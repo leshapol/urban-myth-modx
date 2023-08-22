@@ -1,0 +1,92 @@
+<?php
+/**
+ * Access Policy English lexicon topic
+ *
+ * @language en
+ * @package modx
+ * @subpackage lexicon
+ */
+$_lang['template_group'] = 'Sabloncsoport';
+$_lang['active_of'] = '[[+active]] az összesből ([[+total]])';
+$_lang['active_permissions'] = 'Élő jogosultságok';
+$_lang['no_policy_option'] = ' (nincs házirend) ';
+$_lang['permission'] = 'Jogosultság';
+$_lang['permission_err_ae'] = 'A jogosultság már létezik ehhez a házirendhez.';
+$_lang['permission_err_nf'] = 'Hiányzó jogosultság.';
+$_lang['permission_err_ns'] = 'Nincs megadva a jogosultság.';
+$_lang['permission_err_remove'] = 'Hiba történt a jogosultság törlése közben.';
+$_lang['permission_err_save'] = 'Hiba történt a jogosultság mentése közben.';
+$_lang['permission_remove_confirm'] = 'Biztosan törli ezt a jogosultságot?';
+$_lang['permissions'] = 'Jogosultságok';
+$_lang['permissions_desc'] = 'Itt adhatja meg az egyes jogosultságokat, amiket ez a házirend tartalmazni fog. Az ehhez a házirendhez tartozó összes felhasználói csoport örökli ezeket a jogosultságokat.';
+$_lang['policies'] = 'Hozzáférési házirendek';
+$_lang['policy'] = 'Hozzáférési házirend';
+$_lang['policy_data'] = 'Házirend adatai';
+$_lang['policy_desc'] = 'A hozzáférési házirendek általános házirendek, amelyek korlátoznak vagy engedélyeznek bizonyos MODX műveleteket.';
+$_lang['policy_desc_name'] = 'Hozzáférési házirend neve';
+$_lang['policy_desc_description'] = 'Elhagyható. A hozzáférési házirend rövid leírása. Használhat szókészlet-kulcsot is benne.';
+$_lang['policy_desc_template'] = 'Az ehhez a házirendhez használt házirendsablon. A házirendek a sablonjukból kapják az engedélyek felsorolását.';
+$_lang['policy_desc_lexicon'] = 'Elhagyható. A szókészleti témakör, amelyet ez a házirend használ az általa birtokolt engedélyek lefordításához.';
+$_lang['policy_duplicate_confirm'] = 'Biztosan törli ezt a házirendet és minden adatát?';
+$_lang['policy_err_ae'] = 'Már létezik `[[+name]]` nevű házirend. Kérjük, válasszon másik nevet.';
+$_lang['policy_err_nf'] = 'Házirend nem található.';
+$_lang['policy_err_ns'] = 'Házirend nincs megadva.';
+$_lang['policy_err_remove'] = 'Hiba történt a házirend törlése közben.';
+$_lang['policy_err_save'] = 'Hiba történt a házirend mentése közben.';
+$_lang['policy_import_msg'] = 'Válasszon ki egy XML állományt a házirend betöltésére. Helyes XML házirend-formátumban kell lennie.';
+$_lang['policy_management'] = 'Hozzáférési házirendek';
+$_lang['policy_management_msg'] = 'A hozzáférési házirendek határozzák meg, hogy a MODX hogyan kezeli a jogosultságokat az egyes tevékenységekhez.';
+$_lang['policy_name'] = 'Házirend neve';
+$_lang['policy_property_create'] = 'Hozzáférési házirend-tulajdonság létrehozása';
+$_lang['policy_property_new'] = 'Házirend-tulajdonság létrehozása';
+$_lang['policy_property_remove'] = 'Hozzáférési házirend-tulajdonság törlése';
+$_lang['policy_property_specify_name'] = 'Kérjük, adja meg a házirend-tulajdonság nevét:';
+$_lang['policy_remove_confirm'] = 'Biztosan törli ezt a hozzáférési házirendet?';
+$_lang['policy_remove_multiple_confirm'] = 'Biztosan törli ezeket a hozzáférési házirendeket? A művelet nem vonható vissza.';
+$_lang['policy_template'] = 'Házirendsablon';
+$_lang['policy_template_desc'] = 'Egy házirendsablon meghatározza, hogy melyik engedélyek jelennek meg az engedélytáblázatban az egyes házirendek szerkesztésénél. Alább engedélyeket adhat vagy vehet el ehhez a sablonhoz. Vegye figyelembe, hogy ha egy engedélyt eltávolít egy sablonból, ezzel az összes házirendből is kikerül, amelyik ezt a sablont használja.';
+$_lang['policy_template_desc_name'] = 'A hozzáférési házirendsablon neve';
+$_lang['policy_template_desc_description'] = 'Elhagyható. A hozzáférési házirend sablon rövid leírása. Használhat szókészlet-kulcsot is benne.';
+$_lang['policy_template_lexicon'] = 'Szókészlet témaköre';
+$_lang['policy_template_desc_lexicon'] = 'Elhagyható. A szókészleti témakör, amelyet ez a házirendsablon használ az általa birtokolt engedélyek lefordításához.';
+$_lang['policy_template_desc_template_group'] = 'A használni kívánt házirendsablon-csoport. A házirendek lenyíló menüből való kiválasztásakor használjuk, általában a sabloncsoportok által szűrve vannak. Válassza ki a megfelelő csoportot a házirendsablonjának.';
+$_lang['policy_template_duplicate_confirm'] = 'Biztosan új példányt hoz létre ebből a házirendsablonból?';
+$_lang['policy_template_err_ae'] = 'Már létezik `[[+name]]` nevű házirendsablon. Kérjük, válasszon másik nevet.';
+$_lang['policy_template_err_nf'] = 'Házirendsablon nem található.';
+$_lang['policy_template_err_ns'] = 'Házirendsablon nincs megadva.';
+$_lang['policy_template_err_remove'] = 'Hiba történt a házirendsablon törlése közben.';
+$_lang['policy_template_err_save'] = 'Hiba történt a házirendsablon mentése közben.';
+$_lang['policy_template_import_msg'] = 'Válasszon ki egy XML állományt a házirendsablon betöltésére. Helyes XML házirendsablon-formátumban kell lennie.';
+$_lang['policy_template_remove_confirm'] = 'Biztosan törli ezt a házirendsablont? Ezzel töröl minden házirendet, amely ezt a sablont használja. Ezzel tönkreteheti a MODX telepítését, ha van ehhez a sablonhoz csatolt házirend.';
+$_lang['policy_template_remove_confirm_in_use'] = 'Biztosan törli ezt a házirendsablont? Ezzel töröl minden házirendet, amely ezt a sablont használja. Ezzel tönkreteheti a MODX telepítését, ha van ehhez a sablonhoz kapcsolódó házirend.<br><br><strong>Ez a sablon használatban van ([[+count]] házirendben összesen). Biztosan törli ezt a sablont és az összes hozzá kapcsolódó házirendet?</strong>';
+$_lang['policy_template_remove_multiple_confirm'] = 'Biztosan törli ezeket a házirendsablontokat? Ezzel eltávolít minden házirendet, amely ezeket a sablonokat használja. Ezzel tönkreteheti a MODX telepítését, ha van ezekhez a sablonokhoz csatolt házirend.';
+$_lang['policy_template_remove_multiple_confirm_in_use'] = 'Biztosan törli ezeket a házirendsablonokat? Ezzel töröl minden házirendet, amelyek ezt a sablont használják. Ezzel tönkreteheti a MODX telepítését, ha vannak ezekhez a sablonokhoz kapcsolódó házirendek.<br><br><strong>A kijelölt sablonok részben használatban vannak ([[+count]] házirendben összesen). Biztosan törli ezeket a sablonokat és az összes hozzájuk kapcsolódó házirendet?</strong>';
+$_lang['policy_templates'] = 'Házirendsablonok';
+$_lang['policy_templates.intro_msg'] = 'Ez a házirendsablonok felsorolása, amelyek meghatározzák az egyes házirendeknél bejelölhető rngedélyeket.';
+$_lang['policy_template_administrator_desc'] = 'Környezetkezelési házirend sablonja az összes engedéllyel.';
+$_lang['policy_template_resource_desc'] = 'Erőforrás-kezelési házirend sablonja az összes jellemzővel.';
+$_lang['policy_template_object_desc'] = 'Objektumkezelési házirend sablonja az összes jellemzővel.';
+$_lang['policy_template_element_desc'] = 'Elemkezelési házirend sablonja az összes jellemzővel.';
+$_lang['policy_template_mediasource_desc'] = 'Médiaforrás-kezelési házirend sablonja az összes jellemzővel.';
+$_lang['policy_template_context_desc'] = 'Környezetkezelési házirend sablonja az összes jellemzővel.';
+$_lang['policy_template_namespace_desc'] = 'Névtérkezelési házirend sablonja az összes jellemzővel.';
+$_lang['policy_template_group_administrator_desc'] = 'Az összes rendszergazdai házirendminta';
+$_lang['policy_template_group_object_desc'] = 'All Object-based policy templates.';
+$_lang['policy_template_group_resource_desc'] = 'All Resource-based policy templates.';
+$_lang['policy_template_group_element_desc'] = 'Az összes elemalapú házirendminta';
+$_lang['policy_template_group_mediasource_desc'] = 'Az összes médiaforrás-alapú házirendminta';
+$_lang['policy_template_group_namespace_desc'] = 'Az összes névtéralapú házirendminta';
+$_lang['policy_template_group_context_desc'] = 'Az összes környezetalapú házirendminta';
+$_lang['policy_resource_desc'] = 'MODX erőforrás-házirend az összes jellemzőjével.';
+$_lang['policy_administrator_desc'] = 'Környezetkezelési házirend az összes engedéllyel.';
+$_lang['policy_load_only_desc'] = 'Egy objektum betöltéséhez szükséges legkevesebb engedély házirendje.';
+$_lang['policy_load_list_and_view_desc'] = 'Csak betöltési, felsorolási és megtekintési jogosultságokat biztosít.';
+$_lang['policy_object_desc'] = 'Objektumkezelési házirend az összes engedéllyel.';
+$_lang['policy_element_desc'] = 'MODX elem-házirend az összes jellemzőjével.';
+$_lang['policy_content_editor_desc'] = 'Környezetkezelési házirend korlátozott, tartalomszerkesztéshez kapcsolódó engedélyekkel, kivéve a közzétételt.';
+$_lang['policy_media_source_admin_desc'] = 'Médiaforrás-kezelési házirend.';
+$_lang['policy_media_source_user_desc'] = 'Médiaforrás felhasználói házirend a médiaforrások alapszintű megjelenítésével és használatával - a szerkesztésen kívül.';
+$_lang['policy_developer_desc'] = 'Környezetkezelési házirend a legtöbb engedéllyel, kivéve a rendszergazdai és biztonsági műveletek.';
+$_lang['policy_context_desc'] = 'Egy szabványos környezeti házirend, amelyet alkalmazhat környezeti hozzáférési listák létrehozásakor alapszintű írás/olvasás és view_unpublished hozzáféréssel egy környezeten belül.';
+$_lang['policy_hidden_namespace_desc'] = 'Rejtett névtér házirend, nem jeleníti meg a névteret a felsorolásokban.';
+$_lang['policy_count'] = 'Házirendek száma';

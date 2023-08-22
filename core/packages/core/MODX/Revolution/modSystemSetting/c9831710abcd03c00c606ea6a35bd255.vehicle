@@ -1,0 +1,11 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => false,
+  'vehicle_class' => 'xPDO\\Transport\\xPDOObjectVehicle',
+  'guid' => 'd2c334edcf35b6a0c2d17ea4a170f4b0',
+  'package' => '',
+  'class' => 'MODX\\Revolution\\modSystemSetting',
+  'signature' => 'c9831710abcd03c00c606ea6a35bd255',
+  'native_key' => 'symlink_merge_fields',
+  'object' => '{"key":"symlink_merge_fields","value":true,"xtype":"combo-boolean","namespace":"core","area":"site","editedon":null}',
+);

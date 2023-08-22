@@ -1,0 +1,33 @@
+<?php
+
+$_lang['language_ar'] = 'अरबी';
+$_lang['language_be'] = 'बेलारूसी';
+$_lang['language_bg'] = 'बलगेरियाई';
+$_lang['language_cs'] = 'चेक';
+$_lang['language_da'] = 'दानिश';
+$_lang['language_de'] = 'जर्मन';
+$_lang['language_el'] = 'यूनानी';
+$_lang['language_en'] = 'अंग्रेजी';
+$_lang['language_es'] = 'स्पेनिश';
+$_lang['language_et'] = 'एस्टोनियन';
+$_lang['language_fa'] = 'फ़ारसी';
+$_lang['language_fi'] = 'फिनिश';
+$_lang['language_fr'] = 'फ्रांसिसी ';
+$_lang['language_he'] = 'यहूदी';
+$_lang['language_hi'] = 'हिंदी';
+$_lang['language_hu'] = 'हंगेरियन';
+$_lang['language_id'] = 'इंडोनेशियन';
+$_lang['language_it'] = 'इतालवी';
+$_lang['language_ja'] = 'जापानी';
+$_lang['language_nl'] = 'डच';
+$_lang['language_pl'] = 'पॉलिश';
+$_lang['language_pt'] = 'पुर्तगाली ';
+$_lang['language_pt-br'] = 'पुर्तगाली ब्राजीलिआई';
+$_lang['language_ro'] = 'रोमनियाई';
+$_lang['language_ru'] = 'रूसी';
+$_lang['language_sv'] = 'स्वीडिश';
+$_lang['language_th'] = 'थाई';
+$_lang['language_tr'] = 'तुर्क';
+$_lang['language_uk'] = 'युक्रेनियन';
+$_lang['language_yo'] = 'योरूबा';
+$_lang['language_zh'] = 'चीनी सामान्य';

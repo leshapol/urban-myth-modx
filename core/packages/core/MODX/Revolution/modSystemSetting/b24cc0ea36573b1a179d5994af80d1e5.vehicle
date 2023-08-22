@@ -1,0 +1,11 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => false,
+  'vehicle_class' => 'xPDO\\Transport\\xPDOObjectVehicle',
+  'guid' => '41a09854e5aee1d0b08d1e06ae887a63',
+  'package' => '',
+  'class' => 'MODX\\Revolution\\modSystemSetting',
+  'signature' => 'b24cc0ea36573b1a179d5994af80d1e5',
+  'native_key' => 'manager_tooltip_delay',
+  'object' => '{"key":"manager_tooltip_delay","value":2300,"xtype":"numberfield","namespace":"core","area":"manager","editedon":null}',
+);

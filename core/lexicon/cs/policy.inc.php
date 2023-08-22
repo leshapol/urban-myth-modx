@@ -1,0 +1,92 @@
+<?php
+/**
+ * Access Policy English lexicon topic
+ *
+ * @language en
+ * @package modx
+ * @subpackage lexicon
+ */
+$_lang['template_group'] = 'Skupina šablon';
+$_lang['active_of'] = '[[+active]] z [[+total]]';
+$_lang['active_permissions'] = 'Aktivní oprávnění';
+$_lang['no_policy_option'] = ' (bez přístupových práv) ';
+$_lang['permission'] = 'Oprávnění';
+$_lang['permission_err_ae'] = 'Oprávnění už existuje pro tato přístupová prává.';
+$_lang['permission_err_nf'] = 'Oprávnění nenalezeno.';
+$_lang['permission_err_ns'] = 'Nespecifikované oprávnění.';
+$_lang['permission_err_remove'] = 'An error occurred while trying to delete this permission.';
+$_lang['permission_err_save'] = 'Nastala chyba při ukládní oprávění.';
+$_lang['permission_remove_confirm'] = 'Are you sure you want to delete this permission?';
+$_lang['permissions'] = 'Přístup';
+$_lang['permissions_desc'] = 'V této části můžete definovat konkrétní oprávnění, které bude obsaženo v přístupových právech. Všechny uživatelské skupiny tyto přístupová práva zdědí.';
+$_lang['policies'] = 'Přístupová práva';
+$_lang['policy'] = 'Přístupová politika';
+$_lang['policy_data'] = 'Přístupová data';
+$_lang['policy_desc'] = 'Přístupová práva jsou obecné zásady, které omezují nebo umožňují některé akce v MODX.';
+$_lang['policy_desc_name'] = 'Název přístupové politiky';
+$_lang['policy_desc_description'] = 'Volitelné. Stručný popis přístupové politiky. Také zde můžete použít slovníkové klíče.';
+$_lang['policy_desc_template'] = 'Šablona Přístupového práva použitá pro toto Přístupové právo. Přístupová práva získávají seznam Oprávnění ze své šablony.';
+$_lang['policy_desc_lexicon'] = 'Volitené. Téma slovníku, které toto Přístupové právo používá pro překlad Oprávnění, která kontroluje.';
+$_lang['policy_duplicate_confirm'] = 'Opravdu chcete zkopírovat toto přístupové právo a všechny jeho data?';
+$_lang['policy_err_ae'] = 'Přístupové právo s názvem `[[+name]]` již existuje. Zvolte prosím jiné jméno.';
+$_lang['policy_err_nf'] = 'Přístupové právo nenalezeno.';
+$_lang['policy_err_ns'] = 'Přístupové právo nebylo specifikováno.';
+$_lang['policy_err_remove'] = 'An error occurred while trying to delete the Policy.';
+$_lang['policy_err_save'] = 'Nastala chyba při ukládání přístupového práva.';
+$_lang['policy_import_msg'] = 'Vyberte XML soubor, ze kterého se má naimportovat přístupové právo. Soubor musí mít plátný formát XML přístupového práva.';
+$_lang['policy_management'] = 'Přístupová práva';
+$_lang['policy_management_msg'] = 'Přístupová práva spravují, jak MODX oprávnění přistupují k specifikovaným akcím.';
+$_lang['policy_name'] = 'Název';
+$_lang['policy_property_create'] = 'Vytvořit vlastnost přístupové politiky';
+$_lang['policy_property_new'] = 'Create Policy Property';
+$_lang['policy_property_remove'] = 'Odstranit vlastnost přístupové politiky';
+$_lang['policy_property_specify_name'] = 'Zadejte název přístupového práva:';
+$_lang['policy_remove_confirm'] = 'Are you sure you want to delete this Access Policy?';
+$_lang['policy_remove_multiple_confirm'] = 'Are you sure you want to delete these Access Policies? This is irreversible.';
+$_lang['policy_template'] = 'Šablona přístupového práva';
+$_lang['policy_template_desc'] = 'Šablona přístupového práva určující oprávnění zobrazující se v tabulce oprávnění při úpravách daného přístupového práva. Níže můžete přidat nebo odebrat specifická oprávnění z této šablony. Pamatujte, že odstranění oprávnění z šablony jej odstraní ze všech přístupových práv, které používají tuto šablonu.';
+$_lang['policy_template_desc_name'] = 'Název šablony přístupové politiky';
+$_lang['policy_template_desc_description'] = 'Volitelné. Stručný popis šablony přístupové politiky. Také zde můžete použít slovníkové klíče.';
+$_lang['policy_template_lexicon'] = 'Lexicon Topic';
+$_lang['policy_template_desc_lexicon'] = 'Volitelné. Téma slovníku, které tato Šablona přístupového práva používá pro překlad oprávnění, které kontroluje..';
+$_lang['policy_template_desc_template_group'] = 'Použitá Skupina šablon přístupových práv. Toto se používá, když vybíráte Přístupové právo z rozbalovací nebídky; běžně jsou filtrována dle skupiny šablon. Vyberte odpovídající skupinu pro Vaše Šablony přístupových práv.';
+$_lang['policy_template_duplicate_confirm'] = 'Opravdu chcete zkopírovat tuto šablonu přístupového práva?';
+$_lang['policy_template_err_ae'] = 'Šablona přístupového práva s názvem `[[+name]]` již existuje. Zvolte jiný název.';
+$_lang['policy_template_err_nf'] = 'Šablona přístupového práva nenalezena.';
+$_lang['policy_template_err_ns'] = 'Šablona přístupového práva nebyla určena.';
+$_lang['policy_template_err_remove'] = 'An error occurred while trying to delete the Policy Template.';
+$_lang['policy_template_err_save'] = 'Nastala chyba při ukládání šablony přístupového práva.';
+$_lang['policy_template_import_msg'] = 'Vyberte XML soubor, ze kterého se má naimportovat šablona přístupového práva. Soubor musí mít plátný formát XML šablony přístupového práva.';
+$_lang['policy_template_remove_confirm'] = 'Are you sure you want to delete this Policy Template? It will delete all Policies attached to this Template as well - this could break your MODX installation if any active Policies are attached to this Template.';
+$_lang['policy_template_remove_confirm_in_use'] = 'Jste si jisti, že chcete odstranit tuto šablonu přístupových práv? Odstraní také všechna přístupová práva připojená k této šabloně - může dojít k narušení instalace MODX, pokud jsou k této šabloně připojena aktivní přístupová práva.<br><br><strong>Tato šablona je používána existujícími Zásadami (celkem [[+count]]). Jste si jisti, že chcete odstranit tuto šablonu a všechny připojené podmínky?</strong>';
+$_lang['policy_template_remove_multiple_confirm'] = 'Are you sure you want to delete these Policy Templates? It will delete all Policies attached to these Templates as well - this could break your MODX installation if any active Policies are attached to these Templates.';
+$_lang['policy_template_remove_multiple_confirm_in_use'] = 'Jste si jisti, že chcete odstranit tyto šablony přístupových práv? Odstraní také všechna přístupová práva připojená k těmto šablonám - může dojít k narušení instalace MODX, pokud jsou k těmto šablonám připojena aktivní přístupová práva.<br><br><strong>Některé z vybraných šablon jsou stále používány v existujících Zásadách (celkem [[+count]]). Jste si jisti, že chcete odstranit tuto šablonu a všechny připojené podmínky?</strong>';
+$_lang['policy_templates'] = 'Šablony přístupových práv';
+$_lang['policy_templates.intro_msg'] = 'V této časti vidíte seznam šablon přístupových práv, které definují seznam oprávnění, která jsou zaškrtlá nebo nezaškrtlá pro specifická přístupová práva.';
+$_lang['policy_template_administrator_desc'] = 'Context administration policy template with all permissions.';
+$_lang['policy_template_resource_desc'] = 'Resource Policy Template with all attributes.';
+$_lang['policy_template_object_desc'] = 'Object Policy Template with all attributes.';
+$_lang['policy_template_element_desc'] = 'Element Policy Template with all attributes.';
+$_lang['policy_template_mediasource_desc'] = 'Media Source Policy Template with all attributes.';
+$_lang['policy_template_context_desc'] = 'Context Policy Template with all attributes.';
+$_lang['policy_template_namespace_desc'] = 'Namespace Policy Template with all attributes.';
+$_lang['policy_template_group_administrator_desc'] = 'All admin policy templates.';
+$_lang['policy_template_group_object_desc'] = 'Všechny šablony zásad založené na objektu.';
+$_lang['policy_template_group_resource_desc'] = 'Všechny šablony politik založené na dokumentu.';
+$_lang['policy_template_group_element_desc'] = 'All Element-based policy templates.';
+$_lang['policy_template_group_mediasource_desc'] = 'All Media Source-based policy templates.';
+$_lang['policy_template_group_namespace_desc'] = 'All Namespace based policy templates.';
+$_lang['policy_template_group_context_desc'] = 'All Context based policy templates.';
+$_lang['policy_resource_desc'] = 'MODX Resource Policy with all attributes.';
+$_lang['policy_administrator_desc'] = 'Context administration policy with all permissions.';
+$_lang['policy_load_only_desc'] = 'A minimal policy with permission to load an object.';
+$_lang['policy_load_list_and_view_desc'] = 'Provides load, list and view permissions only.';
+$_lang['policy_object_desc'] = 'An Object policy with all permissions.';
+$_lang['policy_element_desc'] = 'MODX Element policy with all attributes.';
+$_lang['policy_content_editor_desc'] = 'Context administration policy with limited, content-editing related Permissions, but no publishing.';
+$_lang['policy_media_source_admin_desc'] = 'Media Source administration policy.';
+$_lang['policy_media_source_user_desc'] = 'Media Source user policy, with basic viewing and using - but no editing - of Media Sources.';
+$_lang['policy_developer_desc'] = 'Context administration policy with most Permissions except Administrator and Security functions.';
+$_lang['policy_context_desc'] = 'A standard Context policy that you can apply when creating Context ACLs for basic read/write and view_unpublished access within a Context.';
+$_lang['policy_hidden_namespace_desc'] = 'Hidden Namespace policy, will not show Namespace in lists.';
+$_lang['policy_count'] = 'Počet přístupových práv';

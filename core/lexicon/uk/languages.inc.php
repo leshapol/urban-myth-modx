@@ -1,0 +1,33 @@
+<?php
+
+$_lang['language_ar'] = 'Арабська';
+$_lang['language_be'] = 'Білоруська';
+$_lang['language_bg'] = 'Болгарська';
+$_lang['language_cs'] = 'Чеська';
+$_lang['language_da'] = 'Датська';
+$_lang['language_de'] = 'Німецька';
+$_lang['language_el'] = 'Грецька';
+$_lang['language_en'] = 'Англійська';
+$_lang['language_es'] = 'Іспанська';
+$_lang['language_et'] = 'Естонська';
+$_lang['language_fa'] = 'Перська';
+$_lang['language_fi'] = 'Фінська';
+$_lang['language_fr'] = 'Французька';
+$_lang['language_he'] = 'Іврит';
+$_lang['language_hi'] = 'Хінді';
+$_lang['language_hu'] = 'Угорська';
+$_lang['language_id'] = 'Індонезійська';
+$_lang['language_it'] = 'Італійська';
+$_lang['language_ja'] = 'Японська';
+$_lang['language_nl'] = 'Голандська';
+$_lang['language_pl'] = 'Польська';
+$_lang['language_pt'] = 'Португальська';
+$_lang['language_pt-br'] = 'Португальська (Бразилія)';
+$_lang['language_ro'] = 'Румунська';
+$_lang['language_ru'] = 'Росiйська';
+$_lang['language_sv'] = 'Шведська';
+$_lang['language_th'] = 'Тайська';
+$_lang['language_tr'] = 'Турецька';
+$_lang['language_uk'] = 'Українська';
+$_lang['language_yo'] = 'Йоруба';
+$_lang['language_zh'] = 'Китайська (спрощена)';

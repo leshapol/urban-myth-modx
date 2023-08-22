@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/*
+ * This file is part of MODX Revolution.
+ *
+ * Copyright (c) MODX, LLC. All Rights Reserved.
+ *
+ * For complete copyright and license information, see the COPYRIGHT and LICENSE
+ * files found in the top-level directory of this distribution.
+ */
+-->
+<!-- Data for modActionField objects -->
+<actions>
+    <action controller="resource/update" form="modx-panel-resource">
+        <tab name="modx-resource-settings">
+        </tab>
+        <tab name="modx-resource-main-left">
+            <field name="id" />
+            <field name="pagetitle" />
+            <field name="alias" />
+            <field name="longtitle" />
+            <field name="description" />
+            <field name="introtext" />
+        </tab>
+        <tab name="modx-resource-content">
+            <field name="modx-resource-content" />
+        </tab>
+        <tab name="modx-resource-main-right">
+        </tab>
+        <tab name="modx-resource-main-right-top">
+            <field name="published" />
+            <field name="deleted" />
+            <field name="publishedon" />
+            <field name="pub_date" />
+            <field name="unpub_date" />
+        </tab>
+        <tab name="modx-resource-main-right-middle">
+            <field name="template" />
+        </tab>
+        <tab name="modx-resource-main-right-bottom">
+            <field name="hidemenu" />
+            <field name="menutitle" />
+            <field name="link_attributes" />
+            <field name="menuindex" />
+        </tab>
+        <tab name="modx-page-settings">
+        </tab>
+        <tab name="modx-page-settings-left">
+            <field name="class_key" />
+            <field name="content_type" />
+        </tab>
+        <tab name="modx-page-settings-right">
+            <field name="parent-cmb" />
+            <field name="content_dispo" />
+        </tab>
+        <tab name="modx-page-settings-box-left">
+            <field name="isfolder" />
+            <field name="show_in_tree" />
+            <field name="hide_children_in_tree" />
+            <field name="alias_visible" />
+            <field name="uri_override" />
+            <field name="uri" />
+        </tab>
+        <tab name="modx-page-settings-box-right">
+            <field name="richtext" />
+            <field name="cacheable" />
+            <field name="searchable" />
+            <field name="syncsite" />
+        </tab>
+        <tab name="modx-panel-resource-tv" other="tv" />
+        <tab name="modx-resource-access-permissions" />
+    </action>
+
+    <action controller="resource/create" form="modx-panel-resource">
+        <tab name="modx-resource-settings">
+        </tab>
+        <tab name="modx-resource-main-left">
+            <field name="id" />
+            <field name="pagetitle" />
+            <field name="alias" />
+            <field name="longtitle" />
+            <field name="description" />
+            <field name="introtext" />
+        </tab>
+        <tab name="modx-resource-content">
+            <field name="modx-resource-content" />
+        </tab>
+        <tab name="modx-resource-main-right">
+        </tab>
+        <tab name="modx-resource-main-right-top">
+            <field name="published" />
+            <field name="deleted" />
+            <field name="publishedon" />
+            <field name="pub_date" />
+            <field name="unpub_date" />
+        </tab>
+        <tab name="modx-resource-main-right-middle">
+            <field name="template" />
+        </tab>
+        <tab name="modx-resource-main-right-bottom">
+            <field name="hidemenu" />
+            <field name="menutitle" />
+            <field name="link_attributes" />
+            <field name="menuindex" />
+        </tab>
+        <tab name="modx-page-settings">
+        </tab>
+        <tab name="modx-page-settings-left">
+            <field name="class_key" />
+            <field name="content_type" />
+        </tab>
+        <tab name="modx-page-settings-right">
+            <field name="parent-cmb" />
+            <field name="content_dispo" />
+        </tab>
+        <tab name="modx-page-settings-box-left">
+            <field name="isfolder" />
+            <field name="show_in_tree" />
+            <field name="hide_children_in_tree" />
+            <field name="alias_visible" />
+            <field name="uri_override" />
+            <field name="uri" />
+        </tab>
+        <tab name="modx-page-settings-box-right">
+            <field name="richtext" />
+            <field name="cacheable" />
+            <field name="searchable" />
+            <field name="syncsite" />
+        </tab>
+        <tab name="modx-panel-resource-tv" other="tv" />
+        <tab name="modx-resource-access-permissions" />
+    </action>
+</actions>

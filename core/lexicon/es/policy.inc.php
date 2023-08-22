@@ -1,0 +1,92 @@
+<?php
+/**
+ * Access Policy English lexicon topic
+ *
+ * @language en
+ * @package modx
+ * @subpackage lexicon
+ */
+$_lang['template_group'] = 'Grupo de Plantillas';
+$_lang['active_of'] = '[[+active]] de [[+total]]';
+$_lang['active_permissions'] = 'Permisos Activos';
+$_lang['no_policy_option'] = ' (no hay política) ';
+$_lang['permission'] = 'Permisos';
+$_lang['permission_err_ae'] = 'El permiso ya existe para esta política.';
+$_lang['permission_err_nf'] = 'Permiso no encontrado.';
+$_lang['permission_err_ns'] = 'Permiso no especificado.';
+$_lang['permission_err_remove'] = 'An error occurred while trying to delete this permission.';
+$_lang['permission_err_save'] = 'Ocurrió un error mientra se trataba de guardar este permiso.';
+$_lang['permission_remove_confirm'] = 'Are you sure you want to delete this permission?';
+$_lang['permissions'] = 'Permisos';
+$_lang['permissions_desc'] = 'Aquí puedes definir los permisos específicos que contiene esta política. Todos lo grupos de usuarios con esta política heredarán estos permisos.';
+$_lang['policies'] = 'Políticas de Acceso';
+$_lang['policy'] = 'Política de Acceso';
+$_lang['policy_data'] = 'Datos de Política';
+$_lang['policy_desc'] = 'Las políticas de acceso son políticas genéricas que restringen o habilitan ciertas acciones dentro de MODX.';
+$_lang['policy_desc_name'] = 'El nombre de la política de Acceso';
+$_lang['policy_desc_description'] = 'Optional. A short description of the Access Policy. Also you might use lexicon keys here.';
+$_lang['policy_desc_template'] = 'La Plantilla de Política utilizada para esta política. Las políticas toman su lista de Permisos de su Plantilla.';
+$_lang['policy_desc_lexicon'] = 'Opcional. El Tópico de Archivo de Idioma que utilizará esta Política para traducir los permisos que posee.';
+$_lang['policy_duplicate_confirm'] = '¿Estás seguro de que quieres duplicar esta política y todos sus datos?';
+$_lang['policy_err_ae'] = 'Ya existe una política con el nombre `[[+name]]`. Por favor, selecciona otro nombre.';
+$_lang['policy_err_nf'] = 'Política no encontrada.';
+$_lang['policy_err_ns'] = 'Política no especificada.';
+$_lang['policy_err_remove'] = 'An error occurred while trying to delete the Policy.';
+$_lang['policy_err_save'] = 'Ocurrió un error mientras se trataba de guardar la política.';
+$_lang['policy_import_msg'] = 'Selecciona un archivo XML desde el que importar una Política. Debe ser un archivo de Política en su correspondiente formato XML.';
+$_lang['policy_management'] = 'Políticas de Acceso';
+$_lang['policy_management_msg'] = 'Las Políticas de Acceso administran cómo MODX maneja los permisos para las acciones especificadas.';
+$_lang['policy_name'] = 'Nombre de la Política';
+$_lang['policy_property_create'] = 'Crear Propiedad de Política de Acceso';
+$_lang['policy_property_new'] = 'Create Policy Property';
+$_lang['policy_property_remove'] = 'Eliminar Propiedad de Política';
+$_lang['policy_property_specify_name'] = 'Por favor especifíca un nombre de propiedad de política:';
+$_lang['policy_remove_confirm'] = 'Are you sure you want to delete this Access Policy?';
+$_lang['policy_remove_multiple_confirm'] = 'Are you sure you want to delete these Access Policies? This is irreversible.';
+$_lang['policy_template'] = 'Plantilla de Política';
+$_lang['policy_template_desc'] = 'Una Plantilla de Política define qué Permisos serán mostrados en la cuadrícula de Permisos cuando se esté editando una política específica. Puedes añadir o eliminar Permisos específicos de esta plantilla de abajo. Toma en cuenta que al eliminar un Permiso de una Plantilla, lo eliminará de cualquier Política que use dicha Plantilla.';
+$_lang['policy_template_desc_name'] = 'El nombre de la Plantilla de Política de Acceso';
+$_lang['policy_template_desc_description'] = 'Optional. A short description of the Access Policy Template. Also you might use lexicon keys here.';
+$_lang['policy_template_lexicon'] = 'Lexicon Topic';
+$_lang['policy_template_desc_lexicon'] = 'Opcional. El Tópico de Archivo de Idioma que utilizará esta Plantilla de Política para traducir los permisos que posee.';
+$_lang['policy_template_desc_template_group'] = 'El Grupo de Plantillas de Política a utilizar. Ésto se utiliza cuando se seleccionan políticas en un menú desplegable; se suelen filtrar por el Grupo de Plantillas. Selecciona un grupo apropiado para tu Plantilla de Política.';
+$_lang['policy_template_duplicate_confirm'] = '¿Estás seguro de que quieres duplicar esta Plantilla de política?';
+$_lang['policy_template_err_ae'] = 'Ya existe una Plantilla de política con el nombre `[[+name]]`. Por favor, selecciona otro nombre.';
+$_lang['policy_template_err_nf'] = 'Plantilla de Política no encontrada.';
+$_lang['policy_template_err_ns'] = 'Plantilla de Política no especificada.';
+$_lang['policy_template_err_remove'] = 'An error occurred while trying to delete the Policy Template.';
+$_lang['policy_template_err_save'] = 'Ocurrió un error mientras se trataba de guardar la Plantilla de Política.';
+$_lang['policy_template_import_msg'] = 'Selecciona un archivo XML desde el cual importar una Plantilla de Política. Debe ser un archivo de Plantilla de Política en su correspondiente formato XML.';
+$_lang['policy_template_remove_confirm'] = 'Are you sure you want to delete this Policy Template? It will delete all Policies attached to this Template as well - this could break your MODX installation if any active Policies are attached to this Template.';
+$_lang['policy_template_remove_confirm_in_use'] = 'Are you sure you want to delete this Policy Template? It will delete all Policies attached to this Template as well - this could break your MODX installation if any active Policies are attached to this Template.<br><br><strong>This template is used by existing Policies ([[+count]] in total). Are you sure you want to delete this template and all attached policies?</strong>';
+$_lang['policy_template_remove_multiple_confirm'] = 'Are you sure you want to delete these Policy Templates? It will delete all Policies attached to these Templates as well - this could break your MODX installation if any active Policies are attached to these Templates.';
+$_lang['policy_template_remove_multiple_confirm_in_use'] = 'Are you sure you want to delete these Policy Templates? It will delete all Policies attached to these Templates as well - this could break your MODX installation if any active Policies are attached to these Templates.<br><br><strong>Some of selected templates are still used by existing Policies ([[+count]] in total). Are you sure you want to delete these template and all attached policies?</strong>';
+$_lang['policy_templates'] = 'Plantillas de Política';
+$_lang['policy_templates.intro_msg'] = 'Esta es una lista de las Plantillas de Política, las cuales definen listas de los Permisos que están seleccionados o no en Políticas específicas.';
+$_lang['policy_template_administrator_desc'] = 'Context administration policy template with all permissions.';
+$_lang['policy_template_resource_desc'] = 'Resource Policy Template with all attributes.';
+$_lang['policy_template_object_desc'] = 'Object Policy Template with all attributes.';
+$_lang['policy_template_element_desc'] = 'Element Policy Template with all attributes.';
+$_lang['policy_template_mediasource_desc'] = 'Media Source Policy Template with all attributes.';
+$_lang['policy_template_context_desc'] = 'Context Policy Template with all attributes.';
+$_lang['policy_template_namespace_desc'] = 'Namespace Policy Template with all attributes.';
+$_lang['policy_template_group_administrator_desc'] = 'All admin policy templates.';
+$_lang['policy_template_group_object_desc'] = 'All Object-based policy templates.';
+$_lang['policy_template_group_resource_desc'] = 'All Resource-based policy templates.';
+$_lang['policy_template_group_element_desc'] = 'All Element-based policy templates.';
+$_lang['policy_template_group_mediasource_desc'] = 'All Media Source-based policy templates.';
+$_lang['policy_template_group_namespace_desc'] = 'All Namespace based policy templates.';
+$_lang['policy_template_group_context_desc'] = 'All Context based policy templates.';
+$_lang['policy_resource_desc'] = 'MODX Resource Policy with all attributes.';
+$_lang['policy_administrator_desc'] = 'Context administration policy with all permissions.';
+$_lang['policy_load_only_desc'] = 'A minimal policy with permission to load an object.';
+$_lang['policy_load_list_and_view_desc'] = 'Provides load, list and view permissions only.';
+$_lang['policy_object_desc'] = 'An Object policy with all permissions.';
+$_lang['policy_element_desc'] = 'MODX Element policy with all attributes.';
+$_lang['policy_content_editor_desc'] = 'Context administration policy with limited, content-editing related Permissions, but no publishing.';
+$_lang['policy_media_source_admin_desc'] = 'Media Source administration policy.';
+$_lang['policy_media_source_user_desc'] = 'Media Source user policy, with basic viewing and using - but no editing - of Media Sources.';
+$_lang['policy_developer_desc'] = 'Context administration policy with most Permissions except Administrator and Security functions.';
+$_lang['policy_context_desc'] = 'A standard Context policy that you can apply when creating Context ACLs for basic read/write and view_unpublished access within a Context.';
+$_lang['policy_hidden_namespace_desc'] = 'Hidden Namespace policy, will not show Namespace in lists.';
+$_lang['policy_count'] = 'Policy Count';

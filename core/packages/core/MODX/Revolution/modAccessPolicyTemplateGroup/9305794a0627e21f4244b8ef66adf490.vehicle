@@ -1,0 +1,15 @@
+<?php return array (
+  'preserve_keys' => false,
+  'unique_key' => 
+  array (
+    0 => 'name',
+  ),
+  'update_object' => true,
+  'vehicle_class' => 'xPDO\\Transport\\xPDOObjectVehicle',
+  'guid' => '2094439f44356a6719964c6383083c8d',
+  'package' => '',
+  'class' => 'MODX\\Revolution\\modAccessPolicyTemplateGroup',
+  'signature' => '9305794a0627e21f4244b8ef66adf490',
+  'native_key' => NULL,
+  'object' => '{"id":null,"name":"Administrator","description":"policy_template_group_administrator_desc"}',
+);

@@ -1,0 +1,15 @@
+<?php return array (
+  'preserve_keys' => false,
+  'unique_key' => 
+  array (
+    0 => 'name',
+  ),
+  'update_object' => true,
+  'vehicle_class' => 'xPDO\\Transport\\xPDOObjectVehicle',
+  'guid' => '0aa1466d141e00d5ee34eb5b92506224',
+  'package' => '',
+  'class' => 'MODX\\Revolution\\modAccessPolicy',
+  'signature' => '3fe593051b7bae3ccef06a65932cf4c6',
+  'native_key' => 11,
+  'object' => '{"id":11,"name":"Context","description":"policy_context_desc","parent":0,"template":0,"class":"","data":"{\\"load\\":true,\\"list\\":true,\\"view\\":true,\\"save\\":true,\\"remove\\":true,\\"copy\\":true,\\"view_unpublished\\":true}","lexicon":"permissions"}',
+);

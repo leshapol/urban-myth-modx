@@ -1,0 +1,11 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => true,
+  'vehicle_class' => 'xPDO\\Transport\\xPDOObjectVehicle',
+  'guid' => 'e7c0e5a627dca59e231ad13f47ea35df',
+  'package' => '',
+  'class' => 'MODX\\Revolution\\modEvent',
+  'signature' => '60746e1b182544bbe841fd079e57c85d',
+  'native_key' => 'OnManagerLoginFormPrerender',
+  'object' => '{"name":"OnManagerLoginFormPrerender","service":2,"groupname":"Security"}',
+);

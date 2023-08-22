@@ -1,0 +1,15 @@
+<?php return array (
+  'preserve_keys' => false,
+  'unique_key' => 
+  array (
+    0 => 'name',
+  ),
+  'update_object' => true,
+  'vehicle_class' => 'xPDO\\Transport\\xPDOObjectVehicle',
+  'guid' => '0de96e25c3361f8c4c6f5ebad2cee94c',
+  'package' => '',
+  'class' => 'MODX\\Revolution\\modAccessPolicyTemplateGroup',
+  'signature' => 'd0ad94ca5b9b64398a92c8659d5f8486',
+  'native_key' => NULL,
+  'object' => '{"id":null,"name":"Resource","description":"policy_template_group_resource_desc"}',
+);

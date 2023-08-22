@@ -1,0 +1,11 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => false,
+  'vehicle_class' => 'xPDO\\Transport\\xPDOObjectVehicle',
+  'guid' => '50e6adbf067790cb22ab37e654f0bd71',
+  'package' => '',
+  'class' => 'MODX\\Revolution\\modSystemSetting',
+  'signature' => 'f619a8735eefba1cf45547046d55f6ba',
+  'native_key' => 'quick_search_in_content',
+  'object' => '{"key":"quick_search_in_content","value":true,"xtype":"combo-boolean","namespace":"core","area":"manager","editedon":null}',
+);

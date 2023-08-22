@@ -1,0 +1,11 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => false,
+  'vehicle_class' => 'xPDO\\Transport\\xPDOObjectVehicle',
+  'guid' => '89963c40bad97058488f0ce94f0334c0',
+  'package' => '',
+  'class' => 'MODX\\Revolution\\modSystemSetting',
+  'signature' => 'b4a0c8eaa08e738fe5a5bca3cd1a5d8d',
+  'native_key' => 'static_elements_automate_snippets',
+  'object' => '{"key":"static_elements_automate_snippets","value":false,"xtype":"combo-boolean","namespace":"core","area":"static_elements","editedon":null}',
+);

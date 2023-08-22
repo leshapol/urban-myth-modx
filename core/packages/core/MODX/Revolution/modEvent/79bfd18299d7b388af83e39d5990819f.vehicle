@@ -1,0 +1,11 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => true,
+  'vehicle_class' => 'xPDO\\Transport\\xPDOObjectVehicle',
+  'guid' => '599553855e39ce7b5b40b4896df5b802',
+  'package' => '',
+  'class' => 'MODX\\Revolution\\modEvent',
+  'signature' => '79bfd18299d7b388af83e39d5990819f',
+  'native_key' => 'OnTemplateVarRemove',
+  'object' => '{"name":"OnTemplateVarRemove","service":1,"groupname":"Template Variables"}',
+);

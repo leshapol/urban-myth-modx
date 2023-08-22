@@ -1,0 +1,39 @@
+{
+    "name": "xpdo/xpdo",
+    "description": "A PDO-based Object/Relational Bridge Library",
+    "homepage": "http://www.xpdo.org/",
+    "type": "library",
+    "license": "GPL-2.0+",
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "authors": [
+        {
+            "name": "Jason Coward",
+            "email": "jason@opengeek.com",
+            "homepage": "https://opengeek.com/",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=7.2.5",
+        "ext-PDO": "*",
+        "ext-json": "*",
+        "ext-simplexml": "*",
+        "symfony/console": "^5.4",
+        "psr/container": "^1.1 || ^2.0.1"
+    },
+    "require-dev": {
+        "yoast/phpunit-polyfills": "^1.0"
+    },
+    "suggest": {
+        "ext-redis": "Allows caching using Redis"
+    },
+    "autoload": {
+        "psr-0": {
+            "xPDO": ["src/", "test/"]
+        }
+    },
+    "bin": [
+        "bin/xpdo"
+    ]
+}

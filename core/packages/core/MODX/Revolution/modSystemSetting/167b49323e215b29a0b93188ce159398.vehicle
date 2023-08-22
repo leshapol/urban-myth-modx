@@ -1,0 +1,11 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => false,
+  'vehicle_class' => 'xPDO\\Transport\\xPDOObjectVehicle',
+  'guid' => 'fbadf761b0a3a0137f5247d3add50a72',
+  'package' => '',
+  'class' => 'MODX\\Revolution\\modSystemSetting',
+  'signature' => '167b49323e215b29a0b93188ce159398',
+  'native_key' => 'mail_smtp_secure',
+  'object' => '{"key":"mail_smtp_secure","value":"","xtype":"textfield","namespace":"core","area":"mail","editedon":null}',
+);

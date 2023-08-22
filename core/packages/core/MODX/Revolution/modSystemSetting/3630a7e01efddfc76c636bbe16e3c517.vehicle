@@ -1,0 +1,11 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => false,
+  'vehicle_class' => 'xPDO\\Transport\\xPDOObjectVehicle',
+  'guid' => 'bea30b96f219735a21967c01dea3eaca',
+  'package' => '',
+  'class' => 'MODX\\Revolution\\modSystemSetting',
+  'signature' => '3630a7e01efddfc76c636bbe16e3c517',
+  'native_key' => 'error_page',
+  'object' => '{"key":"error_page","value":1,"xtype":"numberfield","namespace":"core","area":"site","editedon":null}',
+);

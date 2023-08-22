@@ -1,0 +1,11 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => false,
+  'vehicle_class' => 'xPDO\\Transport\\xPDOObjectVehicle',
+  'guid' => '613f7dcb981c990d55d10f023b586540',
+  'package' => '',
+  'class' => 'MODX\\Revolution\\modSystemSetting',
+  'signature' => '59aee11ec3e8200262f304e2f775c567',
+  'native_key' => 'debug',
+  'object' => '{"key":"debug","value":"","xtype":"numberfield","namespace":"core","area":"system","editedon":null}',
+);

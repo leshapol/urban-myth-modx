@@ -1,0 +1,12 @@
+<?php return array (
+  'preserve_keys' => false,
+  'update_object' => false,
+  'unique_key' => 'mime_type',
+  'vehicle_class' => 'xPDO\\Transport\\xPDOObjectVehicle',
+  'guid' => 'f2e2bb09d51630248dcc9b6e63376465',
+  'package' => '',
+  'class' => 'MODX\\Revolution\\modContentType',
+  'signature' => '775a56267578a7b0a3533ba371e0cee7',
+  'native_key' => 1,
+  'object' => '{"id":1,"name":"HTML","description":"HTML content","mime_type":"text\\/html","file_extensions":".html","icon":"","headers":"NULL","binary":0}',
+);

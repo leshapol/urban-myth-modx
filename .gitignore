@@ -1,0 +1,15 @@
+// config files
+config.core.php
+connectors/config.core.php
+manager/config.core.php
+core/config/config.inc.php
+
+// IDE
+.idea/
+
+// cache
+core/cache/
+
+// front
+/assets/theme/node_modules/
+/assets/theme/build/

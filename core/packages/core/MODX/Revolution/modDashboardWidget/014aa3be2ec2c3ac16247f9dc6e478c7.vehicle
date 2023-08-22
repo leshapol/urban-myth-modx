@@ -1,0 +1,15 @@
+<?php return array (
+  'preserve_keys' => false,
+  'update_object' => false,
+  'unique_key' => 
+  array (
+    0 => 'name',
+  ),
+  'vehicle_class' => 'xPDO\\Transport\\xPDOObjectVehicle',
+  'guid' => 'dc50cfff840ad869f09d875a6d4be61e',
+  'package' => '',
+  'class' => 'MODX\\Revolution\\modDashboardWidget',
+  'signature' => '014aa3be2ec2c3ac16247f9dc6e478c7',
+  'native_key' => NULL,
+  'object' => '{"id":null,"name":"w_buttons","description":"w_buttons_desc","type":"file","content":"[[++manager_path]]controllers\\/default\\/dashboard\\/widget.buttons.php","properties":"{\\"create-resource\\":{\\"link\\":\\"[[++manager_url]]?a=resource\\\\\\/create\\",\\"icon\\":\\"file-o\\",\\"title\\":\\"[[%action_new_resource]]\\",\\"description\\":\\"[[%action_new_resource_desc]]\\"},\\"view-site\\":{\\"link\\":\\"[[++site_url]]\\",\\"icon\\":\\"eye\\",\\"title\\":\\"[[%action_view_website]]\\",\\"description\\":\\"[[%action_view_website_desc]]\\",\\"target\\":\\"_blank\\"},\\"advanced-search\\":{\\"link\\":\\"[[++manager_url]]?a=search\\",\\"icon\\":\\"search\\",\\"title\\":\\"[[%action_advanced_search]]\\",\\"description\\":\\"[[%action_advanced_search_desc]]\\"},\\"manage-users\\":{\\"link\\":\\"[[++manager_url]]?a=security\\\\\\/user\\",\\"icon\\":\\"user\\",\\"title\\":\\"[[%action_manage_users]]\\",\\"description\\":\\"[[%action_manage_users_desc]]\\"}}","namespace":"core","lexicon":"core:dashboards","size":"full","permission":""}',
+);

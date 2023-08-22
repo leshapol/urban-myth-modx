@@ -1,0 +1,11 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => false,
+  'vehicle_class' => 'xPDO\\Transport\\xPDOObjectVehicle',
+  'guid' => '72bddc238bfc7c018d1f8ae720332784',
+  'package' => '',
+  'class' => 'MODX\\Revolution\\modSystemSetting',
+  'signature' => 'b344131c93c78b88740ddc1cebc15ab2',
+  'native_key' => 'automatic_alias',
+  'object' => '{"key":"automatic_alias","value":true,"xtype":"combo-boolean","namespace":"core","area":"furls","editedon":null}',
+);
