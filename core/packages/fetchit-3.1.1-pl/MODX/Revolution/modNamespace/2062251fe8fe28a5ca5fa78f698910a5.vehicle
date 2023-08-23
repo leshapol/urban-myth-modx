@@ -1,0 +1,17 @@
+<?php return array (
+  'unique_key' => 'name',
+  'preserve_keys' => true,
+  'update_object' => true,
+  'resolve_files' => true,
+  'resolve_php' => true,
+  'namespace' => 'fetchit',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_class' => 'xPDO\\Transport\\xPDOObjectVehicle',
+  'guid' => '5a36b62d90b7826e92c186fb043b5b23',
+  'package' => '',
+  'class' => 'MODX\\Revolution\\modNamespace',
+  'signature' => '2062251fe8fe28a5ca5fa78f698910a5',
+  'native_key' => 'fetchit',
+  'object' => '{"name":"fetchit","path":"{core_path}components\\/fetchit\\/","assets_path":""}',
+);

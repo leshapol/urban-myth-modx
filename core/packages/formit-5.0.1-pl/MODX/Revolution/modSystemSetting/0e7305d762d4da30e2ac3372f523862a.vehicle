@@ -1,0 +1,12 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'vehicle_class' => 'xPDO\\Transport\\xPDOObjectVehicle',
+  'guid' => '0497cfa5d32a9fb943ef6588f5b1acbd',
+  'package' => '',
+  'class' => 'MODX\\Revolution\\modSystemSetting',
+  'signature' => '0e7305d762d4da30e2ac3372f523862a',
+  'native_key' => 'formit.cleanform.days',
+  'object' => '{"key":"formit.cleanform.days","value":30,"xtype":"textfield","namespace":"formit","area":"formit","editedon":null}',
+);

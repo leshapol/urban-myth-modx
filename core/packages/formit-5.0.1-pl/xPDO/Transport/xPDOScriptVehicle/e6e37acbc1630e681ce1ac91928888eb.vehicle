@@ -1,0 +1,12 @@
+<?php return array (
+  'class' => 'xPDO\\Transport\\xPDOScriptVehicle',
+  'object' => 
+  array (
+    'source' => 'formit-5.0.1-pl/xPDO/Transport/xPDOScriptVehicle/e6e37acbc1630e681ce1ac91928888eb.permissions.resolver.script',
+  ),
+  'vehicle_class' => 'xPDO\\Transport\\xPDOScriptVehicle',
+  'guid' => '91a9f91f161d7856b4207e658f46a832',
+  'package' => '',
+  'signature' => 'e6e37acbc1630e681ce1ac91928888eb',
+  'native_key' => '91a9f91f161d7856b4207e658f46a832',
+);

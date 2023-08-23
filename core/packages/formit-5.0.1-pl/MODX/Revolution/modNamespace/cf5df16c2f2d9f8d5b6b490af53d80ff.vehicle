@@ -1,0 +1,40 @@
+<?php return array (
+  'unique_key' => 'name',
+  'preserve_keys' => true,
+  'update_object' => true,
+  'resolve' => 
+  array (
+    0 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"formit-5.0.1-pl\\/MODX\\/Revolution\\/modNamespace\\/cf5df16c2f2d9f8d5b6b490af53d80ff\\/0\\/","target":"return MODX_CORE_PATH . \'components\\/\';","name":"formit"}',
+    ),
+    1 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"formit-5.0.1-pl\\/MODX\\/Revolution\\/modNamespace\\/cf5df16c2f2d9f8d5b6b490af53d80ff\\/1\\/","target":"return MODX_ASSETS_PATH . \'components\\/\';","name":"formit"}',
+    ),
+    2 => 
+    array (
+      'type' => 'php',
+      'body' => '{"type":"php","source":"formit-5.0.1-pl\\/MODX\\/Revolution\\/modNamespace\\/cf5df16c2f2d9f8d5b6b490af53d80ff.gpm.resolve.bootstrap.resolver","name":"gpm.resolve.bootstrap"}',
+    ),
+    3 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"formit-5.0.1-pl\\/MODX\\/Revolution\\/modNamespace\\/cf5df16c2f2d9f8d5b6b490af53d80ff\\/3\\/","target":"return MODX_CORE_PATH . \'components\\/formit\\/docs\\/\';","name":"LICENSE.md"}',
+    ),
+    4 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"formit-5.0.1-pl\\/MODX\\/Revolution\\/modNamespace\\/cf5df16c2f2d9f8d5b6b490af53d80ff\\/4\\/","target":"return MODX_CORE_PATH . \'components\\/formit\\/docs\\/\';","name":"CHANGELOG.md"}',
+    ),
+  ),
+  'vehicle_class' => 'xPDO\\Transport\\xPDOObjectVehicle',
+  'guid' => 'b00604f4d06043f0e8da1516f38141b5',
+  'package' => '',
+  'class' => 'MODX\\Revolution\\modNamespace',
+  'signature' => 'cf5df16c2f2d9f8d5b6b490af53d80ff',
+  'native_key' => 'formit',
+  'object' => '{"name":"formit","path":"{core_path}components\\/formit\\/","assets_path":"{assets_path}components\\/formit\\/"}',
+);

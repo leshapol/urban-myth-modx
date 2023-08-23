@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'ace',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '88cec86feb523e41eff43b34108c8e92',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '3f153c4526af4f01d4f12679742c33ea',
+  'native_key' => 'ace.tab_size',
+  'object' => '{"key":"ace.tab_size","value":"4","xtype":"textfield","namespace":"ace","area":"general","editedon":null}',
+);

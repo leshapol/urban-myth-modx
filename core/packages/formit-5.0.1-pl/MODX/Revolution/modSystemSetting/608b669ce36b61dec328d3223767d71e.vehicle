@@ -1,0 +1,12 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'vehicle_class' => 'xPDO\\Transport\\xPDOObjectVehicle',
+  'guid' => 'ed19ed850e1f5777221bdea9815aea7e',
+  'package' => '',
+  'class' => 'MODX\\Revolution\\modSystemSetting',
+  'signature' => '608b669ce36b61dec328d3223767d71e',
+  'native_key' => 'formit.form_encryptkey',
+  'object' => '{"key":"formit.form_encryptkey","value":"","xtype":"textfield","namespace":"formit","area":"formit","editedon":null}',
+);

@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'ace',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'aa303fc6071e8f08b4b1fc1da54fde3f',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '20162c586226aa956e67075bdd9deb6e',
+  'native_key' => 'ace.fold_widgets',
+  'object' => '{"key":"ace.fold_widgets","value":"1","xtype":"combo-boolean","namespace":"ace","area":"general","editedon":null}',
+);

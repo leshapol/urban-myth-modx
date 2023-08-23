@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'related_objects' => false,
+  'namespace' => 'fetchit',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_class' => 'xPDO\\Transport\\xPDOObjectVehicle',
+  'guid' => 'f222be6a8edf778223353160bf0eeb7d',
+  'package' => '',
+  'class' => 'MODX\\Revolution\\modSystemSetting',
+  'signature' => '50d639f505efa5382c9a83f6a5edb3be',
+  'native_key' => 'fetchit.frontend.js',
+  'object' => '{"key":"fetchit.frontend.js","value":"[[+assetsUrl]]js\\/fetchit.js","xtype":"textfield","namespace":"fetchit","area":"fetchit_main","editedon":null}',
+);

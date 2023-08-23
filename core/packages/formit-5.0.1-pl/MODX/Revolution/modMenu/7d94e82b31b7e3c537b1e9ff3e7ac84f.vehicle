@@ -1,0 +1,21 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => true,
+  'unique_key' => 'text',
+  'related_object_attributes' => 
+  array (
+    'Children' => 
+    array (
+      'preserve_keys' => true,
+      'update_object' => true,
+      'unique_key' => 'text',
+    ),
+  ),
+  'vehicle_class' => 'xPDO\\Transport\\xPDOObjectVehicle',
+  'guid' => 'a90f641b91c60a7c994cc81768df835d',
+  'package' => '',
+  'class' => 'MODX\\Revolution\\modMenu',
+  'signature' => '7d94e82b31b7e3c537b1e9ff3e7ac84f',
+  'native_key' => 'formit',
+  'object' => '{"text":"formit","parent":"components","action":"home","description":"formit.desc","icon":"","menuindex":0,"params":"","handler":"","permissions":"","namespace":"formit","menundex":"","permission":""}',
+);

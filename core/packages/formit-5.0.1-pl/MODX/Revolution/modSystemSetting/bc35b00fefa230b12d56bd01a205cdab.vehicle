@@ -1,0 +1,12 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'vehicle_class' => 'xPDO\\Transport\\xPDOObjectVehicle',
+  'guid' => 'bd7bc3456d8e560de45acdd19c35f911',
+  'package' => '',
+  'class' => 'MODX\\Revolution\\modSystemSetting',
+  'signature' => 'bc35b00fefa230b12d56bd01a205cdab',
+  'native_key' => 'formit.attachment.mediasource',
+  'object' => '{"key":"formit.attachment.mediasource","value":1,"xtype":"modx-combo-source","namespace":"formit","area":"formit","editedon":null}',
+);

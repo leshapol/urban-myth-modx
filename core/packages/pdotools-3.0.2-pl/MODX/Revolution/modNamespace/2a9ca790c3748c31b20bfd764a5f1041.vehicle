@@ -1,0 +1,17 @@
+<?php return array (
+  'unique_key' => 'name',
+  'preserve_keys' => true,
+  'update_object' => true,
+  'resolve_files' => true,
+  'resolve_php' => true,
+  'namespace' => 'pdotools',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_class' => 'xPDO\\Transport\\xPDOObjectVehicle',
+  'guid' => '8a825ab40013c8c740cabb52edf99084',
+  'package' => '',
+  'class' => 'MODX\\Revolution\\modNamespace',
+  'signature' => '2a9ca790c3748c31b20bfd764a5f1041',
+  'native_key' => 'pdotools',
+  'object' => '{"name":"pdotools","path":"{core_path}components\\/pdotools\\/","assets_path":""}',
+);
