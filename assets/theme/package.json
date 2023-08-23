@@ -1,0 +1,29 @@
+{
+  "name": "entelechy",
+  "version": "1.0.0",
+  "description": "Entelechy template with Gulp",
+  "author": "entelechy",
+  "private": true,
+  "license": "GNU General Public License (GPL)",
+  "devDependencies": {
+    "browser-sync": "latest",
+    "del": "^6.0.0",
+    "gulp": "latest",
+    "gulp-autoprefixer": "latest",
+    "gulp-clean-css": "latest",
+    "gulp-file-include": "latest",
+    "gulp-group-css-media-queries": "latest",
+    "gulp-imagemin": "^7.1.0",
+    "imagemin-webp": "^6.0.0",
+    "gulp-newer": "latest",
+    "gulp-plumber": "latest",
+    "gulp-rename": "latest",
+    "gulp-sass": "latest",
+    "gulp-uglify-es": "latest",
+    "webp-converter": "2.2.3",
+    "gulp-notify": "^4.0.0"
+  },
+  "dependencies": {
+    "sass": "^1.35.2"
+  }
+}

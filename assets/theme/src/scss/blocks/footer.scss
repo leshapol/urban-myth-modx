@@ -1,0 +1,162 @@
+.footer {
+  background-color: black;
+  color: white;
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    padding: 74px 0px 100px 0px;
+    gap: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+    max-width: 2000px;
+    margin: 0 auto;
+    @media (max-width: $md4) {
+      flex-direction: column;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+    @media (max-width: $md2) {
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+  }
+
+  &__column {
+    flex: 0 0 600px;
+    display: flex;
+    flex-direction: row;
+    gap: 0px 140px;
+    @media (max-width: $md4) {
+      flex: 0 0 auto;
+      flex-direction: column;
+    }
+  }
+
+  &__logo {
+    margin-bottom: 20px;
+  }
+
+  &__social-list {
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: $md4) {
+      max-width: 240px;
+    }
+  }
+
+  &__link {
+    margin-bottom: 30px;
+    @media (max-width: $md4) {
+      display: none;
+    }
+  }
+
+  &__link_mobile {
+    display: none;
+    @media (max-width: $md4) {
+      display: inline-flex;
+      margin-bottom: 30px;
+    }
+  }
+
+  &__tel {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    @media (max-width: $md4) {
+      font-size: 26px;
+    }
+  }
+
+  &__address {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 130%;
+    @media (max-width: $md4) {
+      font-size: 26px;
+      margin-bottom: 60px;
+    }
+  }
+
+  &__title {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    @media (max-width: $md4) {
+      margin-top: 40px;
+      font-size: 28px;
+    }
+  }
+
+  &__list {
+  }
+
+  &__item a {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+
+    @media (max-width: $md4) {
+      font-size: 26px;
+    }
+  }
+  &__item:not(:last-child) {
+    margin-bottom: 7px;
+  }
+  &__item:last-child {
+    margin-bottom: 20px;
+  }
+}
+
+.footer {
+  &__row {
+  }
+
+  &__column {
+  }
+
+  &__logo {
+  }
+
+  &__social-list {
+  }
+
+  &__social-item {
+  }
+
+  &__link {
+  }
+
+  &__address {
+  }
+
+  &__tel {
+  }
+
+  &__link-list {
+    display: flex;
+    flex-direction: row;
+    gap: 0px 100px;
+    @media (max-width: $md4) {
+      flex-direction: column;
+    }
+  }
+
+  &__link-list-wrapper {
+  }
+
+  &__title {
+  }
+
+  &__list {
+  }
+
+  &__item {
+  }
+}
+.button {
+  &_footer {
+  }
+}

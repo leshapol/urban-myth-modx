@@ -1,0 +1,17 @@
+// common ***********************************//
+@import "common";
+
+@import "components/slick-lightbox";
+@import "components/slick-theme";
+// blocks ***********************************//
+@import "blocks/button";
+@import "blocks/tags";
+@import "blocks/blog";
+@import "blocks/header";
+@import "blocks/footer";
+@import "blocks/page-head";
+/*********************************************/
+
+// pages ***********************************//
+@import "pages/content";
+/*********************************************/

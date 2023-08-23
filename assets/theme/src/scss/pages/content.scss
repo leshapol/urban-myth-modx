@@ -1,0 +1,319 @@
+/************************************************content****/
+/*==================header=============*/
+/*==================article=============*/
+.article {
+  margin-top: 100px;
+  margin-bottom: 125px;
+  &__top-line {
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__category {
+    color: #000;
+    font-family: Helvetica;
+    font-size: 14px;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+
+  &__tags {
+    max-width: 500px;
+  }
+
+  &__image {
+    margin-bottom: 83px;
+    padding: 0px 20px;
+  }
+  &__image img {
+    width: 100%;
+    height: 800px;
+    object-fit: cover;
+    border-radius: 0px 0px 250px 0px;
+    @media (max-width: $md4) {
+      height: 400px;
+    }
+  }
+
+  &__p {
+    font-family: "Urbanist";
+    font-size: 30px;
+    font-weight: 400;
+
+    max-width: 970px;
+    margin-left: auto;
+    margin-bottom: 50px;
+  }
+
+  &__caption {
+    font-family: Helvetica;
+    font-size: 40px;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin: 70px 0;
+    text-align: center;
+  }
+
+  &__slider {
+  }
+
+  &__details {
+    font-family: Helvetica;
+    font-size: 16px;
+    letter-spacing: 2.24px;
+
+    max-width: 970px;
+    margin-left: auto;
+    margin-bottom: 50px;
+  }
+
+  &__details-title {
+    font-weight: 700;
+    margin-bottom: 5px;
+  }
+
+  &__details-list {
+  }
+
+  &__details-wrap {
+    display: flex;
+    column-gap: 10px;
+    margin-bottom: 3px;
+  }
+
+  &__details-subtitle {
+  }
+
+  &__details-desc {
+    font-style: italic;
+    font-family: "Times New Roman";
+  }
+
+  &__share {
+    display: flex;
+    max-width: 970px;
+    margin-left: auto;
+
+    color: #5a5a5a;
+    font-family: Helvetica;
+    font-size: 14px;
+    font-weight: 300;
+    text-transform: uppercase;
+    align-items: center;
+    gap: 0 15px;
+  }
+  &__link:before {
+    display: block;
+    content: " ";
+    background: url("../img/share.svg") center / contain no-repeat;
+    width: 24px;
+    height: 24px;
+  }
+}
+/*==================slider=============*/
+.slider {
+  padding: 30px 0px;
+  background-color: #f3f1d5;
+  margin-bottom: 80px;
+  &__body {
+    max-width: 2400px;
+    padding: 0px 20px;
+  }
+
+  //   &__desc {
+  //     color: #5a5a5a;
+  //     font-family: Helvetica;
+  //     font-size: 14px;
+  //     font-weight: 300;
+  //     text-transform: uppercase;
+  //     margin-bottom: 10px;
+  //   }
+
+  //   &__list {
+  //     display: flex;
+  //     flex-wrap: nowrap;
+  //     column-gap: 20px;
+  //     overflow-y: auto;
+  //   }
+
+  //   &__list::-webkit-scrollbar {
+  //     width: 0;
+  //   }
+
+  // &__list_active &__image img {
+  //   height: 750px;
+  //   width: 100%;
+  // }
+  &__image img {
+    object-fit: cover;
+  }
+
+  //   &__arrow {
+  //   }
+
+  //   &__footer {
+  //   }
+
+  //   &__title {
+  //   }
+
+  //   &__button {
+  //   }
+}
+
+/* Слайдер */
+.slick-slider {
+}
+// .slider__list_active {
+//   position: fixed;
+//   top: 50%;
+//   left: 50%;
+//   transform: translate(-50%, -50%);
+//   width: 100%;
+//   height: 900px;
+//   background-color: black;
+// }
+/* Слайдер запущен */
+.slick-slider.slick-initialized {
+}
+/* Слайдер с точками */
+.slick-slider.slick-dotted {
+}
+/* Ограничивающая оболочка */
+.slick-list {
+  overflow: hidden;
+}
+
+.slick-lightbox .slick-list {
+  width: 1440px;
+  height: 900px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: black;
+}
+/* Лента слайдов */
+.slick-track {
+  display: flex;
+  flex-wrap: nowrap;
+  column-gap: 20px;
+}
+/* Слайд */
+.slick-slide {
+  //flex: 0 0 560px;
+  max-width: 560px;
+  // height: auto;
+  // cursor: pointer;
+}
+.slick-lightbox-slick-item.slick-slide {
+  //w height: 750px;
+  // flex: 0 0 auto;
+  max-width: 100%;
+}
+
+/* Слайд активный (показывается) */
+.slick-slide.slick-active {
+}
+/* Слайд основной */
+.slick-slide.slick-current {
+}
+/* Слайд по центру */
+.slick-slide.slick-center {
+}
+/* Клонированный слайд */
+.slick-slide.slick-cloned {
+}
+/* Стрелка */
+.slick-arrow {
+  width: auto !important;
+  height: auto !important;
+  @media (max-width: 1500px) {
+    visibility: hidden;
+    position: absolute;
+  }
+}
+.slick-arrow:before {
+  font-size: 60px !important;
+  position: relative !important;
+  z-index: 10 !important;
+}
+
+/* Стрелка влево */
+.slick-arrow.slick-prev {
+}
+
+/* Стрелка вправо */
+.slick-arrow.slick-next {
+}
+/* Стрелка не активная */
+.slick-arrow.slick-disabled {
+}
+/* Точки (булиты) */
+.slick-dots {
+}
+.slick-dots li {
+}
+/* Активная точка */
+.slick-dots li.slick-active {
+}
+/* Элемент точки */
+.slick-dots li button {
+}
+
+.slick-lightbox {
+  @media (max-width: $md4) {
+    // display: none;
+  }
+}
+.slick-lightbox-slick-item {
+  padding: 30px 10px 10px 20px;
+}
+.slick-lightbox-slick-item-inner {
+  vertical-align: top !important;
+  max-width: 100% !important;
+}
+
+img.slick-lightbox-slick-img {
+  object-fit: cover;
+  width: 1440px;
+  height: 750px;
+  border-radius: 100px 0px 100px 0px;
+  max-width: 100% !important;
+  @media (max-width: 1600px) {
+    width: 1200px;
+  }
+  @media (max-width: 1200px) {
+    width: 720px;
+  }
+  @media (max-width: 720px) {
+    width: 600px;
+  }
+  @media (max-width: 620px) {
+    width: 370px;
+    height: 600px;
+    margin-bottom: 100px;
+  }
+}
+
+.slick-lightbox-slick-caption {
+  margin: 0;
+  display: block;
+  font-size: 30px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  margin-top: 20px !important;
+  text-align: start;
+}
+
+.slick-lightbox-close {
+  right: 40px !important;
+}
+
+.slick-lightbox-close:before {
+  font-size: 70px !important;
+}
+/*==================Blog===============*/
+/*==================footer=============*/

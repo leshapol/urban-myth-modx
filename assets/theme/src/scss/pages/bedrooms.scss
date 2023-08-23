@@ -1,0 +1,273 @@
+.bedrooms {
+  &__header {
+    margin-top: 50px;
+  }
+
+  &__for-you {
+  }
+
+  &__form-function {
+  }
+}
+
+.for-you {
+  margin-bottom: 70px;
+  &__image {
+    height: 800px;
+    @media (max-width: $md5) {
+      height: 400px;
+    }
+  }
+  &__image img {
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    object-fit: cover;
+    padding: 0 30px;
+    border-radius: 0px 0px 250px 0px;
+    @media (max-width: $md4) {
+      padding: 0;
+    }
+  }
+  &__header {
+    margin-bottom: 200px;
+    @media (max-width: $md4) {
+      margin-bottom: 30px;
+    }
+  }
+  &__header .container {
+    height: 0;
+    @media (max-width: $md4) {
+      height: auto;
+      padding: 0;
+    }
+  }
+
+  &__body {
+    position: relative;
+    top: -140px;
+    z-index: 10;
+    background-color: #e2e9f2;
+    padding: 60px 35px 55px 60px;
+    border-radius: 0px 75px 75px 75px;
+    max-width: 640px;
+    bottom: -100px;
+    left: 50px;
+    @media (max-width: $md4) {
+      top: 0;
+      left: 0;
+      padding: 60px 35px 55px 15px;
+    }
+  }
+
+  &__title {
+    font-size: 36px;
+    margin-bottom: 30px;
+  }
+
+  &__text {
+    font-size: 20px;
+    @media (max-width: $md4) {
+      font-size: 24px;
+    }
+  }
+
+  &__gallery {
+    padding: 0 30px;
+    @media (max-width: $md3) {
+      padding: 0;
+    }
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 30px;
+    margin: 0 auto;
+    @media (max-width: $md3) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__item {
+    position: relative;
+    padding: 0px 0px 63% 0px;
+    overflow: hidden;
+  }
+  &__item:first-child {
+    border-radius: 0 0 100px 0;
+  }
+  &__item:nth-child(2) {
+    border-radius: 0 0 0 100px;
+  }
+  &__item:nth-child(3) {
+    border-radius: 0 100px 0 0;
+  }
+  &__item:last-child {
+    border-radius: 100px 0 0 0;
+  }
+  &__image-gallery img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.form-function {
+  .container {
+    height: 100%;
+  }
+  &__header {
+    text-align: center;
+    max-width: 520px;
+    margin: 0 auto;
+    margin-bottom: 70px;
+  }
+
+  &__title {
+    font-family: Urbanist;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 15px;
+  }
+
+  &__desc {
+    font-size: 18px;
+  }
+
+  &__body {
+  }
+  &__top-block {
+    position: relative;
+    height: 650px;
+    @media (max-width: $md4) {
+      height: 450px;
+    }
+  }
+
+  &__full-image {
+  }
+
+  &__full-image img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    object-fit: cover;
+    border-radius: 0px 0px 0px 250px;
+  }
+
+  &__top-block &__text {
+    position: absolute;
+    z-index: 10;
+    max-width: 380px;
+    top: 100px;
+    left: 100px;
+    @media (max-width: $md4) {
+      top: 15px;
+      padding-left: 10px;
+    }
+  }
+  // postition
+  &__top-block_bottom &__text {
+    bottom: 160px;
+    top: unset;
+  }
+  &__top-block_right &__text {
+    right: 100px;
+    left: unset;
+  }
+  //---------------//
+
+  &__text {
+    font-size: 18px;
+  }
+
+  &__grid {
+    background-color: #d9e0ce;
+    border-radius: 200px 0 0 0;
+    padding-top: 40px;
+    padding-bottom: 70px;
+    margin-bottom: 65px;
+    @media (max-width: $md3) {
+      padding-top: 100px;
+    }
+  }
+
+  &__grid-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 30px 40px;
+    @media (max-width: $md3) {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+    }
+  }
+
+  &__grid-list &__text {
+    padding: 0px 100px;
+    @media (max-width: $md4) {
+      padding: 0 20px;
+    }
+  }
+
+  &__grid-image_first {
+    border-radius: 150px 0 0 0;
+    overflow: hidden;
+    @media (max-width: $md3) {
+      grid-row: 2/3;
+      margin-bottom: 50px;
+    }
+  }
+  &__grid-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    @media (max-width: $md4) {
+      height: 300px;
+    }
+  }
+
+  &__footer {
+    padding: 0 50px;
+  }
+
+  &__footer-image {
+    padding: 0 0 50% 0;
+    position: relative;
+    margin-bottom: 50px;
+  }
+  &__footer-image img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  &__footer-text-block {
+    max-width: 720px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 100px;
+  }
+
+  &__footer-caption {
+    font-size: 30px;
+    font-weight: 300;
+    margin-bottom: 10px;
+  }
+
+  &__footer-text {
+    font-size: 18px;
+  }
+
+  &__button {
+    display: block;
+    margin: 0 auto;
+    padding: 43px 100px;
+    margin-bottom: 100px;
+  }
+}

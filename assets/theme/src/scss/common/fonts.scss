@@ -1,0 +1,31 @@
+@font-face {
+  font-family: "helvetica";
+  src: local("helvetica"),
+    url("../fonts/helvetica_regular.ttf") format("truetype"),
+    url("../fonts/helvetica_regular.otf") format("opentype"),
+    url("../fonts/helvetica_regular.woff") format("woff"),
+    url("../fonts/helvetica_regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "helvetica";
+  src: local("helvetica"),
+    url("../fonts/helvetica_light.ttf") format("truetype"),
+    url("../fonts/helvetica_light.otf") format("opentype"),
+    url("../fonts/helvetica_light.woff") format("woff"),
+    url("../fonts/helvetica_light.woff2") format("woff2");
+  font-weight: light;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "helvetica";
+  src: local("helvetica"), url("../fonts/helvetica_bold.ttf") format("truetype"),
+    url("../fonts/helvetica_bold.otf") format("opentype"),
+    url("../fonts/helvetica_bold.woff") format("woff"),
+    url("../fonts/helvetica_bold.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+}

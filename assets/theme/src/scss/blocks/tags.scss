@@ -1,0 +1,20 @@
+.tags {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px 10px;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-right: 5px;
+
+  &__item {
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    font-size: 10px;
+    font-weight: 400;
+    letter-spacing: 1.4px;
+    background-color: black;
+    border-radius: 25px;
+    padding: 12px;
+  }
+}

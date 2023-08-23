@@ -1,0 +1,54 @@
+$fontFamily: "Urbanist", sans-serif;
+$text-color: black;
+$body-bgcolor: #f5f5f5;
+$body-line-height: 1.2;
+
+$mobile-padding: 10px;
+$minWidth: 320px;
+$maxWidth: 1920;
+$maxWidthContainer: 1488px;
+$md1: $maxWidthContainer + 40;
+$md2: 1200px;
+$md3: 991.98px;
+$md4: 767.98px;
+$md5: 479.98px;
+
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  > main {
+    flex: 1 1 auto;
+  }
+  > * {
+    min-width: 0;
+  }
+}
+
+.container {
+  max-width: $maxWidthContainer;
+  margin: 0 auto;
+  padding: 0 20px;
+  // @media (max-width: $md2) {
+  //   padding-left: $mobile-padding;
+  //   padding-right: $mobile-padding;
+  // }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.lock {
+  overflow: hidden;
+}
