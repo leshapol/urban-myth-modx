@@ -1,8 +1,10 @@
 // common ***********************************//
 @import "common/fonts";
-@import "common/global-variable";
 @import "common/mixins";
+@import "common/global-variable";
 @import "common/null";
 @import "blocks/popup";
 @import "blocks/select";
 @import "blocks/editpanel";
+@import "blocks/header";
+@import "blocks/footer";

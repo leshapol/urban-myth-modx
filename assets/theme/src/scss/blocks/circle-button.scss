@@ -1,0 +1,37 @@
+.circle-button {
+  color: #fff;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 300;
+  width: 230px;
+  height: 230px;
+  line-height: 135%;
+  padding: 14px;
+  border-radius: 50%;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid white;
+  z-index: 3;
+
+  &_right {
+    position: absolute;
+    right: 50px;
+  }
+
+  &_bottom {
+    position: absolute;
+    bottom: 70px;
+  }
+
+  &_left {
+    position: absolute;
+    left: 50px;
+  }
+
+  &_top {
+    position: absolute;
+    top: 70px;
+  }
+}
