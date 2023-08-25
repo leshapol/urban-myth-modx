@@ -1,0 +1,80 @@
+.select {
+  position: relative;
+
+  &__item {
+    position: relative;
+  }
+
+  &__title {
+    border-radius: 8px !important;
+    border: 1px solid #dcdcdd;
+    width: 100%;
+    display: block;
+    color: $text-color;
+    background-color: #ffffff;
+  }
+
+  &__value {
+    display: flex;
+    height: 45px;
+    padding: 12px 16px;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+
+    span {
+      // height: 1em;
+      //overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+    }
+    &:before {
+      content: "";
+      display: inline-block;
+      transition: all 0.3s ease 0s;
+      width: 14px;
+      height: 9px;
+      background: url("../img/shared/select-arrow-gray.svg") center / 100%
+        no-repeat;
+    }
+  }
+
+  &__input {
+    width: 100%;
+    background-color: transparent;
+    height: 100%;
+  }
+
+  &__options {
+    color: $text-color;
+    display: none;
+    position: absolute;
+    top: 43px;
+    border-radius: 0 0 8px 8px;
+    min-width: 100%;
+    left: 0;
+    background-color: #fff;
+    border-top: 0;
+    border: 1px solid #d9d9d9;
+    border-top: 0;
+    padding: 10px 0px 5px 0px;
+  }
+
+  &__option {
+    cursor: pointer;
+    padding: 8px 16px;
+    margin: 0px 0px 0px 0px;
+  }
+  &._active {
+    z-index: 5;
+    .select__value {
+      &:before {
+        transform: rotate(-180deg);
+      }
+    }
+    .select__options {
+      display: block;
+    }
+  }
+}

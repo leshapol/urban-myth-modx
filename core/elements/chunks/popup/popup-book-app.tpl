@@ -1,10 +1,21 @@
-<div class="popup__title">Brochure request</div>
+<div class="popup__title">Book an appointment</div>
 <div class="popup__text">
-  With one of the most diverse ranges of kitchens available in the industry we
-  have produced this brochure to give you more inspiration about the work we can
-  do.
+  Send us an email or call
+  <span class="popup__text_bold"> 020 8531 3413 </span>
 </div>
 <form class="popup__form popup-form">
+  <label class="popup-form__label popup-form__label_select"
+    >Subject:
+    <div class="popup-form__label popup-form-select__wrapper">
+      <select class="_select" name="subject">
+        <option>Value 1</option>
+        <option>Value 2</option>
+        <option>Value 3</option>
+        <option>Value 4</option>
+      </select>
+    </div>
+  </label>
+
   <label class="popup-form__label"
     >Name:
     <input type="text" class="popup-form__input" />
@@ -13,6 +24,14 @@
     >Email:
     <input type="mail" class="popup-form__input" />
   </label>
+  <label class="popup-form__label"
+    >Tel:
+    <input type="mail" class="popup-form__input" />
+  </label>
+  <label class="popup-form__label"
+    >Message:
+    <input type="mail" class="popup-form__input popup-form__input_high" />
+  </label>
   <div class="popup-form__privacy">
     <div class="popup-form__privacy-caption">Privacy</div>
     <label class="popup-form__label-privacy">
@@ -20,5 +39,5 @@
       I have read and accept the Urban Myth Privacy Policy
     </label>
   </div>
-  <button type="submit" class="popup-form__submit button">download</button>
+  <button type="submit" class="popup-form__submit button">send</button>
 </form>
