@@ -34,7 +34,7 @@ let path = {
     js: src_folder + "/js/*.js",
     css: src_folder + "/scss/*.scss",
     images: src_folder + "/img/**/*.{jpg,png,svg,gif,ico,webp}",
-    fonts: src_folder + "/fonts/*.ttf",
+    fonts: src_folder + "/fonts/*.{ttf,otf,woff,woff2}",
     videos: src_folder + "/video/*.*",
   },
   watch: {
@@ -149,6 +149,10 @@ function videos() {
   return src(path.src.videos).pipe(plumber()).pipe(dest(path.build.videos));
 }
 
+function fonts() {
+  return src(path.src.fonts).pipe(plumber()).pipe(dest(path.build.fonts));
+}
+
 function infofile() {}
 function cb() {}
 function clean() {
@@ -160,7 +164,7 @@ function watchFiles() {
   gulp.watch([path.watch.js], js);
   gulp.watch([path.watch.images], images);
 }
-let build = gulp.series(clean, gulp.parallel(css, js, images, videos));
+let build = gulp.series(clean, gulp.parallel(css, js, images, videos, fonts));
 let watch = gulp.parallel(build, watchFiles);
 
 exports.css = css;
