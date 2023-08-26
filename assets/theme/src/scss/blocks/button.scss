@@ -15,9 +15,14 @@
 .button_long {
   padding-left: 64px;
   padding-right: 64px;
+
+  @media (max-width: $md4) {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
 }
 
-.button_footer {
+.button_white {
   color: black;
   background-color: white;
   padding-left: 10px;

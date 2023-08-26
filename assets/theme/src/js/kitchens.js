@@ -1,3 +1,3 @@
 @@include('common.js', {})
 
-@@include('pages/gallery.js', {})
+@@include('pages/kitchens.js', {})

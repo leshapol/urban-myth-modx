@@ -6,8 +6,8 @@ $body-line-height: 1.2;
 $mobile-padding: 10px;
 $minWidth: 320px;
 $maxWidth: 1920;
-$maxWidthContainer: 1488px;
-$md1: $maxWidthContainer + 40;
+$maxWidthContainer: 1488;
+$md1: $maxWidthContainer + 40 + px;
 $md2: 1200px;
 $md3: 991.98px;
 $md4: 767.98px;
@@ -27,7 +27,7 @@ $md5: 479.98px;
 }
 
 .container {
-  max-width: $maxWidthContainer;
+  max-width: $maxWidthContainer + px;
   margin: 0 auto;
   padding: 0 20px;
   // @media (max-width: $md2) {
@@ -87,13 +87,15 @@ $md5: 479.98px;
 }
 
 .absolute-image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 0;
-  object-fit: cover;
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    object-fit: cover;
+  }
 }
 
 .section-title {
@@ -103,19 +105,21 @@ $md5: 479.98px;
 }
 
 .section-text {
-  @include adaptiv-font(24, 18, 1);
+  @include adaptiv-font(30, 18, 1);
   line-height: 135%;
 }
 
 .border-radius {
   &_right-bottom {
-    border-radius: 0 0 200px 0;
-    overflow: hidden;
+    img {
+      border-radius: 0 0 200px 0;
+    }
   }
 
   &_left-top {
-    border-radius: 200px 0 0 0;
-    overflow: hidden;
+    img {
+      border-radius: 200px 0 0 0;
+    }
   }
 }
 

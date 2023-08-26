@@ -10,7 +10,7 @@
         <h1 class="visually-hidden">[[*longtitle]]</h1>
         <section class="hero">
           <div class="hero__wrap">
-            <div class="hero__image absolute-image">
+            <div class="hero__image absolute-image border-radius_right-bottom">
               <picture>
                 <source
                   type="image/webp"
@@ -125,7 +125,7 @@
                   <h3 class="kitchens__title section-title">
                     Perfect kitchens for you
                   </h3>
-                  <p class="kitchens__textsection-text">
+                  <p class="kitchens__text section-text">
                     Whatever the size of your space, every one of our kitchen
                     designs is unique, made to suit your home and lifestyle.
                   </p>
@@ -139,7 +139,7 @@
               </div>
 
               <div
-                class="kitchens__image absolute-image border-radius_right-bottom"
+                class="kitchens__image kitchens__border-radius absolute-image border-radius_right-bottom"
               >
                 <picture>
                   <source
@@ -163,9 +163,9 @@
                 </picture>
               </div>
 
-              <a href="#" class="kitchens__button-mobile button">
-                BOOK FREE CONSULTATION
-              </a>
+              <div class="kitchens__button-mobile">
+                <a href="#" class="button"> BOOK FREE CONSULTATION </a>
+              </div>
             </div>
 
             <div class="kitchens__block">
@@ -174,7 +174,7 @@
                   <h3 class="kitchens__title section-title">
                     It’s all in the detail 
                   </h3>
-                  <p class="kitchens__textsection-text">
+                  <p class="kitchens__text section-text">
                     The finishing touches that add personality to your space 
                   </p>
                 </div>
@@ -186,7 +186,9 @@
                 </a>
               </div>
 
-              <div class="kitchens__image absolute-image">
+              <div
+                class="kitchens__image kitchens__border-radius absolute-image border-radius_left-top"
+              >
                 <picture>
                   <source
                     media="(min-width: 470px)"
@@ -209,9 +211,9 @@
                 </picture>
               </div>
 
-              <a href="#" class="kitchens__button-mobile button">
-                BOOK FREE CONSULTATION
-              </a>
+              <div class="kitchens__button-mobile">
+                <a href="#" class="button"> BOOK FREE CONSULTATION </a>
+              </div>
             </div>
 
             <div class="kitchens__block">
@@ -222,7 +224,7 @@
                   <h3 class="kitchens__title section-title">
                     Inspiration at every turn 
                   </h3>
-                  <p class="kitchens__text section-text section-text_white">
+                  <p class="kitchens__text section-text">
                     Designed to inspire, our showroom offers you the opportunity
                     to experience the quality of our kitchens in a relaxed
                     atmosphere. 
@@ -236,7 +238,9 @@
                 </a>
               </div>
 
-              <div class="kitchens__image absolute-image">
+              <div
+                class="kitchens__image kitchens__border-radius absolute-image border-radius_right-bottom"
+              >
                 <picture>
                   <source
                     media="(min-width: 470px)"
@@ -259,9 +263,9 @@
                 </picture>
               </div>
 
-              <a href="#" class="kitchens__button-mobile button">
-                BOOK FREE CONSULTATION
-              </a>
+              <div class="kitchens__button-mobile">
+                <a href="#" class="button"> BOOK FREE CONSULTATION </a>
+              </div>
             </div>
           </div>
         </section>

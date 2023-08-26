@@ -2,7 +2,7 @@
   <div class="footer__row">
     <div class="footer__column">
       <div class="footer__column-left">
-        <a href="" class="footer__link_mobile button button_footer">
+        <a href="" class="footer__link_mobile button button_white">
           BOOK CONSULTATION
         </a>
         <div class="footer__logo">
@@ -71,7 +71,7 @@
         </ul>
       </div>
       <div class="footer__column-right">
-        <a href="" class="footer__link button button_footer">
+        <a href="" class="footer__link button button_white">
           BOOK CONSULTATION
         </a>
         <div class="footer__address">
