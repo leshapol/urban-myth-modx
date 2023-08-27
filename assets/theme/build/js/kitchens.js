@@ -381,10 +381,13 @@ let blogList = document.querySelector(".blog__list");
 
 function scrollHorizontally(e) {
   //включает горизонтальный скрол элемента колесом
+
   e = window.event || e;
   var delta = Math.max(-1, Math.min(1, e.wheelDelta || -e.detail)); //это шаг колеса для разных браузеров
-
   var sk = delta * 3;
+
+  let scrollEnd =
+    blogList.scrollWidth === blogList.scrollLeft + blogList.clientWidth;
 
   let timeScrioll = setInterval(() => {
     blogList.scrollBy(-sk, 0);
@@ -394,7 +397,9 @@ function scrollHorizontally(e) {
     clearInterval(timeScrioll);
   }, 150);
 
-  e.preventDefault();
+  if (!(scrollEnd || blogList.scrollLeft == 0)) {
+    e.preventDefault(true);
+  }
 }
 
 function addMouseWell(elem, callback) {
