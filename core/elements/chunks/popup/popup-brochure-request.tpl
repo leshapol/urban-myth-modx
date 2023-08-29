@@ -7,16 +7,16 @@
 <form class="popup__form popup-form">
   <label class="popup-form__label"
     >Name:
-    <input type="text" class="popup-form__input" />
+    <input type="text" name="name" class="popup-form__input" />
   </label>
   <label class="popup-form__label"
     >Email:
-    <input type="mail" class="popup-form__input" />
+    <input type="email" name="email" class="popup-form__input" />
   </label>
   <div class="popup-form__privacy">
     <div class="popup-form__privacy-caption">Privacy</div>
     <label class="popup-form__label-privacy">
-      <input type="checkbox" class="popup-form__input-checkbox" />
+      <input type="checkbox" name="accept" class="popup-form__input-checkbox" />
       I have read and accept the Urban Myth Privacy Policy
     </label>
   </div>
