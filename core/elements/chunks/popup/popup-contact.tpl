@@ -13,7 +13,6 @@
       <option>Value 3</option>
       <option>Value 4</option>
     </select>
-
   </label>
 
   <label class="popup-form__label">Name:

@@ -2,4 +2,4 @@
 @@include('common/header.js', {})
 @@include('common/popup.js', {})
 @@include('common/select.js', {})
-@@include('common/blog.js', {})
+@@include('common/last-articles.js', {})
