@@ -50,6 +50,8 @@ const render = (elem) => {
   }
   pagRender(i);
 
+  // animation //
+
   activeImage.animate([{ opacity: 1 }, { opacity: 0 }], 500);
   activeImage.classList.remove("about__image_active");
   setTimeout(() => {
@@ -57,6 +59,8 @@ const render = (elem) => {
     elem.animate([{ opacity: 0 }, { opacity: 1 }], 500);
     activeImage = elem;
   }, 500);
+
+  //----//
 };
 
 //----//
