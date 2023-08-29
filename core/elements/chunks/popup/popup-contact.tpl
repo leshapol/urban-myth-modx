@@ -24,12 +24,12 @@
            class="popup-form__input" />
   </label>
   <label class="popup-form__label">Tel:
-    <input type="mail"
+    <input type="tel"
            class="popup-form__input" />
   </label>
   <label class="popup-form__label">Message:
-    <input type="mail"
-           class="popup-form__input popup-form__input_high" />
+    <textarea type="mail"
+              class="popup-form__input popup-form__input_high"></textarea>
   </label>
   <div class="popup-form__privacy">
     <div class="popup-form__privacy-caption">Privacy</div>
