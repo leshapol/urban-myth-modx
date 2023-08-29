@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model package="redirector" baseClass="xPDOObject" platform="sqlsrv" version="1.0">
+    <object class="modRedirect" table="redirects" extends="xPDOSimpleObject">
+        <field key="pattern" dbtype="nvarchar" precision="255" phptype="string" null="false" default="" index="index" />
+        <field key="target" dbtype="nvarchar" precision="255" phptype="string" null="false" default="" index="index" />
+        <field key="context_key" dbtype="nvarchar" precision="255" phptype="string" null="true" default="NULL" index="index" />
+        <field key="triggered" dbtype="int" precision="11" phptype="integer" null="false" default="0" />
+	    <field key="triggered_first" dbtype="timestamp" phptype="datetime" null="true" default="NULL" />
+	    <field key="triggered_last" dbtype="timestamp" phptype="datetime" null="true" default="NULL" />
+	    <field key="active" dbtype="bit" phptype="boolean" null="false" default="1" index="index" />
+
+        <aggregate alias="PatternResource" class="modResource" local="pattern" foreign="uri" cardinality="one" owner="foreign" />
+        <aggregate alias="TargetResource" class="modResource" local="target" foreign="uri" cardinality="one" owner="foreign" />
+        <aggregate alias="Context" class="modContext" local="context_key" foreign="key" cardinality="one" owner="foreign" />
+    </object>
+</model>

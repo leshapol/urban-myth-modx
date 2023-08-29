@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model package="redirector" baseClass="xPDOObject" platform="mysql" defaultEngine="InnoDB" version="1.1">
+    <object class="modRedirect" table="redirects" extends="xPDOSimpleObject">
+        <field key="pattern" dbtype="varchar" precision="255" phptype="string" null="false" default="" />
+        <field key="target" dbtype="varchar" precision="255" phptype="string" null="false" default="" />
+        <field key="context_key" dbtype="varchar" precision="255" phptype="string" null="true" default="NULL" />
+	    <field key="triggered" dbtype="int" precision="11" phptype="integer" null="false" default="0" />
+	    <field key="triggered_first" dbtype="timestamp" phptype="datetime" null="true" default="NULL" />
+	    <field key="triggered_last" dbtype="timestamp" phptype="datetime" null="true" default="NULL" />
+	    <field key="active" dbtype="tinyint" precision="1" attributes="unsigned" phptype="boolean" null="false" default="1" />
+
+        <index alias="pattern" name="pattern" primary="false" unique="false" type="BTREE">
+            <column key="pattern" length="191" collation="A" null="false" />
+        </index>
+        <index alias="target" name="target" primary="false" unique="false" type="BTREE">
+            <column key="target" length="191" collation="A" null="false" />
+        </index>
+        <index alias="context_key" name="context_key" primary="false" unique="false" type="BTREE">
+            <column key="context_key" length="191" collation="A" null="true" />
+        </index>
+        <index alias="active" name="active" primary="false" unique="false" type="BTREE">
+            <column key="active" length="" collation="A" null="false" />
+        </index>
+
+        <aggregate alias="PatternResource" class="modResource" local="pattern" foreign="uri" cardinality="one" owner="foreign" />
+        <aggregate alias="TargetResource" class="modResource" local="target" foreign="uri" cardinality="one" owner="foreign" />
+        <aggregate alias="Context" class="modContext" local="context_key" foreign="key" cardinality="one" owner="foreign" />
+    </object>
+</model>

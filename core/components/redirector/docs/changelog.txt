@@ -1,0 +1,106 @@
+Changelog file for Redirector component.
+
+Redirector 2.0.11
+====================================
+- Fixed: Set index length for utf8mb4 and remove 1.0 index in schema
+- Fixed: Some styling issues
+
+Redirector 2.0.10
+====================================
+- Fixed: Fix upper case letters in processor paths for MODX3
+- Fixed: Lexicon issues
+
+Redirector 2.0.9
+====================================
+- Fixed: Removed modAction suppport
+- Changed: Removed standard build script (GPM build script is available)
+
+Redirector 2.0.8
+====================================
+- Fixed: BlindSQL Injection
+- Added: Moving to GPM config
+- Improved: Minor styling tweaks to better fit into current Revo 2.5 branch
+
+Redirector 2.0.7
+====================================
+- Improved: made combo list minimum width to 300px so pagetitle are readable without a maximized window (rtripault)
+- Improved: when selecting any site-start page, a "/" is being used as target. Will be converted to full URL by plugin
+- Fixed: contexts combo vs resources list, to filter resources that only belongs to selected context
+- Fixed: tracking URI changes, only when setting "redirector.track_uri_updates" is enabled (true, 1, yes, y.. etc.)
+
+Redirector 2.0.6
+====================================
+- New feature: [#31] Add a "View Redirect" option
+- Fixed: [#33] Double slashes in redirect
+- Fixed: [#43] Cannot set redirect for an existing, unpublished Resource (uri)
+- Fixed: [#44] Undefined lexicon: redirect_err_ae_resource
+- Fixed: [#47] Support for MODX link tags and prepend whole site-url
+- Fixed: [#48] Problems with cyrillic URLs
+- Fixed: Manager UI and fixed selecting a target resource URI parsing
+- Fixed: [#24] [#26] [#32] [#46] Added senseless where statement to the REGEX where statement, to avoid xPDO errors
+- Fixed: new/update redirect resource box margin set to 0.
+- [#23] Fixed: redirect raw data import doesn't work
+
+Redirector 2.0.5
+====================================
+- Fixed: plugin not checking URL extension any more, it should redirect based on whole URL data.
+- Fixed: [#20] look a like patterns working as expected, regex pattern not checked at once.
+- New feature: tracks the number of times a redirect has been triggered. Also first and last date/time are registered.
+
+Redirector 2.0.4
+====================================
+- Fixed: entering and checking MODX link tags
+- Fixed: parsed full urls are now got validated by PHP get_headers()
+- Fixed: entering regex targets starting with '$' sign to be valid
+
+Redirector 2.0.3
+====================================
+- New feature: including (relative) file support for redirection
+- Fixed: using the right setting key in the Redirector plugin
+- Fixed: broken unsinstall tables without having db manager instance
+- Updated Russian translation (Thanks to @danyaPostfactum)
+- Updated Frensch translation (Thanks to @rtripault)
+
+Redirector 2.0.2
+====================================
+- Added grid row expander to show errors against pattern and target URIs
+- Updated Lexicon files with new entries (not yet translated, help needed!)
+- Improved setting target to resource URI (instead of id) on resource selection
+- Added checks on pattern & context combination. Should be unique
+- Fixed unique index on db columns pattern and context_key, length is not respected by xPDO
+
+Redirector 2.0.1
+====================================
+- Fixed saving MODX link tag as valid value for target
+
+Redirector 2.0.0
+====================================
+- New feature: possibility to import from CSV files and raw data
+- Added visible view (red bar) when a redirect is invalid (pattern or target)
+- Redirect created on URI update. Enable/disable via System Settings (Thanks to chrischerrett)
+- Added support for regular expressions in pattern and replaces in target (preg_replace, Thanks to eprochasson)
+- Added support for context specific rules
+- Added support for contexts-as-subfolder (Thanks to jkenters)
+- UI fixes for MODX 2.2+
+- Code compatible with MODX 2.2+
+
+Redirector 1.0.3
+====================================
+- Add sqlsrv support
+- Add changelog to package
+
+Redirector 1.0.1
+====================================
+- Add improvement to auto-save active checkbox on grid
+- Add Dutch translation
+
+Redirector 1.0.0
+====================================
+- Fixed issue with redirects when base_url is /
+- Added Russian translation
+- Optimized for Revo RC-2
+- Prepared for release
+- Fixes to build script
+- Implement plugin, load pluginevents into build
+- Fixed bugs in redirects grid
+- Initial commit
