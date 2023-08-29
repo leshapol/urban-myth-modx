@@ -84,7 +84,7 @@
   }
   &__foreground-img {
     background-image: url("../img/hero-img-gray.jpg");
-    width: 30%;
+    width: 50%;
     @media (max-width: $md3) {
       display: none;
     }
@@ -139,7 +139,7 @@
     height: $size;
     border-radius: 50%;
     border: 2px solid white;
-    left: calc(30% - 18px);
+    left: calc(50% - 18px);
     top: calc(50% - 18px);
     z-index: 5;
     @include center;
