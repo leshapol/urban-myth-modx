@@ -181,6 +181,10 @@
     }
   }
 
+  &__link {
+    text-transform: uppercase;
+  }
+
   &__btn {
     max-width: 300px;
     align-items: flex-start;

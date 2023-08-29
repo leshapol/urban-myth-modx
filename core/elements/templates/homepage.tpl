@@ -59,7 +59,7 @@
                   complete service means our experienced team is with you every
                   step of the way.
                 </p>
-                <a href="#" class="hero__button button button_long">
+                <a href="[[~3]]" class="hero__button button button_long">
                   VIEW KITCHEN GALLERY
                 </a>
               </div>
@@ -77,7 +77,10 @@
                 The first step to your dream kitchen is a tour of our showroom
                 and a free consultation with a designer. 
               </p>
-              <a class="swiper__link button button_long">
+              <a
+                href="book-app"
+                class="swiper__link button button_long _popup-link"
+              >
                 BOOK FREE CONSULTATION
               </a>
             </div>
@@ -130,8 +133,9 @@
                     designs is unique, made to suit your home and lifestyle.
                   </p>
                 </div>
+
                 <a
-                  href="#"
+                  href="[[~3]]"
                   class="kitchens__button circle-button circle-button_bottom circle-button_right"
                 >
                   learn more
@@ -164,7 +168,7 @@
               </div>
 
               <div class="kitchens__button-mobile">
-                <a href="#" class="button"> BOOK FREE CONSULTATION </a>
+                <a href="[[~3]]" class="button">learn more</a>
               </div>
             </div>
 
@@ -179,7 +183,7 @@
                   </p>
                 </div>
                 <a
-                  href="#"
+                  href="[[~3]]"
                   class="kitchens__button circle-button circle-button_top circle-button_left"
                 >
                   Explore our kitchen features
@@ -212,7 +216,9 @@
               </div>
 
               <div class="kitchens__button-mobile">
-                <a href="#" class="button"> BOOK FREE CONSULTATION </a>
+                <a href="[[~3]]" class="button" target="_blank">
+                  Explore our kitchen features
+                </a>
               </div>
             </div>
 
@@ -231,7 +237,7 @@
                   </p>
                 </div>
                 <a
-                  href="#"
+                  href="[[~3]]"
                   class="kitchens__button circle-button circle-button_bottom circle-button_right"
                 >
                   Visit the showroom
@@ -264,7 +270,7 @@
               </div>
 
               <div class="kitchens__button-mobile">
-                <a href="#" class="button"> BOOK FREE CONSULTATION </a>
+                <a href="[[~3]]" class="button">Visit the showroom</a>
               </div>
             </div>
           </div>
@@ -330,7 +336,7 @@
                   <li class="about__item">The latest appliances and brands</li>
                   <li class="about__item">Dedicated customer service</li>
                 </ul>
-                <a class="about__link button button_long">
+                <a href="[[~6]]" class="about__link button button_long">
                   WHY CHOOSE URBAN MYTH
                 </a>
               </div>

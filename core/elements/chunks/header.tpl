@@ -29,28 +29,36 @@
           height="95"
         />
       </a>
-      <nav class="header__nav">
-        <ul class="header__list">
-          <li class="header__item">
-            <a href="[[~1]]" class="header__link">KITCHENS</a>
-          </li>
-          <li class="header__item">
-            <a href="[[~1]]" class="header__link">BEDROOMS</a>
-          </li>
-          <li class="header__item">
-            <a href="[[~1]]" class="header__link">ABOUT US</a>
-          </li>
-          <li class="header__item">
-            <a href="[[~1]]" class="header__link">DEVELOPERS</a>
-          </li>
-          <li class="header__item">
-            <a href="[[~1]]" class="header__link">BLOG</a>
-          </li>
+
+      [[pdoMenu? &parents=`15` &tplOuter=`@INLINE
+      <nav
+        class="header__nav"
+        itemscope=""
+        itemtype="http://schema.org/SiteNavigationElement"
+      >
+        <ul
+          class="header__list"
+          itemprop="about"
+          itemscope=""
+          itemtype="http://schema.org/ItemList"
+        >
+          [[+wrapper]]
         </ul>
         <a href="book-app" class="header__btn button _popup-link"
           >BOOK APPOINTMENT</a
         >
       </nav>
+      ` &tpl=`@INLINE
+      <li
+        itemprop="itemListElement"
+        itemscope=""
+        itemtype="http://schema.org/ItemList"
+        class="header__item"
+      >
+        <a href="[[+link]]" class="header__link">[[+pagetitle]]</a>
+      </li>
+      `]]
+
       <div class="header__burger">
         <span></span>
         <span></span>
