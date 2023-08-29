@@ -3,41 +3,14 @@
 <form class="popup__form popup-form">
   <label class="popup-form__label popup-form__label_select"
     >I am...
-    <div class="popup-form__label popup-form-select__wrapper">
-      <div class="popup-form-select__header">
-        <span class="popup-form-select__current">Select...</span>
-      </div>
-      <div class="popup-form-select__options">
-        <label class="popup-form-select__label">
-          <input type="checkbox" class="popup-form-select__input" />
-          Value 2
-        </label>
-        <label class="popup-form-select__label">
-          <input type="checkbox" class="popup-form-select__input" />
-          Value 2
-        </label>
-        <label class="popup-form-select__label">
-          <input type="checkbox" class="popup-form-select__input" />
-          Value 2
-        </label>
-        <label class="popup-form-select__label">
-          <input type="checkbox" class="popup-form-select__input" />
-          Value 2
-        </label>
-        <label class="popup-form-select__label">
-          <input type="checkbox" class="popup-form-select__input" />
-          Value 2
-        </label>
-        <label class="popup-form-select__label">
-          <input type="checkbox" class="popup-form-select__input" />
-          Value 3
-        </label>
-        <label class="popup-form-select__label">
-          <input type="checkbox" class="popup-form-select__input" />
-          Value 4
-        </label>
-      </div>
-    </div>
+
+    <select class="_select" name="subject">
+      <option></option>
+      <option>Value 1</option>
+      <option>Value 2</option>
+      <option>Value 3</option>
+      <option>Value 4</option>
+    </select>
   </label>
 
   <label class="popup-form__label"
