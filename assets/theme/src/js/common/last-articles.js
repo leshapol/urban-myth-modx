@@ -1,10 +1,15 @@
-let blogList = document.querySelector(".blog__list");
+let blogList = document.querySelector(".last-articles__list");
+
+if (blogList) {
+  addMouseWell(
+    document.querySelector(".last-articles__list"),
+    scrollHorizontally
+  );
+}
 
 function scrollHorizontally(e) {
-  //включает горизонтальный скрол элемента колесом
-
   e = window.event || e;
-  var delta = Math.max(-1, Math.min(1, e.wheelDelta || -e.detail)); //это шаг колеса для разных браузеров
+  var delta = Math.max(-1, Math.min(1, e.wheelDelta || -e.detail));
   var sk = delta * 3;
 
   let scrollEnd =
@@ -36,5 +41,3 @@ function addMouseWell(elem, callback) {
     elem.attachEvent("onmousewheel", callback);
   }
 }
-
-addMouseWell(document.querySelector(".blog__list"), scrollHorizontally);

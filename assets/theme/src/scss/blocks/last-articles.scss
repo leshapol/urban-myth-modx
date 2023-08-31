@@ -1,11 +1,20 @@
-.blog {
-  padding-bottom: 120px;
-  padding-top: 112px;
+.last-articles {
+  @include adaptiv-value("padding-top", 120, 60, 1);
+  @include adaptiv-value("padding-bottom", 120, 60, 1);
   background-color: #f3f1d5;
-  border-radius: 350px 350px 0px 0px;
-  @media (max-width: $md4) {
-    padding-top: 200px;
+  border-radius: 300px 300px 0px 0px;
+  @media (max-width: $md3) {
+    border-radius: 200px 200px 0px 0px;
   }
+
+  @media (max-width: $md4) {
+    border-radius: 120px 120px 0px 0px;
+  }
+
+  @media (max-width: $md5) {
+    border-radius: 80px 80px 0px 0px;
+  }
+
   &__body {
   }
 
@@ -15,21 +24,21 @@
     padding-right: 0;
   }
 
+  &__text-block {
+    padding-right: 20px;
+  }
+
   &__title {
-    color: #000;
+    @include title;
     text-align: center;
-    text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    font-size: 40px;
-    font-weight: 700;
-    margin-bottom: 10px;
+    @include adaptiv-font(40, 32, 1);
+    padding-bottom: 16px;
   }
 
   &__subtitle {
     text-align: center;
-    font-size: 36px;
-    font-weight: 400;
-    margin-bottom: 107px;
-    padding: 0px 20px;
+    @include adaptiv-font(36, 24, 1);
+    @include adaptiv-value("padding-bottom", 100, 40, 1);
   }
 
   &__list {
@@ -93,7 +102,7 @@
   &__link:before {
     display: block;
     content: "";
-    background: url("../img/footer.svg") center no-repeat;
+    background: url("../img/icons/link-arrow.svg") center no-repeat;
     width: 10px;
     height: 10px;
   }

@@ -277,18 +277,17 @@
         </section>
 
         <section class="stay">
-          <div class="container">
-            <div class="stay__row">
-              <div class="stay__column">
-                <h2 class="stay__title">Stay in touch</h2>
-                <p class="stay__text">
-                  Lorem ipsum dolor sit amet consectetur. Quis at quis eget
-                  nunc. Tempor vestibulum leo metus et leo et. Nullam bibendum
-                  aliquet velit magnis at. Aliquam dignissim ut massa adipiscing
-                  blandit porttitor pretium lorem.
-                </p>
-              </div>
-              <a href="contact" class="stay__submit button _popup-link"
+          <div class="stay__text-block">
+            <h2 class="stay__title">Stay in touch</h2>
+            <p class="stay__text">
+              Lorem ipsum dolor sit amet consectetur. Quis at quis eget nunc.
+              Tempor vestibulum leo metus et leo et. Nullam bibendum aliquet
+              velit magnis at. Aliquam dignissim ut massa adipiscing blandit
+              porttitor pretium lorem.
+            </p>
+
+            <div class="stay__button">
+              <a href="contact" class="button button_long _popup-link"
                 >contact us</a
               >
             </div>
@@ -322,9 +321,9 @@
         </section>
 
         <section class="about">
-          <div class="about__row">
-            <div class="container">
-              <div class="about__body">
+          <div class="container">
+            <div class="about__body">
+              <div class="about__text-block">
                 <h2 class="about__title">About Urban Myth</h2>
                 <ul class="about__list">
                   <li class="about__item">
@@ -340,37 +339,37 @@
                   WHY CHOOSE URBAN MYTH
                 </a>
               </div>
-            </div>
-            <div class="about__figure">
-              <button
-                class="about__arrow about__arrow_before"
-                type="button"
-              ></button>
-              <button
-                class="about__arrow about__arrow_after"
-                type="button"
-              ></button>
-              <div class="about__images">
-                <img
-                  class="about__image about__image_active"
-                  src="/assets/theme/build/img/about.jpg"
-                  alt=""
-                />
-                <img
-                  class="about__image"
-                  src="/assets/theme/build/img/about.jpg"
-                  alt=""
-                />
-                <img
-                  class="about__image"
-                  src="/assets/theme/build/img/about.jpg"
-                  alt=""
-                />
-              </div>
-              <div class="about__pag pag">
-                <span data-num="0" class="pag__item pag__item_active"></span>
-                <span data-num="1" class="pag__item"></span>
-                <span data-num="2" class="pag__item"></span>
+              <div class="about__figure">
+                <button
+                  class="about__arrow about__arrow_before"
+                  type="button"
+                ></button>
+                <button
+                  class="about__arrow about__arrow_after"
+                  type="button"
+                ></button>
+                <div class="about__images">
+                  <img
+                    class="about__image about__image_active"
+                    src="/assets/theme/build/img/about.jpg"
+                    alt=""
+                  />
+                  <img
+                    class="about__image"
+                    src="/assets/theme/build/img/about.jpg"
+                    alt=""
+                  />
+                  <img
+                    class="about__image"
+                    src="/assets/theme/build/img/about.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="about__pag pag">
+                  <span data-num="0" class="pag__item pag__item_active"></span>
+                  <span data-num="1" class="pag__item"></span>
+                  <span data-num="2" class="pag__item"></span>
+                </div>
               </div>
             </div>
           </div>

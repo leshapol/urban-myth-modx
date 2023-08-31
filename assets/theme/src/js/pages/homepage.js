@@ -7,15 +7,15 @@ let pags = document.querySelectorAll(".pag__item");
 //----//
 
 arrowBefore.addEventListener("click", (e) => {
-  if (activeImage.previousElementSibling.classList.contains("about__image")) {
-    let elem = activeImage.previousElementSibling;
+  let elem = activeImage.previousElementSibling;
+  if (elem) {
     render(elem);
   }
 });
 
 arrowAfter.addEventListener("click", (e) => {
-  if (activeImage.nextElementSibling.classList.contains("about__image")) {
-    let elem = activeImage.nextElementSibling;
+  let elem = activeImage.nextElementSibling;
+  if (elem) {
     render(elem);
   }
 });
@@ -56,7 +56,6 @@ const render = (elem) => {
   activeImage.classList.remove("about__image_active");
   setTimeout(() => {
     elem.classList.add("about__image_active");
-    elem.animate([{ opacity: 0 }, { opacity: 1 }], 500);
     activeImage = elem;
   }, 500);
 

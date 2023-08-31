@@ -1,82 +1,67 @@
-.bedrooms {
-  &__header {
-    margin-top: 50px;
-  }
-
-  &__for-you {
-  }
-
-  &__form-function {
-  }
-}
-
-.for-you {
-  margin-bottom: 70px;
-  &__image {
-    height: 800px;
-    @media (max-width: $md5) {
-      height: 400px;
-    }
-  }
-  &__image img {
-    width: 100%;
-    height: 100%;
-    z-index: 0;
-    object-fit: cover;
-    padding: 0 30px;
-    border-radius: 0px 0px 250px 0px;
-    @media (max-width: $md4) {
-      padding: 0;
-    }
-  }
-  &__header {
-    margin-bottom: 200px;
-    @media (max-width: $md4) {
-      margin-bottom: 30px;
-    }
-  }
-  &__header .container {
-    height: 0;
-    @media (max-width: $md4) {
-      height: auto;
-      padding: 0;
-    }
+.hero {
+  padding-bottom: 160px;
+  position: relative;
+  @media (max-width: $md4) {
+    padding-bottom: 30px;
   }
 
   &__body {
+    height: 720px;
     position: relative;
-    top: -140px;
-    z-index: 10;
+
+    @media (max-width: $md4) {
+      height: auto;
+    }
+  }
+
+  &__image img {
+    padding: 0 30px;
+
+    @media (max-width: $md4) {
+      padding: 0;
+      position: static;
+      height: 720px;
+    }
+
+    @media (max-width: $md5) {
+      height: 480px;
+    }
+  }
+
+  &__text-block {
+    position: absolute;
+    z-index: 3;
     background-color: #e2e9f2;
     padding: 60px 35px 55px 60px;
     border-radius: 0px 75px 75px 75px;
     max-width: 640px;
     bottom: -100px;
     left: 50px;
+
     @media (max-width: $md4) {
-      top: 0;
-      left: 0;
-      padding: 60px 35px 55px 15px;
+      padding: 35px;
+      position: static;
+      margin: 0 -20px;
     }
   }
 
   &__title {
-    font-size: 36px;
-    margin-bottom: 30px;
+    @include adaptiv-font(36, 28, 1);
+    padding-bottom: 30px;
   }
 
   &__text {
     font-size: 20px;
-    @media (max-width: $md4) {
-      font-size: 24px;
-    }
   }
+}
 
-  &__gallery {
-    padding: 0 30px;
-    @media (max-width: $md3) {
-      padding: 0;
-    }
+.gallery {
+  padding: 0 30px;
+  @include adaptiv-value("padding-bottom", 72, 32, 1);
+
+  @media (max-width: $md3) {
+    padding-left: 0;
+    padding-right: 0;
   }
 
   &__list {
@@ -114,22 +99,21 @@
     object-fit: cover;
   }
 }
+
 .form-function {
-  .container {
-    height: 100%;
-  }
   &__header {
     text-align: center;
     max-width: 520px;
     margin: 0 auto;
-    margin-bottom: 70px;
+    padding-left: 20px;
+    padding-right: 20px;
+    @include adaptiv-value("padding-bottom", 72, 32, 1);
   }
 
   &__title {
-    font-family: Urbanist;
-    font-size: 40px;
-    font-weight: 700;
-    margin-bottom: 15px;
+    @include title;
+    @include adaptiv-font(40, 32, 1);
+    padding-bottom: 15px;
   }
 
   &__desc {
@@ -137,61 +121,83 @@
   }
 
   &__body {
+    display: grid;
   }
-  &__top-block {
+
+  &__image-block {
+    min-height: 720px;
     position: relative;
-    height: 650px;
-    @media (max-width: $md4) {
-      height: 450px;
+
+    @media (max-width: $md3) {
+      min-height: auto;
+    }
+
+    .container {
+      height: 100%;
+      position: relative;
+
+      @media (max-width: $md3) {
+        height: auto;
+      }
     }
   }
 
-  &__full-image {
-  }
-
-  &__full-image img {
+  &__text-block {
+    max-width: 370px;
+    z-index: 2;
     position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: 0;
-    object-fit: cover;
-    border-radius: 0px 0px 0px 250px;
-  }
 
-  &__top-block &__text {
-    position: absolute;
-    z-index: 10;
-    max-width: 380px;
-    top: 100px;
-    left: 100px;
-    @media (max-width: $md4) {
-      top: 15px;
-      padding-left: 10px;
+    &.position_right {
+      margin-left: 70%;
+
+      @media (max-width: $md3) {
+        margin-left: 0;
+      }
+    }
+
+    @media (max-width: $md3) {
+      position: static;
+      margin: 0;
+      padding: 0;
+      padding-bottom: 30px;
+      max-width: 570px;
     }
   }
-  // postition
-  &__top-block_bottom &__text {
-    bottom: 160px;
-    top: unset;
-  }
-  &__top-block_right &__text {
-    right: 100px;
-    left: unset;
-  }
-  //---------------//
 
   &__text {
     font-size: 18px;
   }
 
+  &__image {
+    img {
+      @media (max-width: $md3) {
+        position: static;
+        padding-bottom: 24px;
+      }
+    }
+  }
+
+  &__border-radius {
+    img {
+      @media (max-width: $md3) {
+        border-radius: 0;
+      }
+    }
+  }
+
   &__grid {
     background-color: #d9e0ce;
     border-radius: 200px 0 0 0;
-    padding-top: 40px;
-    padding-bottom: 70px;
-    margin-bottom: 65px;
-    @media (max-width: $md3) {
-      padding-top: 100px;
+    padding: 40px;
+    @include adaptiv-value("margin-bottom", 60, 48, 1);
+
+    @media (max-width: $md4) {
+      padding: 30px 20px;
+      border-radius: 0;
+    }
+
+    .container {
+      padding: 0;
     }
   }
 
@@ -205,24 +211,32 @@
     @media (max-width: $md3) {
       grid-template-columns: 1fr;
       grid-template-rows: auto;
+      gap: 30px;
     }
-  }
 
-  &__grid-list &__text {
-    padding: 0px 100px;
-    @media (max-width: $md4) {
-      padding: 0 20px;
+    .form-function__text {
+      padding: 0 100px;
+      @media (max-width: $md3) {
+        padding: 0 20px;
+      }
     }
   }
 
   &__grid-image_first {
     border-radius: 150px 0 0 0;
     overflow: hidden;
-    @media (max-width: $md3) {
-      grid-row: 2/3;
-      margin-bottom: 50px;
+
+    @media (max-width: $md4) {
+      border-radius: 0;
     }
   }
+
+  &__grid-image_last {
+    @media (max-width: $md3) {
+      grid-row: 3/4;
+    }
+  }
+
   &__grid-image img {
     width: 100%;
     height: 100%;
@@ -231,36 +245,45 @@
       height: 300px;
     }
   }
+}
 
-  &__footer {
-    padding: 0 50px;
-  }
+.small {
+  @include adaptiv-value("padding-bottom", 100, 40, 1);
 
-  &__footer-image {
-    padding: 0 0 50% 0;
+  &__image-block {
     position: relative;
-    margin-bottom: 50px;
+    height: 720px;
+    padding: 0 20px;
+    @include adaptiv-value("margin-bottom", 40, 32, 1);
   }
-  &__footer-image img {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+
+  &__image img {
+    padding: 0 30px;
+
+    @media (max-width: $md3) {
+      padding: 0;
+    }
   }
-  &__footer-text-block {
+
+  &__text-block {
+    padding-left: 20px;
+    padding-right: 20px;
+    @include adaptiv-value("padding-bottom", 100, 40, 1);
     max-width: 720px;
-    margin: 0 auto;
+    margin: auto;
     text-align: center;
-    margin-bottom: 100px;
   }
 
-  &__footer-caption {
-    font-size: 30px;
-    font-weight: 300;
-    margin-bottom: 10px;
+  &__title {
+    font-size: 26px;
+    padding-bottom: 16px;
   }
 
-  &__footer-text {
+  &__text {
     font-size: 18px;
+  }
+
+  &__button-block {
+    text-align: center;
   }
 }

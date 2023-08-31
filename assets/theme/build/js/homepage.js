@@ -377,13 +377,18 @@ let _slideToggle = (target, duration = 500) => {
   }
 };
 
-let blogList = document.querySelector(".blog__list");
+let blogList = document.querySelector(".last-articles__list");
+
+if (blogList) {
+  addMouseWell(
+    document.querySelector(".last-articles__list"),
+    scrollHorizontally
+  );
+}
 
 function scrollHorizontally(e) {
-  //включает горизонтальный скрол элемента колесом
-
   e = window.event || e;
-  var delta = Math.max(-1, Math.min(1, e.wheelDelta || -e.detail)); //это шаг колеса для разных браузеров
+  var delta = Math.max(-1, Math.min(1, e.wheelDelta || -e.detail));
   var sk = delta * 3;
 
   let scrollEnd =
@@ -416,8 +421,6 @@ function addMouseWell(elem, callback) {
   }
 }
 
-addMouseWell(document.querySelector(".blog__list"), scrollHorizontally);
-
 $("#slider").on("input change", (e) => {
   const sliderPos = e.target.value;
 
@@ -436,15 +439,15 @@ let pags = document.querySelectorAll(".pag__item");
 //----//
 
 arrowBefore.addEventListener("click", (e) => {
-  if (activeImage.previousElementSibling.classList.contains("about__image")) {
-    let elem = activeImage.previousElementSibling;
+  let elem = activeImage.previousElementSibling;
+  if (elem) {
     render(elem);
   }
 });
 
 arrowAfter.addEventListener("click", (e) => {
-  if (activeImage.nextElementSibling.classList.contains("about__image")) {
-    let elem = activeImage.nextElementSibling;
+  let elem = activeImage.nextElementSibling;
+  if (elem) {
     render(elem);
   }
 });
@@ -485,7 +488,6 @@ const render = (elem) => {
   activeImage.classList.remove("about__image_active");
   setTimeout(() => {
     elem.classList.add("about__image_active");
-    elem.animate([{ opacity: 0 }, { opacity: 1 }], 500);
     activeImage = elem;
   }, 500);
 

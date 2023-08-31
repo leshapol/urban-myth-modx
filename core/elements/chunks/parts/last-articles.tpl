@@ -1,58 +1,60 @@
-<section class="blog">
+<section class="last-articles">
   <div class="container">
-    <div class="blog__body">
-      <h2 class="blog__title">Urban Blog</h2>
-      <div class="blog__subtitle">
-        Keep ahead of the trends and latest designs in kitchens
+    <div class="last-articles__body">
+      <div class="last-articles__text-block">
+        <h2 class="last-articles__title">Urban Blog</h2>
+        <p class="last-articles__subtitle">
+          Keep ahead of the trends and latest designs in kitchens
+        </p>
       </div>
-      <ul class="blog__list">
-        <li class="blog__item">
-          <div class="blog__image">
+      <ul class="last-articles__list">
+        <li class="last-articles__item">
+          <div class="last-articles__image">
             <img src="/assets/theme/build/img/blog.jpg" alt="" />
           </div>
-          <a href="#" class="blog__link"> Snappy title from blog </a>
+          <a href="#" class="last-articles__link"> Snappy title from blog </a>
         </li>
-        <li class="blog__item">
-          <div class="blog__image">
+        <li class="last-articles__item">
+          <div class="last-articles__image">
             <img src="/assets/theme/build/img/blog2.jpg" alt="" />
           </div>
-          <a href="#" class="blog__link"> Snappy title from blog </a>
+          <a href="#" class="last-articles__link"> Snappy title from blog </a>
         </li>
-        <li class="blog__item">
-          <div class="blog__image">
+        <li class="last-articles__item">
+          <div class="last-articles__image">
             <img src="/assets/theme/build/img/blog.jpg" alt="" />
           </div>
-          <a href="#" class="blog__link"> Snappy title from blog </a>
+          <a href="#" class="last-articles__link"> Snappy title from blog </a>
         </li>
-        <li class="blog__item">
-          <div class="blog__image">
+        <li class="last-articles__item">
+          <div class="last-articles__image">
             <img src="/assets/theme/build/img/blog2.jpg" alt="" />
           </div>
-          <a href="#" class="blog__link"> Snappy title from blog </a>
+          <a href="#" class="last-articles__link"> Snappy title from blog </a>
         </li>
-        <li class="blog__item">
-          <div class="blog__image">
+        <li class="last-articles__item">
+          <div class="last-articles__image">
             <img src="/assets/theme/build/img/blog.jpg" alt="" />
           </div>
-          <a href="#" class="blog__link"> Snappy title from blog </a>
+          <a href="#" class="last-articles__link"> Snappy title from blog </a>
         </li>
-        <li class="blog__item">
-          <div class="blog__image">
+        <li class="last-articles__item">
+          <div class="last-articles__image">
             <img src="/assets/theme/build/img/blog2.jpg" alt="" />
           </div>
-          <a href="#" class="blog__link"> Snappy title from blog </a>
+          <a href="#" class="last-articles__link"> Snappy title from blog </a>
         </li>
-        <li class="blog__item">
-          <div class="blog__image">
+        <li class="last-articles__item">
+          <div class="last-articles__image">
             <img src="/assets/theme/build/img/blog.jpg" alt="" />
           </div>
-          <a href="#" class="blog__link"> Snappy title from blog </a>
+          <a href="#" class="last-articles__link"> Snappy title from blog </a>
         </li>
-        <li class="blog__item">
-          <div class="blog__image">
+        <li class="last-articles__item">
+          <div class="last-articles__image">
             <img src="/assets/theme/build/img/blog2.jpg" alt="" />
           </div>
-          <a href="#" class="blog__link"> Snappy title from blog </a>
+          <a href="#" class="last-articles__link"> Snappy title from blog </a>
         </li>
       </ul>
     </div>
