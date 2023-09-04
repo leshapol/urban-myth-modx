@@ -40,7 +40,7 @@
             <div class="article__text-block">[[*content]]</div>
 
             <div class="article__footer">
-              [[*blog-tags:is=``:then=``:else=`
+              [[*blog-tags:ne=``:then=``:else=`
               <div class="article__details">
                 <div class="article__details-title">Details:</div>
                 <dl class="article__details-list">

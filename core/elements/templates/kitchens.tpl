@@ -20,8 +20,8 @@
             <div class="catalog__catalog-list catalog-list">
               <ul class="catalog-list__list">
                 [[pdoResources? &parents=`[[*id]]` &tpl=`category-card.tpl`
-                &hideContainers=`1` &includeTVs=`category-img,tags`
-                &prepareTVs=`1 ]]
+                &hideContainers=`1` &includeTVs=`category-img,hero-img,tags`
+                &prepareTVs=`1`]]
                 <div class="catalog-list__button-wrap">
                   <a
                     href="newsletter"
@@ -32,7 +32,7 @@
               </ul>
             </div>
 
-            <button class="catalog__button-more button">LOAD MORE</button>
+            <!-- <button class="catalog__button-more button">LOAD MORE</button> -->
           </div>
         </section>
         [[$last-articles]]
