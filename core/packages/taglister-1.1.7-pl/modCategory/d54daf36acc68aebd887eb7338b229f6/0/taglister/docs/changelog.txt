@@ -1,0 +1,74 @@
+Changelog for tagLister.
+
+tagLister 1.1.7
+===============
+- [#24] Fix issues with &parents call when no tags are found; better optimize logic
+- [#25] Add within search type for mysql users
+- Fix notice error in tagLister snippet
+
+tagLister 1.1.6
+===============
+- Add &furlKey to tagLister to allow changing of FURL request key
+
+tagLister 1.1.5
+===============
+- [#23] Fix issues with useTagFURL support
+- Better handling of all tpl for tagLister snippet
+- [#21] Add in missing pageActiveTpl property to getResourcesTag
+
+tagLister 1.1.3
+===============
+- [#17] Fix issue with tolinks and key parameter
+- Fix queries for sqlsrv support
+
+tagLister 1.1.2
+===============
+- [#18] Add ability to sortBy=`rand` to randomly sort tags in tagLister snippet
+- [#16] Add lastCls, condition if tag is equal tagList count.
+- [#16] Add element (value: getResources) to default properties
+- [#15] Add fix to allow for &tag property in getResourcesTag snippet
+- [#10] Add urldecode to tag var in getResourcesTag to fix encoded chars
+
+tagLister 1.1.1
+===============
+- Added ability to sort by publishedon in tagLister
+- Added idx placeholder to each tag
+
+tagLister 1.1.0
+===============
+- Added active tag: Set css class (activeCls) for currently selected tag. Used in conjunction with a content listing snippet (like getResourcesTag)
+- Added activeCls: (Optional) A CSS class to add to the active tag. If empty will ignore.
+- Fixed cls and altCls properties to allow empty values
+- Added weights calculation for better css styling (compared to using count).  Each tags count relative to the rest (on a linear scale) adds a class
+- Implemented tagKey and tagKeyVar in all three snippets
+- Added toLower property to tagLister snippet to allow case-insensitive tag listing, with multibyte support
+- Added extraParams property to tolinks snippet
+
+tagLister 1.0.3
+===============
+- Fixed bug in 'contains' setting of tagSearchType property in getResourcesTag
+- Added &tagSearchType property to getResourcesTag to allow for different types of searching; defaults to exact
+
+tagLister 1.0.2
+===============
+- Added where property for JSON where query support
+- Added parents, depth properties to taglister for specifying parent resources and depth
+- Added all, allTpl, and allText properties to tagLister snippet for listing an 'All Tags' result
+- Fixed bug in getResourcesTag snippet with tagRequestParam variable
+- Changed tolinks &key to &tagRequestParam (with backwards compat)
+- i18n of snippet properties
+- Added tagKey and tagRequestParam properties to getResourcesTag snippet
+- Fixed bug in tolinks snippet
+
+tagLister 1.0.1
+===============
+- Added outputSeparator property to taglister
+
+tagLister 1.0.0
+===============
+- Added toPlaceholder property to tolinks
+- Added tpl, cls properties to tolinks
+- Added tolinks and getResourcesTag snippets
+- Fixed altCls parameter issue
+- Added includeDeleted, includeUnpublished, and tagVar properties
+- Initial commit.
