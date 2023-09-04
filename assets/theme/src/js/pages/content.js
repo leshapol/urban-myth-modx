@@ -6,12 +6,16 @@ $(document).ready(function () {
     slidesToShow: 4,
     slidesToScroll: 2,
     easing: "ease",
+    variableWidth: true,
+    arrows: false,
+    dots: false,
 
     responsive: [
       {
         breakpoint: 2400,
         settings: {
           slidesToShow: 3,
+          slidesToScroll: 1,
         },
       },
       {
@@ -27,7 +31,6 @@ $(document).ready(function () {
           slidesToShow: 1,
           slidesToScroll: 1,
           centerMode: true,
-          variableWidth: true,
         },
       },
     ],
@@ -36,9 +39,10 @@ $(document).ready(function () {
   $(".slider__list").slickLightbox({
     itemSelector: "li > a",
     navigateByKeyboard: true,
+    closeOnBackdropClick: true,
     caption: true,
+    lazy: true,
     caption: "title",
-
     easing: "ease",
 
     // layouts: {

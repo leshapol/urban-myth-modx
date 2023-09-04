@@ -19,37 +19,20 @@
 
   &__body {
     display: grid;
-    grid-template-columns: auto 1fr;
+    grid-template-columns: 1fr auto;
   }
 
   &__title {
-    font-size: 30px;
-    font-weight: 300;
-    margin-right: 30px;
-    max-width: 200px;
-    @media (max-width: $md4) {
-      font-size: 24px;
-    }
+    @include adaptiv-font(30, 24, 1);
+    padding-right: 24px;
   }
 
   &__title a {
     color: #000;
   }
-  &__title a:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
 
   &__text {
-    font-size: 18px;
-    font-weight: 400;
-    @media (max-width: $md4) {
-      font-size: 14px;
-    }
+    @include adaptiv-font(18, 14, 1);
   }
 }
 
