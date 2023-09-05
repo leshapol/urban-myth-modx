@@ -8,54 +8,9 @@
         </p>
       </div>
       <ul class="last-articles__list">
-        <li class="last-articles__item">
-          <div class="last-articles__image">
-            <img src="/assets/theme/build/img/blog.jpg" alt="" />
-          </div>
-          <a href="#" class="last-articles__link"> Snappy title from blog </a>
-        </li>
-        <li class="last-articles__item">
-          <div class="last-articles__image">
-            <img src="/assets/theme/build/img/blog2.jpg" alt="" />
-          </div>
-          <a href="#" class="last-articles__link"> Snappy title from blog </a>
-        </li>
-        <li class="last-articles__item">
-          <div class="last-articles__image">
-            <img src="/assets/theme/build/img/blog.jpg" alt="" />
-          </div>
-          <a href="#" class="last-articles__link"> Snappy title from blog </a>
-        </li>
-        <li class="last-articles__item">
-          <div class="last-articles__image">
-            <img src="/assets/theme/build/img/blog2.jpg" alt="" />
-          </div>
-          <a href="#" class="last-articles__link"> Snappy title from blog </a>
-        </li>
-        <li class="last-articles__item">
-          <div class="last-articles__image">
-            <img src="/assets/theme/build/img/blog.jpg" alt="" />
-          </div>
-          <a href="#" class="last-articles__link"> Snappy title from blog </a>
-        </li>
-        <li class="last-articles__item">
-          <div class="last-articles__image">
-            <img src="/assets/theme/build/img/blog2.jpg" alt="" />
-          </div>
-          <a href="#" class="last-articles__link"> Snappy title from blog </a>
-        </li>
-        <li class="last-articles__item">
-          <div class="last-articles__image">
-            <img src="/assets/theme/build/img/blog.jpg" alt="" />
-          </div>
-          <a href="#" class="last-articles__link"> Snappy title from blog </a>
-        </li>
-        <li class="last-articles__item">
-          <div class="last-articles__image">
-            <img src="/assets/theme/build/img/blog2.jpg" alt="" />
-          </div>
-          <a href="#" class="last-articles__link"> Snappy title from blog </a>
-        </li>
+        [[pdoResources? &parents=`4` &tpl=`last-articles-item.tpl`
+        &hideContainers=`1` &includeTVs=`category-img` &prepareTVs=`1`
+        &limit=`10` ]]
       </ul>
     </div>
   </div>
