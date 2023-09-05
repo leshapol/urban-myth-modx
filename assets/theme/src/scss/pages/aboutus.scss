@@ -223,6 +223,9 @@
 
   &__item-head {
     padding-bottom: 12px;
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
   }
 
   &__name {

@@ -39,7 +39,8 @@
       </main>
 
       <!-- popup's -->
-      [[$popup-block? &type=`book-app`]] [[$popup-block? &type=`newsletter`]]
+      [[$popup-block? &type=`book-app`]] [[$popup-block? &type=`newsletter`]] [[$popup-block?
+      &type=`brochure-request`]]
       [[$popup-block? &type=`filters`]]
       <!------------->
       [[$footer]]

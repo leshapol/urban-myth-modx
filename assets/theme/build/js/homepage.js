@@ -377,6 +377,7 @@ let _slideToggle = (target, duration = 500) => {
   }
 };
 
+
 let blogList = document.querySelector(".last-articles__list");
 
 if (blogList) {
