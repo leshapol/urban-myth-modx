@@ -1,96 +1,82 @@
-.story {
-  &__header {
-    margin-bottom: 100px;
-    margin-top: 50px;
-  }
+.about-us-title {
+  @include title;
+  @include adaptiv-font(36, 30, 1);
+  padding-bottom: 20px;
+}
+.about-us-text {
+  font-size: 18px;
 
-  &__start {
-    margin-bottom: 100px;
-  }
-
-  &__company {
-    margin-bottom: 100px;
-  }
-
-  &__directors {
-    margin-bottom: 100px;
+  p:not(:last-child) {
+    padding-bottom: 16px;
   }
 }
 
-.start {
-  display: flex;
-  min-height: 450px;
-  align-items: center;
-  column-gap: 80px;
-  @media (max-width: $md1) {
-    column-gap: 20px;
-  }
-  @media (max-width: $md3) {
-    flex-direction: column;
-    row-gap: 30px;
-  }
+.story {
+  @include adaptiv-value("padding-bottom", 100, 40, 1);
 
-  &.container {
-    @media (max-width: $md4) {
-      padding: 0 10px;
-    }
-  }
-  &__image {
-    flex: 0 0 450px;
-    height: 450px;
-    @media (max-width: $md2) {
-      flex: 0 0 350px;
-      height: 350px;
+  &__body {
+    display: flex;
+    align-items: center;
+    column-gap: 80px;
+
+    @media (max-width: $md1) {
+      column-gap: 20px;
     }
     @media (max-width: $md3) {
-      flex: 0 0 450px;
-      height: 450px;
+      flex-direction: column;
+      row-gap: 30px;
+    }
+
+    &.container {
+      @media (max-width: $md4) {
+        padding: 0 10px;
+      }
+    }
+  }
+
+  &__image {
+    flex: 0 0 430px;
+    height: auto;
+    @media (max-width: $md2) {
+      flex: 0 0 330px;
+    }
+    @media (max-width: $md3) {
+      flex: 0 0 430px;
     }
     @media (max-width: $md5) {
       flex: 0 0 300px;
-      height: 300px;
+    }
+
+    img {
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
     }
   }
-  &__image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 50%;
-  }
 
-  &__body {
+  &__text-block {
     flex: 0 1 820px;
     padding: 45px 60px 60px 75px;
     background-color: #f1eecf;
     border-radius: 75px 0px 75px 75px;
+
     @media (max-width: $md3) {
       padding: 45px 20px 60px 30px;
       flex: 0 0 auto;
     }
   }
-
-  &__title {
-    font-size: 36px;
-    font-weight: 400;
-    margin-bottom: 20px;
-  }
-
-  &__text {
-    font-size: 18px;
-    font-weight: 400;
-  }
-  &__text p:not(:last-child) {
-    margin-bottom: 10px;
-  }
 }
+
 .company {
+  @include adaptiv-value("padding-bottom", 100, 40, 1);
   position: relative;
 
-  & .container {
+  .container {
     @media (max-width: $md3) {
-      padding: 0;
+      padding: 0 10px;
     }
   }
+
   &__image {
     height: 705px;
     max-width: 1800px;
@@ -108,7 +94,7 @@
     position: relative;
   }
 
-  &__body {
+  &__text-block {
     background-color: #f1eecf;
     z-index: 10;
     position: relative;
@@ -121,34 +107,25 @@
     border-radius: 0px 0px 75px 75px;
 
     @media (max-width: $md5) {
-      padding: 50px 30px 30px 30px;
+      padding: 30px 25px 30px;
+      border-radius: 0px 0px 40px 40px;
     }
   }
-
-  &__title {
-    font-size: 36px;
-    margin-bottom: 30px;
-  }
-
-  &__text {
-    font-size: 18px;
-  }
-  &__text p:not(:last-child) {
-    margin-bottom: 10px;
-  }
 }
+
 .directors {
+  @include adaptiv-value("padding-bottom", 100, 60, 1);
+
   &__title {
-    font-size: 36px;
     text-align: center;
-    margin-bottom: 20px;
   }
 
   &__subtitle {
     font-size: 18px;
     max-width: 600px;
     margin: 0 auto;
-    margin-bottom: 90px;
+    text-align: center;
+    @include adaptiv-value("padding-bottom", 90, 40, 1);
   }
 
   &__list {
@@ -240,13 +217,12 @@
     margin-bottom: 20px;
   }
   &__image img {
-    width: 220px;
-    height: 220px;
-    object-fit: cover;
-    border-radius: 50%;
+    width: 215px;
+    height: 215px;
   }
 
   &__item-head {
+    padding-bottom: 12px;
   }
 
   &__name {

@@ -5,5 +5,5 @@ let body = document.body;
 burger.onclick = function () {
   burger.classList.toggle("header__burger_active");
   menu.classList.toggle("header__nav_active");
-  body.classList.toggle("lock");
+  body.classList.toggle("_lock");
 };
