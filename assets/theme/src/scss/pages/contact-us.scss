@@ -1,0 +1,26 @@
+.contact {
+  &__body {
+    display: grid;
+    grid-template-columns: 500px 1fr;
+    gap: 30px;
+    @include adaptiv-value("padding-bottom", 100, 60, 1);
+
+    @media (max-width: $md3) {
+      grid-template-columns: 1fr;
+      pap: 40px;
+    }
+  }
+
+  .form {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__map-wrapper {
+    min-height: 800px;
+
+    @media (max-width: $md3) {
+      min-height: 500px;
+    }
+  }
+}

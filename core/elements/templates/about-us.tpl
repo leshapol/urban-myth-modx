@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  [[$head? &css=`aboutus`]]
+  [[$head? &css=`about-us`]]
 
   <body>
     <div class="wrapper">
@@ -336,10 +336,12 @@
 
       <!-- popup's -->
       [[$popup-block? &type=`book-app`]]
+      [[$popup-block?
+      &type=`brochure-request`]]
       <!------------->
       [[$footer]]
     </div>
 
-    [[$scripts? js=`aboutus`]]
+    [[$scripts? js=`about-us`]]
   </body>
 </html>

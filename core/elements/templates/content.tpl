@@ -80,7 +80,8 @@
         [[$last-articles]]
       </main>
       <!-- popup's -->
-      [[$popup-block? &type=`book-app`]]
+      [[$popup-block? &type=`book-app`]] [[$popup-block?
+      &type=`brochure-request`]]
       <!------------->
       [[$footer]]
     </div>

@@ -43,7 +43,6 @@
 
   &__list {
     display: flex;
-    height: 380px;
     position: relative;
     overflow-x: auto;
   }
@@ -89,7 +88,7 @@
     text-transform: uppercase;
     display: flex;
     flex-direction: row-reverse;
-    align-items: center;
+    align-items: flex-start;
     gap: 13px;
   }
   &__link:before {
@@ -98,5 +97,6 @@
     background: url("../img/icons/link-arrow.svg") center no-repeat;
     width: 10px;
     height: 10px;
+    padding-top: 15px;
   }
 }
