@@ -46,13 +46,23 @@
                 <dl class="article__details-list">
                   [[*style:notempty=`
                   <div class="article__details-wrap">
-                    <dt class="article__details-subtitle">Kitchen:</dt>
+                    <dt class="article__details-subtitle">Style:</dt>
                     <dd class="article__details-desc">[[*style]]</dd>
                   </div>
                   `]] [[*finish:notempty=`
                   <div class="article__details-wrap">
                     <dt class="article__details-subtitle">Finish:</dt>
                     <dd class="article__details-desc">[[*finish]]</dd>
+                  </div>
+                  `]] [[*colour:notempty=`
+                  <div class="article__details-wrap">
+                    <dt class="article__details-subtitle">Colour:</dt>
+                    <dd class="article__details-desc">[[*colour]]</dd>
+                  </div>
+                  `]] [[*shape:notempty=`
+                  <div class="article__details-wrap">
+                    <dt class="article__details-subtitle">Shape:</dt>
+                    <dd class="article__details-desc">[[*shape]]</dd>
                   </div>
                   `]]
 
