@@ -1,7 +1,7 @@
 .tags {
   display: flex;
   justify-content: flex-end;
-  gap: 10px 10px;
+  gap: 8px;
   flex-wrap: wrap;
   align-items: center;
   padding-right: 5px;
@@ -20,5 +20,6 @@
     background-color: black;
     border-radius: 25px;
     padding: 12px;
+    display: inline-block;
   }
 }

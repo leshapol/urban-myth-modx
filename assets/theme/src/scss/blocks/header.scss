@@ -24,65 +24,46 @@
     display: flex;
     min-height: 65px;
     align-items: center;
-    @media (max-width: $md3) {
+    column-gap: 18px;
+
+    @media (max-width: $md4) {
       min-height: 45px;
+      column-gap: 24px;
     }
   }
-  &__wrap > *:not(:last-child) {
-    margin-right: 18px;
-  }
+
   &__head a,
   &__head {
     color: #fff;
   }
 
-  &__tel a {
-    padding-left: 24px;
-    position: relative;
+  &__link {
+    display: flex;
+    gap: 8px;
+
     @media (max-width: $md4) {
-      width: 0px;
-      overflow: hidden;
-      display: block;
+      gap: 0;
+      font-size: 0;
+      letter-spacing: 0;
+    }
+
+    &::before {
+      content: "";
+      width: 16px;
+      height: 16px;
     }
   }
-  &__tel a:before {
-    content: "";
+
+  &__tel a::before {
     background: url("../img/icons/tel.svg") center / contain no-repeat;
-    position: absolute;
-    width: 16px;
-    height: 16px;
-    top: 0;
-    left: 0;
-    @media (max-width: $md4) {
-      top: 50%;
-      transform: translateY(-50%);
-    }
   }
 
-  &__broshure a {
-    padding-left: 24px;
-    position: relative;
-    text-transform: uppercase;
-    @media (max-width: $md4) {
-      width: 0px;
-      overflow: hidden;
-      display: block;
-    }
-  }
-  &__broshure a:before {
-    content: "";
+  &__broshure a::before {
     background: url("../img/icons/libr.svg") center / contain no-repeat;
-    position: absolute;
+  }
 
-    width: 16px;
-    height: 16px;
-    top: 0;
-    left: 0;
-
-    @media (max-width: $md3) {
-      top: 50%;
-      transform: translateY(-50%);
-    }
+  &__contact a::before {
+    background: url("../img/icons/location.svg") center / contain no-repeat;
   }
 
   &__slogan {

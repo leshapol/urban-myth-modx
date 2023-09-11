@@ -4,12 +4,15 @@
       <div class="container">
         <div class="header__wrap">
           <div class="header__tel">
-            <a href="tel:02085313413">020 8531 3413</a>
+            <a class="header__link" href="tel:02085313413">020 8531 3413</a>
           </div>
           <div class="header__broshure">
-            <a href="brochure-request" class="_popup-link">
+            <a class="header__link _popup-link" href="brochure-request">
               REQUEST BROCHURE
             </a>
+          </div>
+          <div class="header__contact">
+            <a class="header__link" href="[[~23]]">FIND US</a>
           </div>
           <div class="header__slogan">MORE THAN A KITCHEN</div>
         </div>

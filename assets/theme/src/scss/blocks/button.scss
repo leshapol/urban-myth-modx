@@ -10,21 +10,32 @@
 
   align-items: center;
   text-align: center;
-}
 
-.button_long {
-  padding-left: 64px;
-  padding-right: 64px;
+  &_long {
+    padding-left: 64px;
+    padding-right: 64px;
 
-  @media (max-width: $md4) {
-    padding-left: 32px;
-    padding-right: 32px;
+    @media (max-width: $md4) {
+      padding-left: 32px;
+      padding-right: 32px;
+    }
   }
-}
 
-.button_white {
-  color: black;
-  background-color: white;
-  padding-left: 10px;
-  padding-right: 10px;
+  &_white {
+    color: black;
+    background-color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  &_more {
+    color: black;
+    background-color: white;
+    padding: 30px 60px;
+    width: auto !important;
+
+    @media (max-width: $md3) {
+      padding: 20px 30px;
+    }
+  }
 }

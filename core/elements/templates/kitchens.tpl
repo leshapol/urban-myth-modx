@@ -17,11 +17,19 @@
               <span class="filters__current">filter</span>
             </a>
 
-            <div class="catalog__catalog-list catalog-list">
-              <ul class="catalog-list__list">
-                [[pdoResources? &parents=`[[*id]]` &tpl=`category-card.tpl`
-                &hideContainers=`1` &includeTVs=`category-img,hero-img,tags`
-                &prepareTVs=`1`]]
+            <div class="catalog__catalog-list catalog-list" id="pdopage">
+              [[!+page.nav]]
+              <ul class="catalog-list__list rows">
+                [[pdoPage? 
+                  &limit=`12` 
+                  &parents=`[[*id]]` 
+                  &tpl=`category-card.tpl`
+                  &hideContainers=`1` 
+                  &includeTVs=`category-img,hero-img,tags`
+                  &prepareTVs=`1`
+                  &ajaxMode=`button`
+                  &ajaxTplMore=`@INLINE <button class="blog__button-more button button_more btn-more">LOAD MORE</button>`
+                ]]
                 <div class="catalog-list__button-wrap">
                   <a
                     href="newsletter"
@@ -32,7 +40,6 @@
               </ul>
             </div>
 
-            <!-- <button class="catalog__button-more button">LOAD MORE</button> -->
           </div>
         </section>
         [[$last-articles]]

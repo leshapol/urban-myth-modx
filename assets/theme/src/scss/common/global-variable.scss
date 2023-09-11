@@ -52,6 +52,10 @@ $md5: 479.98px;
 ._lock {
   overflow: hidden;
   padding-right: 17px;
+
+  @media (hover: none) {
+    padding-right: 0;
+  }
 }
 
 .position {

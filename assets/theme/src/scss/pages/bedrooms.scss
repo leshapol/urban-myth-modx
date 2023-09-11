@@ -206,8 +206,12 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     justify-content: center;
-    align-items: center;
     gap: 30px 40px;
+
+    & > * {
+      align-self: center;
+    }
+
     @media (max-width: $md3) {
       grid-template-columns: 1fr;
       grid-template-rows: auto;

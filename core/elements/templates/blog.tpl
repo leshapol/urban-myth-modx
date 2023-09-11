@@ -14,11 +14,20 @@
               <p class="page-head__desc">[[*description]]</p>
             </div>
 
-            <div class="blog__catalog-list catalog-list">
-              <ul class="catalog-list__list">
-                [[pdoResources? &parents=`[[*id]]` &tpl=`category-card.tpl`
-                &hideContainers=`1` &includeTVs=`category-img,blog-tags`
-                &prepareTVs=`1` &isblog=`1` ]]
+            <div class="blog__catalog-list catalog-list" id="pdopage">
+              [[!+page.nav]]
+              <ul class="catalog-list__list rows" >
+                [[pdoPage? 
+                  &limit=`6` 
+                  &parents=`[[*id]]` 
+                  &tpl=`category-card.tpl`
+                  &hideContainers=`1` 
+                  &includeTVs=`category-img,blog-tags`
+                  &prepareTVs=`1` 
+                  &isblog=`1` 
+                  &ajaxMode=`button`
+                  &ajaxTplMore=`@INLINE <button class="blog__button-more button button_more btn-more">LOAD MORE</button>`
+                ]]
               </ul>
               <div class="catalog-list__button-wrap">
                 <a
@@ -27,9 +36,11 @@
                   >JOIN OUR NEWSLETTER</a
                 >
               </div>
+              
+              
             </div>
 
-            <!-- <button class="blog__button-more button">LOAD MORE</button> -->
+            
           </div>
         </section>
         [[$last-articles]]

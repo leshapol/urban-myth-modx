@@ -90,13 +90,13 @@
     flex-direction: row-reverse;
     align-items: flex-start;
     gap: 13px;
-  }
-  &__link:before {
-    display: block;
-    content: "";
-    background: url("../img/icons/link-arrow.svg") center no-repeat;
-    width: 10px;
-    height: 10px;
-    padding-top: 15px;
+
+    &::before {
+      display: block;
+      content: "";
+      background: url("../img/icons/link-arrow.svg") center no-repeat;
+      width: 17px;
+      height: 17px;
+    }
   }
 }
