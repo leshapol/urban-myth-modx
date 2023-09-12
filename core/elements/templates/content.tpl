@@ -15,7 +15,8 @@
             <ul class="article__tags tags">
               [[!toLinks?
               &items=`[[*blog-tags:is=``:then=`[[*tags]]`:else=`[[*blog-tags]]`]]`
-              &target=`[[*blog-tags:is=``:then=`3`:else=`4`]]` &tpl=`tag.tpl`
+              &tagKey=`[[*blog-tags:is=``:then=`tags`:else=`blog-tags`]]`
+              &tpl=`tag.tpl` &target=`127`
               &outputDelim=`` ]]
             </ul>
           </div>

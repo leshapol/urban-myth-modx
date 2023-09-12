@@ -27,8 +27,9 @@
     </h3>
     <ul class="card__tags tags">
       [[!toLinks?
-      &items=`[[+isblog:is=`1`:then=`[[+tv.blog-tags]]`:else=`[[+tv.tags]]`]]`
-      &target=`[[+id]]` &tpl=`tag.tpl` &outputDelim=`` ]]
+      &items=`[[+parent:is=`4`:then=`[[+tv.blog-tags]]`:else=`[[+tv.tags]]`]]`
+      &tagKey=`[[+parent:is=`4`:then=`blog-tags`:else=`tags`]]`
+      &target=`127` &tpl=`tag.tpl` &outputDelim=`` ]]
     </ul>
   </div>
   <div class="card__text">[[+description]]</div>
