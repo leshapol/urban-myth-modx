@@ -14,19 +14,7 @@
           </div>
 
           <div class="contact__body container">
-            [[!FormIt? 
-              &hooks=`spam,FormItSaveForm,email,redirect`
-              &emailUseFieldForSubject=`1`
-              &emailSubject=`Email From Website` 
-              &emailTo=`webadmin@urbanmyth.net,nancy@urbanmyth.net`
-              &emailFrom=`website@urbanmyth.net`
-              &redirectTo=`126`
-              &validate=`name:required,email:required,accept:required`
-              &emailTpl=`email-chunk`
-              &submitVar=`contact-form`
-              &validationErrorMessage=`The form contains errors!`
-              &successMessage=`Message sent successfully`
-            ]] 
+            [[$formit]] 
             [[$contact-form]]
             <div class="contact__map-wrapper">
               <iframe

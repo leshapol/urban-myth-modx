@@ -36,5 +36,5 @@
       <span>I have read and accept the Urban Myth <a href="[[~22]]" target="_blank">Privacy Policy</a></span>
     </label>
   </div>
-  <input type="submit" name="[[+submit-val:is=``:then=`contact-form`:else=`[[+submit-val]]`]]" class="form__submit button" value="Send"/>
+  <input type="submit" name="[[+submit-var:is=``:then=`contact-form`:else=`[[+submit-var]]`]]" class="form__submit button" value="Send"/>
 </form>
