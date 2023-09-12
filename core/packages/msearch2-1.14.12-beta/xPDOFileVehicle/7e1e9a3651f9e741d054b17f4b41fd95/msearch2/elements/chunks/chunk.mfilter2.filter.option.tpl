@@ -1,0 +1,1 @@
+<option value="{$value}" {$selected} {$disabled} class="{$disabled}">{$title}&nbsp;{if !$selected}({$num}){/if}</option>

@@ -1,0 +1,15 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => true,
+  'namespace' => 'msearch2',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'f5b23829e14d361de5d89a2e7e99723b',
+  'package' => 'modx',
+  'class' => 'modEvent',
+  'signature' => '781efd3f00e2875fdb96203ace864cdf',
+  'native_key' => 'mse2OnGetWorkFields',
+  'object' => '{"name":"mse2OnGetWorkFields","service":6,"groupname":"mSearch2"}',
+);
