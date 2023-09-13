@@ -13,3 +13,7 @@ core/cache/
 // front
 /assets/theme/node_modules/
 /assets/image-cache/
+
+// uploads
+uploads/
+
