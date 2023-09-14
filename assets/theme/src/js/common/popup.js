@@ -1,6 +1,6 @@
 let popup_link = document.querySelectorAll("._popup-link");
 let popups = document.querySelectorAll(".popup");
-
+let menu = document.querySelector(".header__nav");
 if (location.hash) {
   const hsh = location.hash.replace("#", "");
   if (document.querySelector(".popup_" + hsh)) {
@@ -49,7 +49,15 @@ function popup_close(item) {
     item.classList.remove("_active");
   }
   history.pushState("", "", window.location.href.split("#")[0]);
-  $("body").removeClass("_lock");
+
+  if (menu) {
+    if (!menu.classList.contains("header__nav_active")) {
+      $("body").removeClass("_lock");
+    }
+  } else {
+    $("body").removeClass("_lock");
+  }
+
   sessionStorage.setItem("shuldShowExitPopup", "false");
 }
 
