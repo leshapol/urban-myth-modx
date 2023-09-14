@@ -25,7 +25,7 @@
       <section
         id="site-start"
         class=" d-none d-md-flex text-dark d-flex min-vh-100 position-relative align-items-center"
-        style="z-index:-2;background-image: url('assets/images/shaker_white.jpg'); background-size: cover;background-position: center;"
+        style="z-index:-2;background-image: url('/assets/theme/build/img/developers/section-1.jpg'); background-size: cover;background-position: center;"
       >
         <div class="container-fluid ">
           <div class="row mx-md-5 pb-4">
@@ -35,7 +35,7 @@
             >
               <img
                 class="m-3"
-                src="assets/images/urban_myth_logo_white.png"
+                src="/assets/theme/build/img/developers/logo-white.png"
                 alt="logo"
                 height="88px"
               >
@@ -50,7 +50,7 @@
       <section
         id="site-start-alt"
         class="d-md-none text-dark d-flex min-vh-100 position-relative align-items-center"
-        style="z-index:-2;background-image: url('assets/images/shaker_alt.jpg'); background-size: cover;background-position: center;"
+        style="z-index:-2;background-image: url('/assets/theme/build/img/developers/section-1.jpg'); background-size: cover;background-position: center;"
       >
         <div class="container-fluid ">
           <div class="row mx-md-5 pb-4">
@@ -60,7 +60,7 @@
             >
               <img
                 class="m-3"
-                src="assets/images/urban_myth_logo_white.png"
+                src="/assets/theme/build/img/developers/logo-white.png"
                 alt="logo"
                 height="88px"
               >
@@ -76,7 +76,7 @@
       <section
         id="experience"
         class=" text-light  min-vh-100  scroll-md-bg  position-relative "
-        style="background-image: url('assets/images/more/pedini_white_3.jpg'); background-size: cover; background-position:center"
+        style="background-image: url('/assets/theme/build/img/developers/section-2.jpg'); background-size: cover; background-position:center"
       >
         <div
           class=" position-absolute mb-5 bottom-0 start-50 translate-middle-x col-md-8 col-12"
@@ -107,7 +107,7 @@
       <section
         id="more-than-a-kitchen"
         class=" text-light d-flex min-vh-100  scroll-md-bg align-items-center position-relative"
-        style="background-image: url('assets/images/more/hero_three_4.jpg'); background-size: cover;background-position:center;"
+        style="background-image: url('/assets/theme/build/img/developers/section-3.jpg'); background-size: cover;background-position:center;"
       >
         <div
           class=" position-absolute mb-5 bottom-0 start-50 translate-middle-x"
@@ -195,29 +195,174 @@
               <div class="carousel-item active">
                 <div class="row mx-md-5 ">
                   <div class="col-md-4  col-4">
-                    [[getImageList? &tvname=`Projects` &tpl=`more_project` &limit=`2`]]
+                    <!-- [[getImageList? &tvname=`Projects` &tpl=`more_project` &limit=`2`]] -->
+                    <div class="project h-auto position-relative">
+                      <img
+                        src="/assets/theme/build/img/developers/slider-image-1.jpg"
+                        alt="[[+title]]"
+                        class="img-fluid   mb-md-4 mb-4"
+                        loading="lazy"
+                      >
+                      <div class="position-absolute top-0 end-0 m-1 "><img
+                          src="/assets/theme/build/img/developers/slider-open.svg"
+                          alt=""
+                        ></div>
+                    </div>
+                    <div class="project h-auto position-relative">
+                      <img
+                        src="/assets/theme/build/img/developers/slider-image-2.jpg"
+                        alt="[[+title]]"
+                        class="img-fluid   mb-md-4 mb-4"
+                        loading="lazy"
+                      >
+                      <div class="position-absolute top-0 end-0 m-1 "><img
+                          src="/assets/theme/build/img/developers/slider-open.svg"
+                          alt=""
+                        ></div>
+                    </div>
                   </div>
                   <div class="col-md-3 col-4">
-                    [[getImageList? &tvname=`Projects` &tpl=`more_project` &offset=`2` &limit=`2`]]
+                    <!-- [[getImageList? &tvname=`Projects` &tpl=`more_project` &offset=`2` &limit=`2`]] -->
+                    <div class="project h-auto position-relative">
+                      <img
+                        src="/assets/theme/build/img/developers/slider-image-3.jpg"
+                        alt="[[+title]]"
+                        class="img-fluid   mb-md-4 mb-4"
+                        loading="lazy"
+                      >
+                      <div class="position-absolute top-0 end-0 m-1 "><img
+                          src="/assets/theme/build/img/developers/slider-open.svg"
+                          alt=""
+                        ></div>
+                    </div>
+                    <div class="project h-auto position-relative">
+                      <img
+                        src="/assets/theme/build/img/developers/slider-image-4.jpg"
+                        alt="[[+title]]"
+                        class="img-fluid   mb-md-4 mb-4"
+                        loading="lazy"
+                      >
+                      <div class="position-absolute top-0 end-0 m-1 "><img
+                          src="/assets/theme/build/img/developers/slider-open.svg"
+                          alt=""
+                        ></div>
+                    </div>
                   </div>
                   <div class="col-md-5 col-4">
                     [[getImageList? &tvname=`Projects` &tpl=`more_project` &offset=`4` &limit=`1`]]
+                    <div class="project h-auto position-relative">
+                      <img
+                        src="/assets/theme/build/img/developers/slider-image-5.jpg"
+                        alt="[[+title]]"
+                        class="img-fluid   mb-md-4 mb-4"
+                        loading="lazy"
+                      >
+                      <div class="position-absolute top-0 end-0 m-1 "><img
+                          src="/assets/theme/build/img/developers/slider-open.svg"
+                          alt=""
+                        ></div>
+                    </div>
                   </div>
                 </div>
               </div>
               <div class="carousel-item">
                 <div class="row mx-md-5 ">
                   <div class="col-md-3 col-4 ">
-                    [[getImageList? &tvname=`Projects` &tpl=`more_project` &offset=`5` &limit=`2`]]
+                    <!-- [[getImageList? &tvname=`Projects` &tpl=`more_project` &offset=`5` &limit=`2`]] -->
+                    <div class="project h-auto position-relative">
+                      <img
+                        src="/assets/theme/build/img/developers/slider-image-6.jpg"
+                        alt="[[+title]]"
+                        class="img-fluid   mb-md-4 mb-4"
+                        loading="lazy"
+                      >
+                      <div class="position-absolute top-0 end-0 m-1 "><img
+                          src="/assets/theme/build/img/developers/slider-open.svg"
+                          alt=""
+                        ></div>
+                    </div>
+                    <div class="project h-auto position-relative">
+                      <img
+                        src="/assets/theme/build/img/developers/slider-image-7.jpg"
+                        alt="[[+title]]"
+                        class="img-fluid   mb-md-4 mb-4"
+                        loading="lazy"
+                      >
+                      <div class="position-absolute top-0 end-0 m-1 "><img
+                          src="/assets/theme/build/img/developers/slider-open.svg"
+                          alt=""
+                        ></div>
+                    </div>
+
                   </div>
                   <div class="col-md-4">
-                    [[getImageList? &tvname=`Projects` &tpl=`more_project` &offset=`7` &limit=`2`]]
+                    <!-- [[getImageList? &tvname=`Projects` &tpl=`more_project` &offset=`7` &limit=`2`]] -->
+                    <div class="project h-auto position-relative">
+                      <img
+                        src="/assets/theme/build/img/developers/slider-image-8.jpg"
+                        alt="[[+title]]"
+                        class="img-fluid   mb-md-4 mb-4"
+                        loading="lazy"
+                      >
+                      <div class="position-absolute top-0 end-0 m-1 "><img
+                          src="/assets/theme/build/img/developers/slider-open.svg"
+                          alt=""
+                        ></div>
+                    </div>
+                    <div class="project h-auto position-relative">
+                      <img
+                        src="/assets/theme/build/img/developers/slider-image-9.jpg"
+                        alt="[[+title]]"
+                        class="img-fluid   mb-md-4 mb-4"
+                        loading="lazy"
+                      >
+                      <div class="position-absolute top-0 end-0 m-1 "><img
+                          src="/assets/theme/build/img/developers/slider-open.svg"
+                          alt=""
+                        ></div>
+                    </div>
                   </div>
                   <div class="col-md-3 col-4">
-                    [[getImageList? &tvname=`Projects` &tpl=`more_project` &offset=`9` &limit=`1`]]
+                    <!-- [[getImageList? &tvname=`Projects` &tpl=`more_project` &offset=`9` &limit=`1`]] -->
+                    <div class="project h-auto position-relative">
+                      <img
+                        src="/assets/theme/build/img/developers/slider-image-10.jpg"
+                        alt="[[+title]]"
+                        class="img-fluid   mb-md-4 mb-4"
+                        loading="lazy"
+                      >
+                      <div class="position-absolute top-0 end-0 m-1 "><img
+                          src="/assets/theme/build/img/developers/slider-open.svg"
+                          alt=""
+                        ></div>
+                    </div>
                   </div>
                   <div class="col-md-2 col-4">
-                    [[getImageList? &tvname=`Projects` &tpl=`more_project` &offset=`10` &limit=`2`]]
+                    <!-- [[getImageList? &tvname=`Projects` &tpl=`more_project` &offset=`10` &limit=`2`]] -->
+                    <div class="project h-auto position-relative">
+                      <img
+                        src="/assets/theme/build/img/developers/slider-image-11.jpg"
+                        alt="[[+title]]"
+                        class="img-fluid   mb-md-4 mb-4"
+                        loading="lazy"
+                      >
+                      <div class="position-absolute top-0 end-0 m-1 "><img
+                          src="/assets/theme/build/img/developers/slider-open.svg"
+                          alt=""
+                        ></div>
+                    </div>
+                    <div class="project h-auto position-relative">
+                      <img
+                        src="/assets/theme/build/img/developers/slider-image-12.jpg"
+                        alt="[[+title]]"
+                        class="img-fluid   mb-md-4 mb-4"
+                        loading="lazy"
+                      >
+                      <div class="position-absolute top-0 end-0 m-1 "><img
+                          src="/assets/theme/build/img/developers/slider-open.svg"
+                          alt=""
+                        ></div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -294,12 +439,12 @@
         style="z-index:5;max-width: 1600px;"
       >
         <img
-          src="assets/images/more/_before.jpg"
+          src="/assets/theme/build/img/developers/section-5-before.jpg"
           alt="Kitchen Pre Vis"
           class="img-fluid   p-0"
         >
         <img
-          src="assets/images/more/_after.jpg"
+          src="/assets/theme/build/img/developers/section-5-after.jpg"
           alt="Kitchen completed"
           class="img-fluid   p-0"
         >
@@ -329,12 +474,12 @@
         style="z-index:5;"
       >
         <img
-          src="assets/images/more/_before.jpg"
+          src="/assets/theme/build/img/developers/section-5-before.jpg"
           alt=""
           class="img-fluid   p-0"
         >
         <img
-          src="assets/images/more/_after.jpg"
+          src="/assets/theme/build/img/developers/section-5-after.jpg"
           alt=""
           class="img-fluid   p-0"
         >
@@ -421,7 +566,7 @@
         </div>
         <div class="col-md-4 col-6">
           <img
-            src="assets/images/more/factory/factory_4.jpg"
+            src="/assets/theme/build/img/developers/factory-4.jpg"
             alt=""
             class="img-fluid reveal  col-md-10 offset-md-2 mb-md-4 mb-4"
           >
@@ -429,12 +574,12 @@
         </div>
         <div class="col-md-4 col-6 my-auto">
           <img
-            src="assets/images/more/factory/factory_2.jpg"
+            src="/assets/theme/build/img/developers/factory-2.jpg"
             alt=""
             class="img-fluid reveal mb-4 "
           >
           <img
-            src="assets/images/more/factory/factory_3.jpg"
+            src="/assets/theme/build/img/developers/factory-3.jpg"
             alt=""
             class="img-fluid col-md-8 reveal  "
           >
@@ -465,17 +610,17 @@
       <div class="row mx-md-5 pb-4 pb-md-0">
         <div class="col-md-4 col-6 order-md-1 order-2">
           <img
-            src="assets/images/more/suppliers/boil_tap.jpg"
+            src="/assets/theme/build/img/developers/boil-tap.jpg"
             alt="tap"
             class="img-fluid reveal col-12 col-md-10 mb-4 offset-md-2 mb-md-4"
           >
           <img
-            src="assets/images/more/suppliers/cookers.jpg"
+            src="/assets/theme/build/img/developers/cookers.jpg"
             alt="cooker"
             class="img-fluid reveal  mb-4 col-12 col-md-10  mb-md-4"
           >
           <img
-            src="assets/images/more/suppliers/extractor.jpg"
+            src="/assets/theme/build/img/developers/extractor.jpg"
             alt="extractor worksurface"
             class="img-fluid reveal  col-12 col-md-10 offset-md-2 mb-4 mb-md-0 "
           >
@@ -489,17 +634,17 @@
         </div>
         <div class="col-md-4 col-6 order-3 ">
           <img
-            src="assets/images/more/suppliers/induction.jpg"
+            src="/assets/theme/build/img/developers/induction.jpg"
             alt="induction hob"
             class="img-fluid reveal  col-12 col-md-10  mb-4 mb-md-4"
           >
           <img
-            src="assets/images/more/suppliers/oven.jpg"
+            src="/assets/theme/build/img/developers/oven.jpg"
             alt="neff overn"
             class="img-fluid reveal  col-12 col-md-10 offset-md-2 mb-4 mb-md-4"
           >
           <img
-            src="assets/images/more/suppliers/stove_top.jpg"
+            src="/assets/theme/build/img/developers/stove-top.jpg"
             alt="stove top"
             class="img-fluid reveal  col-12 col-md-10  mb-4 mb-md-0"
           >
@@ -538,14 +683,14 @@
         </div>
         <div class="col-md-3 col-6">
           <img
-            src="assets/images/more/pm/install.jpg"
+            src="/assets/theme/build/img/developers/install.jpg"
             alt=""
             class="img-fluid reveal  mb-4"
           >
         </div>
         <div class="col-md-3 col-6">
           <img
-            src="assets/images/more/pm/on_site.jpg"
+            src="/assets/theme/build/img/developers/on-site.jpg"
             alt=""
             class="img-fluid reveal  mb-4"
           >
@@ -554,14 +699,14 @@
       <div class="row mx-md-5 pb-md-0 align-items-center">
         <div class="col-md-3 offset-md-1 col-6">
           <img
-            src="assets/images/more/pm/map.jpg"
+            src="/assets/theme/build/img/developers/map.jpg"
             alt=""
             class="img-fluid reveal  mb-4 mb-md-0"
           >
         </div>
         <div class="col-md-3 col-6">
           <img
-            src="assets/images/more/pm/service.jpg"
+            src="/assets/theme/build/img/developers/service.jpg"
             alt=""
             class="img-fluid reveal  mb-4 mb-md-0"
           >
@@ -613,14 +758,14 @@
         </div>
         <div class="col-md-4 col-6">
           <img
-            src="assets/images/more/hand.jpg"
+            src="/assets/theme/build/img/developers/hand.jpg"
             alt=""
             class="img-fluid reveal  mt-0"
           >
         </div>
         <div class="col-md-4 col-6">
           <img
-            src="assets/images/more/team-3.jpg.jpg"
+            src="/assets/theme/build/img/developers/team-3.jpg"
             alt=""
             class="img-fluid reveal  mb-0"
           >
@@ -639,7 +784,7 @@
       <div class="row ">
         <div class="col-md-2 col-4 mx-auto pb-5">
           <img
-            src="assets/images/urban_myth_logo_white.png"
+            src="/assets/theme/build/img/developers/logo-white.png"
             alt=""
             class="img-fluid pb-5"
           >
@@ -660,141 +805,7 @@
         <div class="col-md-6 offset-md-1">
 
 
-          <form
-            class="js-cm-form"
-            id="subForm"
-            action="https://www.createsend.com/t/subscribeerror?description="
-            method="post"
-            data-id="30FEA77E7D0A9B8D7616376B90063231FDB0D035CF3D2585A9A0FC9006078E4F6098F5BF280009F3A4269B544C4E127DA4C99E61D1F3A169D408BD20F00ACA27"
-          >
-
-            <div class="form-group"><label>Name </label><input
-                aria-label="Name"
-                class="form-control "
-                id="fieldName"
-                maxlength="200"
-                name="cm-name"
-              ></div>
-            <div class="form-group"><label>Email </label><input
-                autocomplete="Email"
-                aria-label="Email"
-                class="js-cm-email-input qa-input-email form-control"
-                id="fieldEmail"
-                maxlength="200"
-                name="cm-yullhhl-yullhhl"
-                required=""
-                type="email"
-              ></div>
-            <div class="form-group"><label>Company </label><input
-                class="form-control"
-                aria-label="Company"
-                id="fieldiduhhkt"
-                maxlength="200"
-                name="cm-f-iduhhkt"
-              ></div>
-            <div class="form-group"><label>Telephone </label><input
-                class="form-control"
-                aria-label="Telephone"
-                id="fieldiduhhkh"
-                maxlength="200"
-                name="cm-f-iduhhkh"
-              ></div>
-            <div class="form-group"><label>Message </label><textarea
-                class="form-control"
-                row="6"
-                aria-label="Message"
-                id="fieldiduhhkd"
-                maxlength="200"
-                name="cm-f-iduhhkd"
-              ></textarea>
-            </div>
-            <p class="pt-3">What is your role or responsibility?</p>
-            <div class="form-check">
-              <input
-                id="1929915"
-                name="cm-fo-iduhhki"
-                class="form-check-input"
-                type="checkbox"
-                value="1929915"
-              ><label
-                class="form-check-label"
-                for="1929915"
-              >Developer</label>
-              <div><input
-                  id="1929916"
-                  name="cm-fo-iduhhki"
-                  class="form-check-input"
-                  type="checkbox"
-                  value="1929916"
-                ><label
-                  class="form-check-label"
-                  for="1929916"
-                >Architect</label></div>
-              <div><input
-                  id="1929917"
-                  name="cm-fo-iduhhki"
-                  class="form-check-input"
-                  type="checkbox"
-                  value="1929917"
-                ><label
-                  class="form-check-label"
-                  for="1929917"
-                >Specifier</label></div>
-              <div><input
-                  id="1932113"
-                  name="cm-fo-iduhhki"
-                  class="form-check-input"
-                  type="checkbox"
-                  value="1932113"
-                ><label
-                  class="form-check-label"
-                  for="1932113"
-                >Quantity Surveyor</label></div>
-            </div>
-
-            <hr>
-            <p class="pt-3">I have read and understood Urban Myth privacy policy</p>
-            <div class="form-check">
-
-              <input
-                aria-required=""
-                class="form-check-input"
-                id="cm-privacy-consent"
-                name="cm-privacy-consent"
-                required=""
-                type="checkbox"
-              >
-              <label
-                for="cm-privacy-consent"
-                class="form-check-label"
-              >I agree to be emailed</label>
-
-              <input
-                class="form-check-input"
-                id="cm-privacy-consent-hidden"
-                name="cm-privacy-consent-hidden"
-                type="hidden"
-                value="true"
-              >
-
-            </div>
-            <p><small><a
-                  href="https://staging.urbanmyth.net/privacy-policy.html"
-                  rel="noopener"
-                  target="_blank"
-                >Privacy policy</a> ||
-                <a
-                  href="https://staging.urbanmyth.net/cookie-policy.html"
-                  rel="noopener"
-                  target="_blank"
-                >Cookie policy</a></small></p>
-
-
-            <button
-              class="btn btn-outline-dark"
-              type="submit"
-            >Send</button>
-          </form>
+          [[$contact-form]]
 
           <script
             type="text/javascript"
@@ -816,8 +827,19 @@
   <!------------->
   [[$footer]]
   </div>
-
   [[$scripts? js=`developers`]]
+  <script
+    src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"
+  ></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script type="text/javascript">
+    $(function () {
+      $("#container1").twentytwenty();
+    });
+  </script>
 </body>
 
 </html>
