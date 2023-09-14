@@ -3,7 +3,7 @@
 [[$head? &css=`developers`]]
 
 <body>
-  <div class="wrapper">
+  <div class="wrapper wrapper_developers">
     [[$header]]
 
     <main>
@@ -24,7 +24,7 @@
 
       <section
         id="site-start"
-        class=" d-none d-md-flex text-dark d-flex min-vh-100 position-relative align-items-center"
+        class="first-section d-none d-md-flex text-dark d-flex min-vh-100 position-relative align-items-center"
         style="z-index:-2;background-image: url('/assets/theme/build/img/developers/section-1.jpg'); background-size: cover;background-position: center;"
       >
         <div class="container-fluid ">
