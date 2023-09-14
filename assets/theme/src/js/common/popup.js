@@ -1,6 +1,7 @@
 let popup_link = document.querySelectorAll("._popup-link");
 let popups = document.querySelectorAll(".popup");
-let menu = document.querySelector(".header__nav");
+let head_menu = document.querySelector(".header__nav");
+
 if (location.hash) {
   const hsh = location.hash.replace("#", "");
   if (document.querySelector(".popup_" + hsh)) {
@@ -50,8 +51,8 @@ function popup_close(item) {
   }
   history.pushState("", "", window.location.href.split("#")[0]);
 
-  if (menu) {
-    if (!menu.classList.contains("header__nav_active")) {
+  if (head_menu) {
+    if (!head_menu.classList.contains("header__nav_active")) {
       $("body").removeClass("_lock");
     }
   } else {
