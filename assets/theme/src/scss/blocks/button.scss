@@ -7,6 +7,7 @@
   border-radius: 58px;
   letter-spacing: 2.24px;
   display: inline-block;
+  text-transform: uppercase;
 
   align-items: center;
   text-align: center;
@@ -14,6 +15,16 @@
   &_long {
     padding-left: 64px;
     padding-right: 64px;
+
+    @media (max-width: $md4) {
+      padding-left: 32px;
+      padding-right: 32px;
+    }
+  }
+
+  &_medium {
+    padding-left: 40px;
+    padding-right: 40px;
 
     @media (max-width: $md4) {
       padding-left: 32px;
@@ -33,6 +44,8 @@
     background-color: white;
     padding: 30px 60px;
     width: auto !important;
+    display: block;
+    margin: auto;
 
     @media (max-width: $md3) {
       padding: 20px 30px;

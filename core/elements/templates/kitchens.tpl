@@ -17,28 +17,25 @@
               <span class="filters__current">filter</span>
             </a>
 
-            <div class="catalog__catalog-list catalog-list" id="pdopage">
-              [[!+page.nav]]
-              <ul class="catalog-list__list rows">
-                [[pdoPage? 
-                  &limit=`12` 
-                  &parents=`[[*id]]` 
-                  &tpl=`category-card.tpl`
-                  &hideContainers=`1` 
-                  &includeTVs=`category-img,hero-img,tags`
-                  &prepareTVs=`1`
-                  &ajaxMode=`button`
-                  &ajaxTplMore=`@INLINE <button class="blog__button-more button button_more btn-more">LOAD MORE</button>`
-                ]]
-                <div class="catalog-list__button-wrap">
-                  <a
-                    href="newsletter"
-                    class="catalog-list__button button _popup-link"
-                    >JOIN OUR NEWSLETTER</a
-                  >
-                </div>
-              </ul>
-            </div>
+            [[mFilter2? 
+              &filters=`tv|style, tv|colour, tv|shape, tv|finish, tv|case-study:boolean`
+              &aliases=`tv|tags==tags, tv|style==style, tv|colour==colour, tv|shape==shape, tv|finish==finish, tv|case-study:boolean==case-study`
+              &element=`pdoResources`
+              &paginator'=`pdoPage`,
+              &limit=`12` 
+              &parents=`3` 
+              &tpl=`category-card.tpl`
+              &hideContainers=`1` 
+              &includeTVs=`category-img,hero-img,tags`
+              &prepareTVs=`1`
+              &ajaxMode=`button`
+              &ajaxTplMore=`@INLINE <button class="blog__button-more button button_more btn-more">LOAD MORE</button>`
+              &tplOuter=`tpl.mFilter2.outer.Urbanmyth`
+              &tplFilter.outer.default=`tpl.mFilter2.filter.outer.Urbanmyth`
+              &tplFilter.row.default=`tpl.mFilter2.filter.checkbox.Urbanmyth`
+            ]]
+
+            
 
           </div>
         </section>
@@ -48,7 +45,7 @@
       <!-- popup's -->
       [[$popup-block? &type=`book-app`]] [[$popup-block? &type=`newsletter`]] [[$popup-block?
       &type=`brochure-request`]]
-      [[$popup-block? &type=`filters`]]
+      
       <!------------->
       [[$footer]]
     </div>

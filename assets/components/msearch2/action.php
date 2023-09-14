@@ -122,8 +122,8 @@ switch ($action) {
         }
 
         // Save log
-        $log = $pdoFetch->timings;
-        $pdoFetch->timings = array();
+        // $log = $pdoFetch->timings;
+        // $pdoFetch->timings = array();
 
         // Get results
         if (!empty($ids)) {
@@ -164,7 +164,7 @@ switch ($action) {
             $page = $pages = 0;
         }
 
-        $pdoFetch->timings = $log;
+        //$pdoFetch->timings = $log;
         $pdoFetch->addTime('Total filter operations: ' . $mSearch2->filter_operations);
         $response = array(
             'success' => true,
