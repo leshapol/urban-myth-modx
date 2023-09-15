@@ -13,8 +13,8 @@
               <h1 class="page-head__title">[[*pagetitle]]</h1>
               <p class="page-head__desc">[[*description]]</p>
             </div>
-            <a href="filters" class="catalog__modal-open _popup-link">
-              <span class="filters__current">filter</span>
+            <a href="filters" class="catalog__filter-button button button_long _popup-link">
+              Filter
             </a>
 
             [[mFilter2? 

@@ -32,7 +32,10 @@
             </a>
           </li>
           <li class="footer__social-item">
-            <a href="#">
+            <a
+              href="https://www.facebook.com/urbanmythkitchens"
+              target="_blank"
+            >
               <img
                 src="/assets/theme/build/img/icons/facebook.svg"
                 alt="fb"
@@ -42,7 +45,10 @@
             </a>
           </li>
           <li class="footer__social-item">
-            <a href="#">
+            <a
+              href="https://www.instagram.com/urbanmythkitchens/"
+              target="_blank"
+            >
               <img
                 src="/assets/theme/build/img/icons/instagram.svg"
                 alt="instagram"
@@ -52,7 +58,10 @@
             </a>
           </li>
           <li class="footer__social-item">
-            <a href="#">
+            <a
+              href="https://www.linkedin.com/company/urbanmyth/"
+              target="_blank"
+            >
               <img
                 src="/assets/theme/build/img/icons/linkedin.svg"
                 alt="linkedin"
@@ -62,7 +71,10 @@
             </a>
           </li>
           <li class="footer__social-item">
-            <a href="#">
+            <a
+              href="https://www.pinterest.co.uk/urbanmythkitchens/"
+              target="_blank"
+            >
               <img
                 src="/assets/theme/build/img/icons/pinterest.svg"
                 alt="pinterest"

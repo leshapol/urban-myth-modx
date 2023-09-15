@@ -13,6 +13,7 @@
                 <div class="filters__button-container">
                     <button type="reset" class="filters__button button button_medium">{'mse2_reset' | lexicon}</button>
                     <button type="submit" class="filters__button button button_medium">{'mse2_submit' | lexicon}</button>
+                    <a class="filters__button button button_medium _popup-close">Applay</a>
                 </div>
                 {/if}
             </form>
@@ -22,9 +23,9 @@
 
 
     <div class="catalog__catalog-list catalog-list" id="pdopage">
-        <div id="mse2_selected_wrapper">
+        <div id="mse2_selected_wrapper" class="catalog__selected-wrapper">
             <p>{'mse2_filter_total' | lexicon} <span id="mse2_total">{$total ?: 0}</span></p>
-            <div id="mse2_selected">
+            <div id="mse2_selected" class="catalog__selected filter-list">
                 {'mse2_selected' | lexicon}:<span></span>
             </div>
         </div>
