@@ -22,7 +22,7 @@
         </div>
         <ul class="footer__social-list">
           <li class="footer__social-item">
-            <a href="#">
+            <a href="https://twitter.com/urbanmythlondon" target="_blank">
               <img
                 src="/assets/theme/build/img/icons/twitter.svg"
                 alt="twitter"
@@ -91,7 +91,7 @@
         </a>
         <div class="footer__address">
           <div class="footer__tel">
-            <a>020 8531 3413</a>
+            <a href="tel:02085313413">020 8531 3413</a>
           </div>
           <div class="footer__address">
             Urban Myth <br />
@@ -107,77 +107,33 @@
       <div class="footer__link-list-wrapper">
         <h3 class="footer__title">Products</h3>
         <ul class="footer__list">
-          <li class="footer__item">
-            <a href="#">Shaker Kitchens</a>
-          </li>
-          <li class="footer__item">
-            <a href="#">Handleless Kitchens</a>
-          </li>
-          <li class="footer__item">
-            <a href="#">Pedini Kitchens</a>
-          </li>
-          <li class="footer__item">
-            <a href="#">Fitted Bedrooms</a>
-          </li>
+          [[pdoMenu? &parents=`129` &tplOuter=`@INLINE [[+wrapper]]`
+          &tpl=`footer-link.tpl` ]]
         </ul>
 
         <h3 class="footer__title">Service</h3>
         <ul class="footer__list">
-          <li class="footer__item">
-            <a href="#">Consultancy</a>
-          </li>
-          <li class="footer__item">
-            <a href="#">Design</a>
-          </li>
-          <li class="footer__item">
-            <a href="#">Installation</a>
-          </li>
+          [[pdoMenu? &parents=`130` &tplOuter=`@INLINE [[+wrapper]]`
+          &tpl=`footer-link.tpl` ]]
         </ul>
       </div>
       <div class="footer__link-list-wrapper">
-        <h3 class="footer__title">Developers</h3>
+        <h3 class="footer__title"><a href="[[~7]]">Developers</a></h3>
         <ul class="footer__list">
-          <li class="footer__item">
-            <a href="#">Projects</a>
-          </li>
-          <li class="footer__item">
-            <a href="#">Service</a>
-          </li>
-          <li class="footer__item">
-            <a href="#"> Sustainability</a>
-          </li>
+          [[pdoMenu? &parents=`131` &tplOuter=`@INLINE [[+wrapper]]`
+          &tpl=`footer-link.tpl` ]]
         </ul>
       </div>
       <div class="footer__link-list-wrapper">
         <h3 class="footer__title">About Us</h3>
         <ul class="footer__list">
-          <li class="footer__item">
-            <a href="#">Our Story</a>
-          </li>
-          <li class="footer__item">
-            <a href="#">Our Team</a>
-          </li>
-          <li class="footer__item">
-            <a href="#">Our Process</a>
-          </li>
+          [[pdoMenu? &parents=`132` &tplOuter=`@INLINE [[+wrapper]]`
+          &tpl=`footer-link.tpl` ]]
         </ul>
         <h3 class="footer__title">Resources</h3>
         <ul class="footer__list">
-          <li class="footer__item">
-            <a href="#">Kitchen Brochure</a>
-          </li>
-          <li class="footer__item">
-            <a href="#">Customer Manuals</a>
-          </li>
-          <li class="footer__item">
-            <a href="#">Privacy</a>
-          </li>
-          <li class="footer__item">
-            <a href="#">Terms of service</a>
-          </li>
-          <li class="footer__item">
-            <a href="#">Modern Slavery</a>
-          </li>
+          [[pdoMenu? &parents=`133` &tplOuter=`@INLINE [[+wrapper]]`
+          &tpl=`footer-link.tpl` ]]
         </ul>
       </div>
     </div>

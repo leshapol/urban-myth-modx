@@ -18,7 +18,7 @@
             </a>
 
             [[mFilter2? 
-              &filters=`tv|style, tv|colour, tv|shape, tv|finish, tv|case-study:boolean`
+              &filters=`tv|tags, tv|style, tv|colour, tv|shape, tv|finish, tv|case-study:boolean`
               &aliases=`tv|tags==tags, tv|style==style, tv|colour==colour, tv|shape==shape, tv|finish==finish, tv|case-study:boolean==case-study`
               &element=`pdoResources`
               &paginator'=`pdoPage`,
