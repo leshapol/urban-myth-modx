@@ -26,10 +26,13 @@
       <a href="[[+uri]]">[[+pagetitle]]</a>
     </h3>
     <ul class="card__tags tags">
-      [[!toLinks?
-      &items=`[[+parent:is=`4`:then=`[[+tv.blog-tags]]`:else=`[[+tv.tags]]`]]`
-      &tagKey=`[[+parent:is=`4`:then=`blog-tags`:else=`tags`]]`
-      &target=`127` &tpl=`tag.tpl` &outputDelim=`` ]]
+      [[+tv.blog-tags:notempty=`[[!toLinks?
+      &items=`[[+tv.blog-tags]]` &tagKey=`blog-tags`
+      &target=`127` &tpl=`tag.tpl` &outputDelim=`` ]]`]]
+
+      [[+tv.tags:notempty=`[[!toLinks?
+      &items=`[[+tv.tags]]` &tagKey=`tags`
+      &target=`127` &tpl=`tag.tpl` &outputDelim=`` ]]`]]
     </ul>
   </div>
   <div class="card__text">[[+description]]</div>

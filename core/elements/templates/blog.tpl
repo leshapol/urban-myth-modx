@@ -28,6 +28,7 @@
                   &ajaxTplMore=`@INLINE <button class="blog__button-more button button_more btn-more">LOAD MORE</button>`
                 ]]
               </ul>
+              [[*newsletter:is=`1`:then=`
               <div class="catalog-list__button-wrap">
                 <a
                   href="newsletter"
@@ -35,7 +36,8 @@
                   >JOIN OUR NEWSLETTER</a
                 >
               </div>
-              
+              [[$popup-block? &type=`newsletter`]]
+              `]]
               
             </div>
 
@@ -46,7 +48,7 @@
       </main>
 
       <!-- popup's -->
-      [[$popup-block? &type=`book-app`]] [[$popup-block? &type=`newsletter`]] [[$popup-block?
+      [[$popup-block? &type=`book-app`]]  [[$popup-block?
       &type=`brochure-request`]]
       <!------------->
       [[$footer]]
