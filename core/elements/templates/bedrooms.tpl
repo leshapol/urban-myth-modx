@@ -7,7 +7,6 @@
       [[$header]]
 
       <main>
-        <h1 class="visually-hidden">[[*longtitle]]</h1>
         <section class="hero">
           <div class="hero__header page-head container">
             <h1 class="page-head__title">[[*pagetitle]]</h1>
