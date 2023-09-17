@@ -92,7 +92,8 @@ $md5: 479.98px;
 }
 
 .absolute-image {
-  img {
+  img,
+  iframe {
     position: absolute;
     top: 0;
     left: 0;
@@ -116,19 +117,22 @@ $md5: 479.98px;
 
 .border-radius {
   &_right-bottom {
-    img {
+    img,
+    iframe {
       border-radius: 0 0 200px 0;
     }
   }
 
   &_left-top {
-    img {
+    img,
+    iframe {
       border-radius: 200px 0 0 0;
     }
   }
 
   &_left-bottom {
-    img {
+    img,
+    iframe {
       border-radius: 0 0 0 200px;
     }
   }

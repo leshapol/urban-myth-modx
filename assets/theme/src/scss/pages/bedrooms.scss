@@ -14,7 +14,8 @@
     }
   }
 
-  &__image img {
+  &__image img,
+  &__image iframe {
     padding: 0 30px;
 
     @media (max-width: $md4) {
