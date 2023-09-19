@@ -53,7 +53,7 @@
               </picture>
             </div>
             <div class="container">
-              <div class="hero__body position_bottom position_left">
+              <div class="hero__body [[!get-position? &section=`hero`]]">
                 <p class="hero__text section-text">
                   Bespoke kitchens and bedrooms designed just for you. Our
                   complete service means our experienced team is with you every
@@ -69,7 +69,7 @@
 
         <section class="swiper">
           <div class="container">
-            <div class="swiper__body position_left position_top">
+            <div class="swiper__body [[!get-position? &section=`swiper`]]">
               <h2 class="swiper__title section-title">
                 Turning ideas into beautiful kitchens
               </h2>
@@ -286,10 +286,9 @@
               porttitor pretium lorem.
             </p>
 
-            <div class="stay__button">
-              <a href="contact" class="button button_long _popup-link"
-                >contact us</a
-              >
+            <div class="stay__form">
+              [[$formit]] 
+              [[$contact-form]]
             </div>
           </div>
         </section>

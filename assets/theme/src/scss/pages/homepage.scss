@@ -45,14 +45,13 @@
     position: absolute;
     z-index: 5;
     max-width: 645px;
-    margin-left: 0;
   }
 
   &__text {
     color: white;
     letter-spacing: 1.2px;
     margin-bottom: 25px;
-    font-size: 24px;
+    @include adaptiv-font(24, 18, 1);
   }
 }
 /*=====================Swiper==========*/
@@ -180,6 +179,8 @@
 
   &__title {
     max-width: 450px;
+    font-weight: 400;
+    @include adaptiv-font(40, 32, 1);
   }
   &__body {
     position: absolute;
@@ -201,7 +202,8 @@
   &__text {
     color: black;
     margin-bottom: 25px;
-    max-width: 400px;
+    max-width: 460px;
+    @include adaptiv-font(20, 18, 1);
   }
 }
 /*========================More=========*/
@@ -369,6 +371,12 @@
 
   &__button {
     text-align: center;
+  }
+
+  &__form {
+    form {
+      margin: auto;
+    }
   }
 }
 /*========================trustpilot===*/
