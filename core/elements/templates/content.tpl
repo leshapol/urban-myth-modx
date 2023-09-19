@@ -41,31 +41,26 @@
             <div class="article__text-block">[[*content]]</div>
 
             <div class="article__footer">
-              [[*parent:is=`3`:then=`
+              [[!has-details:is=`1`:then=`
               <div class="article__details">
                 <div class="article__details-title">Details:</div>
                 <dl class="article__details-list">
-                  [[*style:notempty=`
+                  [[*details-style:notempty=`
                   <div class="article__details-wrap">
                     <dt class="article__details-subtitle">Style:</dt>
-                    <dd class="article__details-desc">[[*style]]</dd>
+                    <dd class="article__details-desc">[[*details-style]]</dd>
                   </div>
-                  `]] [[*finish:notempty=`
+                  `]] [[*details-finishes:notempty=`
                   <div class="article__details-wrap">
-                    <dt class="article__details-subtitle">Finish:</dt>
-                    <dd class="article__details-desc">[[*finish]]</dd>
+                    <dt class="article__details-subtitle">Finishes:</dt>
+                    <dd class="article__details-desc">[[*details-finishes]]</dd>
                   </div>
-                  `]] [[*colour:notempty=`
+                  `]] [[*details-appliances:notempty=`
                   <div class="article__details-wrap">
-                    <dt class="article__details-subtitle">Colour:</dt>
-                    <dd class="article__details-desc">[[*colour]]</dd>
+                    <dt class="article__details-subtitle">Appliances:</dt>
+                    <dd class="article__details-desc">[[*details-appliances]]</dd>
                   </div>
-                  `]] [[*shape:notempty=`
-                  <div class="article__details-wrap">
-                    <dt class="article__details-subtitle">Shape:</dt>
-                    <dd class="article__details-desc">[[*shape]]</dd>
-                  </div>
-                  `]]
+                  `]] 
 
                   <!-- <div class="article__details-wrap">
                     <dt class="article__details-subtitle">Fittings:</dt>
@@ -83,12 +78,14 @@
               </div>
               `]]
 
-              <a href="#" class="article__share">Share</a>
+              <!--<a href="#" class="article__share">Share</a>-->
             </div>
           </div>
         </article>
-
-        [[$last-articles]]
+        [[*parent:is=`3`:then=`
+        [[$last-articles? &type=`kitchen`]]`:else=`
+        [[$last-articles]]`]]
+        
       </main>
       <!-- popup's -->
       [[$popup-block? &type=`book-app`]] [[$popup-block?

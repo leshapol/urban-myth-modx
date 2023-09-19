@@ -6,7 +6,7 @@
           href="book-app"
           class="footer__link_mobile button button_white _popup-link"
         >
-          BOOK CONSULTATION
+          book appointment
         </a>
         <div class="footer__logo">
           <img
@@ -87,7 +87,7 @@
       </div>
       <div class="footer__column-right">
         <a href="book-app" class="footer__link button button_white _popup-link">
-          BOOK CONSULTATION
+          Book appointment
         </a>
         <div class="footer__address">
           <div class="footer__tel">

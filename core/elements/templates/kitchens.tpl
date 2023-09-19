@@ -11,13 +11,13 @@
           <div class="container">
             <div class="catalog__header page-head">
               <h1 class="page-head__title">[[*pagetitle]]</h1>
-              <p class="page-head__desc">[[*description]]</p>
+              <p class="page-head__desc_small">[[*description]]</p>
             </div>
             <a href="filters" class="catalog__filter-button button button_long _popup-link">
               Filter
             </a>
 
-            [[mFilter2? 
+            [[!mFilter2? 
               &filters=`tv|tags, tv|style, tv|colour, tv|shape, tv|finish, tv|case-study:boolean`
               &aliases=`tv|tags==tags, tv|style==style, tv|colour==colour, tv|shape==shape, tv|finish==finish, tv|case-study:boolean==case-study`
               &element=`pdoResources`

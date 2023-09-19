@@ -141,9 +141,7 @@
                   <picture>
                     <source
                       type="image/webp"
-                      data-srcset="
-                        /assets/theme/build/img/about-us/rob.webp 1x, 
-                        /assets/theme/build/img/about-us/rob@2x.webp 2x"
+                      data-srcset="[[*rob-image:phpthumbof=`w=215&f=webp`]]"
                       srcset="
                         data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw==
                       "
@@ -152,9 +150,7 @@
                       loading="lazy"
                       class="lazyload"
                       src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw=="
-                      data-srcset="
-                        /assets/theme/build/img/about-us/rob.png 1x,
-                        /assets/theme/build/img/about-us/rob@2x.png 2x"
+                      data-srcset="[[*rob-image:phpthumbof=`w=215`]]"
                       alt="Rob Hardie"
                       width="215"
                       height="215"
@@ -182,9 +178,7 @@
                   <picture>
                     <source
                       type="image/webp"
-                      data-srcset="
-                        /assets/theme/build/img/about-us/daniel.webp 1x, 
-                        /assets/theme/build/img/about-us/daniel@2x.webp 2x"
+                      data-srcset="[[*daniel-image:phpthumbof=`w=215&f=webp`]]"
                       srcset="
                         data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw==
                       "
@@ -193,9 +187,7 @@
                       loading="lazy"
                       class="lazyload"
                       src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw=="
-                      data-srcset="
-                        /assets/theme/build/img/about-us/daniel.png 1x,
-                        /assets/theme/build/img/about-us/daniel@2x.png 2x"
+                      data-srcset="[[*daniel-image:phpthumbof=`w=215`]]"
                       alt="Daniel Denscombe"
                       width="215"
                       height="215"
@@ -222,9 +214,7 @@
                   <picture>
                     <source
                       type="image/webp"
-                      data-srcset="
-                        /assets/theme/build/img/about-us/neil.webp 1x, 
-                        /assets/theme/build/img/about-us/neil@2x.webp 2x"
+                      data-srcset="[[*neil-image:phpthumbof=`w=215&f=webp`]]"
                       srcset="
                         data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw==
                       "
@@ -233,9 +223,7 @@
                       loading="lazy"
                       class="lazyload"
                       src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw=="
-                      data-srcset="
-                        /assets/theme/build/img/about-us/neil.png 1x,
-                        /assets/theme/build/img/about-us/neil@2x.png 2x"
+                      data-srcset="[[*neil-image:phpthumbof=`w=215`]]"
                       alt="Neil Copeland"
                       width="215"
                       height="215"
@@ -261,9 +249,7 @@
                   <picture>
                     <source
                       type="image/webp"
-                      data-srcset="
-                        /assets/theme/build/img/about-us/john.webp 1x, 
-                        /assets/theme/build/img/about-us/john@2x.webp 2x"
+                      data-srcset="[[*john-image:phpthumbof=`w=215&f=webp`]]"
                       srcset="
                         data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw==
                       "
@@ -272,9 +258,7 @@
                       loading="lazy"
                       class="lazyload"
                       src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw=="
-                      data-srcset="
-                        /assets/theme/build/img/about-us/john.png 1x,
-                        /assets/theme/build/img/about-us/john@2x.png 2x"
+                      data-srcset="[[*john-image:phpthumbof=`w=215`]]"
                       alt="John Young"
                       width="215"
                       height="215"
@@ -301,9 +285,7 @@
                   <picture>
                     <source
                       type="image/webp"
-                      data-srcset="
-                        /assets/theme/build/img/about-us/name.webp 1x, 
-                        /assets/theme/build/img/about-us/name@2x.webp 2x"
+                      data-srcset="[[*director-image:phpthumbof=`w=215&f=webp`]]"
                       srcset="
                         data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw==
                       "
@@ -312,9 +294,7 @@
                       loading="lazy"
                       class="lazyload"
                       src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw=="
-                      data-srcset="
-                        /assets/theme/build/img/about-us/name.png 1x,
-                        /assets/theme/build/img/about-us/name@2x.png 2x"
+                      data-srcset="[[*director-image:phpthumbof=`w=215&f=webp`]]"
                       alt="Director"
                       width="215"
                       height="215"

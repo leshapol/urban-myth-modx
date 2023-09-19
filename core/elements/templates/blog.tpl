@@ -11,13 +11,13 @@
           <div class="container">
             <div class="blog__header page-head">
               <h1 class="page-head__title">[[*pagetitle]]</h1>
-              <p class="page-head__desc">[[*description]]</p>
+              <p class="page-head__desc_small">[[*description]]</p>
             </div>
 
             <div class="blog__catalog-list catalog-list" id="pdopage">
               [[!+page.nav]]
               <ul class="catalog-list__list rows" >
-                [[pdoPage? 
+                [[!pdoPage? 
                   &limit=`6` 
                   &parents=`[[*id]]` 
                   &tpl=`category-card.tpl`

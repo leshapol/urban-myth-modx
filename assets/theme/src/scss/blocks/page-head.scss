@@ -17,5 +17,10 @@
   &__desc {
     @include adaptiv-font(36, 24, 1);
     @include adaptiv-value("padding-bottom", 60, 40, 1);
+
+    &_small {
+      @include adaptiv-font(24, 18, 1);
+      padding-bottom: 30px;
+    }
   }
 }
