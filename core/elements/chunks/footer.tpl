@@ -138,4 +138,46 @@
       </div>
     </div>
   </div>
+  <ul class="footer__logos">
+    <li class="footer__logos-item">
+      <a href="https://www.kbsa.org.uk/retailer/urban-myth" target="_blank"
+        ><img
+          src="/assets/theme/build/img/logo/kbsa.png"
+          srcset="
+            /assets/theme/build/img/logo/kbsa.png    1x,
+            /assets/theme/build/img/logo/kbsa@2x.png 2x
+          "
+          alt="kbsa"
+          width="108"
+          height="58"
+      /></a>
+    </li>
+    <li class="footer__logos-item">
+      <a
+        href="https://www.trustmark.org.uk/firms/Urban%20Myth-524854-E4%208QF?id=6ce4ed2d-270a-43df-ac3c-cc05554e18ff"
+        target="_blank"
+        ><img
+          src="/assets/theme/build/img/logo/tsa.png"
+          alt="tsa"
+          srcset="
+            /assets/theme/build/img/logo/tsa.png    1x,
+            /assets/theme/build/img/logo/tsa@2x.png 2x
+          "
+          width="247"
+          height="48"
+      /></a>
+    </li>
+    <li class="footer__logos-item">
+      <img
+        src="/assets/theme/build/img/logo/smas.png"
+        srcset="
+          /assets/theme/build/img/logo/smas.png    1x,
+          /assets/theme/build/img/logo/smas@2x.png 2x
+        "
+        alt="smas"
+        width="151"
+        height="70"
+      />
+    </li>
+  </ul>
 </footer>

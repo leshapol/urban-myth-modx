@@ -125,4 +125,18 @@
   &__item:last-child {
     margin-bottom: 30px;
   }
+
+  &__logos {
+    display: flex;
+    background: #fff;
+    padding: 50px;
+    align-items: center;
+    justify-content: center;
+    column-gap: 95px;
+
+    @media (max-width: $md3) {
+      flex-direction: column;
+      row-gap: 50px;
+    }
+  }
 }
