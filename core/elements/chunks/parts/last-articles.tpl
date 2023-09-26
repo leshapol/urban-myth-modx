@@ -11,21 +11,23 @@
         [[+type:is=`kitchen`:then=`
         [[pdoResources? 
           &parents=`3` 
+          &resources=`-[[*id]]`
           &tpl=`last-articles-item.tpl`
           &hideContainers=`1` 
           &includeTVs=`category-img,tags` 
           &tvFilters=`tags==[[*tags]]`
           &prepareTVs=`1`
-          &limit=`10`
+          &limit=`8`
         ]]
         `:else=`
         [[pdoResources? 
           &parents=`4` 
+          &resources=`-[[*id]]`
           &tpl=`last-articles-item.tpl`
           &hideContainers=`1` 
           &includeTVs=`category-img` 
           &prepareTVs=`1`
-          &limit=`10`
+          &limit=`8`
         ]]
         `]]        
       </ul>

@@ -58,7 +58,7 @@
         itemtype="http://schema.org/ItemList"
         class="header__item"
       >
-        <a href="[[+link]]" class="header__link">[[+pagetitle]]</a>
+        <a href="[[+link]]">[[+pagetitle]]</a>
       </li>
       `]]
 

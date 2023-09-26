@@ -13,43 +13,10 @@
             <div class="hero__image absolute-image border-radius_right-bottom">
               <picture>
                 <source
+                  srcset="[[*hero-img:phpthumbof=`f=webp]]"
                   type="image/webp"
-                  media="(min-width: 470px)"
-                  srcset="
-                    /assets/theme/build/img/homepage/hero-img.webp    1x,
-                    /assets/theme/build/img/homepage/hero-img@2x.webp 2x
-                  "
-                  width="1920"
-                  height="720"
                 />
-                <source
-                  type="image/webp"
-                  srcset="
-                    /assets/theme/build/img/homepage/hero-img-mobile.webp    1x,
-                    /assets/theme/build/img/homepage/hero-img-mobile@2x.webp 2x
-                  "
-                  width="480"
-                  height="720"
-                />
-                <source
-                  media="(min-width: 470px)"
-                  srcset="
-                    /assets/theme/build/img/homepage/hero-img.jpg    1x,
-                    /assets/theme/build/img/homepage/hero-img@2x.jpg 2x
-                  "
-                  width="1920"
-                  height="720"
-                />
-                <img
-                  src="/assets/theme/build/img/homepage/hero-img-mobile.jpg"
-                  srcset="
-                    /assets/theme/build/img/homepage/hero-img-mobile.jpg    1x,
-                    /assets/theme/build/img/homepage/hero-img-mobile@2x.jpg 2x
-                  "
-                  alt="Urban myth hero"
-                  width="480"
-                  height="720"
-                />
+                <img src="[[*hero-img]]" alt="[[*pagetitle]]" />
               </picture>
             </div>
             <div class="container">
@@ -147,28 +114,15 @@
               >
                 <picture>
                   <source
-                    media="(min-width: 470px)"
-                    data-srcset="/assets/theme/build/img/homepage/kitchen-1.jpg 1x, /assets/theme/build/img/homepage/kitchen-1@2x.jpg 2x"
-                    srcset="
-                      data:image/gif;base64,R0lGODlhCAADAIAAAP///wAAACH5BAEAAAEALAAAAAAIAAMAAAIEjI+pVwA7
-                    "
-                    width="1920"
-                    height="720"
+                    srcset="[[*kitchen-1-img:phpthumbof=`f=webp]]"
+                    type="image/webp"
                   />
-                  <img
-                    loading="lazy"
-                    class="lazyload"
-                    src="data:image/gif;base64,R0lGODlhAgADAIAAAP///wAAACH5BAEAAAEALAAAAAACAAMAAAICjF8AOw=="
-                    data-srcset="/assets/theme/build/img/homepage/kitchen-1-mobile.jpg    1x, /assets/theme/build/img/homepage/kitchen-1-mobile@2x.jpg 2x"
-                    alt="Perfect kitchens for you"
-                    width="480"
-                    height="720"
-                  />
+                  <img src="[[*kitchen-1-img]]" alt="Learn more" />
                 </picture>
               </div>
 
               <div class="kitchens__button-mobile">
-                <a href="[[~3]]" class="button">learn more</a>
+                <a href="[[~3]]" class="button">Learn more</a>
               </div>
             </div>
 
@@ -195,22 +149,12 @@
               >
                 <picture>
                   <source
-                    media="(min-width: 470px)"
-                    data-srcset="/assets/theme/build/img/homepage/kitchen-2.jpg 1x, /assets/theme/build/img/homepage/kitchen-2@2x.jpg 2x"
-                    srcset="
-                      data:image/gif;base64,R0lGODlhCAADAIAAAP///wAAACH5BAEAAAEALAAAAAAIAAMAAAIEjI+pVwA7
-                    "
-                    width="1920"
-                    height="720"
+                    srcset="[[*kitchen-2-img:phpthumbof=`f=webp]]"
+                    type="image/webp"
                   />
                   <img
-                    loading="lazy"
-                    class="lazyload"
-                    src="data:image/gif;base64,R0lGODlhAgADAIAAAP///wAAACH5BAEAAAEALAAAAAACAAMAAAICjF8AOw=="
-                    data-srcset="/assets/theme/build/img/homepage/kitchen-2-mobile.jpg    1x, /assets/theme/build/img/homepage/kitchen-2-mobile@2x.jpg 2x"
-                    alt="Perfect kitchens for you"
-                    width="480"
-                    height="720"
+                    src="[[*kitchen-2-img]]"
+                    alt="Explore our kitchen features"
                   />
                 </picture>
               </div>
@@ -249,23 +193,10 @@
               >
                 <picture>
                   <source
-                    media="(min-width: 470px)"
-                    data-srcset="/assets/theme/build/img/homepage/kitchen-3.jpg 1x, /assets/theme/build/img/homepage/kitchen-3@2x.jpg 2x"
-                    srcset="
-                      data:image/gif;base64,R0lGODlhCAADAIAAAP///wAAACH5BAEAAAEALAAAAAAIAAMAAAIEjI+pVwA7
-                    "
-                    width="1920"
-                    height="720"
+                    srcset="[[*kitchen-1-img:phpthumbof=`f=webp]]"
+                    type="image/webp"
                   />
-                  <img
-                    loading="lazy"
-                    class="lazyload"
-                    src="data:image/gif;base64,R0lGODlhAgADAIAAAP///wAAACH5BAEAAAEALAAAAAACAAMAAAICjF8AOw=="
-                    data-srcset="/assets/theme/build/img/homepage/kitchen-3-mobile.jpg    1x, /assets/theme/build/img/homepage/kitchen-3-mobile@2x.jpg 2x"
-                    alt="Perfect kitchens for you"
-                    width="480"
-                    height="720"
-                  />
+                  <img src="[[*kitchen-1-img]]" alt="Visit the showroom" />
                 </picture>
               </div>
 
@@ -286,10 +217,7 @@
               porttitor pretium lorem.
             </p>
 
-            <div class="stay__form">
-              [[$formit]] 
-              [[$contact-form]]
-            </div>
+            <div class="stay__form">[[$formit]] [[$contact-form]]</div>
           </div>
         </section>
 

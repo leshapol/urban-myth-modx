@@ -9,9 +9,9 @@
       <main>
         <article class="article">
           <div class="article__top-line container">
-            <p class="article__category">
-              <a href="[[~[[*parent]]]]">[[#[[*parent]].pagetitle]]</a>
-            </p>
+            <a class="article__category" href="[[~[[*parent]]]]">
+              [[#[[*parent]].pagetitle]]
+            </a>
             <ul class="article__tags tags">
               [[!toLinks?
               &items=`[[*blog-tags:is=``:then=`[[*tags]]`:else=`[[*blog-tags]]`]]`
@@ -20,7 +20,7 @@
               &outputDelim=`` ]]
             </ul>
           </div>
-          <div class="article__header page-head container">
+          <div class="article__header page-head page-head_content container">
             <h1 class="page-head__title">[[*pagetitle]]</h1>
             <p class="page-head__desc">[[*description]]</p>
           </div>
