@@ -27,8 +27,7 @@ var mSearch2 = {
     selected: "#mse2_selected",
     selected_tpl:
       '<a href="#" data-id="_id_" class="mse2_selected_link filter-list__tag">_title_</a>',
-    selected_wrapper_tpl:
-      '<span class="filter-list__item"><p class="filter-list__title">_title_</p>',
+    selected_wrapper_tpl: '<span class="filter-list__item">',
     selected_filters_delimeter: "</span>",
     selected_values_delimeter: " ",
 

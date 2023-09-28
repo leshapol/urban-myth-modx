@@ -18,7 +18,7 @@
               [[!+page.nav]]
               <ul class="catalog-list__list rows" >
                 [[!pdoPage? 
-                  &limit=`6` 
+                  &limit=`12` 
                   &parents=`[[*id]]` 
                   &tpl=`category-card.tpl`
                   &hideContainers=`1` 
@@ -26,18 +26,21 @@
                   &prepareTVs=`1` 
                   &ajaxMode=`button`
                   &ajaxTplMore=`@INLINE <button class="blog__button-more button button_more btn-more">LOAD MORE</button>`
+                  &sortby=`menuindex`
+                  &sortdir=`ASC`
                 ]]
+                [[*newsletter:is=`1`:then=`
+                <div class="catalog-list__button-wrap">
+                  <a
+                    href="newsletter"
+                    class="catalog-list__button button _popup-link"
+                    >JOIN OUR NEWSLETTER</a
+                  >
+                </div>
+                [[$popup-block? &type=`newsletter`]]
+                `]]
               </ul>
-              [[*newsletter:is=`1`:then=`
-              <div class="catalog-list__button-wrap">
-                <a
-                  href="newsletter"
-                  class="catalog-list__button button _popup-link"
-                  >JOIN OUR NEWSLETTER</a
-                >
-              </div>
-              [[$popup-block? &type=`newsletter`]]
-              `]]
+              
               
             </div>
 

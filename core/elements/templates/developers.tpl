@@ -848,7 +848,7 @@
                 </p>
               </div>
               <div class="col-md-6 offset-md-1 pt-4">
-                [[$formit]] [[$contact-form]]
+                [[$formit]] [[$contact-form? &text-subject=`1`]]
 
                 <script
                   type="text/javascript"

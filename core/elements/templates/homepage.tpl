@@ -86,135 +86,16 @@
         </section>
 
         <section class="kitchens">
-          <h2 class="visually-hidden">Kitchens</h2>
-
           <div class="kitchens__body">
-            <div class="kitchens__block">
-              <div class="container">
-                <div class="kitchens__text-block position_top position_right">
-                  <h3 class="kitchens__title section-title">
-                    Perfect kitchens for you
-                  </h3>
-                  <p class="kitchens__text section-text">
-                    Whatever the size of your space, every one of our kitchen
-                    designs is unique, made to suit your home and lifestyle.
-                  </p>
-                </div>
-
-                <a
-                  href="[[~3]]"
-                  class="kitchens__button circle-button circle-button_bottom circle-button_right"
-                >
-                  learn more
-                </a>
-              </div>
-
-              <div
-                class="kitchens__image kitchens__border-radius absolute-image border-radius_right-bottom"
-              >
-                <picture>
-                  <source
-                    srcset="[[*kitchen-1-img:phpthumbof=`f=webp]]"
-                    type="image/webp"
-                  />
-                  <img src="[[*kitchen-1-img]]" alt="Learn more" />
-                </picture>
-              </div>
-
-              <div class="kitchens__button-mobile">
-                <a href="[[~3]]" class="button">Learn more</a>
-              </div>
-            </div>
-
-            <div class="kitchens__block">
-              <div class="container">
-                <div class="kitchens__text-block position_bottom position_left">
-                  <h3 class="kitchens__title section-title">
-                    It’s all in the detail 
-                  </h3>
-                  <p class="kitchens__text section-text">
-                    The finishing touches that add personality to your space 
-                  </p>
-                </div>
-                <a
-                  href="[[~3]]"
-                  class="kitchens__button circle-button circle-button_top circle-button_left"
-                >
-                  Explore our kitchen features
-                </a>
-              </div>
-
-              <div
-                class="kitchens__image kitchens__border-radius absolute-image border-radius_left-top"
-              >
-                <picture>
-                  <source
-                    srcset="[[*kitchen-2-img:phpthumbof=`f=webp]]"
-                    type="image/webp"
-                  />
-                  <img
-                    src="[[*kitchen-2-img]]"
-                    alt="Explore our kitchen features"
-                  />
-                </picture>
-              </div>
-
-              <div class="kitchens__button-mobile">
-                <a href="[[~3]]" class="button" target="_blank">
-                  Explore our kitchen features
-                </a>
-              </div>
-            </div>
-
-            <div class="kitchens__block">
-              <div class="container">
-                <div
-                  class="kitchens__text-block position_top position_left white-color"
-                >
-                  <h3 class="kitchens__title section-title">
-                    Inspiration at every turn 
-                  </h3>
-                  <p class="kitchens__text section-text">
-                    Designed to inspire, our showroom offers you the opportunity
-                    to experience the quality of our kitchens in a relaxed
-                    atmosphere. 
-                  </p>
-                </div>
-                <a
-                  href="[[~3]]"
-                  class="kitchens__button circle-button circle-button_bottom circle-button_right"
-                >
-                  Visit the showroom
-                </a>
-              </div>
-
-              <div
-                class="kitchens__image kitchens__border-radius absolute-image border-radius_right-bottom"
-              >
-                <picture>
-                  <source
-                    srcset="[[*kitchen-1-img:phpthumbof=`f=webp]]"
-                    type="image/webp"
-                  />
-                  <img src="[[*kitchen-1-img]]" alt="Visit the showroom" />
-                </picture>
-              </div>
-
-              <div class="kitchens__button-mobile">
-                <a href="[[~3]]" class="button">Visit the showroom</a>
-              </div>
-            </div>
+            [[getImageList? &tvname=`kitchens` &tpl=`kitchens-section.tpl` ]]
           </div>
         </section>
 
         <section class="stay">
           <div class="stay__text-block">
-            <h2 class="stay__title">Stay in touch</h2>
+            <h2 class="stay__title">Contact us</h2>
             <p class="stay__text">
-              Lorem ipsum dolor sit amet consectetur. Quis at quis eget nunc.
-              Tempor vestibulum leo metus et leo et. Nullam bibendum aliquet
-              velit magnis at. Aliquam dignissim ut massa adipiscing blandit
-              porttitor pretium lorem.
+              Send us an email or call <strong>020 8531 3413</strong>
             </p>
 
             <div class="stay__form">[[$formit]] [[$contact-form]]</div>
@@ -276,7 +157,7 @@
                   type="button"
                 ></button>
                 <div class="about__images">
-                  <img
+                  <!-- <img
                     class="about__image about__image_active"
                     src="/assets/theme/build/img/about.jpg"
                     alt=""
@@ -290,12 +171,26 @@
                     class="about__image"
                     src="/assets/theme/build/img/about.jpg"
                     alt=""
-                  />
+                  /> -->
+                  [[getImageList? &tvname=`gallery` &tpl=`@CODE:
+                  <picture>
+                    <source
+                      type="image/webp"
+                      srcset="[[+image:phpthumbof=`f=webp]]"
+                    />
+                    <img
+                      loading="lazy"
+                      class="about__image"
+                      data-imagenum="[[+idx]]"
+                      src="[[+image]]"
+                      alt="[[+title]]"
+                    />
+                  </picture>
+                  ` ]]
                 </div>
                 <div class="about__pag pag">
-                  <span data-num="0" class="pag__item pag__item_active"></span>
-                  <span data-num="1" class="pag__item"></span>
-                  <span data-num="2" class="pag__item"></span>
+                  [[getImageList? &tvname=`gallery` &tpl=`@CODE:
+                  <span data-num="[[+idx]]" class="pag__item"></span>` ]]
                 </div>
               </div>
             </div>

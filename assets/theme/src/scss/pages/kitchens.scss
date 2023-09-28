@@ -1,6 +1,6 @@
 .catalog {
   &__filter-button {
-    @include adaptiv-value("margin-bottom", 40, 32, 1);
+    @include adaptiv-value("margin-bottom", 30, 24, 1);
   }
 
   &__selected-wrapper {
@@ -14,7 +14,7 @@
 
 .filter-list {
   display: flex;
-  column-gap: 16px;
+  column-gap: 6px;
   row-gap: 8px;
   flex-wrap: wrap;
   background: transparent !important;

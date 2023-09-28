@@ -33,9 +33,9 @@
               &tplOuter=`tpl.mFilter2.outer.Urbanmyth`
               &tplFilter.outer.default=`tpl.mFilter2.filter.outer.Urbanmyth`
               &tplFilter.row.default=`tpl.mFilter2.filter.checkbox.Urbanmyth`
+              &sortby=`menuindex`
+              &sortdir=`ASC`
             ]]
-
-            
 
           </div>
         </section>

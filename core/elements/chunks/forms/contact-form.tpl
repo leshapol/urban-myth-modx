@@ -1,6 +1,12 @@
 [[!+fi.validation_error_message:notempty=`<p>[[!+fi.validation_error_message]]</p>`]]
 
 <form action="[[~[[*id]]]]" class="popup__form form" method="post">
+  [[+text-subject:is=`1`:then=`
+  <label class="form__label"
+    >Subject:
+    <input type="text" name="subject" class="form__input" value="[[+fi.subject]]"/>
+  </label>
+  `:else=`
   <label class="form__label form__label_select"
     >Subject:
 
@@ -12,6 +18,8 @@
       <option>General Enquiry</option>
     </select>
   </label>
+  `]]
+  
 
   <label class="form__label"
     >Name:
