@@ -10,7 +10,7 @@
         <section class="hero">
           <div class="hero__header page-head container">
             <h1 class="page-head__title">[[*pagetitle]]</h1>
-            <p class="page-head__desc">[[*introtext]]</p>
+            <p class="page-head__desc page-head__desc_small">[[*introtext]]</p>
           </div>
 
           <div class="hero__body">

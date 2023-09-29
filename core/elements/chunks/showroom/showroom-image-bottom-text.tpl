@@ -4,7 +4,7 @@
       <picture>
         <source
           type="image/webp"
-          data-srcset="[[+image:phpthumbof=`f=webp]]"
+          data-srcset="[[+image:phpthumbof=`f=webp`]]"
           srcset="
             data:image/gif;base64,R0lGODlhAgADAIAAAP///wAAACH5BAEAAAEALAAAAAACAAMAAAICjF8AOw==
           "

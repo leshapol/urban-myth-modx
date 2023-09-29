@@ -1,25 +1,26 @@
 [[!+fi.validation_error_message:notempty=`<p>[[!+fi.validation_error_message]]</p>`]]
 
 <form action="[[~[[*id]]]]" class="popup__form form" method="post">
-  [[+text-subject:is=`1`:then=`
-  <label class="form__label"
-    >Subject:
-    <input type="text" name="subject" class="form__input" value="[[+fi.subject]]"/>
-  </label>
-  `:else=`
-  <label class="form__label form__label_select"
-    >Subject:
+  [[+subject:ne=`0`:then=`
+    [[+text-subject:is=`1`:then=`
+      <label class="form__label"
+        >Subject:
+        <input type="text" name="subject" class="form__input" value="[[+fi.subject]]"/>
+      </label>
+      `:else=`
+      <label class="form__label form__label_select"
+        >Subject:
 
-    <select class="_select" name="subject">
-      <option value="">Select an option...</option>
-      <option>New Kitchen Enquiry</option>
-      <option>Additions to an Urban Myth Kitchen</option>
-      <option>Customer Support</option>
-      <option>General Enquiry</option>
-    </select>
-  </label>
-  `]]
-  
+        <select class="_select" name="subject">
+          <option value="">Select an option...</option>
+          <option>New Kitchen Enquiry</option>
+          <option>Additions to an Urban Myth Kitchen</option>
+          <option>Customer Support</option>
+          <option>General Enquiry</option>
+        </select>
+      </label>
+      `]]
+  `]]  
 
   <label class="form__label"
     >Name:

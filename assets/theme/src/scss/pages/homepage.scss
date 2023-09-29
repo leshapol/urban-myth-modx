@@ -250,8 +250,12 @@
   }
 
   &__block {
-    min-height: 720px;
+    min-height: 900px;
     position: relative;
+
+    @media (max-width: $md0) {
+      min-height: 720px;
+    }
 
     @media (max-width: $md3) {
       min-height: auto;

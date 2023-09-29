@@ -1,12 +1,25 @@
 .catalog-list {
   margin-bottom: 100px;
+
+  @media (min-width: $md0) {
+    margin-left: calc((100vw - $md1) / -2);
+    margin-right: calc((100vw - $md1) / -2);
+  }
+
   &__list {
     display: grid;
-    grid-template-columns: repeat(3, minmax(auto, 463px));
+    grid-template-columns: repeat(4, minmax(auto, 463px));
     gap: 30px;
+    justify-content: center;
+
+    @media (max-width: $md0) {
+      grid-template-columns: repeat(3, minmax(auto, 463px));
+    }
+
     @media (max-width: $md3) {
       grid-template-columns: 1fr;
     }
+
     @media (max-width: $md2) {
       grid-template-columns: 1fr 1fr;
     }

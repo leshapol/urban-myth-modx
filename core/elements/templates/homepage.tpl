@@ -93,12 +93,17 @@
 
         <section class="stay">
           <div class="stay__text-block">
-            <h2 class="stay__title">Contact us</h2>
+            <h2 class="stay__title">How can we help?</h2>
             <p class="stay__text">
-              Send us an email or call <strong>020 8531 3413</strong>
+              Have a question for our team or want to learn more about our
+              service?<br />
+              Fill in the form below and we will be in touch.
             </p>
 
-            <div class="stay__form">[[$formit]] [[$contact-form]]</div>
+            <div class="stay__form">
+              [[$formit? &email-to=`info@urbanmyth.net`]] [[$contact-form?
+              &subject=`0`]]
+            </div>
           </div>
         </section>
 
@@ -157,21 +162,6 @@
                   type="button"
                 ></button>
                 <div class="about__images">
-                  <!-- <img
-                    class="about__image about__image_active"
-                    src="/assets/theme/build/img/about.jpg"
-                    alt=""
-                  />
-                  <img
-                    class="about__image"
-                    src="/assets/theme/build/img/about.jpg"
-                    alt=""
-                  />
-                  <img
-                    class="about__image"
-                    src="/assets/theme/build/img/about.jpg"
-                    alt=""
-                  /> -->
                   [[getImageList? &tvname=`gallery` &tpl=`@CODE:
                   <picture>
                     <source
@@ -201,7 +191,7 @@
       </main>
       <!-- popup's -->
       [[$popup-block? &type=`book-app`]] [[$popup-block?
-      &type=`brochure-request`]] [[$popup-block? &type=`contact`]]
+      &type=`brochure-request`]] [[-$popup-block? &type=`contact`]]
 
       <!------------->
       [[$footer]]
