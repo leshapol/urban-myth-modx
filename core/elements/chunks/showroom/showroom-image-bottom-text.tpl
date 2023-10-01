@@ -1,6 +1,6 @@
-<section class="small">
-  <div class="small__image-block">
-    <div class="small__image absolute-image">
+<section class="image-bottom">
+  <div class="image-bottom__image-block">
+    <div class="image-bottom__image absolute-image">
       <picture>
         <source
           type="image/webp"
@@ -19,8 +19,8 @@
       </picture>
     </div>
   </div>
-  <div class="small__text-block">
-    <h2 class="small__title">[[+title]]</h2>
-    <p class="small__text">[[+description]]</p>
+  <div class="image-bottom__text-block">
+    <h2 class="image-bottom__title">[[+title]]</h2>
+    <p class="image-bottom__text">[[+description]]</p>
   </div>
 </section>

@@ -103,7 +103,8 @@ $md5: 479.98px;
 
 .absolute-image {
   img,
-  iframe {
+  iframe,
+  video {
     position: absolute;
     top: 0;
     left: 0;
@@ -128,7 +129,8 @@ $md5: 479.98px;
 .border-radius {
   &_right-bottom {
     img,
-    iframe {
+    iframe,
+    video {
       border-radius: 0 0 200px 0;
 
       @media (max-width: $md3) {
@@ -139,7 +141,8 @@ $md5: 479.98px;
 
   &_right-top {
     img,
-    iframe {
+    iframe,
+    video {
       border-radius: 0 200px 0 0;
 
       @media (max-width: $md3) {
@@ -150,7 +153,8 @@ $md5: 479.98px;
 
   &_left-top {
     img,
-    iframe {
+    iframe,
+    video {
       border-radius: 200px 0 0 0;
 
       @media (max-width: $md3) {
@@ -161,7 +165,8 @@ $md5: 479.98px;
 
   &_left-bottom {
     img,
-    iframe {
+    iframe,
+    video {
       border-radius: 0 0 0 200px;
 
       @media (max-width: $md3) {

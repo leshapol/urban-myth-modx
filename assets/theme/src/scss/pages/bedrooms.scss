@@ -5,6 +5,13 @@
     padding-bottom: 30px;
   }
 
+  &_media {
+    padding-bottom: 80px;
+    @media (max-width: $md4) {
+      padding-bottom: 30px;
+    }
+  }
+
   &__body {
     height: 720px;
     position: relative;
@@ -15,7 +22,8 @@
   }
 
   &__image img,
-  &__image iframe {
+  &__image iframe,
+  &__image video {
     padding: 0 30px;
 
     @media (max-width: $md4) {
@@ -53,6 +61,77 @@
 
   &__text {
     font-size: 20px;
+  }
+}
+
+.hero-left {
+  @include adaptiv-value("padding-bottom", 100, 40, 1);
+
+  &__body {
+    display: flex;
+    align-items: center;
+    column-gap: 80px;
+
+    @media (max-width: $md1) {
+      column-gap: 20px;
+    }
+    @media (max-width: $md3) {
+      flex-direction: column;
+      row-gap: 30px;
+    }
+
+    &.container {
+      @media (max-width: $md4) {
+        padding: 0 10px;
+      }
+    }
+  }
+
+  &__image {
+    flex: 0 0 430px;
+    height: auto;
+    @media (max-width: $md2) {
+      flex: 0 0 330px;
+    }
+    @media (max-width: $md3) {
+      flex: 0 0 430px;
+    }
+    @media (max-width: $md5) {
+      flex: 0 0 300px;
+    }
+
+    img {
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+      border-radius: 50%;
+    }
+  }
+
+  &__text-block {
+    flex: 0 1 820px;
+    padding: 45px 60px 60px 75px;
+    background-color: #f1eecf;
+    border-radius: 75px 0px 75px 75px;
+
+    @media (max-width: $md3) {
+      padding: 45px 20px 60px 30px;
+      flex: 0 0 auto;
+    }
+  }
+
+  &__title {
+    @include title;
+    @include adaptiv-font(36, 30, 1);
+    padding-bottom: 20px;
+  }
+
+  &__text {
+    font-size: 18px;
+
+    p:not(:last-child) {
+      padding-bottom: 16px;
+    }
   }
 }
 
@@ -101,15 +180,11 @@
   }
 }
 
-.form-function {
-  &__header {
-    text-align: center;
-    max-width: 520px;
-    margin: 0 auto;
-    padding-left: 20px;
-    padding-right: 20px;
-    @include adaptiv-value("padding-bottom", 72, 32, 1);
-  }
+.text-divider {
+  text-align: center;
+  max-width: 520px;
+  margin: 0 auto;
+  @include adaptiv-value("padding-bottom", 72, 32, 1);
 
   &__title {
     @include title;
@@ -117,10 +192,12 @@
     padding-bottom: 15px;
   }
 
-  &__desc {
+  &__text {
     font-size: 18px;
   }
+}
 
+.full-image {
   &__body {
     display: grid;
   }
@@ -165,6 +242,11 @@
     }
   }
 
+  &__title {
+    @include adaptiv-font(28, 22, 1);
+    padding-bottom: 16px;
+  }
+
   &__text {
     font-size: 18px;
   }
@@ -174,6 +256,7 @@
       @media (max-width: $md3) {
         position: static;
         padding-bottom: 24px;
+        min-height: 450px;
       }
     }
   }
@@ -185,8 +268,10 @@
       }
     }
   }
+}
 
-  &__grid {
+.two-images {
+  &__body {
     background-color: #d9e0ce;
     border-radius: 200px 0 0 0;
     padding: 40px;
@@ -202,58 +287,73 @@
     }
   }
 
-  &__grid-list {
+  &__list {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    justify-content: center;
-    gap: 30px 40px;
+    gap: 30px;
+  }
 
-    & > * {
-      align-self: center;
-    }
+  &__block {
+    display: grid;
+    gap: 40px;
+    grid-template-columns: 1fr 1fr;
 
     @media (max-width: $md3) {
       grid-template-columns: 1fr;
-      grid-template-rows: auto;
       gap: 30px;
     }
 
-    .form-function__text {
-      padding: 0 100px;
-      @media (max-width: $md3) {
-        padding: 0 20px;
+    &_first {
+      .two-images__image {
+        border-radius: 150px 0 0 0;
+        overflow: hidden;
+
+        @media (max-width: $md4) {
+          border-radius: 0;
+        }
+      }
+    }
+
+    &_even {
+      .two-images__image {
+        order: 2;
+
+        @media (max-width: $md3) {
+          order: 1;
+        }
+      }
+
+      .two-images__text {
+        order: 1;
+
+        @media (max-width: $md3) {
+          order: 2;
+        }
       }
     }
   }
 
-  &__grid-image_first {
-    border-radius: 150px 0 0 0;
-    overflow: hidden;
+  &__text {
+    padding: 0 100px;
+    align-self: center;
 
-    @media (max-width: $md4) {
-      border-radius: 0;
-    }
-  }
-
-  &__grid-image_last {
     @media (max-width: $md3) {
-      grid-row: 3/4;
+      padding: 0 20px;
     }
   }
 
-  &__grid-image img {
+  &__image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+
     @media (max-width: $md4) {
       height: 300px;
     }
   }
 }
 
-.small {
-  @include adaptiv-value("padding-bottom", 50, 40, 1);
+.image-bottom {
+  @include adaptiv-value("padding-bottom", 60, 40, 1);
 
   &__image-block {
     position: relative;
@@ -286,13 +386,10 @@
   &__text {
     font-size: 18px;
   }
-
-  &__button-block {
-    text-align: center;
-  }
 }
 
 .book {
+  padding-top: 16px;
   @include adaptiv-value("padding-bottom", 50, 32, 1);
   text-align: center;
 }

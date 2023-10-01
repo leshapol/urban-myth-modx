@@ -1,10 +1,11 @@
-<section class="hero">
+[[+title:ne=``:then=`
+<section class="hero hero_media">
   <div class="hero__body">
     <div class="hero__image absolute-image border-radius_right-bottom">
       <iframe
         loading="lazy"
         class=""
-        src="https://my.matterport.com/show/?m=2ftCfgKxYrw"
+        src="[[+title]]"
         frameborder="0"
         allowfullscreen
         allow="xr-spatial-tracking"
@@ -12,3 +13,16 @@
     </div>
   </div>
 </section>
+`:else=`
+<section class="hero hero_media">
+  <div class="hero__body">
+    <div class="hero__image absolute-image border-radius_right-bottom">
+      <video autoplay muted loop id="myVideo">
+        <source src="[[+image]]" type="video/mp4">
+      </video>
+    </div>
+  </div>
+</section>
+`]]
+
+
