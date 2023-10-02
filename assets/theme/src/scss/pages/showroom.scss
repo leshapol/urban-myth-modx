@@ -47,6 +47,11 @@
     bottom: -100px;
     left: 50px;
 
+    &_right {
+      left: auto;
+      right: 100px;
+    }
+
     @media (max-width: $md4) {
       padding: 35px;
       position: static;
@@ -198,6 +203,8 @@
 }
 
 .full-image {
+  @include adaptiv-value("padding-bottom", 72, 32, 1);
+
   &__body {
     display: grid;
   }
@@ -221,17 +228,9 @@
   }
 
   &__text-block {
-    max-width: 370px;
+    max-width: 520px;
     z-index: 2;
     position: absolute;
-
-    &.position_right {
-      margin-left: 70%;
-
-      @media (max-width: $md3) {
-        margin-left: 0;
-      }
-    }
 
     @media (max-width: $md3) {
       position: static;
@@ -271,11 +270,12 @@
 }
 
 .two-images {
+  @include adaptiv-value("padding-bottom", 60, 48, 1);
+
   &__body {
     background-color: #d9e0ce;
     border-radius: 200px 0 0 0;
     padding: 40px;
-    @include adaptiv-value("margin-bottom", 60, 48, 1);
 
     @media (max-width: $md4) {
       padding: 30px 20px;

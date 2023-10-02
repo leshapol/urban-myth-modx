@@ -7,7 +7,7 @@
       </picture>
     </div>
     <div class="container">
-      <div class="hero__text-block">
+      <div class="hero__text-block hero__text-block_[[+position-horizontal]]">
         <h2 class="hero__title">[[+title]]</h2>
         <div class="hero__text">[[+description]]</div>
       </div>

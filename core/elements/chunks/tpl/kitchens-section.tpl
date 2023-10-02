@@ -7,7 +7,7 @@
       <p class="kitchens__text section-text">[[+description]]</p>
     </div>
     <a
-      href="[[~[[+button-link]]]]"
+      href="[[+button-link]]"
       class="kitchens__button circle-button circle-button_[[+button-position-vertical]] circle-button_[[+button-position-horizontal]]"
     >
       [[+button-text]]
@@ -24,7 +24,7 @@
   </div>
 
   <div class="kitchens__button-mobile">
-    <a href="[[~[[+button-link]]]]" class="button" target="_blank">
+    <a href="[[+button-link]]" class="button" target="_blank">
       [[+button-text]]
     </a>
   </div>

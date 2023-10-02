@@ -9,7 +9,7 @@
           <img src="[[+image]]" alt="[[+title]]" />
       </div>
       <div class="container">
-        <div class="full-image__text-block position_bottom position_right">
+        <div class="full-image__text-block position_[[+position-vertical]] position_[[+position-horizontal]] [[+text-color:is=`white`:then=`white-color`]]">
           [[+title:ne=``:then=`<p class="full-image__title">[[+title]]</p>`]]
           <p class="full-image__text">
             [[+description]]

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  [[$head? &css=`bedrooms`]]
+  [[$head? &css=`showroom`]]
 
   <body>
     <div class="wrapper">
@@ -26,6 +26,6 @@
       [[$footer]]
     </div>
 
-    [[$scripts? js=`bedrooms`]]
+    [[$scripts? js=`showroom`]]
   </body>
 </html>
