@@ -74,12 +74,15 @@
 
   &__background-img {
     background-image: url("../img/homepage/swiper-after.jpg");
+    background-repeat: no-repeat;
+
     @media (max-width: $md3) {
       background-size: cover;
     }
   }
   &__foreground-img {
     background-image: url("../img/homepage/swiper-before.jpg");
+    background-repeat: no-repeat;
     width: 50%;
     @media (max-width: $md3) {
       display: none;
@@ -164,6 +167,9 @@
   &__wrap {
     position: relative;
     height: 706px;
+    max-width: 1600px;
+    margin: auto;
+
     @media (max-width: $md3) {
       height: 400px;
     }

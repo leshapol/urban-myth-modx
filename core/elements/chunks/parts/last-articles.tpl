@@ -15,7 +15,8 @@
           &tpl=`last-articles-item.tpl`
           &hideContainers=`1` 
           &includeTVs=`category-img,tags` 
-          &tvFilters=`tags==[[*tags]]`
+          &prepareTVs=`1`
+          &tvFilters=`[[*tags:ne=``:then=`tags==[[*tags]]`]]`
           &prepareTVs=`1`
           &limit=`8`
         ]]
