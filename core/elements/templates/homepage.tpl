@@ -133,7 +133,7 @@
           </div>
         </section>
 
-        <section class="about">
+        <!--<section class="about">
           <div class="container">
             <div class="about__body">
               <div class="about__text-block">
@@ -185,7 +185,7 @@
               </div>
             </div>
           </div>
-        </section>
+        </section>-->
 
         [[$last-articles]]
       </main>

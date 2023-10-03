@@ -1,0 +1,1 @@
+<span data-num="[[+idx]]" class="slider__dot"></span>

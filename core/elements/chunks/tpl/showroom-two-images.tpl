@@ -21,5 +21,8 @@
       />
     </picture>
   </div>
-  <p class="two-images__text">[[+title]]</p>
+  <div class="two-images__text-block">
+    [[+title:ne=``:then=`<p class="two-images__title">[[+title]]</p>`]]
+    <p class="two-images__text">[[+text]]</p>
+  </div>
 </div>
