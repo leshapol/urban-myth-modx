@@ -34,7 +34,7 @@
           </div>
         </section>
 
-        <section class="swiper">
+        <!--<section class="swiper">
           <div class="container">
             <div class="swiper__body [[!get-position? &section=`swiper`]]">
               <h2 class="swiper__title section-title">
@@ -53,9 +53,6 @@
             </div>
           </div>
           <div class="swiper__wrap">
-            <!-- <div class="swiper__body">
-                
-              </div> -->
             <div class="swiper__img swiper__background-img"></div>
             <div class="swiper__img swiper__foreground-img"></div>
             <input
@@ -70,6 +67,12 @@
             <div class="swiper__slider-button">
               <span class="swiper__slider-line"></span>
             </div>
+          </div>
+        </section>-->
+
+        <section class="top-images">
+          <div class="kitchens__body">
+            [[getImageList? &tvname=`top-images` &tpl=`kitchens-section.tpl` ]]
           </div>
         </section>
 
@@ -133,7 +136,7 @@
           </div>
         </section>
 
-        <!--<section class="about">
+        <section class="about">
           <div class="container">
             <div class="about__body">
               <div class="about__text-block">
@@ -162,7 +165,7 @@
                   type="button"
                 ></button>
                 <div class="about__images">
-                  [[getImageList? &tvname=`gallery` &tpl=`@CODE:
+                  [[getImageList? &tvname=`slider` &tpl=`@CODE:
                   <picture>
                     <source
                       type="image/webp"
@@ -179,13 +182,13 @@
                   ` ]]
                 </div>
                 <div class="about__pag pag">
-                  [[getImageList? &tvname=`gallery` &tpl=`@CODE:
+                  [[getImageList? &tvname=`slider` &tpl=`@CODE:
                   <span data-num="[[+idx]]" class="pag__item"></span>` ]]
                 </div>
               </div>
             </div>
           </div>
-        </section>-->
+        </section>
 
         [[$last-articles]]
       </main>

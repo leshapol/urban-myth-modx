@@ -6,12 +6,15 @@
       <h3 class="kitchens__title section-title">[[+title]]</h3>
       <p class="kitchens__text section-text">[[+description]]</p>
     </div>
+    
+    [[+button-text:ne=``:then=`
     <a
       href="[[+button-link]]"
       class="kitchens__button circle-button circle-button_[[+button-position-vertical]] circle-button_[[+button-position-horizontal]]"
     >
       [[+button-text]]
     </a>
+    `]]
   </div>
 
   <div
@@ -23,9 +26,11 @@
     </picture>
   </div>
 
+  [[+button-text:ne=``:then=`
   <div class="kitchens__button-mobile">
     <a href="[[+button-link]]" class="button" target="_blank">
       [[+button-text]]
     </a>
   </div>
+  `]]
 </div>
