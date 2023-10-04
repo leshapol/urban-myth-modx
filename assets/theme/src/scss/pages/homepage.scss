@@ -245,6 +245,14 @@
   }
 }
 /*====================kitchens========*/
+.top-images {
+  .white-color {
+    @media (max-width: $md3) {
+      color: #000;
+    }
+  }
+}
+
 .kitchens {
   margin-bottom: 66px;
 
