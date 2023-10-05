@@ -10,7 +10,7 @@
     [[+button-text:ne=``:then=`
     <a
       href="[[+button-link]]"
-      class="kitchens__button circle-button circle-button_[[+button-position-vertical]] circle-button_[[+button-position-horizontal]]"
+      class="kitchens__button circle-button circle-button_[[+button-position-vertical]] circle-button_[[+button-position-horizontal]] [[+popup-link:is=`yes`:then=`_popup-link`]]"
     >
       [[+button-text]]
     </a>
@@ -28,7 +28,7 @@
 
   [[+button-text:ne=``:then=`
   <div class="kitchens__button-mobile">
-    <a href="[[+button-link]]" class="button" target="_blank">
+    <a href="[[+button-link]]" class="button [[+popup-link:is=`yes`:then=`_popup-link`]]" target="_blank">
       [[+button-text]]
     </a>
   </div>
