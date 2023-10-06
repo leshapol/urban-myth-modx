@@ -69,7 +69,12 @@ $md5: 479.98px;
   }
   &_middle {
     bottom: 50%;
+    transform: translateY(50%);
     top: unset;
+
+    @media (max-width: $md3) {
+      transform: none;
+    }
   }
   &_bottom {
     bottom: 40px;
@@ -81,7 +86,11 @@ $md5: 479.98px;
     }
   }
   &_right {
-    margin-left: 50%;
+    margin-left: 65%;
+
+    @media (max-width: $md2) {
+      margin-left: 50%;
+    }
 
     @media (max-width: $md3) {
       margin-left: 0;
