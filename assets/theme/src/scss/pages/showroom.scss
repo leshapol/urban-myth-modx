@@ -564,3 +564,25 @@
     }
   }
 }
+
+.form-section {
+  @include adaptiv-value("padding-top", 60, 40, 1);
+  @include adaptiv-value("padding-bottom", 60, 40, 1);
+
+  &__body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+
+    @media (max-width: $md3) {
+      grid-template-columns: 1fr;
+      gap: 40px;
+      max-width: 500px;
+      margin: auto;
+    }
+  }
+
+  &__text-block {
+    max-width: 500px;
+  }
+}

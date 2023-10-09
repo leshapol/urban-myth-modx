@@ -104,7 +104,7 @@
             </p>
 
             <div class="stay__form">
-              [[$formit? &email-to=`info@urbanmyth.net`]] [[$contact-form?
+              [[$formit]] [[$contact-form?
               &subject=`0`]]
             </div>
           </div>

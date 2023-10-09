@@ -4,7 +4,7 @@
       class="kitchens__text-block position_[[+text-position-vertical]] position_[[+text-position-horizontal]] [[+text-color:is=`white`:then=`white-color`]]"
     >
       <h3 class="kitchens__title section-title">[[+title]]</h3>
-      <p class="kitchens__text section-text">[[+description]]</p>
+      <div class="kitchens__text section-text">[[+description]]</div>
     </div>
     
     [[+button-text:ne=``:then=`

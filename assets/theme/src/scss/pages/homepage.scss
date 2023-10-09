@@ -289,12 +289,14 @@
     max-width: 520px;
     z-index: 2;
     position: absolute;
+    margin-right: 20px;
 
     @media (max-width: $md3) {
       position: static;
       margin: 0;
       padding: 0;
       padding-bottom: 24px;
+      margin-right: 0;
     }
 
     .button {
@@ -355,7 +357,7 @@
     border-radius: 100px;
     position: relative;
     z-index: 1;
-    padding: 140px 175px 150px 200px;
+    padding: 60px 0;
     text-align: center;
 
     @media (max-width: $md3) {
