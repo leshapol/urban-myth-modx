@@ -1,5 +1,5 @@
 [[!FormIt? 
-  &hooks=`spam,FormItSaveForm,email,redirect`
+  &hooks=`FormItSaveForm,email,redirect`
   &emailUseFieldForSubject=`1`
   &emailSubject=`Email From Website` 
   &emailTo=`[[+email-to:is=``:then=`[[++email-to]]`:else=`[[+email-to]]`]]`
