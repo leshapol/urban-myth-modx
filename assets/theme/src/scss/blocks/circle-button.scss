@@ -14,6 +14,13 @@
   align-items: center;
   border: 1px solid white;
   z-index: 3;
+  border: 1px solid #000;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: #fff;
+    color: #000;
+  }
 
   &_right {
     position: absolute;
