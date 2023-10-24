@@ -24,16 +24,18 @@
   &__image img,
   &__image iframe,
   &__image video {
-    padding: 0 30px;
+    margin: 0 30px;
+    width: calc(100% - 60px);
 
     @media (max-width: $md4) {
-      padding: 0;
+      margin: 0;
+      width: 100%;
       position: static;
-      height: 720px;
+      height: 480px;
     }
 
     @media (max-width: $md5) {
-      height: 480px;
+      height: 320px;
     }
   }
 

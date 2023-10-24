@@ -124,6 +124,12 @@ $md5: 479.98px;
   }
 }
 
+.absolute-image {
+  iframe {
+    background: #000;
+  }
+}
+
 .section-title {
   @include adaptiv-font(36, 30, 1);
   line-height: 135%;

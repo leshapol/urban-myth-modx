@@ -4,7 +4,7 @@
       <div class="last-articles__text-block">
         <h2 class="last-articles__title">[[+type:is=`kitchen`:then=`We also recommend`:else=`Urban Blog`]]</h2>
         <p class="last-articles__subtitle">
-          [[+type:is=`kitchen`:then=`Similar design inspiration`:else=`Keep ahead of the trends and latest designs in kitchens`]]
+          [[+type:is=`kitchen`:then=`Similar design inspiration`:else=`Be inspired by our latest kitchen, lifestyle and design news and trends`]]
         </p>
       </div>
       <ul class="last-articles__list">
