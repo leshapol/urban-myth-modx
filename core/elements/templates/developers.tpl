@@ -210,19 +210,28 @@
                   <div class="row mx-md-5">
                     <div class="col-md-4 col-4">
                       <!-- [[getImageList? &tvname=`Projects` &tpl=`more_project` &limit=`2`]] -->
+
                       <div class="project h-auto position-relative">
-                        <img
-                          src="/assets/theme/build/img/developers/slider-image-1.jpg"
-                          alt="[[+title]]"
-                          class="img-fluid mb-md-4 mb-4"
-                          loading="lazy"
-                        />
-                        <!-- <div class="position-absolute top-0 end-0 m-1">
+                        <a
+                          href="more/more.html#project1"
+                          data-bs-target="#project1"
+                          data-bs-toggle="modal"
+                          data-bs-backdrop="static"
+                          data-keyboard="false"
+                        >
                           <img
-                            src="/assets/theme/build/img/developers/slider-open.svg"
-                            alt=""
+                            src="/assets/theme/build/img/developers/slider-image-1.jpg"
+                            alt="[[+title]]"
+                            class="img-fluid mb-md-4 mb-4"
+                            loading="lazy"
                           />
-                        </div> -->
+                          <div class="position-absolute top-0 end-0 m-1">
+                            <img
+                              src="/assets/theme/build/img/developers/slider-open.svg"
+                              alt=""
+                            />
+                          </div>
+                        </a>
                       </div>
                       <div class="project h-auto position-relative">
                         <img
@@ -434,8 +443,80 @@
             </div>
           </div>
         </section>
+
         <!-- Start Modals -->
-        <!-- [[getImageList? &tvname=`Projects` &tpl=`more_modal`]] -->
+        <!-- Modals 100 Putney Common -->
+        <div
+          class="modal fade"
+          id="project1"
+          tabindex="-1"
+          aria-labelledby="100 Putney Common"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-fullscreen bg-white text-dark">
+            <div class="modal-content d-flex p-0">
+              <div class="position-absolute top-0 start-0">
+                <button
+                  type="button"
+                  class="btn-close p-3"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+
+              <div class="container-fluid p-md-0">
+                <div class="row m-0 align-items-center">
+                  <div
+                    class="col-md-5 p-0 py-5 ps-md-2 pe-md-5 offset-md-1 align-self-center"
+                  >
+                    <h1>100 Putney Common</h1>
+                    <h2>Durkan Homes</h2>
+                    <p>
+                      The former Putney Hospital site has been transformed into
+                      a selection of 24 contemporary apartments. Built over four
+                      floors, each apartment is fitted to the highest
+                      specification featuring our handle-less kitchens and
+                      appliances from leading brands, Siemens, Bosch, Blanco and
+                      Falmec.
+                    </p>
+
+                    <div class="row pb-4">
+                      <div class="col-6">
+                        <img
+                          src="assets/images/more/projects/putney_1.jpg"
+                          class="img-fluid p-2"
+                          alt="100 Putney Common Kitchen "
+                          loading="lazy"
+                        />
+                      </div>
+                      <div class="col-6">
+                        <img
+                          src="assets/images/more/projects/putney_2.jpg"
+                          class="img-fluid p-2"
+                          alt="100 Putney Common Kitchen"
+                          loading="lazy"
+                        />
+                      </div>
+                    </div>
+                    <h3 class="pt-3 text-muted fs-4"></h3>
+                    <p><small></small></p>
+                    <a href="" target="_blank" class="btn btn-outline-dark"
+                      >CASE STUDY</a
+                    >
+                  </div>
+                  <div
+                    class="col-md-6 vh-100"
+                    style="
+                      background-image: url('assets/images/more/projects/100putney_internal.jpg');
+                      background-size: cover;
+                      background-position: center;
+                    "
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         <!-- End Modals -->
 
         <!-- End -->
