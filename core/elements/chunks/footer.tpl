@@ -21,11 +21,24 @@
           />
         </div>
         <ul class="footer__social-list">
-          <li class="footer__social-item">
+          <!-- <li class="footer__social-item">
             <a href="https://twitter.com/urbanmythlondon" target="_blank">
               <img
                 src="/assets/theme/build/img/icons/twitter.svg"
                 alt="twitter"
+                height="31"
+                width="31"
+              />
+            </a>
+          </li> -->
+          <li class="footer__social-item">
+            <a
+              href="https://www.youtube.com/channel/UCr9oZwWW6VuPoU63Crk7znw"
+              target="_blank"
+            >
+              <img
+                src="/assets/theme/build/img/icons/youtube.svg"
+                alt="youtube"
                 height="31"
                 width="31"
               />
