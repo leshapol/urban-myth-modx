@@ -1,3 +1,3 @@
 <li class="footer__item">
-  <a href="[[+link]]">[[+pagetitle]]</a>
+  <a [[+introtext:is=`popup`:then=`class="_popup-link"`]]  href="[[+link]]" >[[+pagetitle]]</a>
 </li>
