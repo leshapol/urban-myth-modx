@@ -12,14 +12,14 @@
   }
 
   .select {
-    @include adaptiv-value("width", 400, 220, 1);
+    @include adaptiv-value("width", 380, 220, 1);
   }
 
   &__input {
     height: 30px;
     background-color: #d9d9d9;
     border-radius: 5px;
-    @include adaptiv-value("width", 400, 220, 1);
+    @include adaptiv-value("width", 380, 220, 1);
     margin-left: auto;
     padding-left: 10px;
   }

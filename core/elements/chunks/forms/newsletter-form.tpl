@@ -27,6 +27,28 @@
       required
     />
   </label>
+  <label class="form__label"
+    >Postcode:
+    <input
+      class="form__input"
+      aria-label="Postcode"
+      id="fielddylrdky"
+      maxlength="200"
+      name="cm-f-dylrdky"
+    />
+  </label>
+
+  <label class="form__label"
+    >Telephone:
+    <input
+      class="form__input"
+      aria-label="Telephone"
+      id="fielddylrdkj"
+      maxlength="200"
+      name="cm-f-dylrdkj"
+    />
+  </label>
+
   <div class="form__privacy">
     <div class="form__privacy-caption">Privacy</div>
     <label class="form__label-privacy">
