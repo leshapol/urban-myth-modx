@@ -605,7 +605,7 @@
                 <div
                   class="col-md-6 vh-100"
                   style="
-                      background-image: url('assets\theme\build\img\developers\modals\100putney_internal.jpg');
+                      background-image: url('assets/theme/build/img/developers/modals/100putney_internal.jpg');
                       background-size: cover;
                       background-position: center;
                     "
@@ -672,7 +672,7 @@
                 </div>
                 <div
                   class="col-md-6 vh-100  "
-                  style="background-image: url('assets\theme\build\img\developers\modals\broom_hill_hero.jpg'); background-size: cover;background-position: center;"
+                  style="background-image: url('assets/theme/build/img/developers/modals/broom_hill_hero.jpg'); background-size: cover;background-position: center;"
                 >
 
                 </div>
@@ -737,7 +737,7 @@
                 </div>
                 <div
                   class="col-md-6 vh-100  "
-                  style="background-image: url('assets\theme\build\img\developers\modals\alexa_hero.jpg'); background-size: cover;background-position: center;"
+                  style="background-image: url('assets/theme/build/img/developers/modals/alexa_hero.jpg'); background-size: cover;background-position: center;"
                 >
 
                 </div>
@@ -803,7 +803,7 @@
                 </div>
                 <div
                   class="col-md-6 vh-100  "
-                  style="background-image: url('assets\theme\build\img\developers\modals\buckingham_hero.jpg'); background-size: cover;background-position: center;"
+                  style="background-image: url('assets/theme/build/img/developers/modals/buckingham_hero.jpg'); background-size: cover;background-position: center;"
                 >
 
                 </div>
@@ -871,7 +871,7 @@
                 </div>
                 <div
                   class="col-md-6 vh-100  "
-                  style="background-image: url('assets\theme\build\img\developers\modals\bushett_hero.jpg'); background-size: cover;background-position: center;"
+                  style="background-image: url('assets/theme/build/img/developers/modals/bushett_hero.jpg'); background-size: cover;background-position: center;"
                 >
 
                 </div>
@@ -938,7 +938,7 @@
                 </div>
                 <div
                   class="col-md-6 vh-100  "
-                  style="background-image: url('assets\theme\build\img\developers\modals\drapery_hero.jpg'); background-size: cover;background-position: center;"
+                  style="background-image: url('assets/theme/build/img/developers/modals/drapery_hero.jpg'); background-size: cover;background-position: center;"
                 >
 
                 </div>
@@ -1007,7 +1007,7 @@
                 </div>
                 <div
                   class="col-md-6 vh-100  "
-                  style="background-image: url('assets\theme\build\img\developers\modals\gayners_hero.jpg'); background-size: cover;background-position: center;"
+                  style="background-image: url('assets/theme/build/img/developers/modals/gayners_hero.jpg'); background-size: cover;background-position: center;"
                 >
 
                 </div>
@@ -1074,7 +1074,7 @@
                 </div>
                 <div
                   class="col-md-6 vh-100  "
-                  style="background-image: url('assets\theme\build\img\developers\modals/node_hero.jpg'); background-size: cover;background-position: center;"
+                  style="background-image: url('assets/theme/build/img/developers/modals/node_hero.jpg'); background-size: cover;background-position: center;"
                 >
 
                 </div>
@@ -1140,7 +1140,7 @@
                 </div>
                 <div
                   class="col-md-6 vh-100  "
-                  style="background-image: url('assets\theme\build\img\developers\modals/royal_hero.jpg'); background-size: cover;background-position: center;"
+                  style="background-image: url('assets/theme/build/img/developers/modals/royal_hero.jpg'); background-size: cover;background-position: center;"
                 >
 
                 </div>
@@ -1208,7 +1208,7 @@
                 </div>
                 <div
                   class="col-md-6 vh-100  "
-                  style="background-image: url('assets\theme\build\img\developers\modals/whitehall_hero.jpg'); background-size: cover;background-position: center;"
+                  style="background-image: url('assets/theme/build/img/developers/modals/whitehall_hero.jpg'); background-size: cover;background-position: center;"
                 >
 
                 </div>
@@ -1277,7 +1277,7 @@
                 </div>
                 <div
                   class="col-md-6 vh-100  "
-                  style="background-image: url('assets\theme\build\img\developers\modals/charles_hero.jpg'); background-size: cover;background-position: center;"
+                  style="background-image: url('assets/theme/build/img/developers/modals/charles_hero.jpg'); background-size: cover;background-position: center;"
                 >
 
                 </div>
@@ -1343,7 +1343,7 @@
                 </div>
                 <div
                   class="col-md-6 vh-100  "
-                  style="background-image: url('assets\theme\build\img\developers\modals/yewtree_hero.jpg'); background-size: cover;background-position: center;"
+                  style="background-image: url('assets/theme/build/img/developers/modals/yewtree_hero.jpg'); background-size: cover;background-position: center;"
                 >
 
                 </div>
