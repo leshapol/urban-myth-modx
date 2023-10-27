@@ -586,11 +586,11 @@
                         />
                       </div>
                     </div>
-                    <h3 class="pt-3 text-muted fs-4"></h3>
+                    <!-- <h3 class="pt-3 text-muted fs-4"></h3>
                     <p><small></small></p>
                     <a href="" target="_blank" class="btn btn-outline-dark"
                       >CASE STUDY</a
-                    >
+                    > -->
                   </div>
                   <div class="col-md-6 vh-100 position-relative">
                     <img
@@ -666,9 +666,9 @@
                       highly recommend them"
                     </h3>
                     <p><small>Bertroy Homes</small></p>
-                    <a href="" target="_blank" class="btn btn-outline-dark"
+                    <!-- <a href="" target="_blank" class="btn btn-outline-dark"
                       >CASE STUDY</a
-                    >
+                    > -->
                   </div>
                   <div class="col-md-6 vh-100 position-relative">
                     <img
@@ -740,9 +740,9 @@
                       recommending them"
                     </h3>
                     <p><small>Sam Hampton, Robust Developments</small></p>
-                    <a href="" target="_blank" class="btn btn-outline-dark"
+                    <!-- <a href="" target="_blank" class="btn btn-outline-dark"
                       >CASE STUDY</a
-                    >
+                    > -->
                   </div>
                   <div class="col-md-6 vh-100 position-relative">
                     <img
@@ -817,9 +817,9 @@
                       them"
                     </h3>
                     <p><small>Alex Piggott, Regenta Development</small></p>
-                    <a href="" target="_blank" class="btn btn-outline-dark"
+                    <!-- <a href="" target="_blank" class="btn btn-outline-dark"
                       >CASE STUDY</a
-                    >
+                    > -->
                   </div>
                   <div class="col-md-6 vh-100 position-relative">
                     <img
@@ -897,9 +897,9 @@
                       fantastic."
                     </h3>
                     <p><small>Russell Prince, The Door</small></p>
-                    <a href="" target="_blank" class="btn btn-outline-dark"
+                    <!-- <a href="" target="_blank" class="btn btn-outline-dark"
                       >CASE STUDY</a
-                    >
+                    > -->
                   </div>
                   <div class="col-md-6 vh-100 position-relative">
                     <img
@@ -977,9 +977,9 @@
                       aspects of the service are fantastic"
                     </h3>
                     <p><small>Mark & Jason Harding, Harding Homes</small></p>
-                    <a href="" target="_blank" class="btn btn-outline-dark"
+                    <!-- <a href="" target="_blank" class="btn btn-outline-dark"
                       >CASE STUDY</a
-                    >
+                    > -->
                   </div>
                   <div class="col-md-6 vh-100 position-relative">
                     <img
@@ -1059,9 +1059,9 @@
                       sure these kitchens really delivered the “wow” factor."
                     </h3>
                     <p><small>Tony White, AWC</small></p>
-                    <a href="" target="_blank" class="btn btn-outline-dark"
+                    <!-- <a href="" target="_blank" class="btn btn-outline-dark"
                       >CASE STUDY</a
-                    >
+                    > -->
                   </div>
                   <div class="col-md-6 vh-100 position-relative">
                     <img
@@ -1136,11 +1136,11 @@
                         />
                       </div>
                     </div>
-                    <h3 class="pt-3 text-muted fs-4"></h3>
+                    <!-- <h3 class="pt-3 text-muted fs-4"></h3>
                     <p><small></small></p>
                     <a href="" target="_blank" class="btn btn-outline-dark"
                       >CASE STUDY</a
-                    >
+                    > -->
                   </div>
                   <div class="col-md-6 vh-100 position-relative">
                     <img
@@ -1212,11 +1212,11 @@
                         />
                       </div>
                     </div>
-                    <h3 class="pt-3 text-muted fs-4"></h3>
+                    <!-- <h3 class="pt-3 text-muted fs-4"></h3>
                     <p><small></small></p>
                     <a href="" target="_blank" class="btn btn-outline-dark"
                       >CASE STUDY</a
-                    >
+                    > -->
                   </div>
                   <div class="col-md-6 vh-100 position-relative">
                     <img
@@ -1294,9 +1294,9 @@
                       we look forward to working with them again"
                     </h3>
                     <p><small>Michael Smith, Etec Group</small></p>
-                    <a href="" target="_blank" class="btn btn-outline-dark"
+                    <!-- <a href="" target="_blank" class="btn btn-outline-dark"
                       >CASE STUDY</a
-                    >
+                    > -->
                   </div>
                   <div class="col-md-6 vh-100 position-relative">
                     <img
@@ -1375,9 +1375,9 @@
                       which is essential in our industry."
                     </h3>
                     <p><small>Jolyon Prowse, Chester Row</small></p>
-                    <a href="" target="_blank" class="btn btn-outline-dark"
+                    <!-- <a href="" target="_blank" class="btn btn-outline-dark"
                       >CASE STUDY</a
-                    >
+                    > -->
                   </div>
                   <div class="col-md-6 vh-100 position-relative">
                     <img
@@ -1453,9 +1453,9 @@
                       and the team again."
                     </h3>
                     <p><small>Brendan & Julie Morrisey, Morricom Ltd</small></p>
-                    <a href="" target="_blank" class="btn btn-outline-dark"
+                    <!-- <a href="" target="_blank" class="btn btn-outline-dark"
                       >CASE STUDY</a
-                    >
+                    > -->
                   </div>
                   <div class="col-md-6 vh-100 position-relative">
                     <img
