@@ -17,3 +17,6 @@ core/cache/
 // uploads
 uploads/
 
+//robots
+robots.txt
+
