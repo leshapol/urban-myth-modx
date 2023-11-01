@@ -21,7 +21,15 @@
     class="kitchens__image kitchens__border-radius absolute-image border-radius_[[+border-radius]]"
   >
     <picture>
-      <source srcset="[[+image:phpthumbof=`f=webp]]" type="image/webp" />
+      <source 
+        type="image/webp" 
+        media="(min-width: 425px)" 
+        srcset="[[+image:phpthumbof=`f=webp`]]"
+      />
+      <source
+        srcset="[[+image:phpthumbof=`&w=425&h=720&zc=1&f=webp`]]"
+        type="image/webp"
+      />
       <img src="[[+image]]" alt="[[+title]]" />
     </picture>
   </div>

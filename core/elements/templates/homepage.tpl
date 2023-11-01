@@ -12,8 +12,13 @@
           <div class="hero__wrap">
             <div class="hero__image absolute-image border-radius_right-bottom">
               <picture>
+                <source 
+                  type="image/webp" 
+                  media="(min-width: 425px)" 
+                  srcset="[[*hero-img:phpthumbof=`f=webp`]]"
+                />
                 <source
-                  srcset="[[*hero-img:phpthumbof=`f=webp]]"
+                  srcset="[[*hero-img:phpthumbof=`&w=425&h=720&zc=1&f=webp`]]"
                   type="image/webp"
                 />
                 <img src="[[*hero-img]]" alt="[[*pagetitle]]" />
