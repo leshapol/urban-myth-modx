@@ -72,6 +72,21 @@
     src="https://tools.luckyorange.com/core/lo.js?site-id=8a610462"
   ></script>
 
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-JY9SDBQ6J7"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+    gtag("config", "UA-61226415-1"); // Universal Analytics property
+    gtag("config", "G-JY9SDBQ6J7");
+  </script>
+
   <!-- Google Tag Manager -->
   <script>
     (function (w, d, s, l, i) {

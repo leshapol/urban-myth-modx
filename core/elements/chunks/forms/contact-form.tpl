@@ -53,4 +53,6 @@
   </div>
   
   <input type="submit" name="[[+submit-var:is=``:then=`contact-form`:else=`[[+submit-var]]`]]" class="form__submit button" value="Send"/>
+
+  [[!rcv3_html? &action=`[[+rcv3Action:default=``]]` &error=`[[+fi.error.g-recaptcha-response]]`]]
 </form>
