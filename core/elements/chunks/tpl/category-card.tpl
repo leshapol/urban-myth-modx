@@ -1,6 +1,6 @@
 <li class="catalog-list__item card">
   <div class="card__image">
-    <a href="[[+uri]]">
+    <a href="[[+uri]]?[[!+GET.style:not=``:then=`style=[[+GET.style]]`]]">
       <picture>
         <source
           type="image/webp"
