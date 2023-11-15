@@ -1,0 +1,67 @@
+/*
+    COOKIE POLICY
+*/
+.cookie-policy {
+  position: fixed;
+  bottom: 0px;
+  z-index: 1000;
+  width: 100%;
+  padding: 16px 20px;
+  font-size: 12px;
+  background-color: #222222;
+  color: #dddddd;
+}
+.cookie-wrapper {
+  position: relative;
+}
+.cookie-wrapper * {
+  background: #222222;
+}
+.cookie-text {
+  line-height: 16px;
+  padding-right: 44px;
+}
+.cookie-text .cookie-text-intro:after {
+  content: "This site sets cookies on your computer to help improve performance and provide a more engaging user experience.";
+}
+.cookie-text .cookie-text-summary:after {
+  content: "By using this site, you accept the terms of our ";
+}
+.cookie-text .cookie-text-link:after {
+  content: "cookie policy.";
+}
+.cookie-text a {
+  color: #ffffff !important;
+  display: inline-block;
+}
+.cookie-text a:hover {
+  text-decoration: underline;
+}
+.cookie-button-group {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  height: 0;
+}
+.cookie-button-group .cookie-button {
+  position: absolute;
+  display: block;
+  top: -12px;
+  right: 0;
+  width: 24px;
+  height: 24px;
+  background-color: #808080;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA09pVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoMTMuMCAyMDEyMDMwNS5tLjQxNSAyMDEyLzAzLzA1OjIxOjAwOjAwKSAgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MDgzNjk0Nzk5REJEMTFFMUJCNEZBRTA1NjgzMjhBNTkiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MDgzNjk0N0E5REJEMTFFMUJCNEZBRTA1NjgzMjhBNTkiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDowODM2OTQ3NzlEQkQxMUUxQkI0RkFFMDU2ODMyOEE1OSIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDowODM2OTQ3ODlEQkQxMUUxQkI0RkFFMDU2ODMyOEE1OSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PtWfXHIAAABjSURBVHjalJBRCsAwCENld9DP3v933VV2H6esUkntYIF8NDyphlS1mU8zmwnsWXfGH5e+ugHmkbm6B5KCgBmzmEYYBynvk+FllYOmlL705+vqGKmO2dUjWE8bcFW4ROGPAAMAOnA2DdIHig4AAAAASUVORK5CYII=");
+}
+.cookie-button-group .cookie-button:hover {
+  background-color: #9a9a9a;
+}
+@media only all and (-webkit-min-device-pixel-ratio: 1.5) {
+  .cookie-button-group .cookie-button {
+    -webkit-background-size: 10px 10px;
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA09pVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoMTMuMCAyMDEyMDMwNS5tLjQxNSAyMDEyLzAzLzA1OjIxOjAwOjAwKSAgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MDgzNjk0N0Q5REJEMTFFMUJCNEZBRTA1NjgzMjhBNTkiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MDgzNjk0N0U5REJEMTFFMUJCNEZBRTA1NjgzMjhBNTkiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDowODM2OTQ3QjlEQkQxMUUxQkI0RkFFMDU2ODMyOEE1OSIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDowODM2OTQ3QzlEQkQxMUUxQkI0RkFFMDU2ODMyOEE1OSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PiEcTkoAAADMSURBVHjanJRhCsMwCIWlPUkvZQa7R5tdaNBj7R4tLtmUSWjUTHg/TM2n2EeAiIC1FaHKo6p3VsnlMNM3jkEo8h3igUAm0xGFapjEOgHAq+iEX8xFzyKEfiDXzOrs/LC42+2iW29S7NQmvcMo1IS1QA/qwq6AFtSF9YA9qAuzgMAXjhFY1WRYg/76NmDakPlhwGchn0b2JjtLEWgU5tVgC0xRn3nQUZgLrbZZLl6Ne9Fu2GbnmvaVWqTjIziZNWluf0oehGnoJvlbgAEApaSYI9PiJiQAAAAASUVORK5CYII=");
+  }
+}
+/**/

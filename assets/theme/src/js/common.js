@@ -4,3 +4,4 @@
 @@include('common/select.js', {})
 @@include('common/form.js', {})
 @@include('common/last-articles.js', {})
+@@include('common/cookies.js', {})
