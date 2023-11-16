@@ -65,6 +65,8 @@
       </span>
     </label>
   </div>
+  <input aria-label="campaignID" id="fielddldridu" name="cm-f-dldridu" type="hidden" class="marketing_source" value="newbrochure001">
+  
   <button type="submit" class="form__submit button js-cm-submit-button">
     SUBSCRIBE
   </button>
