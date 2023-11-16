@@ -7,7 +7,7 @@ $(document).ready(function () {
     slidesToScroll: 2,
     easing: "ease",
     variableWidth: true,
-    arrows: false,
+    arrows: true,
     dots: false,
 
     responsive: [
