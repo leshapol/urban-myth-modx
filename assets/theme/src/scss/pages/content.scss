@@ -208,25 +208,21 @@
 }
 /* Стрелка */
 .slick-arrow {
-  width: auto !important;
-  height: auto !important;
-  @media (max-width: 1500px) {
-    visibility: hidden;
-    position: absolute;
+  width: 60px !important;
+  height: 60px !important;
+
+  @media (max-width: $md3) {
+    display: none !important;
   }
 }
 .slick-arrow:before {
   font-size: 60px !important;
   position: relative !important;
   z-index: 10 !important;
-  top: -3px;
 }
 
 /* Стрелка влево */
 .slick-arrow.slick-prev {
-  display: block;
-  width: 10px;
-  height: 10px;
 }
 
 /* Стрелка вправо */
@@ -265,67 +261,5 @@
     border-radius: 30px 0px;
   }
 }
-
-// .slick-lightbox .slick-list {
-//   width: 1440px;
-//   height: 900px;
-//   position: absolute;
-//   top: 50%;
-//   left: 50%;
-//   transform: translate(-50%, -50%);
-//   background-color: black;
-// }
-// .slick-lightbox {
-//   @media (max-width: $md4) {
-//     // display: none;
-//   }
-// }
-// .slick-lightbox-slick-item {
-//   padding: 30px 10px 10px 20px;
-// }
-// .slick-lightbox-slick-item-inner {
-//   vertical-align: top !important;
-//   max-width: 100% !important;
-// }
-
-// img.slick-lightbox-slick-img {
-//   object-fit: cover;
-//   width: 1440px;
-//   height: 750px;
-//   border-radius: 100px 0px 100px 0px;
-//   max-width: 100% !important;
-//   @media (max-width: 1600px) {
-//     width: 1200px;
-//   }
-//   @media (max-width: 1200px) {
-//     width: 720px;
-//   }
-//   @media (max-width: 720px) {
-//     width: 600px;
-//   }
-//   @media (max-width: 620px) {
-//     width: 370px;
-//     height: 600px;
-//     margin-bottom: 100px;
-//   }
-// }
-
-// .slick-lightbox-slick-caption {
-//   margin: 0;
-//   display: block;
-//   font-size: 30px;
-//   font-weight: 300;
-//   letter-spacing: 1px;
-//   margin-top: 20px !important;
-//   text-align: start;
-// }
-
-// .slick-lightbox-close {
-//   right: 40px !important;
-// }
-
-// .slick-lightbox-close:before {
-//   font-size: 70px !important;
-// }
 /*==================Blog===============*/
 /*==================footer=============*/
