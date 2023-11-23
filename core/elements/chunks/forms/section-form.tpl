@@ -6,7 +6,7 @@
 >
   <label class="form__label"
     >Name:
-    <input type="text" name="cm-name" id="fieldName" class="form__input" />
+    <input type="text" name="cm-name" id="fieldName" class="form__input" required/>
   </label>
   <label class="form__label"
     >Email:
@@ -35,6 +35,7 @@
       id="fielddldridh"
       name="cm-f-dldridh"
       class="form__input"
+      required
     />
   </label>
   <div class="form__privacy">

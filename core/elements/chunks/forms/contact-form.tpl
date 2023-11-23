@@ -24,7 +24,7 @@
 
   <label class="form__label"
     >Name:
-    <input type="text" name="name" class="form__input" value="[[+fi.name]]"/>
+    <input type="text" name="name" class="form__input" value="[[+fi.name]]" required/>
   </label>
   <label class="form__label"
     >Email:
@@ -32,7 +32,7 @@
   </label>
   <label class="form__label"
     >Tel:
-    <input type="tel" name="phone" class="form__input" value="[[+fi.phone]]"/>
+    <input type="tel" name="phone" class="form__input" value="[[+fi.phone]]" required/>
   </label>
   <label class="form__label"
     >Message:
