@@ -679,17 +679,14 @@
                     />
                   </div>
                 </div>
-<<<<<<< HEAD
                 <div
                   class="col-md-6 vh-100"
                   style="
-                      background-image: url('assets/theme/build/img/developers/modals/100putney_internal.jpg');
-                      background-size: cover;
-                      background-position: center;
-                    "
+                    background-image: url('assets/theme/build/img/developers/modals/100putney_internal.jpg');
+                    background-size: cover;
+                    background-position: center;
+                  "
                 ></div>
-=======
->>>>>>> ad97e9bb8b2920bd6306b4f0e933567edff53227
               </div>
             </div>
           </div>
@@ -763,25 +760,26 @@
                       loading="lazy"
                     />
                   </div>
-<<<<<<< HEAD
-                  <h3 class="pt-3 text-muted fs-4">"We chose Urban Myth for our development at Broom Hill as they offer
-                    a wide range of colour options and deal with the install from start to finish. The kitchens are high
-                    quality, and the team are easy to deal with, we would highly recommend them"</h3>
+                  <h3 class="pt-3 text-muted fs-4">
+                    "We chose Urban Myth for our development at Broom Hill as
+                    they offer a wide range of colour options and deal with the
+                    install from start to finish. The kitchens are high quality,
+                    and the team are easy to deal with, we would highly
+                    recommend them"
+                  </h3>
                   <p><small>Bertroy Homes</small></p>
-                  <a
-                    href=""
-                    target="_blank"
-                    class="btn btn-outline-dark"
-                  >CASE STUDY</a>
+                  <a href="" target="_blank" class="btn btn-outline-dark"
+                    >CASE STUDY</a
+                  >
                 </div>
                 <div
-                  class="col-md-6 vh-100  "
-                  style="background-image: url('assets/theme/build/img/developers/modals/broom_hill_hero.jpg'); background-size: cover;background-position: center;"
-                >
-
-=======
->>>>>>> ad97e9bb8b2920bd6306b4f0e933567edff53227
-                </div>
+                  class="col-md-6 vh-100"
+                  style="
+                    background-image: url('assets/theme/build/img/developers/modals/broom_hill_hero.jpg');
+                    background-size: cover;
+                    background-position: center;
+                  "
+                ></div>
               </div>
             </div>
           </div>
@@ -858,25 +856,25 @@
                       loading="lazy"
                     />
                   </div>
-<<<<<<< HEAD
-                  <h3 class="pt-3 text-muted fs-4">"We work with Urban Myth because of the quality of the products but
-                    also the knowledge and skills of their team who assist us throughout the whole process. The end
-                    results are fantastic and we have no hesitation in recommending them"</h3>
+                  <h3 class="pt-3 text-muted fs-4">
+                    "We work with Urban Myth because of the quality of the
+                    products but also the knowledge and skills of their team who
+                    assist us throughout the whole process. The end results are
+                    fantastic and we have no hesitation in recommending them"
+                  </h3>
                   <p><small>Sam Hampton, Robust Developments</small></p>
-                  <a
-                    href=""
-                    target="_blank"
-                    class="btn btn-outline-dark"
-                  >CASE STUDY</a>
+                  <a href="" target="_blank" class="btn btn-outline-dark"
+                    >CASE STUDY</a
+                  >
                 </div>
                 <div
-                  class="col-md-6 vh-100  "
-                  style="background-image: url('assets/theme/build/img/developers/modals/alexa_hero.jpg'); background-size: cover;background-position: center;"
-                >
-
-=======
->>>>>>> ad97e9bb8b2920bd6306b4f0e933567edff53227
-                </div>
+                  class="col-md-6 vh-100"
+                  style="
+                    background-image: url('assets/theme/build/img/developers/modals/alexa_hero.jpg');
+                    background-size: cover;
+                    background-position: center;
+                  "
+                ></div>
               </div>
             </div>
           </div>
@@ -956,25 +954,25 @@
                       loading="lazy"
                     />
                   </div>
-<<<<<<< HEAD
-                  <h3 class="pt-3 text-muted fs-4">"Urban Myth offer a great all round service, their experienced team
-                    are approachable and understanding of our needs. We look forward to working on our next project with
-                    them"</h3>
+                  <h3 class="pt-3 text-muted fs-4">
+                    "Urban Myth offer a great all round service, their
+                    experienced team are approachable and understanding of our
+                    needs. We look forward to working on our next project with
+                    them"
+                  </h3>
                   <p><small>Alex Piggott, Regenta Development</small></p>
-                  <a
-                    href=""
-                    target="_blank"
-                    class="btn btn-outline-dark"
-                  >CASE STUDY</a>
+                  <a href="" target="_blank" class="btn btn-outline-dark"
+                    >CASE STUDY</a
+                  >
                 </div>
                 <div
-                  class="col-md-6 vh-100  "
-                  style="background-image: url('assets/theme/build/img/developers/modals/buckingham_hero.jpg'); background-size: cover;background-position: center;"
-                >
-
-=======
->>>>>>> ad97e9bb8b2920bd6306b4f0e933567edff53227
-                </div>
+                  class="col-md-6 vh-100"
+                  style="
+                    background-image: url('assets/theme/build/img/developers/modals/buckingham_hero.jpg');
+                    background-size: cover;
+                    background-position: center;
+                  "
+                ></div>
               </div>
             </div>
           </div>
@@ -1054,25 +1052,126 @@
                       loading="lazy"
                     />
                   </div>
-<<<<<<< HEAD
-                  <h3 class="pt-3 text-muted fs-4">"We engaged Urban Myth to provide the kitchens and wardrobes on one
-                    of our latest projects because they share our vision to deliver design-led and innovative living
-                    spaces that meet the highest of standards. The team were great to work with and the finished results
-                    look fantastic."</h3>
+                  <h3 class="pt-3 text-muted fs-4">
+                    "We engaged Urban Myth to provide the kitchens and wardrobes
+                    on one of our latest projects because they share our vision
+                    to deliver design-led and innovative living spaces that meet
+                    the highest of standards. The team were great to work with
+                    and the finished results look fantastic."
+                  </h3>
                   <p><small>Russell Prince, The Door</small></p>
-                  <a
-                    href=""
-                    target="_blank"
-                    class="btn btn-outline-dark"
-                  >CASE STUDY</a>
+                  <a href="" target="_blank" class="btn btn-outline-dark"
+                    >CASE STUDY</a
+                  >
                 </div>
                 <div
-                  class="col-md-6 vh-100  "
-                  style="background-image: url('assets/theme/build/img/developers/modals/bushett_hero.jpg'); background-size: cover;background-position: center;"
-                >
+                  class="col-md-6 vh-100"
+                  style="
+                    background-image: url('assets/theme/build/img/developers/modals/bushett_hero.jpg');
+                    background-size: cover;
+                    background-position: center;
+                  "
+                ></div>
+              </div>
+            </div>
+          </div>
 
-=======
->>>>>>> ad97e9bb8b2920bd6306b4f0e933567edff53227
+          <!-- End Modals -->
+          <!-- Modals Gaynes Park -->
+          <div
+            class="modal fade"
+            id="project8"
+            tabindex="-1"
+            aria-labelledby="Gaynes Park"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-fullscreen bg-white text-dark">
+              <div class="modal-content d-flex p-0">
+                <div class="position-absolute top-0 start-0">
+                  <button
+                    type="button"
+                    class="btn-close p-3"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+
+                <div class="container-fluid p-md-0">
+                  <div class="row m-0 align-items-center">
+                    <div
+                      class="col-md-5 p-0 py-5 ps-md-2 pe-md-5 offset-md-1 align-self-center"
+                    >
+                      <h1>Gaynes Park</h1>
+                      <h2>AWC</h2>
+                      <p>
+                        Five contemporary houses have been seamlessly built into
+                        the countryside and provide spectacular views of Essex
+                        and the London city skyline.
+                      </p>
+
+                      <p>
+                        Every detail has been meticulously designed to suit the
+                        individuality of each house. Our client wanted a
+                        minimalist style that would appeal to many tastes whilst
+                        generating a unique and practical space for cooking and
+                        entertaining.
+                      </p>
+
+                      <div class="row pb-4">
+                        <div class="col-6">
+                          <img
+                            src="assets\theme\build\img\developers\modals\gayners_in.jpg"
+                            class="img-fluid p-2"
+                            alt="Gaynes Park Kitchen "
+                            loading="lazy"
+                          />
+                        </div>
+                        <div class="col-6">
+                          <img
+                            src="assets\theme\build\img\developers\modals\gayners_in_2.jpg"
+                            class="img-fluid p-2"
+                            alt="Gaynes Park Kitchen"
+                            loading="lazy"
+                          />
+                        </div>
+                      </div>
+                      <h3 class="pt-3 text-muted fs-4">
+                        "Urban myth were our first choice to work with on this
+                        project at Gaynes Park, they understood the brief and
+                        made sure these kitchens really delivered the “wow”
+                        factor."
+                      </h3>
+                      <p><small>Tony White, AWC</small></p>
+                      <!-- <a href="" target="_blank" class="btn btn-outline-dark"
+                      >CASE STUDY</a
+                    > -->
+                    </div>
+                    <div class="col-md-6 vh-100 position-relative">
+                      <img
+                        src="assets\theme\build\img\developers\modals\gayners_hero.jpg"
+                        class="modal-img"
+                        alt="Gaynes Park Kitchen"
+                        loading="lazy"
+                      />
+                    </div>
+                    <h3 class="pt-3 text-muted fs-4">
+                      "The final design was stunning yet, remained within our
+                      original budget. We cannot recommend Urban Myth more – all
+                      aspects of the service are fantastic"
+                    </h3>
+                    <p><small>Mark & Jason Harding, Harding Homes</small></p>
+                    <a href="" target="_blank" class="btn btn-outline-dark"
+                      >CASE STUDY</a
+                    >
+                  </div>
+                  <div
+                    class="col-md-6 vh-100"
+                    style="
+                      background-image: url('assets/theme/build/img/developers/modals/drapery_hero.jpg');
+                      background-size: cover;
+                      background-position: center;
+                    "
+                  ></div>
                 </div>
               </div>
             </div>
@@ -1143,198 +1242,88 @@
                       sure these kitchens really delivered the “wow” factor."
                     </h3>
                     <p><small>Tony White, AWC</small></p>
-                    <!-- <a href="" target="_blank" class="btn btn-outline-dark"
+                    <a href="" target="_blank" class="btn btn-outline-dark"
                       >CASE STUDY</a
-                    > -->
+                    >
                   </div>
-                  <div class="col-md-6 vh-100 position-relative">
-                    <img
-                      src="assets\theme\build\img\developers\modals\gayners_hero.jpg"
-                      class="modal-img"
-                      alt="Gaynes Park Kitchen"
-                      loading="lazy"
-                    />
-                  </div>
-<<<<<<< HEAD
-                  <h3 class="pt-3 text-muted fs-4">"The final design was stunning yet, remained within our original
-                    budget. We cannot recommend Urban Myth more – all aspects of the service are fantastic"</h3>
-                  <p><small>Mark & Jason Harding, Harding Homes</small></p>
-                  <a
-                    href=""
-                    target="_blank"
-                    class="btn btn-outline-dark"
-                  >CASE STUDY</a>
-                </div>
-                <div
-                  class="col-md-6 vh-100  "
-                  style="background-image: url('assets/theme/build/img/developers/modals/drapery_hero.jpg'); background-size: cover;background-position: center;"
-                >
-
-=======
->>>>>>> ad97e9bb8b2920bd6306b4f0e933567edff53227
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-<<<<<<< HEAD
-      </div>
-      <!-- End Modals -->
-      <!-- Modals Gaynes Park -->
-      <div
-        class="modal fade"
-        id="project8"
-        tabindex="-1"
-        aria-labelledby="Gaynes Park"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog modal-fullscreen bg-white text-dark   ">
-
-          <div class="modal-content d-flex  p-0">
-            <div class="position-absolute top-0 start-0">
-
-              <button
-                type="button"
-                class="btn-close p-3"
-                data-bs-dismiss="modal"
-                aria-label="Close"
-              ></button>
-            </div>
-
-            <div class="container-fluid p-md-0">
-              <div class="row m-0 align-items-center">
-                <div class="col-md-5  p-0 py-5 ps-md-2 pe-md-5 offset-md-1   align-self-center">
-                  <h1>Gaynes Park</h1>
-                  <h2>AWC</h2>
-                  <p>Five contemporary houses have been seamlessly built into the countryside and provide spectacular
-                    views of Essex and the London city skyline.</p>
-
-                  <p>Every detail has been meticulously designed to suit the individuality of each house. Our client
-                    wanted a minimalist style that would appeal to many tastes whilst generating a unique and practical
-                    space for cooking and entertaining.</p>
-
-                  <div class="row pb-4">
-                    <div class="col-6"><img
-                        src="assets\theme\build\img\developers\modals\gayners_in.jpg"
-                        class="img-fluid p-2"
-                        alt="Gaynes Park Kitchen "
-                        loading="lazy"
-                      ></div>
-                    <div class="col-6"><img
-                        src="assets\theme\build\img\developers\modals\gayners_in_2.jpg"
-                        class="img-fluid p-2"
-                        alt="Gaynes Park Kitchen"
-                        loading="lazy"
-                      ></div>
-                  </div>
-                  <h3 class="pt-3 text-muted fs-4">"Urban myth were our first choice to work with on this project at
-                    Gaynes Park, they understood the brief and made sure these kitchens really delivered the “wow”
-                    factor."</h3>
-                  <p><small>Tony White, AWC</small></p>
-                  <a
-                    href=""
-                    target="_blank"
-                    class="btn btn-outline-dark"
-                  >CASE STUDY</a>
-                </div>
-                <div
-                  class="col-md-6 vh-100  "
-                  style="background-image: url('assets/theme/build/img/developers/modals/gayners_hero.jpg'); background-size: cover;background-position: center;"
-                >
-
-                </div>
-=======
-        <!-- End Modals -->
-        <!-- Modals Node Park -->
-        <div
-          class="modal fade"
-          id="project7"
-          tabindex="-1"
-          aria-labelledby="Node Park"
-          aria-hidden="true"
-        >
-          <div class="modal-dialog modal-fullscreen bg-white text-dark">
-            <div class="modal-content d-flex p-0">
-              <div class="position-absolute top-0 start-0">
-                <button
-                  type="button"
-                  class="btn-close p-3"
-                  data-bs-dismiss="modal"
-                  aria-label="Close"
-                ></button>
->>>>>>> ad97e9bb8b2920bd6306b4f0e933567edff53227
-              </div>
-
-              <div class="container-fluid p-md-0">
-                <div class="row m-0 align-items-center">
                   <div
-                    class="col-md-5 p-0 py-5 ps-md-2 pe-md-5 offset-md-1 align-self-center"
-                  >
-                    <h1>Node Park</h1>
-                    <h2>Taylor French</h2>
-                    <p>
-                      Urban Myth has been involved with the transformation of
-                      this historic development since conception and when
-                      designing and specifying the kitchen furniture and
-                      fittings for this development we ensured that no detail
-                      was overlooked and the kitchens enhanced the character of
-                      the properties.
-                    </p>
+                    class="col-md-6 vh-100"
+                    style="
+                      background-image: url('assets/theme/build/img/developers/modals/gayners_hero.jpg');
+                      background-size: cover;
+                      background-position: center;
+                    "
+                  ></div>
+                </div>
 
-                    <p>
-                      We have designed, manufactured and installed all 16
-                      kitchens for three new build detached houses, three
-                      renovated mews style coach houses and ten apartments.
-                    </p>
+                <div class="container-fluid p-md-0">
+                  <div class="row m-0 align-items-center">
+                    <div
+                      class="col-md-5 p-0 py-5 ps-md-2 pe-md-5 offset-md-1 align-self-center"
+                    >
+                      <h1>Node Park</h1>
+                      <h2>Taylor French</h2>
+                      <p>
+                        Urban Myth has been involved with the transformation of
+                        this historic development since conception and when
+                        designing and specifying the kitchen furniture and
+                        fittings for this development we ensured that no detail
+                        was overlooked and the kitchens enhanced the character
+                        of the properties.
+                      </p>
 
-                    <div class="row pb-4">
-                      <div class="col-6">
-                        <img
-                          src="assets\theme\build\img\developers\modals\node_in.jpg"
-                          class="img-fluid p-2"
-                          alt="Node Park Kitchen "
-                          loading="lazy"
-                        />
+                      <p>
+                        We have designed, manufactured and installed all 16
+                        kitchens for three new build detached houses, three
+                        renovated mews style coach houses and ten apartments.
+                      </p>
+
+                      <div class="row pb-4">
+                        <div class="col-6">
+                          <img
+                            src="assets\theme\build\img\developers\modals\node_in.jpg"
+                            class="img-fluid p-2"
+                            alt="Node Park Kitchen "
+                            loading="lazy"
+                          />
+                        </div>
+                        <div class="col-6">
+                          <img
+                            src="assets\theme\build\img\developers\modals\node_in_2.jpg"
+                            class="img-fluid p-2"
+                            alt="Node Park Kitchen"
+                            loading="lazy"
+                          />
+                        </div>
                       </div>
-                      <div class="col-6">
-                        <img
-                          src="assets\theme\build\img\developers\modals\node_in_2.jpg"
-                          class="img-fluid p-2"
-                          alt="Node Park Kitchen"
-                          loading="lazy"
-                        />
-                      </div>
-                    </div>
-                    <!-- <h3 class="pt-3 text-muted fs-4"></h3>
+                      <!-- <h3 class="pt-3 text-muted fs-4"></h3>
                     <p><small></small></p>
                     <a href="" target="_blank" class="btn btn-outline-dark"
                       >CASE STUDY</a
                     > -->
+                    </div>
+                    <div class="col-md-6 vh-100 position-relative">
+                      <img
+                        src="assets\theme\build\img\developers\modals/node_hero.jpg"
+                        class="modal-img"
+                        alt="Node Park Kitchen"
+                        loading="lazy"
+                      />
+                    </div>
+                    <h3 class="pt-3 text-muted fs-4"></h3>
+                    <p><small></small></p>
+                    <a href="" target="_blank" class="btn btn-outline-dark"
+                      >CASE STUDY</a
+                    >
                   </div>
-                  <div class="col-md-6 vh-100 position-relative">
-                    <img
-                      src="assets\theme\build\img\developers\modals/node_hero.jpg"
-                      class="modal-img"
-                      alt="Node Park Kitchen"
-                      loading="lazy"
-                    />
-                  </div>
-<<<<<<< HEAD
-                  <h3 class="pt-3 text-muted fs-4"></h3>
-                  <p><small></small></p>
-                  <a
-                    href=""
-                    target="_blank"
-                    class="btn btn-outline-dark"
-                  >CASE STUDY</a>
-                </div>
-                <div
-                  class="col-md-6 vh-100  "
-                  style="background-image: url('assets/theme/build/img/developers/modals/node_hero.jpg'); background-size: cover;background-position: center;"
-                >
-
-=======
->>>>>>> ad97e9bb8b2920bd6306b4f0e933567edff53227
+                  <div
+                    class="col-md-6 vh-100"
+                    style="
+                      background-image: url('assets/theme/build/img/developers/modals/node_hero.jpg');
+                      background-size: cover;
+                      background-position: center;
+                    "
+                  ></div>
                 </div>
               </div>
             </div>
@@ -1411,23 +1400,20 @@
                       loading="lazy"
                     />
                   </div>
-<<<<<<< HEAD
                   <h3 class="pt-3 text-muted fs-4"></h3>
                   <p><small></small></p>
-                  <a
-                    href=""
-                    target="_blank"
-                    class="btn btn-outline-dark"
-                  >CASE STUDY</a>
+                  <a href="" target="_blank" class="btn btn-outline-dark"
+                    >CASE STUDY</a
+                  >
                 </div>
                 <div
-                  class="col-md-6 vh-100  "
-                  style="background-image: url('assets/theme/build/img/developers/modals/royal_hero.jpg'); background-size: cover;background-position: center;"
-                >
-
-=======
->>>>>>> ad97e9bb8b2920bd6306b4f0e933567edff53227
-                </div>
+                  class="col-md-6 vh-100"
+                  style="
+                    background-image: url('assets/theme/build/img/developers/modals/royal_hero.jpg');
+                    background-size: cover;
+                    background-position: center;
+                  "
+                ></div>
               </div>
             </div>
           </div>
@@ -1507,26 +1493,27 @@
                       loading="lazy"
                     />
                   </div>
-<<<<<<< HEAD
-                  <h3 class="pt-3 text-muted fs-4">"We’ve worked with Urban Myth on several projects now, the quality of
-                    their kitchens and attention to detail is a perfect fit to achieve the high level of finish we
-                    require. The organised and efficient team offer a great all-round service from design through to
-                    installation and we look forward to working with them again"</h3>
+                  <h3 class="pt-3 text-muted fs-4">
+                    "We’ve worked with Urban Myth on several projects now, the
+                    quality of their kitchens and attention to detail is a
+                    perfect fit to achieve the high level of finish we require.
+                    The organised and efficient team offer a great all-round
+                    service from design through to installation and we look
+                    forward to working with them again"
+                  </h3>
                   <p><small>Michael Smith, Etec Group</small></p>
-                  <a
-                    href=""
-                    target="_blank"
-                    class="btn btn-outline-dark"
-                  >CASE STUDY</a>
+                  <a href="" target="_blank" class="btn btn-outline-dark"
+                    >CASE STUDY</a
+                  >
                 </div>
                 <div
-                  class="col-md-6 vh-100  "
-                  style="background-image: url('assets/theme/build/img/developers/modals/whitehall_hero.jpg'); background-size: cover;background-position: center;"
-                >
-
-=======
->>>>>>> ad97e9bb8b2920bd6306b4f0e933567edff53227
-                </div>
+                  class="col-md-6 vh-100"
+                  style="
+                    background-image: url('assets/theme/build/img/developers/modals/whitehall_hero.jpg');
+                    background-size: cover;
+                    background-position: center;
+                  "
+                ></div>
               </div>
             </div>
           </div>
@@ -1607,26 +1594,26 @@
                       loading="lazy"
                     />
                   </div>
-<<<<<<< HEAD
-                  <h3 class="pt-3 text-muted fs-4">"We continue to work with Urban Myth on numerous projects as they
-                    provide an excellent product and professional service. On top of that the in-house production
-                    facilities gives them the flexibility to meet challenging timescales which is essential in our
-                    industry."</h3>
+                  <h3 class="pt-3 text-muted fs-4">
+                    "We continue to work with Urban Myth on numerous projects as
+                    they provide an excellent product and professional service.
+                    On top of that the in-house production facilities gives them
+                    the flexibility to meet challenging timescales which is
+                    essential in our industry."
+                  </h3>
                   <p><small>Jolyon Prowse, Chester Row</small></p>
-                  <a
-                    href=""
-                    target="_blank"
-                    class="btn btn-outline-dark"
-                  >CASE STUDY</a>
+                  <a href="" target="_blank" class="btn btn-outline-dark"
+                    >CASE STUDY</a
+                  >
                 </div>
                 <div
-                  class="col-md-6 vh-100  "
-                  style="background-image: url('assets/theme/build/img/developers/modals/charles_hero.jpg'); background-size: cover;background-position: center;"
-                >
-
-=======
->>>>>>> ad97e9bb8b2920bd6306b4f0e933567edff53227
-                </div>
+                  class="col-md-6 vh-100"
+                  style="
+                    background-image: url('assets/theme/build/img/developers/modals/charles_hero.jpg');
+                    background-size: cover;
+                    background-position: center;
+                  "
+                ></div>
               </div>
             </div>
           </div>
@@ -1704,25 +1691,26 @@
                       loading="lazy"
                     />
                   </div>
-<<<<<<< HEAD
-                  <h3 class="pt-3 text-muted fs-4">"It was a pleasure to work with the Urban Myth on our project at Yew
-                    Tree Close. Their level of service and design detail was exactly what we required for this exclusive
-                    development. We look forward to working with Rob and the team again."</h3>
+                  <h3 class="pt-3 text-muted fs-4">
+                    "It was a pleasure to work with the Urban Myth on our
+                    project at Yew Tree Close. Their level of service and design
+                    detail was exactly what we required for this exclusive
+                    development. We look forward to working with Rob and the
+                    team again."
+                  </h3>
                   <p><small>Brendan & Julie Morrisey, Morricom Ltd</small></p>
-                  <a
-                    href=""
-                    target="_blank"
-                    class="btn btn-outline-dark"
-                  >CASE STUDY</a>
+                  <a href="" target="_blank" class="btn btn-outline-dark"
+                    >CASE STUDY</a
+                  >
                 </div>
                 <div
-                  class="col-md-6 vh-100  "
-                  style="background-image: url('assets/theme/build/img/developers/modals/yewtree_hero.jpg'); background-size: cover;background-position: center;"
-                >
-
-=======
->>>>>>> ad97e9bb8b2920bd6306b4f0e933567edff53227
-                </div>
+                  class="col-md-6 vh-100"
+                  style="
+                    background-image: url('assets/theme/build/img/developers/modals/yewtree_hero.jpg');
+                    background-size: cover;
+                    background-position: center;
+                  "
+                ></div>
               </div>
             </div>
           </div>
