@@ -8,28 +8,29 @@
         </p>
       </div>
       <ul class="last-articles__list">
+
         [[+type:is=`kitchen`:then=`
-        [[pdoResources? 
-          &parents=`3` 
-          &resources=`-[[*id]]`
-          &tpl=`last-articles-item.tpl`
-          &hideContainers=`1` 
-          &includeTVs=`category-img,tags` 
-          &prepareTVs=`1`
-          &tvFilters=`[[*tags:ne=``:then=`tags==[[*tags]]`]]`
-          &prepareTVs=`1`
-          &limit=`8`
-        ]]
+          [[pdoResources? 
+            &parents=`3` 
+            &resources=`-[[*id]]`
+            &tpl=`last-articles-item.tpl`
+            &hideContainers=`1` 
+            &includeTVs=`category-img,tags,style,colour,finish` 
+            &prepareTVs=`1`
+            &where=`[[!where-kitchen]]`
+            &prepareTVs=`1`
+            &limit=`8`
+          ]]
         `:else=`
-        [[pdoResources? 
-          &parents=`4` 
-          &resources=`-[[*id]]`
-          &tpl=`last-articles-item.tpl`
-          &hideContainers=`1` 
-          &includeTVs=`category-img` 
-          &prepareTVs=`1`
-          &limit=`8`
-        ]]
+          [[pdoResources? 
+            &parents=`4` 
+            &resources=`-[[*id]]`
+            &tpl=`last-articles-item.tpl`
+            &hideContainers=`1` 
+            &includeTVs=`category-img` 
+            &prepareTVs=`1`
+            &limit=`8`
+          ]]
         `]]        
       </ul>
     </div>

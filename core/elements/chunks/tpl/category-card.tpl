@@ -1,6 +1,6 @@
 <li class="catalog-list__item card">
   <div class="card__image">
-    <a href="[[+uri]]">
+    <a class="card__link" href="[[+uri]]">
       <picture>
         <source
           type="image/webp"
@@ -23,7 +23,7 @@
   </div>
   <div class="card__body">
     <h3 class="card__title">
-      <a href="[[+uri]]">[[+pagetitle]]</a>
+      <a class="card__link" href="[[+uri]]">[[+pagetitle]]</a>
     </h3>
     <ul class="card__tags tags">
       [[+tv.blog-tags:notempty=`[[!toLinks?

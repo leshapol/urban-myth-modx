@@ -718,12 +718,15 @@ var mSearch2 = {
     params.key = mse2Config["key"];
     //noinspection JSUnresolvedFunction
 
+    //console.log(params, mse2Config["actionUrl"]);
+
     $.post(
       mse2Config["actionUrl"],
       params,
       function (response) {
+        //console.log(response);
         mSearch2.loading = false;
-        mSearch2.afterLoad();
+        //mSearch2.afterLoad();
         if (response["success"]) {
           mSearch2.Message.success(response["message"]);
           mSearch2.pagination.html(response["data"]["pagination"]);
@@ -758,6 +761,7 @@ var mSearch2 = {
         } else {
           mSearch2.Message.error(response["message"]);
         }
+        mSearch2.afterLoad();
       },
       "json"
     );
@@ -1177,6 +1181,37 @@ var mSearch2 = {
       .find("." + this.options.disabled_class)
       .prop("readonly", false)
       .removeClass(this.options.disabled_class);
+
+    var params = this.Hash.get();
+    console.log(params);
+    $(".card__link").each(function () {
+      var url = $(this).attr("href");
+      if (params.style) {
+        if (url.indexOf("?") === -1) {
+          url += "?style=" + params.style;
+        } else {
+          url += "&style=" + params.style;
+        }
+      }
+      if (params.colour) {
+        if (url.indexOf("?") === -1) {
+          url += "?colour=" + params.colour;
+        } else {
+          url += "&colour=" + params.colour;
+        }
+      }
+      if (params.finish) {
+        if (url.indexOf("?") === -1) {
+          url += "?finish=" + params.finish;
+        } else {
+          url += "&finish=" + params.finish;
+        }
+      }
+
+      //console.log(url);
+      $(this).attr("href", url);
+      //console.log($(this).attr("href"));
+    });
   },
 
   loadJQUI: function (callback, parameters) {
