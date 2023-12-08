@@ -14,7 +14,7 @@
             <div class="hero__body [[!get-position? &section=`hero`]]">
               <p class="hero__text section-text">
                 Bespoke kitchens and bedrooms designed just for you. Our
-                complete service means our experienced team is with you every step of the way.
+                complete service means our experienced team is with you every step of the way...
               </p>
               <a
                 href="[[~3]]"
