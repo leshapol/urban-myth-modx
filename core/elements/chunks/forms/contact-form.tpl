@@ -21,7 +21,7 @@
       </label>
       `]]
   `]]  
-
+  <input name="id" type="hidden" value="ContactPage">
   <label class="form__label"
     >Name:
     <input type="text" name="name" class="form__input" value="[[+fi.name]]" required/>

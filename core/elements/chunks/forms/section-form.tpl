@@ -4,6 +4,7 @@
   data-id="30FEA77E7D0A9B8D7616376B9006323195ADA8E05A6B2F3839B976033E8E410D82B93B0CC861F595BC5CF430CB9DA99DEDBBEC5B7695513F267007CF0393DF0F"
   method="post"
 >
+<input name="id" type="hidden" value="Section">
   <label class="form__label"
     >Name:
     <input type="text" name="cm-name" id="fieldName" class="form__input" required/>

@@ -4,6 +4,7 @@
   data-id="30FEA77E7D0A9B8D7616376B900632319B0E40277B6BB69BAC446F2DFBA7D92DAF73DFA4A1B7442151D771519B06619D0B29EF6BA37B1D467D595F363018BFBD"
   method="post"
 >
+<input name="id" type="hidden" value="newsletter">
   <label class="form__label form__label_select"
     >I am...
 

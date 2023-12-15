@@ -4,6 +4,8 @@
   data-id="30FEA77E7D0A9B8D7616376B900632317BF2286E58878788C662165543DFD0D8F3507747145C238D3C2CB8B2A39D16D690C83AEA5A8D1663482CA2D3CF742AE3"
   method="post"
 >
+
+ <input name="id" type="hidden" value="Brochure">
   <label class="form__label"
     >Name:
     <input type="text" name="cm-name" class="form__input" />
