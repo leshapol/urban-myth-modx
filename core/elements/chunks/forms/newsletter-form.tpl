@@ -8,7 +8,7 @@
   <label class="form__label form__label_select"
     >I am...
 
-    <select class="_select" name="subject">
+    <select class="_select" name="subject" id="fieldtyurjdd" name="cm-fo-tyurjdd">
       <option disabled selected value="">Select...</option>
       <option value="1448807">Homeowner</option>
       <option value="1448808">Developer</option>
@@ -28,7 +28,7 @@
       required
     />
   </label>
-  <label class="form__label"
+  <!-- <label class="form__label"
     >Postcode:
     <input
       class="form__input"
@@ -38,9 +38,9 @@
       name="cm-f-dylrdky"
       
     />
-  </label>
+  </label> -->
 
-  <label class="form__label"
+  <!-- <label class="form__label"
     >Telephone:
     <input
       class="form__input"
@@ -49,7 +49,7 @@
       maxlength="200"
       name="cm-f-dylrdkj"
     />
-  </label>
+  </label> -->
 
   <div class="form__privacy">
     <div class="form__privacy-caption">Privacy</div>
@@ -67,7 +67,7 @@
       </span>
     </label>
   </div>
-  <input aria-label="campaignID" id="fielddldridu" name="cm-f-dldridu" type="hidden" class="marketing_source" value="newbrochure001">
+  <input aria-label="campaignID" id="fielddyjylhj" name="cm-f-dyjylhj" type="hidden" class="marketing_source" value="newbrochure001">
   
   <button type="submit" class="form__submit button js-cm-submit-button">
     SUBSCRIBE
