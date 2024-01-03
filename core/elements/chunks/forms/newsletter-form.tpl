@@ -17,7 +17,7 @@
 
   <label class="form__label"
     >Name:
-    <input type="text" name="cm-name" class="form__input" />
+    <input type="text" name="cm-name" class="form__input" required />
   </label>
   <label class="form__label"
     >Email:
@@ -36,6 +36,7 @@
       id="fielddylrdky"
       maxlength="200"
       name="cm-f-dylrdky"
+      
     />
   </label>
 
