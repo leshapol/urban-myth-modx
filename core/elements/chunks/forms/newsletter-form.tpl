@@ -67,7 +67,7 @@
       </span>
     </label>
   </div>
-  <input aria-label="campaignID" id="fielddyjylhj" name="cm-f-dyjylhj" type="hidden" class="marketing_source" value="Newsletter">
+  <input aria-label="campaignID" id="fielddyjylhj" name="cm-f-dyjylhj" type="hidden" class="marketing_source" value="[[*campaign-id]]">
   
   <button type="submit" class="form__submit button js-cm-submit-button">
     SUBSCRIBE

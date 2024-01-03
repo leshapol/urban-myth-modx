@@ -57,7 +57,7 @@
       </span>
     </label>
   </div>
-  <input aria-label="campaignID" id="fielddyjylhy" name="cm-f-dyjylhy" type="hidden" class="marketing_source" value="newbrochure001">
+  <input aria-label="campaignID" id="fielddyjylhy" name="cm-f-dyjylhy" type="hidden" class="marketing_source" value="[[*campaign-id]]">
   <button type="submit" class="form__submit button js-cm-submit-button">
     download
   </button>
