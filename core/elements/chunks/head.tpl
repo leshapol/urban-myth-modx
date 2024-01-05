@@ -73,7 +73,7 @@
   ></script>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script
+  <!-- <script
     async
     src="https://www.googletagmanager.com/gtag/js?id=G-JY9SDBQ6J7"
   ></script>
@@ -85,7 +85,7 @@
     gtag("js", new Date());
     gtag("config", "UA-61226415-1"); // Universal Analytics property
     gtag("config", "G-JY9SDBQ6J7");
-  </script>
+  </script> -->
 
   <!-- Google Tag Manager -->
   <script>
