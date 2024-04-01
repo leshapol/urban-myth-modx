@@ -17,7 +17,7 @@
                   complete service means our experienced team is with you every
                   step of the way.
                 </p>
-                <a href="[[~3]]" class="hero__button button button_long">
+                <a href="[[~3]]" class="hero__button button button_small">
                   VIEW KITCHEN GALLERY
                 </a>
               </div>
@@ -155,7 +155,7 @@
                   <li class="about__item">The latest appliances and brands</li>
                   <li class="about__item">Dedicated customer service</li>
                 </ul>
-                <a href="[[~6]]" class="about__link button button_long">
+                <a href="[[~6]]" class="about__link button button_small">
                   WHY CHOOSE URBAN MYTH
                 </a>
               </div>

@@ -99,7 +99,10 @@
         </ul>
       </div>
       <div class="footer__column-right">
-        <a href="book-app" class="footer__link button button_white _popup-link">
+        <a
+          href="book-app"
+          class="footer__link button button_white button_small _popup-link"
+        >
           Book appointment
         </a>
         <div class="footer__address">

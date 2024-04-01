@@ -399,6 +399,7 @@ body {
 }
 /*========================stay=========*/
 .stay {
+  margin-bottom: 60px;
   &__text-block {
     max-width: 1215px;
     margin: 0 auto;
@@ -406,8 +407,11 @@ body {
     border-radius: 100px;
     position: relative;
     z-index: 1;
-    padding: 60px 0;
+    padding: 40px 0;
     text-align: center;
+    @media (max-width: $md5) {
+      text-align: left;
+    }
 
     @media (max-width: $md3) {
       padding: 100px;
@@ -416,34 +420,42 @@ body {
     @media (max-width: $md4) {
       border-radius: 40px;
       padding: 40px;
+      background-color: #d9e0ce;
     }
 
-    &:before {
-      content: " ";
-      position: absolute;
-      background-color: #e1e5dc;
-      height: 870px;
-      width: 150vh;
-      left: 40%;
-      bottom: 100px;
-      z-index: -5;
-      border-radius: 150px 0px 0px 150px;
-      opacity: 0.6;
+    // &:before {
+    //   content: " ";
+    //   position: absolute;
+    //   background-color: #e1e5dc;
+    //   height: 870px;
+    //   width: 150vh;
+    //   left: 40%;
+    //   bottom: 100px;
+    //   z-index: -5;
+    //   border-radius: 150px 0px 0px 150px;
+    //   opacity: 0.6;
 
-      @media (max-width: $md3) {
-        display: none;
-      }
-    }
+    //   @media (max-width: $md3) {
+    //     display: none;
+    //   }
+    // }
   }
 
   &__title {
     font-size: 30px;
     padding-bottom: 24px;
+    @media (max-width: $md5) {
+      font-size: 22px;
+      font-weight: 700;
+    }
   }
 
   &__text {
     font-size: 20px;
-    padding-bottom: 50px;
+    padding-bottom: 20px;
+    @media (max-width: $md5) {
+      font-size: 14px;
+    }
   }
 
   &__button {

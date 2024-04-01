@@ -21,7 +21,7 @@
   }
 
   @media (max-width: $md3) {
-    padding: 8px 19px;
+    padding: 10px 19px;
   }
 
   &_long {
@@ -32,15 +32,22 @@
       padding-left: 32px;
       padding-right: 32px;
     }
+
+    @media (max-width: $md5) {
+      font-size: 14px;
+    }
   }
 
+  &_small {
+    padding: 10px 19px;
+  }
   &_medium {
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 28px;
+    padding-right: 28px;
 
     @media (max-width: $md4) {
-      padding-left: 32px;
-      padding-right: 32px;
+      padding-left: 22px;
+      padding-right: 22px;
     }
   }
 
