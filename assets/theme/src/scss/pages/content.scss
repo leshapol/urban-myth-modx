@@ -27,6 +27,10 @@
     height: 720px;
     padding: 0 20px;
     @include adaptiv-value("margin-bottom", 80, 40, 1);
+
+    @media (max-width: $md5) {
+      height: 100vw;
+    }
   }
 
   &__image img {

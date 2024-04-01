@@ -1,6 +1,29 @@
+// houzze
+body {
+  position: relative;
+
+  &:before {
+    content: "";
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    background-image: url("../img/homepage/hero-page-sticker.png");
+    background-repeat: no-repeat;
+    z-index: 1000;
+    bottom: 40vh;
+    background-size: cover;
+    @media (max-width: $md5) {
+      width: 55px;
+      height: 55px;
+      bottom: -1px;
+    }
+  }
+}
 /*==================hero============*/
+
 .hero {
   margin-bottom: 55px;
+  position: relative;
 
   &__wrap {
     position: relative;
@@ -37,6 +60,9 @@
       position: relative;
       min-height: 450px;
     }
+    @media (max-width: $md5) {
+      height: 100vw;
+    }
   }
 
   &__image img {
@@ -70,6 +96,7 @@
     }
   }
 }
+
 /*=====================Swiper==========*/
 .swiper {
   position: relative;
@@ -336,6 +363,9 @@
       margin-bottom: 24px;
       min-height: 450px;
     }
+    @media (max-width: $md5) {
+      height: 100vw;
+    }
   }
 
   &__border-radius {
@@ -561,6 +591,10 @@
     position: relative;
     height: auto;
     flex: 0 0 438px;
+
+    @media (max-width: $md5) {
+      flex: 0 0 100vw;
+    }
   }
 
   &__arrow {

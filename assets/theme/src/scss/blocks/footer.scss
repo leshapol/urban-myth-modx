@@ -24,6 +24,9 @@
       padding-left: 15px;
       padding-right: 15px;
       gap: 30px;
+
+      align-items: center;
+      text-align: center;
     }
   }
 
@@ -42,6 +45,9 @@
     @media (max-width: $md5) {
       flex-direction: column;
       row-gap: 30px;
+
+      align-items: center;
+      text-align: center;
     }
   }
 
