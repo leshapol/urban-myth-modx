@@ -8,7 +8,8 @@
 
 <p>Their phone number is [[+phone]]</p>
 
-<p>Subscribe: [[+subscribe]]</p>
+[[+subscribe:ne=``:then=`<p>Subscribe: [[+subscribe]]</p>`]]
+
 
 <p>Privacy Policy: [[+accept]]</p>
 
