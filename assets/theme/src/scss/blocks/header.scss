@@ -75,6 +75,9 @@
   &__slogan {
     margin-left: 35px;
     text-transform: uppercase;
+    @media (max-width: $md2) {
+      margin-left: auto;
+    }
     @media (max-width: $md3) {
       font-size: 12px;
     }
