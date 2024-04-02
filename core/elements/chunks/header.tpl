@@ -14,6 +14,20 @@
           <div class="header__contact">
             <a class="header__link" href="[[~23]]">FIND US</a>
           </div>
+          <div class="header__trustpilot trustpilot-link">
+            <img
+              alt="TrustScore 5 out of 5"
+              src="https://cdn.trustpilot.net/brand-assets/4.1.0/stars/stars-5.svg"
+              class="trustpilot-link__image"
+            />
+            <img
+              alt=""
+              width="140"
+              src="https://cdn.trustpilot.net/brand-assets/4.3.0/logo-white.svg"
+              class="trustpilot-link__image"
+            />
+          </div>
+
           <div class="header__slogan">MORE THAN A KITCHEN</div>
         </div>
       </div>
