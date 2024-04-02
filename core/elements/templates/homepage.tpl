@@ -39,6 +39,31 @@
           </div>
         </section>
 
+        <section class="features-slider">
+          <div class="container">
+            <ul class="features-slider__list">
+              <li claSS="features-slider__item">
+                <div class="features-slider__icon"></div>
+                <div class="features-slider__text">
+                  Established for 35 years
+                </div>
+              </li>
+              <li claSS="features-slider__item">
+                <div class="features-slider__icon"></div>
+                <div class="features-slider__text">Award winning service</div>
+              </li>
+              <li claSS="features-slider__item">
+                <div class="features-slider__icon"></div>
+                <div class="features-slider__text">Complete service</div>
+              </li>
+              <li claSS="features-slider__item">
+                <div class="features-slider__icon"></div>
+                <div class="features-slider__text">High quality materials</div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
         <!--<section class="swiper">
           <div class="container">
             <div class="swiper__body [[!get-position? &section=`swiper`]]">
@@ -202,7 +227,10 @@
       <!------------->
       [[$footer]]
     </div>
-
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"
+    ></script>
     [[$scripts? js=`homepage`]]
   </body>
 </html>

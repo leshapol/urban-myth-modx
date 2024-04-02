@@ -22,7 +22,7 @@ body {
 /*==================hero============*/
 
 .hero {
-  margin-bottom: 55px;
+  margin-bottom: 100px;
   position: relative;
 
   &__wrap {
@@ -46,7 +46,7 @@ body {
     height: 528px;
     width: 150vh;
     left: 50%;
-    bottom: -120px;
+    bottom: -50px;
     z-index: -5;
     border-radius: 0px 0px 0px 300px;
     opacity: 1;
