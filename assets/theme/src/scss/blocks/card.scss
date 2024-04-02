@@ -11,6 +11,10 @@
     height: 420px;
     border-radius: 100px 30px 100px 30px;
     object-fit: cover;
+
+    @media (max-width: $md5) {
+      height: 100%;
+    }
   }
 
   &__image_long img {

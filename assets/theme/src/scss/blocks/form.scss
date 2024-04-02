@@ -1,30 +1,32 @@
 .form {
   display: flex;
   flex-direction: column;
-  row-gap: 10px;
-  max-width: 500px;
+  row-gap: 15px;
+  max-width: 620px;
   text-align: left;
 
   &__label {
     display: flex;
     column-gap: 10px;
     @include adaptiv-font(20, 16, 1);
+    max-width: 620px;
   }
 
   .select {
-    @include adaptiv-value("width", 380, 220, 1);
+    width: 100%;
   }
 
   &__input {
-    height: 30px;
-    background-color: #d9d9d9;
+    height: 46px;
+    background-color: white;
     border-radius: 5px;
-    @include adaptiv-value("width", 380, 220, 1);
-    margin-left: auto;
+    width: 100%;
+
     padding-left: 10px;
+    font-size: 14px;
   }
   &__input_high {
-    height: 80px;
+    height: 120px;
     padding: 10px;
   }
 
@@ -43,6 +45,12 @@
     font-size: 14px;
     font-weight: 400;
     align-items: center;
+    color: #696969;
+  }
+
+  &__label-privacy a {
+    text-decoration: underline;
+    color: #696969;
   }
   &__input-checkbox {
     appearance: none;
@@ -58,13 +66,13 @@
     content: " ";
     display: block;
     justify-self: flex-start;
-    width: 21px;
-    height: 21px;
+    width: 12px;
+    height: 12px;
     padding-top: 0px;
     padding-bottom: 0px;
     top: 0px;
     border: none;
-    background-color: #d9d9d9;
+    background-color: white;
     border-radius: 3px;
   }
 
@@ -88,7 +96,7 @@
 
   &__submit {
     text-transform: uppercase;
-    align-self: flex-end;
+    align-self: center;
     cursor: pointer;
   }
 }

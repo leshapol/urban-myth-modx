@@ -73,8 +73,11 @@
   }
 
   &__slogan {
-    margin-left: auto;
+    margin-left: 35px;
     text-transform: uppercase;
+    @media (max-width: $md2) {
+      margin-left: auto;
+    }
     @media (max-width: $md3) {
       font-size: 12px;
     }
@@ -148,7 +151,7 @@
     @media (max-width: $md3) {
       flex-direction: column;
       width: 240px;
-      align-items: flex-start;
+      align-items: center;
       margin: 0 auto;
       margin-top: 40px;
       row-gap: 40px;
@@ -196,7 +199,6 @@
     }
 
     @media (max-width: $md3) {
-      font-size: 16px;
     }
   }
 
@@ -232,5 +234,22 @@
   &__burger_active span:nth-child(3) {
     transform: rotate(-45deg) translate(0px, -5px);
     // width: 30px;
+  }
+}
+
+// trustpilot-block
+
+.trustpilot-link {
+  display: flex;
+  margin-left: auto;
+  max-height: 25px;
+  max-width: 225px;
+
+  &__image {
+    max-width: 130px;
+  }
+
+  @media (max-width: $md2) {
+    display: none;
   }
 }

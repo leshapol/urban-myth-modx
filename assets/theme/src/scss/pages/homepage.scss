@@ -1,6 +1,29 @@
+// houzze
+body {
+  position: relative;
+
+  &:before {
+    content: "";
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    background-image: url("../img/homepage/hero-page-sticker.png");
+    background-repeat: no-repeat;
+    z-index: 1000;
+    bottom: 40vh;
+    background-size: cover;
+    @media (max-width: $md5) {
+      width: 55px;
+      height: 55px;
+      bottom: -1px;
+    }
+  }
+}
 /*==================hero============*/
+
 .hero {
-  margin-bottom: 55px;
+  margin-bottom: 100px;
+  position: relative;
 
   &__wrap {
     position: relative;
@@ -23,7 +46,7 @@
     height: 528px;
     width: 150vh;
     left: 50%;
-    bottom: -120px;
+    bottom: -50px;
     z-index: -5;
     border-radius: 0px 0px 0px 300px;
     opacity: 1;
@@ -36,6 +59,9 @@
     @media (max-width: $md3) {
       position: relative;
       min-height: 450px;
+    }
+    @media (max-width: $md5) {
+      height: 100vw;
     }
   }
 
@@ -70,6 +96,7 @@
     }
   }
 }
+
 /*=====================Swiper==========*/
 .swiper {
   position: relative;
@@ -336,6 +363,9 @@
       margin-bottom: 24px;
       min-height: 450px;
     }
+    @media (max-width: $md5) {
+      height: 100vw;
+    }
   }
 
   &__border-radius {
@@ -369,6 +399,7 @@
 }
 /*========================stay=========*/
 .stay {
+  margin-bottom: 60px;
   &__text-block {
     max-width: 1215px;
     margin: 0 auto;
@@ -376,8 +407,11 @@
     border-radius: 100px;
     position: relative;
     z-index: 1;
-    padding: 60px 0;
+    padding: 40px 0;
     text-align: center;
+    @media (max-width: $md5) {
+      text-align: left;
+    }
 
     @media (max-width: $md3) {
       padding: 100px;
@@ -386,34 +420,38 @@
     @media (max-width: $md4) {
       border-radius: 40px;
       padding: 40px;
+      background-color: #d9e0ce;
     }
 
-    &:before {
-      content: " ";
-      position: absolute;
-      background-color: #e1e5dc;
-      height: 870px;
-      width: 150vh;
-      left: 40%;
-      bottom: 100px;
-      z-index: -5;
-      border-radius: 150px 0px 0px 150px;
-      opacity: 0.6;
+    // &:before {
+    //   content: " ";
+    //   position: absolute;
+    //   background-color: #e1e5dc;
+    //   height: 870px;
+    //   width: 150vh;
+    //   left: 40%;
+    //   bottom: 100px;
+    //   z-index: -5;
+    //   border-radius: 150px 0px 0px 150px;
+    //   opacity: 0.6;
 
-      @media (max-width: $md3) {
-        display: none;
-      }
-    }
+    //   @media (max-width: $md3) {
+    //     display: none;
+    //   }
+    // }
   }
 
   &__title {
-    font-size: 30px;
+    @include adaptiv-font(30, 22, 1);
     padding-bottom: 24px;
+    @media (max-width: $md5) {
+      font-weight: 700;
+    }
   }
 
   &__text {
-    font-size: 20px;
-    padding-bottom: 50px;
+    padding-bottom: 20px;
+    @include adaptiv-font(20, 14, 1);
   }
 
   &__button {
@@ -561,6 +599,10 @@
     position: relative;
     height: auto;
     flex: 0 0 438px;
+
+    @media (max-width: $md5) {
+      flex: 0 0 100vw;
+    }
   }
 
   &__arrow {

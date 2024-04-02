@@ -24,11 +24,14 @@
       padding-left: 15px;
       padding-right: 15px;
       gap: 30px;
+
+      align-items: center;
+      text-align: center;
     }
   }
 
   &__column {
-    flex: 0 0 600px;
+    flex: 0 0 620px;
     display: flex;
     flex-direction: row;
     gap: 0px 140px;
@@ -42,6 +45,9 @@
     @media (max-width: $md5) {
       flex-direction: column;
       row-gap: 30px;
+
+      align-items: center;
+      text-align: center;
     }
   }
 
