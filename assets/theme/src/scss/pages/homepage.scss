@@ -442,20 +442,16 @@ body {
   }
 
   &__title {
-    font-size: 30px;
+    @include adaptiv-font(30, 22, 1);
     padding-bottom: 24px;
     @media (max-width: $md5) {
-      font-size: 22px;
       font-weight: 700;
     }
   }
 
   &__text {
-    font-size: 20px;
     padding-bottom: 20px;
-    @media (max-width: $md5) {
-      font-size: 14px;
-    }
+    @include adaptiv-font(20, 14, 1);
   }
 
   &__button {
