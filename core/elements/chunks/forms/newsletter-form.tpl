@@ -4,27 +4,35 @@
   data-id="30FEA77E7D0A9B8D7616376B900632319B0E40277B6BB69BAC446F2DFBA7D92DAF73DFA4A1B7442151D771519B06619D0B29EF6BA37B1D467D595F363018BFBD"
   method="post"
 >
-<input name="id" type="hidden" value="newsletter">
-  <label class="form__label form__label_select"
-    >I am...
-
-    <select class="_select" name="subject" id="fieldtyurjdd" name="cm-fo-tyurjdd">
-      <option disabled selected value="">Select...</option>
+  <input name="id" type="hidden" value="newsletter" />
+  <label class="form__label form__label_select">
+    <select
+      class="_select"
+      name="subject"
+      id="fieldtyurjdd"
+      name="cm-fo-tyurjdd"
+    >
+      <option disabled selected value="">I am (Select)</option>
       <option value="1448807">Homeowner</option>
       <option value="1448808">Developer</option>
     </select>
   </label>
 
-  <label class="form__label"
-    >Name:
-    <input type="text" name="cm-name" class="form__input" required />
+  <label class="form__label">
+    <input
+      type="text"
+      name="cm-name"
+      class="form__input"
+      required
+      placeholder="Name"
+    />
   </label>
-  <label class="form__label"
-    >Email:
+  <label class="form__label">
     <input
       type="email"
       name="cm-ihuhv-ihuhv"
       class="form__input js-cm-email-input"
+      placeholder="Email"
       required
     />
   </label>
@@ -52,7 +60,6 @@
   </label> -->
 
   <div class="form__privacy">
-    <div class="form__privacy-caption">Privacy</div>
     <label class="form__label-privacy">
       <input
         type="checkbox"
@@ -67,8 +74,15 @@
       </span>
     </label>
   </div>
-  <input aria-label="campaignID" id="fielddyjylhj" name="cm-f-dyjylhj" type="hidden" class="marketing_source" value="[[*campaign-id]]">
-  
+  <input
+    aria-label="campaignID"
+    id="fielddyjylhj"
+    name="cm-f-dyjylhj"
+    type="hidden"
+    class="marketing_source"
+    value="[[*campaign-id]]"
+  />
+
   <button type="submit" class="form__submit button js-cm-submit-button">
     SUBSCRIBE
   </button>

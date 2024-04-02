@@ -10,6 +10,7 @@
       name="subject"
       class="form__input"
       value="[[+fi.subject]]"
+      placeholder="Subject"
     />
   </label>
   `:else=`

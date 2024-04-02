@@ -4,43 +4,48 @@
   data-id="30FEA77E7D0A9B8D7616376B9006323195ADA8E05A6B2F3839B976033E8E410D82B93B0CC861F595BC5CF430CB9DA99DEDBBEC5B7695513F267007CF0393DF0F"
   method="post"
 >
-<input name="id" type="hidden" value="Section">
-  <label class="form__label"
-    >Name:
-    <input type="text" name="cm-name" id="fieldName" class="form__input" required/>
+  <input name="id" type="hidden" value="Section" />
+  <label class="form__label">
+    <input
+      type="text"
+      name="cm-name"
+      id="fieldName"
+      class="form__input"
+      placeholder="Name"
+      required
+    />
   </label>
-  <label class="form__label"
-    >Email:
+  <label class="form__label">
     <input
       type="email"
       id="fieldEmail"
       name="cm-jlkilrd-jlkilrd"
       class="form__input _req js-cm-email-input qa-input-email"
+      placeholder="Email"
       required
     />
   </label>
-  <label class="form__label"
-    >Telephone:
+  <label class="form__label">
     <input
       type="text"
       id="fielddldridd"
       name="cm-f-dldridd"
       class="form__input _req"
+      placeholder="Telephone"
       required
     />
   </label>
-  <label class="form__label"
-    >Postcode:
+  <label class="form__label">
     <input
       type="text"
       id="fielddldridh"
       name="cm-f-dldridh"
       class="form__input"
+      placeholder="Postcode"
       required
     />
   </label>
   <div class="form__privacy">
-    <div class="form__privacy-caption">Privacy</div>
     <label class="form__label-privacy">
       <input
         type="checkbox"
