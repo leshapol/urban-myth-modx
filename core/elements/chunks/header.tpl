@@ -20,13 +20,13 @@
           >
             <img
               alt="TrustScore 5 out of 5"
-              src="https://cdn.trustpilot.net/brand-assets/4.1.0/stars/stars-5.svg"
-              class="trustpilot-link__image"
+              src="/assets/theme/build/img/trustpilot-stars-5.svg"
+              class="trustpilot-link__image trustpilot-link__image_stars"
             />
             <img
               alt=""
               width="140"
-              src="https://cdn.trustpilot.net/brand-assets/4.3.0/logo-white.svg"
+              src="/assets/theme/build/img/trustpilot-logo-white.svg"
               class="trustpilot-link__image"
             />
           </a>

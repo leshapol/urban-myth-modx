@@ -75,11 +75,10 @@
   &__slogan {
     margin-left: 35px;
     text-transform: uppercase;
-    @media (max-width: $md2) {
-      margin-left: auto;
-    }
+
     @media (max-width: $md3) {
-      font-size: 12px;
+      //font-size: 12px;
+      display: none;
     }
     @media (max-width: $md5) {
       display: none;
@@ -247,9 +246,11 @@
 
   &__image {
     max-width: 130px;
-  }
 
-  @media (max-width: $md2) {
-    display: none;
+    &_stars {
+      @media (max-width: $md3) {
+        display: none;
+      }
+    }
   }
 }
