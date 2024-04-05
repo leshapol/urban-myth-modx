@@ -25,7 +25,10 @@
       <!------------->
       [[$footer]]
     </div>
-
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"
+    ></script>
     [[$scripts? js=`showroom`]]
   </body>
 </html>

@@ -39,30 +39,7 @@
           </div>
         </section>
 
-        <section class="features-slider">
-          <div class="container">
-            <ul class="features-slider__list">
-              <li claSS="features-slider__item">
-                <div class="features-slider__icon"></div>
-                <div class="features-slider__text">
-                  Established for 35 years
-                </div>
-              </li>
-              <li claSS="features-slider__item">
-                <div class="features-slider__icon"></div>
-                <div class="features-slider__text">Award winning service</div>
-              </li>
-              <li claSS="features-slider__item">
-                <div class="features-slider__icon"></div>
-                <div class="features-slider__text">Complete service</div>
-              </li>
-              <li claSS="features-slider__item">
-                <div class="features-slider__icon"></div>
-                <div class="features-slider__text">High quality materials</div>
-              </li>
-            </ul>
-          </div>
-        </section>
+        [[$showroom-features]]
 
         <!--<section class="swiper">
           <div class="container">
