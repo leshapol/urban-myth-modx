@@ -56,6 +56,8 @@
         itemscope=""
         itemtype="http://schema.org/SiteNavigationElement"
       >
+        
+        [[*hide-menu:isnot=`1`:then=`
         <ul
           class="header__list"
           itemprop="about"
@@ -64,6 +66,8 @@
         >
           [[+wrapper]]
         </ul>
+        `]]
+        
         <a href="book-app" class="header__btn button _popup-link"
           >BOOK APPOINTMENT</a
         >

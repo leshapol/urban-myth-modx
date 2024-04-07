@@ -33,7 +33,7 @@ var mSearch2 = {
 
     more: ".btn-more",
     more_tpl:
-      '<button class="blog__button-more button button_more btn-more">LOAD MORE</button>',
+      '<button class="blog__button-more button button_long button_center">LOAD MORE</button>',
 
     active_class: "active",
     disabled_class: "disabled",

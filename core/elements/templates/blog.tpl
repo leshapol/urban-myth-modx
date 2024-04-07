@@ -25,7 +25,7 @@
                   &includeTVs=`category-img,blog-tags`
                   &prepareTVs=`1` 
                   &ajaxMode=`button`
-                  &ajaxTplMore=`@INLINE <button class="blog__button-more button button_more btn-more">LOAD MORE</button>`
+                  &ajaxTplMore=`@INLINE <button class="blog__button-morebutton button_long button_center">LOAD MORE</button>`
                   &sortby=`menuindex`
                   &sortdir=`ASC`
                 ]]
@@ -33,7 +33,7 @@
                 <div class="catalog-list__button-wrap">
                   <a
                     href="newsletter"
-                    class="catalog-list__button button _popup-link"
+                    class="button_long button _popup-link"
                     >JOIN OUR NEWSLETTER</a
                   >
                 </div>

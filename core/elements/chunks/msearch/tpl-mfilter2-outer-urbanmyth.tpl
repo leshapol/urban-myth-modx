@@ -35,7 +35,7 @@
             <div class="catalog-list__button-wrap">
             <a
                 href="newsletter"
-                class="catalog-list__button button _popup-link"
+                class="button_long button _popup-link"
                 >JOIN OUR NEWSLETTER</a
             >
             </div>
