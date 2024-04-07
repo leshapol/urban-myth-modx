@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  [[$head? &css=`showroom`]]
+  [[$head? &css=`showroom` &trustbox=`1`]]
 
   <body>
     <div class="wrapper">
@@ -28,6 +28,10 @@
     <script
       defer
       src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"
+    ></script>
+    <script
+      defer
+      src="https://mreq.github.io/slick-lightbox/dist/slick-lightbox.js"
     ></script>
     [[$scripts? js=`showroom`]]
   </body>
