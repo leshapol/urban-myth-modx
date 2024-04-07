@@ -1,0 +1,35 @@
+/*========================trustpilot===*/
+.trustpilot {
+  background-color: white;
+  @include adaptiv-value("padding-top", 130, 40, 1);
+  @include adaptiv-value("padding-bottom", 390, 360, 1);
+  margin-bottom: -320px;
+  border-radius: 300px 0 0 0;
+
+  @media (max-width: $md3) {
+    border-radius: 120px 0 0 0;
+  }
+
+  @media (max-width: $md4) {
+    border-radius: 75px 0 0 0;
+  }
+  .container {
+    max-width: 1270px;
+    margin: 0 auto;
+    padding: 0 100px;
+
+    @media (max-width: $md3) {
+      padding: 0 20px;
+    }
+  }
+
+  &__title {
+    color: #000;
+    @include adaptiv-font(40, 32, 1);
+    padding-bottom: 50px;
+
+    @media (max-width: $md3) {
+      text-align: center;
+    }
+  }
+}
