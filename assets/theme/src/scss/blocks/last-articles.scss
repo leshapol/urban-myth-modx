@@ -86,17 +86,20 @@
     font-weight: 300;
     letter-spacing: 1.4px;
     text-transform: uppercase;
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: flex-start;
-    gap: 13px;
+    line-height: 150%;
+    // display: flex;
+    // flex-direction: row-reverse;
+    // align-items: flex-start;
+    // gap: 13px;
 
-    &::before {
-      display: block;
+    &::after {
+      position: relative;
+      display: inline-block;
       content: "";
-      background: url("../img/icons/link-arrow.svg") center no-repeat;
-      width: 17px;
+      background: url("../img/icons/link-arrow-1.svg") center right no-repeat;
+      width: 21px;
       height: 17px;
+      top: 3px;
     }
   }
 }
