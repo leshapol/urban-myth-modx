@@ -32,4 +32,22 @@
       text-align: center;
     }
   }
+
+  &__widget {
+    &_desktop {
+      display: block;
+
+      @media (max-width: $md3) {
+        display: none;
+      }
+    }
+
+    &_mobile {
+      display: none;
+
+      @media (max-width: $md3) {
+        display: block;
+      }
+    }
+  }
 }
