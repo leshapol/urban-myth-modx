@@ -45,7 +45,7 @@
     padding-bottom: 50px;
 
     p {
-      @include adaptiv-font(30, 20, 1);
+      @include adaptiv-font(28, 16, 1);
       padding-bottom: 24px;
       max-width: 970px;
       margin-left: auto;
@@ -61,9 +61,7 @@
   }
 
   &__details {
-    font-family: Helvetica;
     font-size: 16px;
-    letter-spacing: 2.24px;
     max-width: 970px;
     margin-left: auto;
     margin-bottom: 50px;
@@ -71,21 +69,17 @@
 
   &__details-title {
     font-weight: 700;
-    margin-bottom: 5px;
+    margin-bottom: 8px;
   }
 
   &__details-list {
-  }
-
-  &__details-wrap {
-    display: flex;
-    column-gap: 10px;
-    margin-bottom: 3px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 6px 10px;
   }
 
   &__details-desc {
     font-style: italic;
-    font-family: "Times New Roman";
   }
 
   &__share {
@@ -94,7 +88,6 @@
     margin-left: auto;
 
     color: #5a5a5a;
-    font-family: Helvetica;
     font-size: 14px;
     font-weight: 300;
     text-transform: uppercase;

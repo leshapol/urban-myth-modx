@@ -31,7 +31,7 @@
             />
           </a>
 
-          <div class="header__slogan">MORE THAN A KITCHEN</div>
+          <!--<div class="header__slogan">MORE THAN A KITCHEN</div>-->
         </div>
       </div>
     </div>

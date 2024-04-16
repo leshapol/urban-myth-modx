@@ -540,7 +540,10 @@ if ($(".features-slider").length) {
     slidesToShow: 4,
     slidesToScroll: 2,
     easing: "ease",
-    variableWidth: true,
+    autoplay: true,
+    autoplaySpeed: 4000,
+    infinite: true,
+    variableWidth: false,
     arrows: false,
     dots: false,
 

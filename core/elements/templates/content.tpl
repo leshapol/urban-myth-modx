@@ -43,37 +43,18 @@
             <div class="article__footer">
               [[!has-details:is=`1`:then=`
               <div class="article__details">
-                <div class="article__details-title">Details:</div>
+                <p class="article__details-title">Details:</p>
                 <dl class="article__details-list">
                   [[*details-style:notempty=`
-                  <div class="article__details-wrap">
                     <dt class="article__details-subtitle">Style:</dt>
                     <dd class="article__details-desc">[[*details-style]]</dd>
-                  </div>
                   `]] [[*details-finishes:notempty=`
-                  <div class="article__details-wrap">
                     <dt class="article__details-subtitle">Finishes:</dt>
                     <dd class="article__details-desc">[[*details-finishes]]</dd>
-                  </div>
                   `]] [[*details-appliances:notempty=`
-                  <div class="article__details-wrap">
                     <dt class="article__details-subtitle">Appliances:</dt>
                     <dd class="article__details-desc">[[*details-appliances]]</dd>
-                  </div>
                   `]] 
-
-                  <!-- <div class="article__details-wrap">
-                    <dt class="article__details-subtitle">Fittings:</dt>
-                    <dd class="article__details-desc">
-                      Blum Handles and Fankle Basin
-                    </dd>
-                  </div>
-                  <div class="article__details-wrap">
-                    <dt class="article__details-subtitle">Appliances:</dt>
-                    <dd class="article__details-desc">
-                      Smeg Oven and hob, Quooker Tap
-                    </dd>
-                  </div> -->
                 </dl>
               </div>
               `]]
