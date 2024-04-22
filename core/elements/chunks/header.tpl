@@ -14,7 +14,7 @@
           <div class="header__contact">
             <a class="header__link" href="[[~23]]">FIND US</a>
           </div>
-          <a
+          <!--<a
             href="https://www.trustpilot.com/review/urbanmyth.net"
             class="header__trustpilot trustpilot-link"
           >
@@ -29,7 +29,15 @@
               src="/assets/theme/build/img/trustpilot-logo-white.svg"
               class="trustpilot-link__image"
             />
-          </a>
+          </a>-->
+          
+          <!-- TrustBox widget - Micro Star -->
+          <div class="header__trustpilot trustpilot-link">
+            <div class="trustpilot-widget" data-locale="en-GB" data-template-id="5419b732fbfb950b10de65e5" data-businessunit-id="61dd99c73bd1310fccb06b5b" data-style-height="24px" data-style-width="100%" data-theme="dark">
+            <a href="https://uk.trustpilot.com/review/urbanmyth.net" target="_blank" rel="noopener">Trustpilot</a>
+            </div>
+          </div>
+          <!-- End TrustBox widget -->
 
           <!--<div class="header__slogan">MORE THAN A KITCHEN</div>-->
         </div>

@@ -8,7 +8,7 @@ if ($(".features-slider").length) {
     autoplaySpeed: 4000,
     infinite: true,
     variableWidth: false,
-    arrows: false,
+    arrows: true,
     dots: false,
 
     responsive: [

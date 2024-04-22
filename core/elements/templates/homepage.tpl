@@ -124,14 +124,9 @@
               <div class="about__text-block">
                 <h2 class="about__title">About Urban Myth</h2>
                 <ul class="about__list">
-                  <li class="about__item">
-                    Full design and consultation service
-                  </li>
-                  <li class="about__item">
-                    UK manufactured kitchens and bedrooms
-                  </li>
-                  <li class="about__item">The latest appliances and brands</li>
-                  <li class="about__item">Dedicated customer service</li>
+                  [[getImageList? &tvname=`about-bullets` &tpl=`@CODE:
+                  <li class="about__item">[[+text]]</li>
+                  ` ]]
                 </ul>
                 <a href="[[~6]]" class="about__link button button_small">
                   WHY CHOOSE URBAN MYTH

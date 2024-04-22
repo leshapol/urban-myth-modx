@@ -5,6 +5,8 @@
     display: flex;
     flex-direction: row;
     gap: 40px;
+    position: relative;
+    margin: 0 30px;
   }
 
   &__item {
@@ -13,9 +15,8 @@
     display: flex;
     align-items: center;
     border-radius: 50px 0px 100px 0px;
-
-    padding: 0 30px;
-    gap: 16px;
+    padding: 0 20px 0 30px;
+    gap: 26px;
 
     @media (max-width: $md4) {
       height: 83px;
@@ -35,8 +36,8 @@
     background-color: #f3f1d5;
   }
   &__icon {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     position: relative;
     @media (max-width: $md4) {
       width: 20px;
@@ -62,11 +63,40 @@
   &__text {
     @include adaptiv-font(30, 18, 1);
   }
+
+  /* Стрелка */
+  .slick-arrow {
+    position: absolute;
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    border-top: 2px solid #000;
+    border-right: 2px solid #000;
+    top: 50%;
+    background: 0 0;
+    transform: rotate(45deg);
+    border-radius: 0;
+    right: -30px;
+
+    &::before {
+      display: none;
+    }
+
+    @media (max-width: $md3) {
+      display: none !important;
+    }
+  }
+
+  .slick-arrow.slick-prev {
+    transform: rotate(-135deg);
+    right: auto;
+    left: -30px;
+  }
 }
 
 /* Слайдер */
 .slick-slider {
-  margin: 0;
+  margin: 0 30px 30px;
 }
 // .slider__list_active {
 //   position: fixed;
@@ -79,7 +109,6 @@
 // }
 /* Слайдер запущен */
 .slick-slider.slick-initialized {
-  overflow: auto;
   height: auto;
 }
 /* Слайдер с точками */
@@ -116,20 +145,6 @@
 }
 /* Клонированный слайд */
 .slick-slide.slick-cloned {
-}
-/* Стрелка */
-.slick-arrow {
-  width: 60px !important;
-  height: 60px !important;
-
-  @media (max-width: $md3) {
-    display: none !important;
-  }
-}
-.slick-arrow:before {
-  font-size: 60px !important;
-  position: relative !important;
-  z-index: 10 !important;
 }
 
 /* Стрелка влево */
