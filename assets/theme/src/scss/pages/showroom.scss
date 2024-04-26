@@ -414,8 +414,18 @@
 }
 
 .slider {
-  @include adaptiv-value("padding-top", 100, 40, 1);
-  @include adaptiv-value("padding-bottom", 100, 40, 1);
+  @include adaptiv-value("padding-top", 130, 40, 1);
+  @include adaptiv-value("padding-bottom", 390, 360, 1);
+  margin-bottom: -320px;
+  background-color: #f4ecec;
+  border-radius: 300px 0px 0px 300px;
+  @media (max-width: $md3) {
+    border-radius: 120px 0 0 0;
+  }
+
+  @media (max-width: $md4) {
+    border-radius: 75px 0 0 0;
+  }
 
   .container {
     max-width: 1270px;
@@ -452,12 +462,36 @@
     @media (max-width: $md3) {
       padding: 0 10px;
     }
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 24px;
+    }
+
+    li {
+      padding-left: 20px;
+      margin-left: 15px;
+      position: relative;
+      font-size: 20px;
+
+      &:before {
+        content: " ";
+        position: absolute;
+        width: 3px;
+        height: 3px;
+        background-color: black;
+        border-radius: 50%;
+        top: 45%;
+        left: 0;
+      }
+    }
   }
 
   &__title {
     font-size: 24px;
     letter-spacing: 1.2px;
-    padding-bottom: 16px;
+    padding-bottom: 24px;
   }
 
   &__list {

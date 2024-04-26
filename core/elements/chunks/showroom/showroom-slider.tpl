@@ -3,9 +3,9 @@
     <div class="slider__body">
       <div class="slider__text-block">
         <h2 class="slider__title">[[+title]]</h2>
-        <ul class="slider__text">
+        <div class="slider__text">
           [[+description]]
-        </ul>
+        </div>
       </div>
       <div class="slider__slider">
         <button
