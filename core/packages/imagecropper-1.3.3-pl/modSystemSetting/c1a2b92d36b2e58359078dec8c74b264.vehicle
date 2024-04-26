@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'imagecropper',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'd5be4529f73392de5b2d3a60c64f963f',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => 'c1a2b92d36b2e58359078dec8c74b264',
+  'native_key' => 'imagecropper.migration_hash',
+  'object' => '{"key":"imagecropper.migration_hash","value":"","xtype":"textfield","namespace":"imagecropper","area":"imagecropper","editedon":null}',
+);

@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'imagecropper',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'dea67e04fbd693d09f899b1e1900ba04',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '46cf477697f7d8f272678ea6ff9e0dab',
+  'native_key' => 'imagecropper.crop_path',
+  'object' => '{"key":"imagecropper.crop_path","value":"assets\\/crops\\/","xtype":"textfield","namespace":"imagecropper","area":"imagecropper","editedon":null}',
+);

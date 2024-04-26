@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'imagecropper',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'cd1b3629e6943c12e7c876f1a9e44052',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '654536be21200cc106af67756d7079ad',
+  'native_key' => 'imagecropper.auto_open_cropper',
+  'object' => '{"key":"imagecropper.auto_open_cropper","value":"1","xtype":"combo-boolean","namespace":"imagecropper","area":"imagecropper","editedon":null}',
+);

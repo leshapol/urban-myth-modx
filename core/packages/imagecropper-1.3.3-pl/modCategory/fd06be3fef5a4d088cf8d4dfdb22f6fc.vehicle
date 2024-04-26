@@ -1,0 +1,235 @@
+<?php return array (
+  'unique_key' => 'category',
+  'preserve_keys' => false,
+  'update_object' => true,
+  'related_objects' => 
+  array (
+    'Chunks' => 
+    array (
+      '976c8ca532a0c4c901424a905dca517e' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modChunk',
+        'object' => '{"id":null,"source":0,"property_preprocess":0,"name":"imageCropperImageTpl","description":"","editor_type":0,"category":0,"cache_type":0,"snippet":"<img src=\\"[[+desktop.image:default=`[[+image]]`]]\\" srcset=\\"[[+mobile.image:default=`[[+image]]`]] 768w, [[+desktop.image:default=`[[+image]]`]] 958w\\" sizes=\\"(max-width: 767px) 768px, 958px\\" alt=\\"[[+alt]]\\" \\/>","locked":0,"properties":"a:0:{}","static":0,"static_file":"","content":"<img src=\\"[[+desktop.image:default=`[[+image]]`]]\\" srcset=\\"[[+mobile.image:default=`[[+image]]`]] 768w, [[+desktop.image:default=`[[+image]]`]] 958w\\" sizes=\\"(max-width: 767px) 768px, 958px\\" alt=\\"[[+alt]]\\" \\/>"}',
+        'guid' => 'a680b6942b06937d2b87478218b08c4f',
+        'native_key' => NULL,
+        'signature' => '72dc025b586a8e9a357565169aa91469',
+      ),
+    ),
+    'Snippets' => 
+    array (
+      '21c0860c3ba899a8c0df8056e90f53cb' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modSnippet',
+        'object' => '{"id":null,"source":0,"property_preprocess":0,"name":"ImageCropper","description":"","editor_type":0,"category":0,"cache_type":0,"snippet":"\\/**\\n * ImageCropper\\n *\\n * Copyright 2019 by Sterc <modx@sterc.nl>\\n *\\/\\n\\n$class = $modx->loadClass(\'ImageCropperSnippet\', $modx->getOption(\'imagecropper.core_path\', null, $modx->getOption(\'core_path\') . \'components\\/imagecropper\\/\') . \'model\\/imagecropper\\/snippets\\/\', false, true);\\n\\nif ($class) {\\n    $instance = new $class($modx);\\n\\n    if ($instance instanceof ImageCropperSnippet) {\\n        return $instance->run($scriptProperties);\\n    }\\n}\\n\\nreturn \'\';","locked":0,"properties":"a:0:{}","moduleguid":"","static":0,"static_file":"","content":"\\/**\\n * ImageCropper\\n *\\n * Copyright 2019 by Sterc <modx@sterc.nl>\\n *\\/\\n\\n$class = $modx->loadClass(\'ImageCropperSnippet\', $modx->getOption(\'imagecropper.core_path\', null, $modx->getOption(\'core_path\') . \'components\\/imagecropper\\/\') . \'model\\/imagecropper\\/snippets\\/\', false, true);\\n\\nif ($class) {\\n    $instance = new $class($modx);\\n\\n    if ($instance instanceof ImageCropperSnippet) {\\n        return $instance->run($scriptProperties);\\n    }\\n}\\n\\nreturn \'\';"}',
+        'guid' => '8e991bd4a24d9ec31508d117b227b1ee',
+        'native_key' => NULL,
+        'signature' => '66eb960b4d44177c5e15c9e29aa300f0',
+      ),
+    ),
+    'Plugins' => 
+    array (
+      'f0d30d13fc9971de7cf69db74da5adf4' => 
+      array (
+        'unique_key' => 'name',
+        'preserve_keys' => false,
+        'update_object' => true,
+        'related_objects' => 
+        array (
+          'PluginEvents' => 
+          array (
+            '2e511ead74c2ed8d8e37434b3e2b558e' => 
+            array (
+              'preserve_keys' => true,
+              'update_object' => false,
+              'unique_key' => 
+              array (
+                0 => 'pluginid',
+                1 => 'event',
+              ),
+              'class' => 'modPluginEvent',
+              'object' => '{"pluginid":0,"event":"OnManagerPageInit","priority":0,"propertyset":0}',
+              'guid' => '60c1da0765071720077d4a62058395c8',
+              'native_key' => 
+              array (
+                0 => 0,
+                1 => 'OnManagerPageInit',
+              ),
+              'signature' => '06337479c83c16580a2ef72184cc4d7a',
+            ),
+            '5b8e00e8a4041bf9edf1d13e0531dbbd' => 
+            array (
+              'preserve_keys' => true,
+              'update_object' => false,
+              'unique_key' => 
+              array (
+                0 => 'pluginid',
+                1 => 'event',
+              ),
+              'class' => 'modPluginEvent',
+              'object' => '{"pluginid":0,"event":"OnTVInputRenderList","priority":0,"propertyset":0}',
+              'guid' => 'ebc68eadcfdaffd54d7192043321a049',
+              'native_key' => 
+              array (
+                0 => 0,
+                1 => 'OnTVInputRenderList',
+              ),
+              'signature' => 'e21df6b686ae56268560ea32b9b2fbc7',
+            ),
+            '930749341f03a2dc66c47f057a336f3d' => 
+            array (
+              'preserve_keys' => true,
+              'update_object' => false,
+              'unique_key' => 
+              array (
+                0 => 'pluginid',
+                1 => 'event',
+              ),
+              'class' => 'modPluginEvent',
+              'object' => '{"pluginid":0,"event":"OnTVInputPropertiesList","priority":0,"propertyset":0}',
+              'guid' => '30a0f38dc485917ab8a25b672de212d1',
+              'native_key' => 
+              array (
+                0 => 0,
+                1 => 'OnTVInputPropertiesList',
+              ),
+              'signature' => '787c879d3e6aa2e4e4e2b0b4f1d16121',
+            ),
+            '56c19086b83be004dfaf0778d34111ce' => 
+            array (
+              'preserve_keys' => true,
+              'update_object' => false,
+              'unique_key' => 
+              array (
+                0 => 'pluginid',
+                1 => 'event',
+              ),
+              'class' => 'modPluginEvent',
+              'object' => '{"pluginid":0,"event":"OnClientSettingsRegisterSettings","priority":0,"propertyset":0}',
+              'guid' => 'fcb3ea4be4f52e31d681a0c3dde7eb54',
+              'native_key' => 
+              array (
+                0 => 0,
+                1 => 'OnClientSettingsRegisterSettings',
+              ),
+              'signature' => '38b076cbfccb9db9557d101b1c2a9350',
+            ),
+          ),
+        ),
+        'related_object_attributes' => 
+        array (
+          'PluginEvents' => 
+          array (
+            'preserve_keys' => true,
+            'update_object' => false,
+            'unique_key' => 
+            array (
+              0 => 'pluginid',
+              1 => 'event',
+            ),
+          ),
+        ),
+        'class' => 'modPlugin',
+        'object' => '{"id":null,"source":0,"property_preprocess":0,"name":"ImageCropper","description":"","editor_type":0,"category":0,"cache_type":0,"plugincode":"\\/**\\n * ImageCropper\\n *\\n * Copyright 2019 by Sterc <modx@sterc.nl>\\n *\\/\\n\\nif (in_array($modx->event->name, [\'OnManagerPageInit\', \'OnTVInputRenderList\', \'OnTVInputPropertiesList\', \'OnClientSettingsRegisterSettings\'], true)) {\\n    $instance = $modx->getService(\'ImageCropperPlugins\', \'ImageCropperPlugins\', $modx->getOption(\'imagecropper.core_path\', null, $modx->getOption(\'core_path\') . \'components\\/imagecropper\\/\') . \'model\\/imagecropper\\/\');\\n\\n    if ($instance instanceof ImageCropperPlugins) {\\n        $method = lcfirst($modx->event->name);\\n\\n        if (method_exists($instance, $method)) {\\n            $instance->$method($scriptProperties);\\n        }\\n    }\\n}","locked":0,"properties":"a:0:{}","disabled":0,"moduleguid":"","static":0,"static_file":"","content":"\\/**\\n * ImageCropper\\n *\\n * Copyright 2019 by Sterc <modx@sterc.nl>\\n *\\/\\n\\nif (in_array($modx->event->name, [\'OnManagerPageInit\', \'OnTVInputRenderList\', \'OnTVInputPropertiesList\', \'OnClientSettingsRegisterSettings\'], true)) {\\n    $instance = $modx->getService(\'ImageCropperPlugins\', \'ImageCropperPlugins\', $modx->getOption(\'imagecropper.core_path\', null, $modx->getOption(\'core_path\') . \'components\\/imagecropper\\/\') . \'model\\/imagecropper\\/\');\\n\\n    if ($instance instanceof ImageCropperPlugins) {\\n        $method = lcfirst($modx->event->name);\\n\\n        if (method_exists($instance, $method)) {\\n            $instance->$method($scriptProperties);\\n        }\\n    }\\n}"}',
+        'guid' => 'c50d4e623707a3f746aa58c66da70bbe',
+        'native_key' => NULL,
+        'signature' => '653abdbbe796573467443dc0fd952c07',
+      ),
+    ),
+  ),
+  'related_object_attributes' => 
+  array (
+    'Children' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 
+      array (
+        0 => 'parent',
+        1 => 'category',
+      ),
+    ),
+    'Snippets' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+    'Chunks' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+    'Templates' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'templatename',
+    ),
+    'TemplateVars' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+    'Plugins' => 
+    array (
+      'unique_key' => 'name',
+      'preserve_keys' => false,
+      'update_object' => true,
+      'related_objects' => true,
+      'related_object_attributes' => 
+      array (
+        'PluginEvents' => 
+        array (
+          'preserve_keys' => true,
+          'update_object' => false,
+          'unique_key' => 
+          array (
+            0 => 'pluginid',
+            1 => 'event',
+          ),
+        ),
+      ),
+    ),
+  ),
+  'namespace' => 'imagecropper',
+  'resolve' => 
+  array (
+    0 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"imagecropper-1.3.3-pl\\/modCategory\\/fd06be3fef5a4d088cf8d4dfdb22f6fc\\/0\\/","target":"return MODX_ASSETS_PATH . \'components\\/\';","name":"imagecropper"}',
+    ),
+    1 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"imagecropper-1.3.3-pl\\/modCategory\\/fd06be3fef5a4d088cf8d4dfdb22f6fc\\/1\\/","target":"return MODX_CORE_PATH . \'components\\/\';","name":"imagecropper"}',
+    ),
+    2 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"imagecropper-1.3.3-pl\\/modCategory\\/fd06be3fef5a4d088cf8d4dfdb22f6fc.setupoptions.resolver.resolver","type":"php","name":"setupoptions.resolver"}',
+    ),
+    3 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"imagecropper-1.3.3-pl\\/modCategory\\/fd06be3fef5a4d088cf8d4dfdb22f6fc.stercextra.resolver.resolver","type":"php","name":"stercextra.resolver"}',
+    ),
+  ),
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '2f2be1cfa4200e4d02781a086c8f3fb1',
+  'package' => 'modx',
+  'class' => 'modCategory',
+  'signature' => 'fd06be3fef5a4d088cf8d4dfdb22f6fc',
+  'native_key' => NULL,
+  'object' => '{"id":null,"parent":0,"category":"ImageCropper","rank":0}',
+);
