@@ -55,7 +55,6 @@
     href="/assets/theme/build/css/[[+css:empty=`main`]].min.css?v=20240408"
   />
 
-  [[+trustbox:is=`1`:then=`
   <!-- TrustBox script -->
   <script
     type="text/javascript"
@@ -63,7 +62,6 @@
     async
   ></script>
   <!-- End TrustBox script -->
-  `]]
 
   <!-- Lucky Orange -->
   <script

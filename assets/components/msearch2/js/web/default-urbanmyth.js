@@ -31,9 +31,9 @@ var mSearch2 = {
     selected_filters_delimeter: "</span>",
     selected_values_delimeter: " ",
 
-    more: ".btn-more",
+    more: "._btn-more",
     more_tpl:
-      '<button class="blog__button-more button button_long button_center">LOAD MORE</button>',
+      '<button class="blog__button-more button button_long button_center _btn-more">LOAD MORE</button>',
 
     active_class: "active",
     disabled_class: "disabled",

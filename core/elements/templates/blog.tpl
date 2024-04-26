@@ -25,7 +25,7 @@
                   &includeTVs=`category-img,blog-tags`
                   &prepareTVs=`1` 
                   &ajaxMode=`button`
-                  &ajaxTplMore=`@INLINE <button class="blog__button-morebutton button_long button_center">LOAD MORE</button>`
+                  &ajaxTplMore=`@INLINE <button class="blog__button-more button button_long button_center _btn-more">LOAD MORE</button>`
                   &sortby=`menuindex`
                   &sortdir=`ASC`
                 ]]
