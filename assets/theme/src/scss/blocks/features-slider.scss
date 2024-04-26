@@ -17,24 +17,26 @@
     border-radius: 50px 0px 100px 0px;
     padding: 0 20px 0 30px;
     gap: 26px;
+    background-color: #fff;
 
     @media (max-width: $md4) {
       height: 83px;
     }
   }
 
-  &__item:nth-child(4n + 1) {
-    background-color: #d9e0ce;
-  }
-  &__item:nth-child(4n + 2) {
-    background-color: #e2e9f2;
-  }
-  &__item:nth-child(4n + 3) {
-    background-color: #f2dcdc;
-  }
-  &__item:nth-child(4n + 4) {
-    background-color: #f3f1d5;
-  }
+  // &__item:nth-child(4n + 1) {
+  //   background-color: #d9e0ce;
+  // }
+  // &__item:nth-child(4n + 2) {
+  //   background-color: #e2e9f2;
+  // }
+  // &__item:nth-child(4n + 3) {
+  //   background-color: #f2dcdc;
+  // }
+  // &__item:nth-child(4n + 4) {
+  //   background-color: #f3f1d5;
+  // }
+
   &__icon {
     width: 40px;
     height: 40px;

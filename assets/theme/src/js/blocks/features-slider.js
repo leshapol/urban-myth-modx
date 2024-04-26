@@ -1,7 +1,10 @@
 if ($(".features-slider").length) {
+  let count = $(".features-slider__item").length;
+  if (count > 4) count = 4;
+
   $(".features-slider__list").slick({
     infinite: false,
-    slidesToShow: 4,
+    slidesToShow: count,
     slidesToScroll: 2,
     easing: "ease",
     autoplay: true,
@@ -15,7 +18,7 @@ if ($(".features-slider").length) {
       {
         breakpoint: 2400,
         settings: {
-          slidesToShow: 4,
+          slidesToShow: count,
           slidesToScroll: 2,
         },
       },
