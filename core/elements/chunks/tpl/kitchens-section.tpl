@@ -26,10 +26,17 @@
         media="(min-width: 425px)" 
         srcset="[[+image:phpthumbof=`f=webp`]]"
       />
+      [[+image-mobile:isnot=``:then=`
       <source
-        srcset="[[+image:phpthumbof=`&w=425&h=720&zc=1&f=webp`]]"
+        srcset="[[+image-mobile:phpthumbof=`f=webp`]]"
         type="image/webp"
       />
+      `:else=`
+      <source
+        srcset="[[+image-mobile=`&w=600&h=720&zc=1&f=webp`]]"
+        type="image/webp"
+      />
+      `]]
       <img src="[[+image]]" alt="[[+title]]" />
     </picture>
   </div>

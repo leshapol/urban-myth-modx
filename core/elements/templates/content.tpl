@@ -29,9 +29,21 @@
             <div class="hero__image absolute-image border-radius_right-bottom">
               <picture>
                 <source
-                  srcset="[[*hero-img:phpthumbof=`f=webp]]"
+                  type="image/webp"
+                  media="(min-width: 425px)"
+                  srcset="[[*hero-img:phpthumbof=`f=webp`]]"
+                />
+                [[*hero-img-mobile:isnot=``:then=`
+                <source
+                  srcset="[[*hero-img-mobile:phpthumbof=`f=webp`]]"
                   type="image/webp"
                 />
+                `:else=`
+                <source
+                  srcset="[[*hero-img:phpthumbof=`&w=1080&h=720&zc=1&f=webp`]]"
+                  type="image/webp"
+                />
+                `]]
                 <img src="[[*hero-img]]" alt="[[*pagetitle]]" />
               </picture>
             </div>
