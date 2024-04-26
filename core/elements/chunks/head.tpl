@@ -52,7 +52,7 @@
   <!-- css -->
   <link
     rel="stylesheet"
-    href="/assets/theme/build/css/[[+css:empty=`main`]].min.css?v=20240408"
+    href="/assets/theme/build/css/[[+css:empty=`main`]].min.css?v=20240427"
   />
 
   <!-- TrustBox script -->
