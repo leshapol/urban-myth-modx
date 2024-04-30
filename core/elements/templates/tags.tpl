@@ -11,7 +11,7 @@
           <div class="container">
             <div class="blog__header page-head">
               <h1 class="page-head__title">[[*pagetitle]]</h1>
-              <p class="page-head__desc_small">[[*description]]</p>
+              <!--<p class="page-head__desc_small">[[*description]]</p>-->
             </div>
 
             <div class="blog__catalog-list catalog-list">

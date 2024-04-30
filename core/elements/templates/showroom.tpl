@@ -9,6 +9,11 @@
       <main>
         <section class="top">
           <div class="page-head container">
+            [[*show-parent:isnot=``:then=`
+            <a class="page-head__category" href="[[~[[*parent]]]]">
+              [[#[[*parent]].pagetitle]]
+            </a>
+            `]]
             <h1 class="page-head__title">[[*pagetitle]]</h1>
             <p class="page-head__desc page-head__desc_small">[[*introtext]]</p>
           </div>

@@ -7,6 +7,14 @@
     }
   }
 
+  &__category {
+    color: #000;
+    font-size: 14px;
+    text-transform: uppercase;
+    display: inline-block;
+    padding-bottom: 20px;
+  }
+
   &__title {
     color: #000;
     @include adaptiv-font(40, 22, 1);
