@@ -10,7 +10,7 @@
       data-style-height="140px"
       data-style-width="100%"
       data-theme="light"
-      data-stars="1,2,3,4,5"
+      data-stars="4,5"
       data-review-languages="en"
     >
       <a
@@ -21,14 +21,13 @@
       >
     </div>
     <!-- End TrustBox widget -->
-
-    <!-- TrustBox widget - Mini Carousel -->
+    <!-- TrustBox widget - Slider -->
     <div
       class="trustpilot-widget trustpilot__widget_mobile"
       data-locale="en-US"
-      data-template-id="539ad0ffdec7e10e686debd7"
+      data-template-id="54ad5defc6454f065c28af8b"
       data-businessunit-id="61dd99c73bd1310fccb06b5b"
-      data-style-height="350px"
+      data-style-height="240px"
       data-style-width="100%"
       data-theme="light"
       data-stars="4,5"
