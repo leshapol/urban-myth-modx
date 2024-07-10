@@ -1,0 +1,58 @@
+Changelog for GoogleSiteMap.
+
+GoogleSiteMap 2.1.2
+====================================
+- Fix duplicate `site_start` url. Thanks [@Jako](https://github.com/Jako)
+
+GoogleSiteMap 2.1.1
+====================================
+- Fix cacheKey collision issue #9
+
+GoogleSiteMap 2.1.0
+====================================
+- Fix multi-context issue
+- Add cachemanager Plugin
+
+GoogleSiteMap 2.0.2
+====================================
+- Complete rewrite based on Garry's blazing fast sitemap code
+- Added cachemanager
+- Efforts were made to make it backwards compatible using runSnippet to call the legacy snippet if legacy features are required.
+- RC release could use some testing
+
+GoogleSiteMap 1.3.1
+====================================
+- [#15] Better Articles support
+- [#14] Add &priorityTV to allow for specifying priority of page in a TV
+
+GoogleSiteMap 1.3.0
+====================================
+- [#7] Add &showHidden for showing items hidden from menu; hide those by default
+- Add &where for JSON-based where filtering
+- [#13] Add &excludeChildrenOf, which can take a comma-separated list of parents to exclude all children of
+
+GoogleSiteMap 1.2.1
+====================================
+- [#1] Add ability to make sitemap from a specific Resource via startId property
+- [#4] Fix issue where children of non-published resources were not showing
+- [#5] Fix issue where children of non-searchable resources were not showing
+
+GoogleSiteMap 1.2
+====================================
+- Fix reference URL for schema
+- Fix reference to 0.9
+- Update schema to 0.90
+
+GoogleSiteMap 1.1
+====================================
+- Added maxDepth, excludeResources properties
+- Refactored to work with overridable chunks for templates
+- Fixed URL generation bug where home URL was incorrectly generating
+- Updated copyright information
+- i18n of properties
+
+GoogleSiteMap 1.0
+====================================
+- Updated package build for Revo RC1
+- Added fix for when editedon is empty (thanks Andrey Federov!)
+- Added changelog
