@@ -2,22 +2,22 @@
 body {
   position: relative;
 
-  &:before {
-    content: "";
-    position: fixed;
-    width: 135px;
-    height: 135px;
-    background-image: url("../img/homepage/hero-page-sticker.png");
-    background-repeat: no-repeat;
-    z-index: 1000;
-    bottom: 40vh;
-    background-size: cover;
-    @media (max-width: $md5) {
-      width: 55px;
-      height: 55px;
-      bottom: 30px;
-    }
-  }
+  // &:before {
+  //   content: "";
+  //   position: fixed;
+  //   width: 135px;
+  //   height: 135px;
+  //   background-image: url("../img/homepage/hero-page-sticker.png");
+  //   background-repeat: no-repeat;
+  //   z-index: 1000;
+  //   bottom: 40vh;
+  //   background-size: cover;
+  //   @media (max-width: $md5) {
+  //     width: 55px;
+  //     height: 55px;
+  //     bottom: 30px;
+  //   }
+  // }
 }
 /*==================hero============*/
 
@@ -277,7 +277,7 @@ body {
   }
 
   &__wrap {
-    background-color: #f0f4e9;
+    // background-color: #f0f4e9;
     max-width: 870px;
     margin: 0 auto;
     border-radius: 0px 0px 100px 100px;

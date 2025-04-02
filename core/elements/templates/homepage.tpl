@@ -46,43 +46,7 @@
           </div>
         </section>
 
-        [[$showroom-features]]
-
-        <!--<section class="swiper">
-          <div class="container">
-            <div class="swiper__body [[!get-position? &section=`swiper`]]">
-              <h2 class="swiper__title section-title">
-                Turning ideas into beautiful kitchens
-              </h2>
-              <p class="swiper__text section-text">
-                The first step to your dream kitchen is a tour of our showroom
-                and a free consultation with a designer. 
-              </p>
-              <a
-                href="book-app"
-                class="swiper__link button button_long _popup-link"
-              >
-                BOOK FREE CONSULTATION
-              </a>
-            </div>
-          </div>
-          <div class="swiper__wrap">
-            <div class="swiper__img swiper__background-img"></div>
-            <div class="swiper__img swiper__foreground-img"></div>
-            <input
-              type="range"
-              min="1"
-              max="100"
-              value="50"
-              class="swiper__slider"
-              name="slider"
-              id="slider"
-            />
-            <div class="swiper__slider-button">
-              <span class="swiper__slider-line"></span>
-            </div>
-          </div>
-        </section>-->
+        [[$showroom-trustpilot]]
 
         <section class="top-images">
           <div class="kitchens__body">
@@ -102,12 +66,6 @@
           </div>
         </section>
 
-        <section class="kitchens">
-          <div class="kitchens__body">
-            [[getImageList? &tvname=`kitchens` &tpl=`kitchens-section.tpl` ]]
-          </div>
-        </section>
-
         <section class="stay">
           <div class="stay__text-block">
             <h2 class="stay__title">How can we help?</h2>
@@ -123,7 +81,13 @@
           </div>
         </section>
 
-        [[$showroom-trustpilot]]
+        [[$showroom-features]]
+
+        <section class="kitchens">
+          <div class="kitchens__body">
+            [[getImageList? &tvname=`kitchens` &tpl=`kitchens-section.tpl` ]]
+          </div>
+        </section>
 
         <section class="about">
           <div class="container">
@@ -173,6 +137,45 @@
             </div>
           </div>
         </section>
+
+        <section class="awards">
+          <div class="container">
+            <h2 class="awards__title">
+              [[getImageList?
+                &tvname=`awards`
+                &tpl=`@CODE: [[+title]]`
+                &limit=`1`
+              ]]
+            </h2>
+            <p class="awards__desc">
+              [[getImageList?
+                &tvname=`awards`
+                &tpl=`@CODE: [[+text]]`
+                &limit=`1`
+              ]]
+            </p>
+            <ul class="awards__list">
+              [[getImageList? &tvname=`awards` &tpl=`@CODE:
+                <li class="awards__item">
+                  <picture>
+                    <source
+                      type="image/webp"
+                      srcset="[[+image:phpthumbof=`f=webp]]"
+                    />
+                    <img
+                      loading="lazy"
+                      class="awards__image"
+                      src="[[+image]]"
+                      alt="urbanmyth award"
+                    />
+                  </picture>
+                </li>
+              ` ]]
+            </ul>
+            <a href="[[~6]]" class="awards__link button button_small">learn more</a>
+          </div>
+        </section>
+
 
         [[$last-articles]]
       </main>

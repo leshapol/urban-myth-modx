@@ -1,6 +1,6 @@
 <section class="trustpilot">
   <div class="container">
-    <h2 class="trustpilot__title">What our customers say</h2>
+    <h2 class="trustpilot__title">What our customer say</h2>
     <!-- TrustBox widget - Carousel -->
     <div
       class="trustpilot-widget trustpilot__widget_desktop"
