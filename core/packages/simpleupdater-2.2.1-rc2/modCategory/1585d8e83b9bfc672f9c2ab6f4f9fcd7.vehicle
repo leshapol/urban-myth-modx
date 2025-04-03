@@ -1,0 +1,94 @@
+<?php return array (
+  'unique_key' => 'category',
+  'preserve_keys' => false,
+  'update_object' => true,
+  'related_objects' => 
+  array (
+    'Plugins' => 
+    array (
+      '8153b4e0cbfc1030c2bc97bfc33b253a' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modPlugin',
+        'object' => '{"id":null,"source":1,"property_preprocess":0,"name":"simpleUpdater","description":"","editor_type":0,"category":0,"cache_type":0,"plugincode":"\\/**\\n * simpleUpdater\\n *\\n * @package simpleupdater\\n * @subpackage plugin\\n *\\n * @event OnManagerPageBeforeRender\\n *\\n * @var modX $modx\\n *\\/\\n\\n$eventName = $modx->event->name;\\n\\n$corePath = $modx->getOption(\'simpleupdater.core_path\', null, $modx->getOption(\'core_path\') . \'components\\/simpleupdater\\/\');\\n\\/** @var simpleUpdater $simpleupdater *\\/\\n$simpleupdater = $modx->getService(\'simpleupdater\', \'simpleUpdater\', $corePath . \'model\\/simpleupdater\\/\', array(\\n    \'core_path\' => $corePath\\n));\\n\\nswitch ($modx->event->name) {\\n    case \'OnManagerPageBeforeRender\':\\n        if ($modx->user->isMember(\'Administrator\')) {\\n            $modx->controller->addLexiconTopic(\'simpleupdater:default\');\\n            $modx->controller->addJavascript($simpleupdater->getOption(\'assetsUrl\') . \'js\\/mgr\\/widgets\\/update.button.js?v=\' . $simpleupdater->version);\\n            $response = $modx->runProcessor(\'mgr\\/version\\/check\', array(), array(\\n                \'processors_path\' => $simpleupdater->getOption(\'processorsPath\')\\n            ));\\n            $html = \\"<script>var simpleUpdateConfig = \\" . json_encode($response->getObject(), JSON_PRETTY_PRINT) . \\";<\\/script>\\";\\n            $modx->controller->addHtml($html);\\n        }\\n        break;\\n}","locked":0,"properties":null,"disabled":0,"moduleguid":"","static":0,"static_file":"core\\/components\\/simpleupdater\\/elements\\/plugins\\/plugin.simpleupdater.php","content":"\\/**\\n * simpleUpdater\\n *\\n * @package simpleupdater\\n * @subpackage plugin\\n *\\n * @event OnManagerPageBeforeRender\\n *\\n * @var modX $modx\\n *\\/\\n\\n$eventName = $modx->event->name;\\n\\n$corePath = $modx->getOption(\'simpleupdater.core_path\', null, $modx->getOption(\'core_path\') . \'components\\/simpleupdater\\/\');\\n\\/** @var simpleUpdater $simpleupdater *\\/\\n$simpleupdater = $modx->getService(\'simpleupdater\', \'simpleUpdater\', $corePath . \'model\\/simpleupdater\\/\', array(\\n    \'core_path\' => $corePath\\n));\\n\\nswitch ($modx->event->name) {\\n    case \'OnManagerPageBeforeRender\':\\n        if ($modx->user->isMember(\'Administrator\')) {\\n            $modx->controller->addLexiconTopic(\'simpleupdater:default\');\\n            $modx->controller->addJavascript($simpleupdater->getOption(\'assetsUrl\') . \'js\\/mgr\\/widgets\\/update.button.js?v=\' . $simpleupdater->version);\\n            $response = $modx->runProcessor(\'mgr\\/version\\/check\', array(), array(\\n                \'processors_path\' => $simpleupdater->getOption(\'processorsPath\')\\n            ));\\n            $html = \\"<script>var simpleUpdateConfig = \\" . json_encode($response->getObject(), JSON_PRETTY_PRINT) . \\";<\\/script>\\";\\n            $modx->controller->addHtml($html);\\n        }\\n        break;\\n}"}',
+        'guid' => 'a21d038b65fdad40433a7e469ae185dc',
+        'native_key' => NULL,
+        'signature' => '3663e78225c62277b315352bdaec034a',
+        'related_objects' => 
+        array (
+          'PluginEvents' => 
+          array (
+            'bfd36ec4aa0c7fd5e895c0d320428a04' => 
+            array (
+              'preserve_keys' => true,
+              'update_object' => true,
+              'unique_key' => 
+              array (
+                0 => 'pluginid',
+                1 => 'event',
+              ),
+              'class' => 'modPluginEvent',
+              'object' => '{"pluginid":0,"event":"OnManagerPageBeforeRender","priority":0,"propertyset":0}',
+              'guid' => 'eabc81f39aa64986c550dc5808bf40f8',
+              'native_key' => 
+              array (
+                0 => 0,
+                1 => 'OnManagerPageBeforeRender',
+              ),
+              'signature' => '1646a708a57a515b9fa0975dcbf3c096',
+            ),
+          ),
+        ),
+      ),
+    ),
+  ),
+  'related_object_attributes' => 
+  array (
+    'Plugins' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+    'PluginEvents' => 
+    array (
+      'preserve_keys' => true,
+      'update_object' => true,
+      'unique_key' => 
+      array (
+        0 => 'pluginid',
+        1 => 'event',
+      ),
+    ),
+  ),
+  'namespace' => 'simpleupdater',
+  'resolve' => 
+  array (
+    0 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"simpleupdater-2.2.1-rc2\\/modCategory\\/1585d8e83b9bfc672f9c2ab6f4f9fcd7\\/0\\/","target":"return MODX_ASSETS_PATH . \'components\\/\';","name":"simpleupdater"}',
+    ),
+    1 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"simpleupdater-2.2.1-rc2\\/modCategory\\/1585d8e83b9bfc672f9c2ab6f4f9fcd7\\/1\\/","target":"return MODX_CORE_PATH . \'components\\/\';","name":"simpleupdater"}',
+    ),
+    2 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"simpleupdater-2.2.1-rc2\\/modCategory\\/1585d8e83b9bfc672f9c2ab6f4f9fcd7.resolve.fixmenu.resolver","type":"php","name":"resolve.fixmenu"}',
+    ),
+  ),
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '47c51aaa7db007a1848ff45c1dae61d1',
+  'package' => 'modx',
+  'class' => 'modCategory',
+  'signature' => '1585d8e83b9bfc672f9c2ab6f4f9fcd7',
+  'native_key' => NULL,
+  'object' => '{"id":null,"parent":0,"category":"simpleUpdater","rank":0}',
+);

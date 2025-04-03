@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 
+  array (
+    0 => 'name',
+    1 => 'namespace',
+  ),
+  'preserve_keys' => false,
+  'update_object' => true,
+  'vehicle_class' => 'xPDO\\Transport\\xPDOObjectVehicle',
+  'guid' => 'fababa79df74930cc7555f08ac6c1fbf',
+  'package' => '',
+  'class' => 'MODX\\Revolution\\modDashboardWidget',
+  'signature' => '19213975d416c1a312eba08babcba607',
+  'native_key' => NULL,
+  'object' => '{"id":null,"name":"seosuite","description":"SEO Suite dashboard widget","type":"file","content":"[[++core_path]]components\\/seosuite\\/elements\\/widgets\\/seosuite.widget.php","properties":"[]","namespace":"seosuite","lexicon":"seosuite:default","size":"half","permission":"","name_trans":"SEO Suite","description_trans":"SEO Suite dashboard widget"}',
+);

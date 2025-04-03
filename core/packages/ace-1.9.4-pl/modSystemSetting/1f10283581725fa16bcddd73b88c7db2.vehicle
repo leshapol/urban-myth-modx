@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'ace',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'e4289f668bc1deda44432ae545da8b68',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '1f10283581725fa16bcddd73b88c7db2',
+  'native_key' => 'ace.show_invisibles',
+  'object' => '{"key":"ace.show_invisibles","value":"0","xtype":"combo-boolean","namespace":"ace","area":"general","editedon":null}',
+);

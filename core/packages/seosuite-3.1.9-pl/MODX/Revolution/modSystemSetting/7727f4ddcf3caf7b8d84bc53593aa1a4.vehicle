@@ -1,0 +1,12 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'vehicle_class' => 'xPDO\\Transport\\xPDOObjectVehicle',
+  'guid' => 'da34c2b25f6d82853ab0c342349f0ef7',
+  'package' => '',
+  'class' => 'MODX\\Revolution\\modSystemSetting',
+  'signature' => '7727f4ddcf3caf7b8d84bc53593aa1a4',
+  'native_key' => 'seosuite.blocked_words',
+  'object' => '{"key":"seosuite.blocked_words","value":"","xtype":"textfield","namespace":"seosuite","area":"seosuite","editedon":null}',
+);

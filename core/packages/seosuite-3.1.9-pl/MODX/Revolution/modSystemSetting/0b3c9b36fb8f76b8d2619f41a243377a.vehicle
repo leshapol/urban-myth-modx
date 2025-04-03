@@ -1,0 +1,12 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'vehicle_class' => 'xPDO\\Transport\\xPDOObjectVehicle',
+  'guid' => '7e8a7399e0847cd3a9819f9de4e3a948',
+  'package' => '',
+  'class' => 'MODX\\Revolution\\modSystemSetting',
+  'signature' => '0b3c9b36fb8f76b8d2619f41a243377a',
+  'native_key' => 'seosuite.disabled_templates',
+  'object' => '{"key":"seosuite.disabled_templates","value":"","xtype":"textfield","namespace":"seosuite","area":"seosuite","editedon":null}',
+);

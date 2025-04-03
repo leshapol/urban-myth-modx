@@ -1,0 +1,12 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'vehicle_class' => 'xPDO\\Transport\\xPDOObjectVehicle',
+  'guid' => '77e9af8b8727ddeeff81feeba6097601',
+  'package' => '',
+  'class' => 'MODX\\Revolution\\modSystemSetting',
+  'signature' => 'adfb72d075d838e45eeb70e22e6d4949',
+  'native_key' => 'seosuite.tab_social.default_twitter_image',
+  'object' => '{"key":"seosuite.tab_social.default_twitter_image","value":"","xtype":"textfield","namespace":"seosuite","area":"seosuite_tab_social","editedon":null}',
+);

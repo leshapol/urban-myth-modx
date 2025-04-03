@@ -1,0 +1,13 @@
+<?php return array (
+  'class' => 'xPDO\\Transport\\xPDOScriptVehicle',
+  'object' => 
+  array (
+    'type' => 'php',
+    'source' => 'seosuite-3.1.9-pl/xPDO/Transport/xPDOScriptVehicle/ff95becb37c6000e238f2600c44b3785.gpm.script.reload_system_settings.script',
+  ),
+  'vehicle_class' => 'xPDO\\Transport\\xPDOScriptVehicle',
+  'guid' => '540dd209db679dc3c5d333a81469f98c',
+  'package' => '',
+  'signature' => 'ff95becb37c6000e238f2600c44b3785',
+  'native_key' => '540dd209db679dc3c5d333a81469f98c',
+);

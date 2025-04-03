@@ -1,0 +1,242 @@
+<?php return array (
+  'unique_key' => 'name',
+  'preserve_keys' => false,
+  'update_object' => true,
+  'related_objects' => 
+  array (
+    'PluginEvents' => 
+    array (
+      '832f0ececcf458461f4615370ad52315' => 
+      array (
+        'preserve_keys' => true,
+        'update_object' => false,
+        'unique_key' => 
+        array (
+          0 => 'pluginid',
+          1 => 'event',
+        ),
+        'class' => 'modPluginEvent',
+        'object' => '{"pluginid":0,"event":"OnChunkFormPrerender","priority":0,"propertyset":0}',
+        'guid' => '04af02c1d740b3fd06c07bf65bd6edb3',
+        'native_key' => 
+        array (
+          0 => 0,
+          1 => 'OnChunkFormPrerender',
+        ),
+        'signature' => '1ea6ce64a91e342d53e144d030b385de',
+      ),
+      '3ab3f2431536f1eeb82b760bcdb15e5f' => 
+      array (
+        'preserve_keys' => true,
+        'update_object' => false,
+        'unique_key' => 
+        array (
+          0 => 'pluginid',
+          1 => 'event',
+        ),
+        'class' => 'modPluginEvent',
+        'object' => '{"pluginid":0,"event":"OnPluginFormPrerender","priority":0,"propertyset":0}',
+        'guid' => '60f4d8e43bf3537c147b752b5dfa7292',
+        'native_key' => 
+        array (
+          0 => 0,
+          1 => 'OnPluginFormPrerender',
+        ),
+        'signature' => 'af7aed0b558b302276eb49e9cfdca589',
+      ),
+      'd5254f7fd2a89af3cd623df68dc9ed2e' => 
+      array (
+        'preserve_keys' => true,
+        'update_object' => false,
+        'unique_key' => 
+        array (
+          0 => 'pluginid',
+          1 => 'event',
+        ),
+        'class' => 'modPluginEvent',
+        'object' => '{"pluginid":0,"event":"OnSnipFormPrerender","priority":0,"propertyset":0}',
+        'guid' => 'b2ee174330729fcb15c86b73e3e9abb7',
+        'native_key' => 
+        array (
+          0 => 0,
+          1 => 'OnSnipFormPrerender',
+        ),
+        'signature' => '104fa8d4b882f827b15a0fd51b0d203a',
+      ),
+      '22d2a924fda9fe5437d4d62d1050e37f' => 
+      array (
+        'preserve_keys' => true,
+        'update_object' => false,
+        'unique_key' => 
+        array (
+          0 => 'pluginid',
+          1 => 'event',
+        ),
+        'class' => 'modPluginEvent',
+        'object' => '{"pluginid":0,"event":"OnTempFormPrerender","priority":0,"propertyset":0}',
+        'guid' => '83f334e70168c1040a2ce37c6fd4c3d6',
+        'native_key' => 
+        array (
+          0 => 0,
+          1 => 'OnTempFormPrerender',
+        ),
+        'signature' => '50f0cc11521f744a0457ad781de786d7',
+      ),
+      '43d2f351c4a2b9adbc74f1c00fc777bc' => 
+      array (
+        'preserve_keys' => true,
+        'update_object' => false,
+        'unique_key' => 
+        array (
+          0 => 'pluginid',
+          1 => 'event',
+        ),
+        'class' => 'modPluginEvent',
+        'object' => '{"pluginid":0,"event":"OnFileEditFormPrerender","priority":0,"propertyset":0}',
+        'guid' => 'f6865313ed3a2a9db3347b006a016652',
+        'native_key' => 
+        array (
+          0 => 0,
+          1 => 'OnFileEditFormPrerender',
+        ),
+        'signature' => '7707f102bbda651109de578f7264c5e9',
+      ),
+      '15f2e192ce2fe878bec5f492af735cad' => 
+      array (
+        'preserve_keys' => true,
+        'update_object' => false,
+        'unique_key' => 
+        array (
+          0 => 'pluginid',
+          1 => 'event',
+        ),
+        'class' => 'modPluginEvent',
+        'object' => '{"pluginid":0,"event":"OnFileCreateFormPrerender","priority":0,"propertyset":0}',
+        'guid' => '5243cc389845db0de763f2e05963cd92',
+        'native_key' => 
+        array (
+          0 => 0,
+          1 => 'OnFileCreateFormPrerender',
+        ),
+        'signature' => 'cc15d354642018fb491a207faea72c87',
+      ),
+      '9b83c692f0201cbf7d55c8391841e5c9' => 
+      array (
+        'preserve_keys' => true,
+        'update_object' => false,
+        'unique_key' => 
+        array (
+          0 => 'pluginid',
+          1 => 'event',
+        ),
+        'class' => 'modPluginEvent',
+        'object' => '{"pluginid":0,"event":"OnDocFormPrerender","priority":0,"propertyset":0}',
+        'guid' => '1fceeb0d9fa63464d2e34ddf54885249',
+        'native_key' => 
+        array (
+          0 => 0,
+          1 => 'OnDocFormPrerender',
+        ),
+        'signature' => '7fe5dbff46beec100184eaf5bb12d25c',
+      ),
+      '82f62de0a86c180443518a4bf762aa55' => 
+      array (
+        'preserve_keys' => true,
+        'update_object' => false,
+        'unique_key' => 
+        array (
+          0 => 'pluginid',
+          1 => 'event',
+        ),
+        'class' => 'modPluginEvent',
+        'object' => '{"pluginid":0,"event":"OnRichTextEditorRegister","priority":0,"propertyset":0}',
+        'guid' => 'faa41536e9ed4cc7fc98d7a473e9d311',
+        'native_key' => 
+        array (
+          0 => 0,
+          1 => 'OnRichTextEditorRegister',
+        ),
+        'signature' => 'db70961cd1a89d83ab60740cc562d1fe',
+      ),
+      '19a4a3a811201aa1df2c35f9e0d73179' => 
+      array (
+        'preserve_keys' => true,
+        'update_object' => false,
+        'unique_key' => 
+        array (
+          0 => 'pluginid',
+          1 => 'event',
+        ),
+        'class' => 'modPluginEvent',
+        'object' => '{"pluginid":0,"event":"OnManagerPageBeforeRender","priority":0,"propertyset":0}',
+        'guid' => '96a8f691d26cea9c57809975fac3e3d9',
+        'native_key' => 
+        array (
+          0 => 0,
+          1 => 'OnManagerPageBeforeRender',
+        ),
+        'signature' => '8293a29ba61eabf51903fe57e882bc20',
+      ),
+      '93201715af468b0e3cb602330fe32e97' => 
+      array (
+        'preserve_keys' => true,
+        'update_object' => false,
+        'unique_key' => 
+        array (
+          0 => 'pluginid',
+          1 => 'event',
+        ),
+        'class' => 'modPluginEvent',
+        'object' => '{"pluginid":0,"event":"OnTVInputRenderList","priority":0,"propertyset":0}',
+        'guid' => 'a3cb19b96d338c161934ce90c4c5e500',
+        'native_key' => 
+        array (
+          0 => 0,
+          1 => 'OnTVInputRenderList',
+        ),
+        'signature' => '25c2036e0bcd1257bbecc35f33997646',
+      ),
+    ),
+  ),
+  'related_object_attributes' => 
+  array (
+    'PluginEvents' => 
+    array (
+      'preserve_keys' => true,
+      'update_object' => false,
+      'unique_key' => 
+      array (
+        0 => 'pluginid',
+        1 => 'event',
+      ),
+    ),
+  ),
+  'namespace' => 'ace',
+  'resolve' => 
+  array (
+    0 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"ace-1.9.4-pl\\/modPlugin\\/2539cc49852b4d5782a910cf714541fd\\/0\\/","target":"return MODX_ASSETS_PATH . \'components\\/\';","name":"ace"}',
+    ),
+    1 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"ace-1.9.4-pl\\/modPlugin\\/2539cc49852b4d5782a910cf714541fd\\/1\\/","target":"return MODX_CORE_PATH . \'components\\/\';","name":"ace"}',
+    ),
+    2 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"ace-1.9.4-pl\\/modPlugin\\/2539cc49852b4d5782a910cf714541fd.transport.resolver.resolver","name":"transport.resolver","type":"php"}',
+    ),
+  ),
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'fa9880b6e5d4d86165f392aa262729d5',
+  'package' => 'modx',
+  'class' => 'modPlugin',
+  'signature' => '2539cc49852b4d5782a910cf714541fd',
+  'native_key' => 1,
+  'object' => '{"id":1,"source":0,"property_preprocess":0,"name":"Ace","description":"Ace code editor plugin for MODx Revolution","editor_type":0,"category":0,"cache_type":0,"plugincode":"\\/**\\n * Ace Source Editor Plugin\\n *\\n * Events: OnManagerPageBeforeRender, OnRichTextEditorRegister, OnSnipFormPrerender,\\n * OnTempFormPrerender, OnChunkFormPrerender, OnPluginFormPrerender,\\n * OnFileCreateFormPrerender, OnFileEditFormPrerender, OnDocFormPrerender\\n *\\n * @author Danil Kostin <danya.postfactum(at)gmail.com>\\n *\\n * @package ace\\n *\\n * @var array $scriptProperties\\n * @var Ace $ace\\n *\\/\\nif ($modx->event->name == \'OnRichTextEditorRegister\') {\\n    $modx->event->output(\'Ace\');\\n    return;\\n}\\n\\nif ($modx->getOption(\'which_element_editor\', null, \'Ace\') !== \'Ace\') {\\n    return;\\n}\\n\\n$corePath = $modx->getOption(\'ace.core_path\', null, $modx->getOption(\'core_path\').\'components\\/ace\\/\');\\n$ace = $modx->getService(\'ace\', \'Ace\', $corePath.\'model\\/ace\\/\');\\n$ace->initialize();\\n\\n$extensionMap = array(\\n    \'tpl\'   => \'text\\/x-smarty\',\\n    \'htm\'   => \'text\\/html\',\\n    \'html\'  => \'text\\/html\',\\n    \'css\'   => \'text\\/css\',\\n    \'scss\'  => \'text\\/x-scss\',\\n    \'less\'  => \'text\\/x-less\',\\n    \'svg\'   => \'image\\/svg+xml\',\\n    \'xml\'   => \'application\\/xml\',\\n    \'xsl\'   => \'application\\/xml\',\\n    \'js\'    => \'application\\/javascript\',\\n    \'json\'  => \'application\\/json\',\\n    \'php\'   => \'application\\/x-php\',\\n    \'sql\'   => \'text\\/x-sql\',\\n    \'md\'    => \'text\\/x-markdown\',\\n    \'txt\'   => \'text\\/plain\',\\n    \'twig\'  => \'text\\/x-twig\'\\n);\\n\\n\\/\\/ Define default mime for html elements(templates, chunks and html resources)\\n$html_elements_mime=$modx->getOption(\'ace.html_elements_mime\',null,false);\\nif(!$html_elements_mime){\\n    \\/\\/ this may deprecated in future because components may set ace.html_elements_mime option now\\n    switch (true) {\\n        case $modx->getOption(\'twiggy_class\'):\\n            $html_elements_mime = \'text\\/x-twig\';\\n            break;\\n        case $modx->getOption(\'pdotools_fenom_parser\'):\\n            $html_elements_mime = \'text\\/x-smarty\';\\n            break;\\n        default:\\n            $html_elements_mime = \'text\\/html\';\\n    }\\n}\\n\\n\\/\\/ Defines wether we should highlight modx tags\\n$modxTags = false;\\nswitch ($modx->event->name) {\\n    case \'OnSnipFormPrerender\':\\n        $field = \'modx-snippet-snippet\';\\n        $mimeType = \'application\\/x-php\';\\n        break;\\n    case \'OnTempFormPrerender\':\\n        $field = \'modx-template-content\';\\n        $modxTags = true;\\n        $mimeType = $html_elements_mime;\\n        break;\\n    case \'OnChunkFormPrerender\':\\n        $field = \'modx-chunk-snippet\';\\n        if ($modx->controller->chunk && $modx->controller->chunk->isStatic()) {\\n            $extension = pathinfo($modx->controller->chunk->name, PATHINFO_EXTENSION);\\n            if(!$extension||!isset($extensionMap[$extension])){\\n                $extension = pathinfo($modx->controller->chunk->getSourceFile(), PATHINFO_EXTENSION);\\n            }\\n            $mimeType = isset($extensionMap[$extension]) ? $extensionMap[$extension] : \'text\\/plain\';\\n        } else {\\n            $mimeType = $html_elements_mime;\\n        }\\n        $modxTags = true;\\n        break;\\n    case \'OnPluginFormPrerender\':\\n        $field = \'modx-plugin-plugincode\';\\n        $mimeType = \'application\\/x-php\';\\n        break;\\n    case \'OnFileCreateFormPrerender\':\\n        $field = \'modx-file-content\';\\n        $mimeType = \'text\\/plain\';\\n        break;\\n    case \'OnFileEditFormPrerender\':\\n        $field = \'modx-file-content\';\\n        $extension = pathinfo($scriptProperties[\'file\'], PATHINFO_EXTENSION);\\n        $mimeType = isset($extensionMap[$extension])\\n            ? $extensionMap[$extension]\\n            : (\'@FILE:\'.pathinfo($scriptProperties[\'file\'], PATHINFO_BASENAME));\\n        $modxTags = $extension == \'tpl\';\\n        break;\\n    case \'OnDocFormPrerender\':\\n        if (!$modx->controller->resourceArray) {\\n            return;\\n        }\\n        $field = \'ta\';\\n        $mimeType = $modx->getObject(\'modContentType\', $modx->controller->resourceArray[\'content_type\'])->get(\'mime_type\');\\n\\n        if($mimeType == \'text\\/html\')$mimeType = $html_elements_mime;\\n\\n        if ($modx->getOption(\'use_editor\')){\\n            $richText = $modx->controller->resourceArray[\'richtext\'];\\n            $classKey = $modx->controller->resourceArray[\'class_key\'];\\n            if ($richText || in_array($classKey, array(\'modStaticResource\',\'modSymLink\',\'modWebLink\',\'modXMLRPCResource\'))) {\\n                $field = false;\\n            }\\n        }\\n        $modxTags = true;\\n        break;\\n    case \'OnTVInputRenderList\':\\n        $modx->event->output($corePath . \'elements\\/tv\\/input\\/\');\\n        break;\\n    default:\\n        return;\\n}\\n\\n$modxTags = (int) $modxTags;\\n$script = \'\';\\nif (!empty($field)) {\\n    $script .= \\"MODx.ux.Ace.replaceComponent(\'$field\', \'$mimeType\', $modxTags);\\";\\n}\\n\\nif ($modx->event->name == \'OnDocFormPrerender\' && !$modx->getOption(\'use_editor\')) {\\n    $script .= \\"MODx.ux.Ace.replaceTextAreas(Ext.query(\'.modx-richtext\'));\\";\\n}\\n\\nif ($script) {\\n    $modx->controller->addHtml(\'<script>Ext.onReady(function() {\' . $script . \'});<\\/script>\');\\n}","locked":0,"properties":null,"disabled":0,"moduleguid":"","static":0,"static_file":"ace\\/elements\\/plugins\\/ace.plugin.php","content":"\\/**\\n * Ace Source Editor Plugin\\n *\\n * Events: OnManagerPageBeforeRender, OnRichTextEditorRegister, OnSnipFormPrerender,\\n * OnTempFormPrerender, OnChunkFormPrerender, OnPluginFormPrerender,\\n * OnFileCreateFormPrerender, OnFileEditFormPrerender, OnDocFormPrerender\\n *\\n * @author Danil Kostin <danya.postfactum(at)gmail.com>\\n *\\n * @package ace\\n *\\n * @var array $scriptProperties\\n * @var Ace $ace\\n *\\/\\nif ($modx->event->name == \'OnRichTextEditorRegister\') {\\n    $modx->event->output(\'Ace\');\\n    return;\\n}\\n\\nif ($modx->getOption(\'which_element_editor\', null, \'Ace\') !== \'Ace\') {\\n    return;\\n}\\n\\n$corePath = $modx->getOption(\'ace.core_path\', null, $modx->getOption(\'core_path\').\'components\\/ace\\/\');\\n$ace = $modx->getService(\'ace\', \'Ace\', $corePath.\'model\\/ace\\/\');\\n$ace->initialize();\\n\\n$extensionMap = array(\\n    \'tpl\'   => \'text\\/x-smarty\',\\n    \'htm\'   => \'text\\/html\',\\n    \'html\'  => \'text\\/html\',\\n    \'css\'   => \'text\\/css\',\\n    \'scss\'  => \'text\\/x-scss\',\\n    \'less\'  => \'text\\/x-less\',\\n    \'svg\'   => \'image\\/svg+xml\',\\n    \'xml\'   => \'application\\/xml\',\\n    \'xsl\'   => \'application\\/xml\',\\n    \'js\'    => \'application\\/javascript\',\\n    \'json\'  => \'application\\/json\',\\n    \'php\'   => \'application\\/x-php\',\\n    \'sql\'   => \'text\\/x-sql\',\\n    \'md\'    => \'text\\/x-markdown\',\\n    \'txt\'   => \'text\\/plain\',\\n    \'twig\'  => \'text\\/x-twig\'\\n);\\n\\n\\/\\/ Define default mime for html elements(templates, chunks and html resources)\\n$html_elements_mime=$modx->getOption(\'ace.html_elements_mime\',null,false);\\nif(!$html_elements_mime){\\n    \\/\\/ this may deprecated in future because components may set ace.html_elements_mime option now\\n    switch (true) {\\n        case $modx->getOption(\'twiggy_class\'):\\n            $html_elements_mime = \'text\\/x-twig\';\\n            break;\\n        case $modx->getOption(\'pdotools_fenom_parser\'):\\n            $html_elements_mime = \'text\\/x-smarty\';\\n            break;\\n        default:\\n            $html_elements_mime = \'text\\/html\';\\n    }\\n}\\n\\n\\/\\/ Defines wether we should highlight modx tags\\n$modxTags = false;\\nswitch ($modx->event->name) {\\n    case \'OnSnipFormPrerender\':\\n        $field = \'modx-snippet-snippet\';\\n        $mimeType = \'application\\/x-php\';\\n        break;\\n    case \'OnTempFormPrerender\':\\n        $field = \'modx-template-content\';\\n        $modxTags = true;\\n        $mimeType = $html_elements_mime;\\n        break;\\n    case \'OnChunkFormPrerender\':\\n        $field = \'modx-chunk-snippet\';\\n        if ($modx->controller->chunk && $modx->controller->chunk->isStatic()) {\\n            $extension = pathinfo($modx->controller->chunk->name, PATHINFO_EXTENSION);\\n            if(!$extension||!isset($extensionMap[$extension])){\\n                $extension = pathinfo($modx->controller->chunk->getSourceFile(), PATHINFO_EXTENSION);\\n            }\\n            $mimeType = isset($extensionMap[$extension]) ? $extensionMap[$extension] : \'text\\/plain\';\\n        } else {\\n            $mimeType = $html_elements_mime;\\n        }\\n        $modxTags = true;\\n        break;\\n    case \'OnPluginFormPrerender\':\\n        $field = \'modx-plugin-plugincode\';\\n        $mimeType = \'application\\/x-php\';\\n        break;\\n    case \'OnFileCreateFormPrerender\':\\n        $field = \'modx-file-content\';\\n        $mimeType = \'text\\/plain\';\\n        break;\\n    case \'OnFileEditFormPrerender\':\\n        $field = \'modx-file-content\';\\n        $extension = pathinfo($scriptProperties[\'file\'], PATHINFO_EXTENSION);\\n        $mimeType = isset($extensionMap[$extension])\\n            ? $extensionMap[$extension]\\n            : (\'@FILE:\'.pathinfo($scriptProperties[\'file\'], PATHINFO_BASENAME));\\n        $modxTags = $extension == \'tpl\';\\n        break;\\n    case \'OnDocFormPrerender\':\\n        if (!$modx->controller->resourceArray) {\\n            return;\\n        }\\n        $field = \'ta\';\\n        $mimeType = $modx->getObject(\'modContentType\', $modx->controller->resourceArray[\'content_type\'])->get(\'mime_type\');\\n\\n        if($mimeType == \'text\\/html\')$mimeType = $html_elements_mime;\\n\\n        if ($modx->getOption(\'use_editor\')){\\n            $richText = $modx->controller->resourceArray[\'richtext\'];\\n            $classKey = $modx->controller->resourceArray[\'class_key\'];\\n            if ($richText || in_array($classKey, array(\'modStaticResource\',\'modSymLink\',\'modWebLink\',\'modXMLRPCResource\'))) {\\n                $field = false;\\n            }\\n        }\\n        $modxTags = true;\\n        break;\\n    case \'OnTVInputRenderList\':\\n        $modx->event->output($corePath . \'elements\\/tv\\/input\\/\');\\n        break;\\n    default:\\n        return;\\n}\\n\\n$modxTags = (int) $modxTags;\\n$script = \'\';\\nif (!empty($field)) {\\n    $script .= \\"MODx.ux.Ace.replaceComponent(\'$field\', \'$mimeType\', $modxTags);\\";\\n}\\n\\nif ($modx->event->name == \'OnDocFormPrerender\' && !$modx->getOption(\'use_editor\')) {\\n    $script .= \\"MODx.ux.Ace.replaceTextAreas(Ext.query(\'.modx-richtext\'));\\";\\n}\\n\\nif ($script) {\\n    $modx->controller->addHtml(\'<script>Ext.onReady(function() {\' . $script . \'});<\\/script>\');\\n}"}',
+);

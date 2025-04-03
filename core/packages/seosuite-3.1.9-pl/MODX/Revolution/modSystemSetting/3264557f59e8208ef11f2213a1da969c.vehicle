@@ -1,0 +1,12 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'vehicle_class' => 'xPDO\\Transport\\xPDOObjectVehicle',
+  'guid' => '5d7621ba769a987224056d4d6b4c544e',
+  'package' => '',
+  'class' => 'MODX\\Revolution\\modSystemSetting',
+  'signature' => '3264557f59e8208ef11f2213a1da969c',
+  'native_key' => 'seosuite.migration_finished',
+  'object' => '{"key":"seosuite.migration_finished","value":false,"xtype":"combo-boolean","namespace":"seosuite","area":"seosuite","editedon":null}',
+);

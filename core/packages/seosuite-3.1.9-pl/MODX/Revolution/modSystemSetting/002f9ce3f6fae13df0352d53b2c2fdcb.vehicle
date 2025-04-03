@@ -1,0 +1,12 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'vehicle_class' => 'xPDO\\Transport\\xPDOObjectVehicle',
+  'guid' => '9b32bb8a07c7e08a507fb3a905192bf6',
+  'package' => '',
+  'class' => 'MODX\\Revolution\\modSystemSetting',
+  'signature' => '002f9ce3f6fae13df0352d53b2c2fdcb',
+  'native_key' => 'seosuite.sitemap.babel.add_alternate_links',
+  'object' => '{"key":"seosuite.sitemap.babel.add_alternate_links","value":"1","xtype":"combo-boolean","namespace":"seosuite","area":"seosuite_sitemap","editedon":null}',
+);

@@ -1,0 +1,16 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => false,
+  'unique_key' => 'text',
+  'namespace' => 'simpleupdater',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'd0c0ee4c1431bf4bec7e323e39014929',
+  'package' => 'modx',
+  'class' => 'modMenu',
+  'signature' => '2d2db44691a2ba5b7213aca4a54a2edb',
+  'native_key' => 'simpleupdater',
+  'object' => '{"text":"simpleupdater","parent":"components","action":"index","description":"simpleupdater_menu_desc","icon":"images\\/icons\\/plugin.gif","menuindex":0,"params":"","handler":"","permissions":"","namespace":"simpleupdater"}',
+);

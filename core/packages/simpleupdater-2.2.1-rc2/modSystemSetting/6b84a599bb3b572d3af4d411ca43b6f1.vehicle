@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => true,
+  'namespace' => 'simpleupdater',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'a41563b2193f3c567f44a7e2cd5f99f1',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '6b84a599bb3b572d3af4d411ca43b6f1',
+  'native_key' => 'simpleupdater.http_handler',
+  'object' => '{"key":"simpleupdater.http_handler","value":"file_get_contents","xtype":"textfield","namespace":"simpleupdater","area":"system","editedon":null}',
+);

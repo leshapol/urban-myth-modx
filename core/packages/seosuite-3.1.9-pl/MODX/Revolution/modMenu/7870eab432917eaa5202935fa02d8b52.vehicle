@@ -1,0 +1,21 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => true,
+  'unique_key' => 'text',
+  'related_object_attributes' => 
+  array (
+    'Children' => 
+    array (
+      'preserve_keys' => true,
+      'update_object' => true,
+      'unique_key' => 'text',
+    ),
+  ),
+  'vehicle_class' => 'xPDO\\Transport\\xPDOObjectVehicle',
+  'guid' => 'f3319a77bef76a55d6942a38b5733793',
+  'package' => '',
+  'class' => 'MODX\\Revolution\\modMenu',
+  'signature' => '7870eab432917eaa5202935fa02d8b52',
+  'native_key' => 'seosuite.menu.seosuite',
+  'object' => '{"text":"seosuite.menu.seosuite","parent":"components","action":"home","description":"seosuite.menu.seosuite_desc","icon":"","menuindex":0,"params":"","handler":"","permissions":"","namespace":"seosuite","menundex":"","permission":""}',
+);

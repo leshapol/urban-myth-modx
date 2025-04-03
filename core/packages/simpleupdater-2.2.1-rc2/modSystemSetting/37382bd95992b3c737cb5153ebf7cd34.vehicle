@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => true,
+  'namespace' => 'simpleupdater',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '73514e21a19b851be5d7c9a9344646df',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '37382bd95992b3c737cb5153ebf7cd34',
+  'native_key' => 'simpleupdater.github_token',
+  'object' => '{"key":"simpleupdater.github_token","value":"","xtype":"textfield","namespace":"simpleupdater","area":"system","editedon":null}',
+);
