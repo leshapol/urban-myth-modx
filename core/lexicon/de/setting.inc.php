@@ -134,10 +134,10 @@ $_lang['setting_use_context_resource_table'] = 'Kontextressourcen-Tabelle verwen
 $_lang['setting_use_context_resource_table_desc'] = 'Wenn diese Einstellung aktiviert ist, wird bei Kontext-Aktualisierungen die Tabelle context_resource verwendet. Dadurch sind Sie in der Lage, programmgesteuert eine Ressource mehreren Kontexten zuzuordnen. Wenn Sie diese Möglichkeit nicht mittels der API nutzen, können Sie diese Einstellung auf "Nein" stellen. Bei großen Websites werden Sie dadurch im Manager möglicherweise eine bessere Performance erreichen.';
 
 $_lang['setting_cache_context_settings'] = 'Kontext-Einstellungen-Cache aktivieren';
-$_lang['setting_cache_context_settings_desc'] = 'Wenn diese Einstellung auf "Ja" gesetzt wird, werden Kontext-Einstellungen gecacht, um die Ladezeiten zu verringern.';
+$_lang['setting_cache_context_settings_desc'] = 'Wird diese Einstellung auf "Ja" gesetzt, werden Kontext-Einstellungen gecacht, um die Ladezeiten zu verringern.';
 
 $_lang['setting_cache_db'] = 'Datenbank-Cache aktivieren';
-$_lang['setting_cache_db_desc'] = 'Wenn diese Option aktiviert ist, werden Objekte und Ergebnisse von SQL-Abfragen gecacht, um die Datenbank-Last signifikant zu reduzieren.';
+$_lang['setting_cache_db_desc'] = 'Wenn diese Einstellung aktiviert ist, werden Objekte und Ergebnisse von SQL-Abfragen gecacht, um die Datenbank-Last signifikant zu reduzieren.';
 
 $_lang['setting_cache_db_expires'] = 'Ablaufzeit für Datenbank-Cache';
 $_lang['setting_cache_db_expires_desc'] = 'Standardzeit für das Ablaufen des Datenbank-Caches (in Sekunden). Wird diese Einstellung auf"0" gesetzt, läuft der Cache niemals ab, wenn nicht ein Datensatz aktualisiert (geändert) wird.';
@@ -201,7 +201,7 @@ $_lang['setting_concat_js'] = 'Verknüpfte Javascript-Bibliotheken verwenden';
 $_lang['setting_concat_js_desc'] = 'Wenn diese Option aktiviert ist, verwendet MODX eine verknüpfte Version seiner allgemeinen JavaScript-Bibliotheken in der Manager-Oberfläche; diese werden dann als eine einzige Datei ausgeliefert. Dadurch werden die Lade- und Ausführungszeiten im Manager deutlich reduziert. Deaktivieren Sie diese Einstellung nur, wenn Sie Core-Elemente modifizieren. Achtung: Funktioniert nicht in via Git heruntergeladenen Installationen – in diesen bitte auf "Nein" lassen!';
 
 $_lang['setting_confirm_navigation'] = 'Navigation bei ungespeicherten Änderungen bestätigen';
-$_lang['setting_confirm_navigation_desc'] = 'Wenn diese Option aktiviert ist, wird der Benutzer aufgefordert, seine Absicht zu bestätigen, wenn es ungespeicherte Änderungen gibt.';
+$_lang['setting_confirm_navigation_desc'] = 'Wenn diese Einstellung aktiviert ist, wird der Benutzer aufgefordert, seine Absicht zu bestätigen, wenn es ungespeicherte Änderungen gibt.';
 
 $_lang['setting_container_suffix'] = 'Container-Suffix';
 $_lang['setting_container_suffix_desc'] = 'Das Suffix, das Ressourcen, die als Container definiert wurden, hinzugefügt wird, wenn suchmaschinenfreundliche URLs verwendet werden.';
@@ -219,6 +219,12 @@ $_lang['setting_cultureKey_desc'] = 'Wählen Sie die Sprache für alle Nicht-Man
 $_lang['setting_date_timezone'] = 'Standard-Zeitzone';
 $_lang['setting_date_timezone_desc'] = 'Gibt die Standard-Zeitzonen-Einstellung für PHP-Datumsfunktionen an, wenn die Einstellung nicht leer gelassen wird. Wird hier nichts eingegeben und die PHP-Konfigurationseinstellung date.timezone (kann mittels php.ini, date_default_timezone_set(), ini_set(), .htaccess etc. eingestellt werden) ist in Ihrer PHP-Umgebung nicht gesetzt, wird UTC vorausgesetzt.';
 
+$_lang['setting_manager_datetime_empty_value'] = 'Leerer Wert Datumsfeld';
+$_lang['setting_manager_datetime_empty_value_desc'] = 'Der Text (falls vorhanden), der in Rastern und Formularen angezeigt wird, wenn der Wert eines Datumsfelds nicht festgelegt wurde. (Standard: „–“ [ein einzelner kurzer Gedankenstrich])';
+
+$_lang['setting_manager_datetime_separator'] = 'Datum-Trennzeichen';
+$_lang['setting_manager_datetime_separator_desc'] = 'Wenn das Datum und die Uhrzeit als kombiniertes Element angezeigt werden, werden diese Zeichen verwendet, um sie visuell zu trennen. (Standard: “, “ [Komma und Leerzeichen])';
+
 $_lang['setting_debug'] = 'Debugging-Einstellungen';
 $_lang['setting_debug_desc'] = 'Einstellmöglichkeit zum Ein- und Ausschalten des Debugging in MODX und/oder zum Setzen des PHP-error_reporting-Levels. "" = verwende aktuellen error_reporting-Wert, "0" = false (keine Meldungen anzeigen, error_reporting = 0), "1" = true (alle Meldungen anzeigen, error_reporting = -1) oder ein beliebiger gültiger Wert für error_reporting (als Integer-Zahl).';
 
@@ -233,6 +239,9 @@ $_lang['setting_default_media_source_desc'] = 'Die Medienquelle, die standardmä
 
 $_lang['setting_default_media_source_type'] = 'Standard Medienquellen-Typ';
 $_lang['setting_default_media_source_type_desc'] = 'Standard Medienquellen-Typ, der bei der Erstellung einer neuen Medienquelle ausgewählt ist.';
+
+$_lang['setting_photo_profile_source'] = 'Benutzerprofil-Foto Medienquelle';
+$_lang['setting_photo_profile_source_desc'] = 'Bestimmt die Medienquelle, die zum Speichern und Abrufen von Profilbildern/Avataren verwendet wird. Falls nicht angegeben, wird die Standard-Medienquelle verwendet.';
 
 $_lang['setting_default_template'] = 'Standard-Template';
 $_lang['setting_default_template_desc'] = 'Wählen Sie das Standard-Template, das Sie für neue Ressourcen verwenden möchten. Sie können weiterhin ein anderes Template im Ressourcen-Editor auswählen; diese Einstellung sorgt nur dafür, dass eines Ihrer Templates für Sie vorausgewählt wird.';
@@ -279,7 +288,7 @@ $_lang['setting_feed_modx_security_enabled'] = 'MODX-Sicherheitshinweise-Feed ak
 $_lang['setting_feed_modx_security_enabled_desc'] = 'Wenn diese Einstellung auf "Nein" gesetzt wird, wird der Sicherheitshinweise-Feed auf der Startseite des Managers nicht angezeigt.';
 
 $_lang['setting_form_customization_use_all_groups'] = 'Alle Benutzergruppen-Zugehörigkeiten für die Formular-Anpassung nutzen';
-$_lang['setting_form_customization_use_all_groups_desc'] = 'Wenn diese Einstellung auf „Ja“ gesetzt wird, werden für die Formular-Anpassung ALLE Sets für ALLE Benutzergruppen, denen ein Benutzer angehört, genutzt, wenn Formular-Anpassungs-Sets angewendet werden. Anderenfalls wird nur das Set verwendet, das der primären Gruppe des Benutzers zugeordnet ist. Hinweis: Wenn Sie diese Einstellung auf „Ja“ setzen, kann es wegen Konflikten zwischen Formular-Anpassungs-Sets zu Problemen kommen.';
+$_lang['setting_form_customization_use_all_groups_desc'] = 'Wird diese Einstellung auf "Ja" gesetzt, werden für die Formular-Anpassung ALLE Sets für ALLE Benutzergruppen, denen ein Benutzer angehört, genutzt, wenn Formular-Anpassungs-Sets angewendet werden. Anderenfalls wird nur das Set verwendet, das der primären Gruppe des Benutzers zugeordnet ist. Hinweis: Wenn Sie diese Einstellung auf „Ja“ setzen, kann es wegen Konflikten zwischen Formular-Anpassungs-Sets zu Problemen kommen.';
 
 $_lang['setting_forward_merge_excludes'] = 'Felder, deren Werte bei Verwendung von Symlinks nicht überschrieben werden sollen';
 $_lang['setting_forward_merge_excludes_desc'] = 'Bei Verwendung eines Symlinks werden die Werte in den Feldern der Ziel-Ressource überschrieben von den nichtleeren Werten des Symlinks; verwenden Sie diese kommaseparierte Liste von Ausnahmen, um die angegebenen Felder davor zu bewahren, von den Werten des Symlinks überschrieben zu werden.';
@@ -396,6 +405,24 @@ $_lang['setting_mail_smtp_timeout_desc'] = 'Legt den SMTP-Server-Timeout in Seku
 $_lang['setting_mail_smtp_user'] = 'SMTP-Benutzername';
 $_lang['setting_mail_smtp_user_desc'] = 'Der Benutzername zur Authentifizierung beim SMTP-Server.';
 
+$_lang['setting_mail_dkim_selector'] = 'DKIM-Selektor';
+$_lang['setting_mail_dkim_selector_desc'] = 'Der DKIM-Domain-Selektor, bei dem der öffentliche Schlüssel gespeichert wurde.';
+
+$_lang['setting_mail_dkim_identity'] = 'DKIM-Identität';
+$_lang['setting_mail_dkim_identity_desc'] = 'DKIM-Identität, mit der Sie unterzeichnen - normalerweise Ihre Absenderadresse';
+
+$_lang['setting_mail_dkim_domain'] = 'DKIM-Domain';
+$_lang['setting_mail_dkim_domain_desc'] = 'DKIM-Signatur-Domainname.';
+
+$_lang['setting_mail_dkim_privatekeyfile'] = 'DKIM Private Schlüsseldatei';
+$_lang['setting_mail_dkim_privatekeyfile_desc'] = 'Pfad zur privaten DKIM-Schlüsseldatei. Sie können stattdessen den privaten DKIM-Schlüsselstring verwenden.';
+
+$_lang['setting_mail_dkim_privatekeystring'] = 'Privater DKIM-Schlüsselstring';
+$_lang['setting_mail_dkim_privatekeystring_desc'] = 'Hat Vorrang vor der privaten DKIM-Schlüsseldatei.';
+
+$_lang['setting_mail_dkim_passphrase'] = 'DKIM-Passphrase';
+$_lang['setting_mail_dkim_passphrase_desc'] = 'Wird nur verwendet, wenn Ihr Schlüssel verschlüsselt ist.';
+
 $_lang['setting_main_nav_parent'] = 'Eltern-Element des Hauptmenüs';
 $_lang['setting_main_nav_parent_desc'] = 'Der Container, der genutzt wird, um die Einträge für das Hauptmenü zu erstellen.';
 
@@ -471,6 +498,9 @@ $_lang['setting_new_file_permissions_desc'] = 'Nach dem Hochladen einer neuen Da
 $_lang['setting_new_folder_permissions'] = 'Verzeichnisrechte für neue Verzeichnisse';
 $_lang['setting_new_folder_permissions_desc'] = 'Nach dem Anlegen eines neuen Ordners im Dateimanager versucht dieser, die Verzeichnisrechte in die zu ändern, die in dieser Einstellung gespeichert sind. Dies könnte in einigen Konfigurationen evtl. nicht funktionieren, z.B. bei Verwendung des IIS-Webservers. In diesem Fall müssen Sie die Rechte selbst ändern.';
 
+$_lang['setting_package_installer_at_top'] = 'Package-Installation oben anpinnen';
+$_lang['setting_package_installer_at_top_desc'] = 'Wenn diese Einstellung aktiviert ist, wird der Installer-Eintrag oben im Extras-Menü angeheftet. Andernfalls wird er entsprechend dem Menü-Index positioniert.';
+
 $_lang['setting_parser_recurse_uncacheable'] = 'Parsen nicht gecachter Elemente verzögern';
 $_lang['setting_parser_recurse_uncacheable_desc'] = 'Wenn diese Option deaktiviert ist, kann die Ausgabe von Elementen, die nicht gecacht werden sollen (Ausrufungszeichen am Anfang des MODX-Tags, siehe <a href="https://rtfm. modx. com/revolution/2.x/making-sites-with-modx/tag-syntax#TagSyntax-Caching" target="_blank">MODX-Dokumentation</a>), innerhalb des Inhalts von gecachten Elementen gecacht werden. Deaktivieren Sie diese Option NUR DANN, wenn Sie Probleme mit dem Parsen von komplexen verschachtelten Elementen haben und dieses nicht wie erwartet funktioniert.';
 
@@ -500,9 +530,6 @@ $_lang['setting_proxy_port_desc'] = 'Der Port für Ihren Proxy-Server.';
 
 $_lang['setting_proxy_username'] = 'Proxy-Benutzername';
 $_lang['setting_proxy_username_desc'] = 'Der Benutzername, der benötigt wird, um sich beim Proxy-Server zu authentifizieren.';
-
-$_lang['setting_photo_profile_source'] = 'Medienquelle für Benutzerfotos';
-$_lang['setting_photo_profile_source_desc'] = 'Die Medienquelle, die zum Speichern der Benutzerprofil-Fotos verwendet wird. Standard ist die Standard-Medienquelle.';
 
 $_lang['setting_phpthumb_allow_src_above_docroot'] = 'phpThumb: Erlaube src oberhalb des Document Root';
 $_lang['setting_phpthumb_allow_src_above_docroot_desc'] = 'Gibt an, ob der src-Pfad außerhalb des Document-Root liegen darf. Dies ist nützlich für Multi-Kontext-Einsatz mit mehreren Virtual Hosts.';
@@ -630,10 +657,10 @@ $_lang['setting_session_cookie_httponly'] = 'Session-Cookie: HttpOnly';
 $_lang['setting_session_cookie_httponly_desc'] = 'Verwenden Sie diese Einstellung, um das HttpOnly-Flag für Session-Cookies zu setzen.';
 
 $_lang['setting_session_gc_maxlifetime'] = 'Maximale Lebensdauer des Session-Garbage-Collectors';
-$_lang['setting_session_gc_maxlifetime_desc'] = 'Erlaubt Anpassung der PHP-Konfigurationseinstellung session.gc_maxlifetime bei Benutzung von "modSessionHandler".';
+$_lang['setting_session_gc_maxlifetime_desc'] = 'Erlaubt die Anpassung der PHP-Einstellungen session.gc_maxlifetime bei Verwendung von \'MODX\\Revolution\\modSessionHandler\'.';
 
 $_lang['setting_session_handler_class'] = 'Name der Session-Handler-Klasse';
-$_lang['setting_session_handler_class_desc'] = 'Für datenbankgestützte Sessions verwenden Sie bitte "modSessionHandler". Lassen Sie dieses Feld leer, um die Standard-PHP-Sessionverwaltung zu verwenden.';
+$_lang['setting_session_handler_class_desc'] = 'Für datenbankverwaltete Sessions verwenden Sie \'MODX\\Revolution\\modSessionHandler\'. Lassen Sie dieses Feld leer, um ein Standard-PHP-Session-Management zu verwenden.';
 
 $_lang['setting_session_name'] = 'Session-Name';
 $_lang['setting_session_name_desc'] = 'Verwenden Sie diese Einstellung, um den Session-Namen für die Sessions in MODX anzupassen. Lassen Sie das Feld leer, wenn der standardmäßige PHP-Session-Name verwendet werden soll.';
@@ -648,7 +675,7 @@ $_lang['setting_set_header'] = 'HTTP-Header setzen';
 $_lang['setting_set_header_desc'] = 'Wenn diese Einstellung aktiviert ist, versucht MODX, die HTTP-Header für Ressourcen zu setzen.';
 
 $_lang['setting_send_poweredby_header'] = 'Sende X-Powered-By-Header';
-$_lang['setting_send_poweredby_header_desc'] = 'Wenn diese Option aktiviert ist, sendet MODX den "X-Powered-By"-Header, um diese Site als auf MODX basierend zu kennzeichnen. Dies hilft dabei, die Ermittlung der globalen MODX-Nutzung durch externe Tracker, die Ihre Site inspizieren, zu ermöglichen. Da dies erleichtert, zu erkennen, auf welchem System Ihre Site basiert, könnte dies ein leicht erhöhtes Sicherheitsrisiko darstellen, wenn eine Sicherheitslücke in MODX gefunden wird.';
+$_lang['setting_send_poweredby_header_desc'] = 'Wenn diese Einstellung aktiviert ist, sendet MODX den "X-Powered-By"-Header, um diese Site als auf MODX basierend zu kennzeichnen. Dies hilft dabei, die Ermittlung der globalen MODX-Nutzung durch externe Tracker, die Ihre Site inspizieren, zu ermöglichen. Da dies erleichtert, zu erkennen, auf welchem System Ihre Site basiert, könnte dies ein leicht erhöhtes Sicherheitsrisiko darstellen, wenn eine Sicherheitslücke in MODX gefunden wird.';
 
 $_lang['setting_show_tv_categories_header'] = 'Reiter-Überschrift "Kategorien" für TVs anzeigen';
 $_lang['setting_show_tv_categories_header_desc'] = 'Wenn diese Einstellung auf "Ja" gesetzt wurde, zeigt MODX die Überschrift "Kategorien" über dem ersten Kategorien-Reiter an, wenn TVs in einer Ressource bearbeitet werden.';
@@ -707,7 +734,7 @@ $_lang['setting_resource_static_path'] = 'Basispfad für statische Ressourcen';
 $_lang['setting_resource_static_path_desc'] = 'Wenn resource_static_allow_absolute deaktiviert ist, sind statische Ressourcen auf den hier angegebenen absoluten Pfad beschränkt.  Wichtig: Wenn Sie diese Einstellung zu weit fassen, können Benutzer Dateien lesen, die sie nicht lesen sollten! Es wird dringend empfohlen, Benutzer mit dieser Einstellung auf ein bestimmtes Verzeichnis wie {core_path}static/ oder {assets_path} zu beschränken.';
 
 $_lang['setting_symlink_merge_fields'] = 'Ressourcen-Felder in Symlinks kombinieren';
-$_lang['setting_symlink_merge_fields_desc'] = 'Wenn diese Einstellung auf „Ja“ gesetzt ist, werden nichtleere Felder automatisch mit denen der Ziel-Ressource kombiniert, wenn mit Hilfe von Symlinks weitergeleitet wird.';
+$_lang['setting_symlink_merge_fields_desc'] = 'Wird diese Einstellung auf "Ja" gesetzt, werden nichtleere Felder automatisch mit denen der Ziel-Ressource kombiniert, wenn mit Hilfe von Symlinks weitergeleitet wird.';
 
 $_lang['setting_syncsite_default'] = 'Cache standardmäßig leeren';
 $_lang['setting_syncsite_default_desc'] = 'Wählen Sie "Ja", um standardmäßig den Cache zu leeren, nachdem eine Ressource gespeichert wurde.';
@@ -738,17 +765,14 @@ $_lang['setting_upload_files_desc'] = 'Hier können Sie eine Liste von Dateitype
 $_lang['setting_upload_file_exists'] = 'Überprüfen, ob die hochgeladene Datei existiert';
 $_lang['setting_upload_file_exists_desc'] = 'Wenn diese Einstellung aktiviert ist, wird ein Fehler beim Hochladen einer Datei mit gleichem Namen angezeigt. Wenn sie deaktiviert ist, wird die vorhandene Datei ohne Nachfrage durch die neue Datei ersetzt.';
 
-$_lang['setting_upload_images'] = 'Hochladbare Bild-Dateitypen';
-$_lang['setting_upload_images_desc'] = 'Hier können Sie eine Liste von Dateitypen eingeben, die über den Ressourcen-Manager in das Verzeichnis assets/images/ hochgeladen werden können. Bitte geben Sie die Dateiendungen der Bildtypen ein, durch Kommata getrennt.';
-
 $_lang['setting_upload_maxsize'] = 'Maximale Upload-Größe';
 $_lang['setting_upload_maxsize_desc'] = 'Geben Sie die maximale Größe für Dateien an, die über den Dateimanager hochgeladen werden können. Die Upload-Dateigröße muss in Bytes angegeben werden. <strong>Hinweis: Der Upload großer Dateien kann eine sehr lange Zeit benötigen!</strong>';
 
-$_lang['setting_upload_media'] = 'Hochladbare Medien-Dateitypen';
-$_lang['setting_upload_media_desc'] = 'Hier können Sie eine Liste von Dateitypen eingeben, die über den Ressourcen-Manager in das Verzeichnis assets/media/ hochgeladen werden können. Bitte geben Sie die Dateiendungen der Medientypen ein, durch Kommata getrennt.';
-
 $_lang['setting_upload_translit'] = 'Namen von hochgeladenen Dateien transliterieren?';
 $_lang['setting_upload_translit_desc'] = 'Wenn diese Option aktiviert ist, wird der Name einer hochgeladenen Datei gemäß den globalen Transliterationsregeln transliteriert.';
+
+$_lang['setting_upload_translit_restrict_chars_pattern'] = 'Dateinamen-Zeichenbeschränkungsmuster';
+$_lang['setting_upload_translit_restrict_chars_pattern_desc'] = 'Ein gültiger regulärer Ausdruck zur Einschränkung der in einem Namen einer hochgeladenen Datei erlaubten Zeichen.';
 
 $_lang['setting_use_alias_path'] = 'Suchmaschinenfreundliche Alias-Pfade';
 $_lang['setting_use_alias_path_desc'] = 'Wenn Sie diese Einstellung auf „Ja“ setzen, wird der komplette Pfad zur Ressource angezeigt, wenn diese einen Alias hat. Wenn z.B. eine Ressource mit dem Alias „kind“ in einer Container-Ressource mit dem Alias „eltern“ abgelegt ist, wird der komplette Alias-Pfad zu dieser Ressource als „/eltern/kind.html“ angezeigt.<br /><strong>HINWEIS: Wenn Sie diese Option auf „Ja“ setzen (also Alias-Pfade aktivieren), verwenden Referenz-Elemente (wie Bilder, CSS- und JavaScript-Dateien etc.) absolute Pfade, also z.B. „/assets/images” im Gegensatz zu „assets/images“. Dadurch wird verhindert, dass der Browser (oder der Webserver) die relativen Pfade an die Alias-Pfade anhängt.</strong>';

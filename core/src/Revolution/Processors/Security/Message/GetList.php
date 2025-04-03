@@ -1,4 +1,5 @@
 <?php
+
 /*
  * This file is part of MODX Revolution.
  *
@@ -10,10 +11,11 @@
 
 namespace MODX\Revolution\Processors\Security\Message;
 
-use MODX\Revolution\Processors\Model\GetListProcessor;
+use MODX\Revolution\Formatter\modManagerDateFormatter;
 use MODX\Revolution\modUser;
 use MODX\Revolution\modUserMessage;
 use MODX\Revolution\modUserProfile;
+use MODX\Revolution\Processors\Model\GetListProcessor;
 use xPDO\Om\xPDOObject;
 use xPDO\Om\xPDOQuery;
 
@@ -32,18 +34,12 @@ class GetList extends GetListProcessor
     public $permission = 'messages';
     public $defaultSortField = 'date_sent';
 
-    /**
-     * @return bool
-     */
+    private modManagerDateFormatter $formatter;
+
     public function initialize()
     {
-        $initialized = parent::initialize();
-        $this->setDefaultProperties([
-            'search' => '',
-            'type' => 'inbox'
-        ]);
-
-        return $initialized;
+        $this->formatter = $this->modx->services->get(modManagerDateFormatter::class);
+        return parent::initialize();
     }
 
     /**
@@ -54,8 +50,8 @@ class GetList extends GetListProcessor
     {
         $c->innerJoin(modUser::class, 'Sender');
         $c->innerJoin(modUser::class, 'Recipient');
-        $c->innerJoin(modUserProfile::class, 'SenderProfile', 'SenderProfile.id = modUserMessage.sender');
-        $c->innerJoin(modUserProfile::class, 'RecipientProfile', 'RecipientProfile.id = modUserMessage.recipient');
+        $c->innerJoin(modUserProfile::class, 'SenderProfile', 'SenderProfile.internalKey = modUserMessage.sender');
+        $c->innerJoin(modUserProfile::class, 'RecipientProfile', 'RecipientProfile.internalKey = modUserMessage.recipient');
 
         switch ($this->getProperty('type')) {
             case 'outbox':
@@ -68,11 +64,11 @@ class GetList extends GetListProcessor
         }
 
         $c->where($where);
-        $search = $this->getProperty('search', '');
-        if (!empty($search)) {
+        $query = $this->getProperty('query', '');
+        if (!empty($query)) {
             $c->andCondition([
-                'subject:LIKE' => '%' . $search . '%',
-                'OR:message:LIKE' => '%' . $search . '%',
+                'subject:LIKE' => '%' . $query . '%',
+                'OR:message:LIKE' => '%' . $query . '%',
             ], null, 2);
         }
 
@@ -92,7 +88,7 @@ class GetList extends GetListProcessor
             'recipient_username' => 'Recipient.username',
             'recipient_fullname' => 'RecipientProfile.fullname'
         ]);
-        
+
         return $c;
     }
 
@@ -103,6 +99,11 @@ class GetList extends GetListProcessor
     public function prepareRow(xPDOObject $object)
     {
         $objectArray = $object->toArray();
+
+        if (array_key_exists('date_sent', $objectArray)) {
+            $objectArray['date_sent'] = $this->formatter->formatDateTime($objectArray['date_sent']);
+        }
+
         $objectArray['sender_name'] = $object->get('sender_fullname') . " ({$object->get('sender_username')})";
         $objectArray['recipient_name'] = $object->get('recipient_fullname') . " ({$object->get('recipient_username')})";
         $objectArray['read'] = $object->get('read') ? true : false;

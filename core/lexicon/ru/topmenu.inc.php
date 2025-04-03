@@ -7,6 +7,7 @@
  * @subpackage lexicon
  */
 $_lang['about'] = 'О проекте';
+$_lang['about_desc'] = 'Помощь!';
 $_lang['access_permissions'] = 'Права доступа';
 $_lang['access_permissions_desc'] = 'Управление доступом групп пользователей к ресурсам и контекстам';
 $_lang['acls'] = 'Контроль доступа';
@@ -118,6 +119,8 @@ $_lang['tools'] = 'Инструменты';
 $_lang['tools_desc'] = 'Инструменты, помогающие содержать сайт';
 $_lang['topnav'] = 'Главное меню';
 $_lang['topnav_desc'] = '';
+$_lang['trash'] = 'Корзина';
+$_lang['trash_desc'] = 'Управление удаленными ресурсами.';
 $_lang['user'] = 'Пользователь';
 $_lang['usernav'] = 'Меню пользователя';
 $_lang['usernav_desc'] = '';

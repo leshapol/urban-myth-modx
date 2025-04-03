@@ -7,6 +7,7 @@
  * @subpackage lexicon
  */
 $_lang['about'] = 'À propos';
+$_lang['about_desc'] = 'Help!';
 $_lang['access_permissions'] = 'Autorisations d\'accès';
 $_lang['access_permissions_desc'] = 'Gérer les accès des groupes d\'utilisateurs aux ressources et aux contextes';
 $_lang['acls'] = 'Listes des contrôles d\'accès';
@@ -118,6 +119,8 @@ $_lang['tools'] = 'Outils';
 $_lang['tools_desc'] = 'Utilitaires';
 $_lang['topnav'] = 'Navigation principale';
 $_lang['topnav_desc'] = '';
+$_lang['trash'] = 'Trash';
+$_lang['trash_desc'] = 'Manage deleted resources.';
 $_lang['user'] = 'Utilisateur';
 $_lang['usernav'] = 'Menu utilisateur';
 $_lang['usernav_desc'] = '';

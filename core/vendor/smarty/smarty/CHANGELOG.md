@@ -6,6 +6,65 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [4.5.5] - 2024-11-21
+
+
+- Support the deprecations introduced in PHP 8.4 and added tests for PHP 8.4 [#1084](https://github.com/smarty-php/smarty/pull/1084)
+
+## [4.5.4] - 2024-08-14
+- Fixed that using `count()` would trigger a deprecation notice. [#813](https://github.com/smarty-php/smarty/issues/813)
+
+
+## [4.5.3] - 2024-05-28
+- Fixed a code injection vulnerability in extends-tag. This addresses CVE-2024-35226.
+
+
+## [4.5.2] - 2024-04-06
+- Fixed argument must be passed by reference error introduced in v4.5.1 [#964](https://github.com/smarty-php/smarty/issues/964)
+
+## [4.5.1] - 2024-03-18
+- Using unregistered static class methods in expressions now also triggers a deprecation notice because we will drop support for this in the next major release [#813](https://github.com/smarty-php/smarty/issues/813)
+
+## [4.5.0] - 2024-03-18
+- (this release accidentally didn't contain any changes, fixed in 4.5.1)
+
+## [4.4.1] - 2024-02-26
+- Fixed internal release-tooling
+
+## [4.4.0] - 2024-02-26
+- Using the `|implode`, `|json_encode` and `|substr` modifiers does not generate a deprecation warning anymore as they will continue to be supported in v5 [#939](https://github.com/smarty-php/smarty/issues/939) 
+
+### Added
+- PHP8.3 support [#925](https://github.com/smarty-php/smarty/issues/925)
+
+### Fixed
+- Incorrect compilation of expressions when escape_html=true [#930](https://github.com/smarty-php/smarty/pull/930)
+
+## [4.3.4] - 2023-09-14
+
+## [4.3.3] - 2023-09-14
+
+### Fixed
+- `|strip_tags` does not work if the input is 0 [#890](https://github.com/smarty-php/smarty/issues/890)
+- Use of negative numbers in {math} equations [#895](https://github.com/smarty-php/smarty/issues/895)
+
+## [4.3.2] - 2023-07-19
+
+### Fixed
+- `$smarty->muteUndefinedOrNullWarnings()` now also mutes PHP8 warnings for undefined properties
+
+## [4.3.1] - 2023-03-28
+
+### Security
+- Fixed Cross site scripting vulnerability in Javascript escaping. This addresses CVE-2023-28447.
+
+### Fixed
+- `$smarty->muteUndefinedOrNullWarnings()` now also mutes PHP7 notices for undefined array indexes [#736](https://github.com/smarty-php/smarty/issues/736)
+- `$smarty->muteUndefinedOrNullWarnings()` now treats undefined vars and array access of a null or false variables 
+  equivalent across all supported PHP versions
+- `$smarty->muteUndefinedOrNullWarnings()` now allows dereferencing of non-objects across all supported PHP versions [#831](https://github.com/smarty-php/smarty/issues/831)
+- PHP 8.1 deprecation warnings on null strings in modifiers [#834](https://github.com/smarty-php/smarty/pull/834)
+
 ## [4.3.0] - 2022-11-22
 
 ### Added
@@ -14,7 +73,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 - Include docs and demo in the releases [#799](https://github.com/smarty-php/smarty/issues/799)
 - Using PHP functions as modifiers now triggers a deprecation notice because we will drop support for this in the next major release [#813](https://github.com/smarty-php/smarty/issues/813) 
--  Dropped remaining references to removed PHP-support in Smarty 4 from docs, lexer and security class. [#816](https://github.com/smarty-php/smarty/issues/816)
+- Dropped remaining references to removed PHP-support in Smarty 4 from docs, lexer and security class. [#816](https://github.com/smarty-php/smarty/issues/816)
 - Support umask when writing (template) files and set dir permissions to 777 [#548](https://github.com/smarty-php/smarty/issues/548) [#819](https://github.com/smarty-php/smarty/issues/819) 
  
 ### Fixed
@@ -26,7 +85,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Fixed PHP8.1 deprecation errors passing null to parameter in trim [#807](https://github.com/smarty-php/smarty/pull/807)
 - Adapt Smarty upper/lower functions to be codesafe (e.g. for Turkish locale) [#586](https://github.com/smarty-php/smarty/pull/586)
 - Bug fix for underscore and limited length in template name in custom resources [#581](https://github.com/smarty-php/smarty/pull/581)
-
 
 ## [4.2.1] - 2022-09-14
 

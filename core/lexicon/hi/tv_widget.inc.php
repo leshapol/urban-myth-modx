@@ -19,6 +19,8 @@ $_lang['capitalize'] = 'कैपिटल में लिखें';
 $_lang['checkbox'] = 'चेक बॉक्स';
 $_lang['checkbox_columns'] = 'स्तंभ';
 $_lang['checkbox_columns_desc'] = 'चेक बॉक्स में प्रदर्शित कर रहे हैं स्तंभों की संख्या।';
+$_lang['checkbox_display_switch'] = 'Display as Switch';
+$_lang['checkbox_display_switch_desc'] = 'When set to “Yes,” this TV’s inputs will be rendered in the Resource editing form as switches (toggles) instead of checked boxes. (Default: “No”)';
 $_lang['class'] = 'कक्षा';
 $_lang['classes'] = 'क्लास(es)';
 $_lang['combo_allowaddnewdata'] = 'नए आइटम जोड़ने की अनुमति दें';
@@ -34,6 +36,8 @@ $_lang['combo_listwidth'] = 'सूची चौड़ाई';
 $_lang['combo_listwidth_desc'] = 'The width, in % or px, of the dropdown list itself. Defaults to the width of the combobox.';
 $_lang['combo_maxheight'] = 'अधिकतम उंचाई';
 $_lang['combo_maxheight_desc'] = 'The maximum height in pixels of the dropdown list before scrollbars are shown. (Default: 300)';
+$_lang['combo_preserve_selectionorder'] = 'Preserve Entry Order';
+$_lang['combo_preserve_selectionorder_desc'] = 'When set to Yes, saved items display in the order they were originally selected. Otherwise, items follow the order defined in the list options. (Default: No)';
 $_lang['combo_stackitems'] = 'Stack चयनित आइटम्स';
 $_lang['combo_stackitems_desc'] = 'जब Yes सेट करें, items 1 प्रति पंक्ति stacked हो जाएगी। Defaults to No, जो items inline प्रदर्शित करता है।';
 $_lang['combo_title'] = 'सूची के शीर्ष लेख';
@@ -99,6 +103,8 @@ $_lang['htmlarea'] = 'HTML क्षेत्र';
 $_lang['htmltag'] = 'HTML टैग';
 $_lang['image'] = 'छवि';
 $_lang['image_alt'] = 'वैकल्पिक पाठ';
+$_lang['input_height'] = 'Input Height';
+$_lang['input_height_desc'] = 'A number specifying the input’s height in pixels. (Default: 140)';
 $_lang['latest_date'] = 'नवीनतम दिनांक';
 $_lang['latest_date_desc'] = 'नवीनतम अनुमति प्राप्त तिथि कि चयनित किया जा सकता।';
 $_lang['latest_time'] = 'नवीनतम समय';
@@ -143,7 +149,7 @@ $_lang['required'] = 'रिक्त की अनुमति दें';
 $_lang['required_desc'] = 'Select “No” to make this TV a required field in the Resources it’s assigned to. (Default: “Yes”)';
 $_lang['resourcelist'] = 'संसाधन सूची';
 $_lang['resourcelist_depth'] = 'गहराई';
-$_lang['resourcelist_depth_desc'] = 'The number of subfolders to drill down into for this lising’s search query. (Default: 10)';
+$_lang['resourcelist_depth_desc'] = 'The number of subfolders to drill down into for this listing’s search query. (Default: 10)';
 $_lang['resourcelist_forceselection_desc'] = 'Disabled; only list matches are valid.';
 $_lang['resourcelist_includeparent'] = 'Parents शामिल हैं';
 $_lang['resourcelist_includeparent_desc'] = 'Select “Yes” to include the Resources specified in the Parents field in the list.';
@@ -178,6 +184,10 @@ $_lang['tag_name'] = 'नाम टैग';
 $_lang['target'] = 'लक्ष्य';
 $_lang['text'] = 'मूलपाठ';
 $_lang['textarea'] = 'पाठ क्षेत्र';
+$_lang['textarea_grow'] = 'Auto Grow?';
+$_lang['textarea_grow_desc'] = 'Select “Yes” to allow the input’s height to automatically change based on its content. (Default: “No”)';
+$_lang['textarea_resizable'] = 'Resizable?';
+$_lang['textarea_resizable_desc'] = 'Select “Yes” to allow the input’s height to be changed by dragging its bottom boundary. (Default: “No”)';
 $_lang['textareamini'] = 'टेक्सटेरिया (मिनी)';
 $_lang['textbox'] = 'पाठ बॉक्स';
 $_lang['time_increment'] = 'समय बृद्दी';
@@ -185,15 +195,15 @@ $_lang['time_increment_desc'] = 'The number of minutes between each time value i
 $_lang['title'] = 'शीर्षक';
 $_lang['tv_default_checkbox_desc'] = 'A double-pipe-separated set of option(s) selected for this TV if the user does not check one or more. If your options include labels (e.g., Option One==1||Option Two==2||Option Three==3), be sure to enter the value (i.e., “1” for Option One, or “1||3” for Option One and Option Three)';
 $_lang['tv_default_date'] = 'डिफाॅल्ट दिनांक और समय';
-$_lang['tv_default_date_desc'] = 'यह दिखाने की तिथि कि क्या उपयोगकर्ता एक प्रदान नहीं करता है। ऊपर दी गई सूची में से एक सापेक्ष तिथि चुनें या निम्न में से किसी एक पैटर्न का उपयोग करके एक अलग तिथि दर्ज करें:
-<div class="example-list">
-  <उल>
-  <li><span class="example-input">[[+example_1]]</span> (संख्या घंटे पहले दर्शाती है)</li>
-  <li><span class="example-input">[[+example_2]]</span> (संख्या भविष्य के घंटों को दर्शाती है)</li>
-  <li><span class="example-input">[[+example_3]]</span> (दिखाए गए प्रारूप का उपयोग करके एक विशिष्ट तिथि [और यदि वांछित हो तो समय])</li>
- </ul>
-नोट: ऊपर दिखाए गए "+" और "-" का उपयोग प्रति-सहज है, लेकिन सही ("+" समय में पिछड़े का प्रतिनिधित्व करता है)।
-  </div>';
+$_lang['tv_default_date_desc'] = 'The date to show if the user does not provide one. Choose a relative date from the list above or enter a different date using one of the following patterns:
+    <div class="example-list">
+        <ul>
+            <li><span class="example-input">[[+example_1]]</span> (number represents hours ago)</li>
+            <li><span class="example-input">[[+example_2]]</span> (number represents hours in the future)</li>
+            <li><span class="example-input">[[+example_3]]</span> (a specific date [and time if desired] using the format shown)</li>
+        </ul>
+        Note: The use of the “+” and “-” shown above is counter-intuitive, but correct (“+” represents backward in time).
+    </div>';
 $_lang['tv_default_email'] = 'डिफॉल्ट ईमेल एड्रेस ';
 $_lang['tv_default_email_desc'] = 'The email address this TV will show if the user does not provide one.';
 $_lang['tv_default_file'] = 'डीफॉल्ट फाइल';

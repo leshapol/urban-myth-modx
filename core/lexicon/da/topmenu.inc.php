@@ -7,6 +7,7 @@
  * @subpackage lexicon
  */
 $_lang['about'] = 'Om';
+$_lang['about_desc'] = 'Help!';
 $_lang['access_permissions'] = 'Adgangsrettigheder';
 $_lang['access_permissions_desc'] = 'Administrer brugergruppeadgang til Ressourcer og Kontekster';
 $_lang['acls'] = 'Access Control Lists';
@@ -38,7 +39,7 @@ $_lang['flush_access_desc'] = 'Genindlæs denne sessions rettigheder';
 $_lang['flush_sessions'] = 'Log alle brugere ud';
 $_lang['flush_sessions_confirm'] = 'Er du sikker på, at du vil til at nulstille alle brugersessioner? Dette vil ødelægge alle nuværende og nylige brugersessioner, herunder din egen, og tvinger alle til at logge ind igen.';
 $_lang['flush_sessions_desc'] = 'Slet alle sessioner med det samme';
-$_lang['flush_sessions_err'] = 'Der opstod en fejl under forsøget på at nulstille de aktuelle brugersessioner.';
+$_lang['flush_sessions_err'] = 'An error occurred while attempting to flush the current user sessions.';
 $_lang['flush_sessions_not_supported'] = 'Brugersessioner kan ikke nulstilles under din konfiguration.';
 $_lang['form_customization'] = 'Formulartilpasning';
 $_lang['form_customization_desc'] = 'Opret tilpassede MODX Manager grænseflader';
@@ -118,6 +119,8 @@ $_lang['tools'] = 'Værktøjer';
 $_lang['tools_desc'] = 'Værktøjer til at holde dit websted ordenligt';
 $_lang['topnav'] = 'Main Navigation';
 $_lang['topnav_desc'] = '';
+$_lang['trash'] = 'Trash';
+$_lang['trash_desc'] = 'Manage deleted resources.';
 $_lang['user'] = 'Bruger';
 $_lang['usernav'] = 'User Navigation';
 $_lang['usernav_desc'] = '';

@@ -219,6 +219,12 @@ $_lang['setting_cultureKey_desc'] = 'Абярыце мову для ўсіх к�
 $_lang['setting_date_timezone'] = 'Часавы пояс па змаўчанні';
 $_lang['setting_date_timezone_desc'] = 'Калі не пуста, кантралюе наладу часавога поясу па змаўчанні для функцый даты у PHP. Калі пуста і налада date.timezone самога PHP не пазначана ў вашым асяроддзі, будзе выкарыстаны часавы пояс UTC.';
 
+$_lang['setting_manager_datetime_empty_value'] = 'Datetime Empty Value';
+$_lang['setting_manager_datetime_empty_value_desc'] = 'The text (if any) that will show in grids and forms when a datetime field’s value has not been set. (Default: “–” [a single en dash])';
+
+$_lang['setting_manager_datetime_separator'] = 'Datetime Separator';
+$_lang['setting_manager_datetime_separator_desc'] = 'When the date and time are shown as a combined element, these characters will be used to visually separate them. (Default: “, ” [comma and space])';
+
 $_lang['setting_debug'] = 'Адладка';
 $_lang['setting_debug_desc'] = 'Кантралюе ўключэнне/выключэнне рэжыму адладкі ў MODX і/або ўсталёўвае ўзровень адлюстравання памылак для PHP (налада error_reporting). \'\' = выкарыстоўваць бягучы error_reporting, \'0\' - адключыць (error_reporting = 0), \'1\' - уключыць (error_reporting = -1), або любое іншае значэнне error_reporting (як цэлы лік).';
 
@@ -233,6 +239,9 @@ $_lang['setting_default_media_source_desc'] = 'Крыніца файлаў, за
 
 $_lang['setting_default_media_source_type'] = 'Тып крыніцы файлаў па змаўчанні';
 $_lang['setting_default_media_source_type_desc'] = 'Выбраны па змаўчанні тып крыніцы файлаў падчас стварэння новай крыніцы файлаў.';
+
+$_lang['setting_photo_profile_source'] = 'User Profile Photo Source';
+$_lang['setting_photo_profile_source_desc'] = 'Specifies the Media Source to use for storing and retrieving profile photos/avatars. If not specified, the default Media Source will be used.';
 
 $_lang['setting_default_template'] = 'Шаблон па змаўчанні';
 $_lang['setting_default_template_desc'] = 'Выберыце шаблон па змаўчанні, які вы жадаеце выкарыстоўваць для новых рэсурсаў. Вы таксама можаце выбраць іншы шаблон ў рэдактары рэсурсаў, гэтая налада толькі папярэдне выбірае адзін з вашых шаблонаў.';
@@ -383,7 +392,7 @@ $_lang['setting_mail_smtp_port'] = 'SMTP Порт';
 $_lang['setting_mail_smtp_port_desc'] = 'Порт SMTP сервера па змаўчанні.';
 
 $_lang['setting_mail_smtp_secure'] = 'SMTP Secure';
-$_lang['setting_mail_smtp_secure_desc'] = 'Sets SMTP secure encyption type. Options are "", "ssl" or "tls"';
+$_lang['setting_mail_smtp_secure_desc'] = 'Sets SMTP secure encryption type. Options are "", "ssl" or "tls"';
 
 $_lang['setting_mail_smtp_autotls'] = 'SMTP Auto TLS';
 $_lang['setting_mail_smtp_autotls_desc'] = 'Whether to enable TLS encryption automatically if a server supports it, even if "SMTP Secure" is not set to "tls"';
@@ -396,6 +405,24 @@ $_lang['setting_mail_smtp_timeout_desc'] = 'Вызначае час чаканн
 
 $_lang['setting_mail_smtp_user'] = 'SMTP Карыстальнік';
 $_lang['setting_mail_smtp_user_desc'] = 'Карыстальнік, які выкарыстоўваецца падчас SMTP аўтарызацыі.';
+
+$_lang['setting_mail_dkim_selector'] = 'DKIM Selector';
+$_lang['setting_mail_dkim_selector_desc'] = 'The DKIM domain selector where the public key stored.';
+
+$_lang['setting_mail_dkim_identity'] = 'DKIM Identity';
+$_lang['setting_mail_dkim_identity_desc'] = 'DKIM identity you\'re signing as - usually your From address';
+
+$_lang['setting_mail_dkim_domain'] = 'DKIM Domain';
+$_lang['setting_mail_dkim_domain_desc'] = 'DKIM signing domain name.';
+
+$_lang['setting_mail_dkim_privatekeyfile'] = 'DKIM Private key file';
+$_lang['setting_mail_dkim_privatekeyfile_desc'] = 'DKIM private key file path. You can use DKIM Private key string instead of this.';
+
+$_lang['setting_mail_dkim_privatekeystring'] = 'DKIM Private key string';
+$_lang['setting_mail_dkim_privatekeystring_desc'] = 'Takes precedence over DKIM Private key file.';
+
+$_lang['setting_mail_dkim_passphrase'] = 'DKIM Passphrase';
+$_lang['setting_mail_dkim_passphrase_desc'] = 'Used only if your key is encrypted.';
 
 $_lang['setting_main_nav_parent'] = 'Бацькоўскі пункт для асноўнага меню';
 $_lang['setting_main_nav_parent_desc'] = 'Кантэйнер, які змяшчае ўсе запісы асноўнага меню.';
@@ -472,6 +499,9 @@ $_lang['setting_new_file_permissions_desc'] = 'Падчас запампоўкі
 $_lang['setting_new_folder_permissions'] = 'Правы на новыя каталогі';
 $_lang['setting_new_folder_permissions_desc'] = 'Падчас стварэння новага каталога праз файлавы агляднік будзе праведзена спроба ўсталяваць правы доступу да гэтага каталога ў адпаведнасці з гэтай наладай. Можа не працаваць на некаторых серверах, напрыклад IIS. У гэтым выпадку вам варта самастойна ўсталяваць правы.';
 
+$_lang['setting_package_installer_at_top'] = 'Pin Package-Installer at top';
+$_lang['setting_package_installer_at_top_desc'] = 'If enabled, the Installer entry will be pinned to the top of the Extras menu. Otherwise it will be positioned according to its menuindex.';
+
 $_lang['setting_parser_recurse_uncacheable'] = 'Адкладзены некэшыруемы парсінг';
 $_lang['setting_parser_recurse_uncacheable_desc'] = 'Калі адключана, некэшыруемыя элементы могуць мець свой кэшаваны вывад у змесце кэшаваных элементаў. Адключайце ТОЛЬКІ калі ў вас ёсць праблемы са складаным глыбокім парсінгам, які перастаў працаваць належным чынам.';
 
@@ -501,9 +531,6 @@ $_lang['setting_proxy_port_desc'] = 'Порт проксі-сервера.';
 
 $_lang['setting_proxy_username'] = 'Карыстальнік проксі-сервера';
 $_lang['setting_proxy_username_desc'] = 'Імя карыстальніка для аўтарызацыі на проксі-серверы.';
-
-$_lang['setting_photo_profile_source'] = 'Крыніца файлаў для аватарак';
-$_lang['setting_photo_profile_source_desc'] = 'Крыніца файлаў для захоўвання карыстацкіх аватарак. Па змаўчанні выкарыстоўваецца стандартная крыніца.';
 
 $_lang['setting_phpthumb_allow_src_above_docroot'] = 'phpThumb Дазволіць крыніцы вышэй за каранёвы каталог';
 $_lang['setting_phpthumb_allow_src_above_docroot_desc'] = 'Паказвае, ці дазволены шлях у src па-за межамі каранёвага каталога. Гэта зручна для мульці-кантэкстных усталёвак са шматлікімі віртуальнымі хастамі.';
@@ -631,10 +658,10 @@ $_lang['setting_session_cookie_httponly'] = 'Кукі сеансаў у рэжы
 $_lang['setting_session_cookie_httponly_desc'] = 'Выкарыстоўвайце гэтую наладу для задання рэжыма HttpOnly для кукаў сеансаў.';
 
 $_lang['setting_session_gc_maxlifetime'] = 'Максімальны час жыцця сесіі прыбіральніка смецця';
-$_lang['setting_session_gc_maxlifetime_desc'] = 'Дазваляе наладзіць PHP-параметр session.gc_maxlifetime, калі выкарыстоўваецца \'modSessionHandler\'.';
+$_lang['setting_session_gc_maxlifetime_desc'] = 'Allows customization of the session.gc_maxlifetime PHP ini setting when using \'MODX\\Revolution\\modSessionHandler\'.';
 
 $_lang['setting_session_handler_class'] = 'Імя класа-апрацоўшчыка сеансаў';
-$_lang['setting_session_handler_class_desc'] = 'Для захавання сесій ў базе дадзеных выкарыстоўвайце "modSessionHandler". Пакіньце гэта поле пустым для выкарыстання стандартнага механізма сесій у PHP.';
+$_lang['setting_session_handler_class_desc'] = 'For database managed sessions, use \'MODX\\Revolution\\modSessionHandler\'.  Leave this blank to use standard PHP session management.';
 
 $_lang['setting_session_name'] = 'Назва сеансу';
 $_lang['setting_session_name_desc'] = 'Выкарыстоўвайце гэтую наладу, каб пазначыць назву сеансу, якая выкарыстоўваецца для сеансаў у MODX. Пакіньце пустым, каб выкарыстоўваць назву сеансу па змаўчанні ў PHP.';
@@ -740,17 +767,14 @@ $_lang['setting_upload_files_desc'] = 'Тут вы можаце пазначыц
 $_lang['setting_upload_file_exists'] = 'Check if uploaded file exists';
 $_lang['setting_upload_file_exists_desc'] = 'When enabled an error will be shown when uploading a file that already exists with the same name. When disabled, the existing file will be quietly replaced with the new file.';
 
-$_lang['setting_upload_images'] = 'Дазволеныя да загрузкі тыпы малюнкаў';
-$_lang['setting_upload_images_desc'] = 'Тут вы можаце пазначыць спіс тыпаў файлаў, якія можна загружаць у каталог "assets/images/", выкарыстоўваючы дыспетчар файлаў. Калі ласка, пазначце пашырэнні тыпаў файлаў праз коску.';
-
 $_lang['setting_upload_maxsize'] = 'Максімальны памер файлаў';
 $_lang['setting_upload_maxsize_desc'] = 'Увядзіце максімальны памер для файлаў, які дазволены для загрузкі праз дыспетчар файлаў. Памер файла павінен быць уведзены ў байтах. <strong>ВАЖНА: Вялікія файлы могуць вельмі доўга загружацца!</strong>';
 
-$_lang['setting_upload_media'] = 'Дазволеныя да загрузкі тыпы медыя-файлаў';
-$_lang['setting_upload_media_desc'] = 'Тут вы можаце пазначыць спіс тыпаў файлаў, якія можна загружаць у каталог "assets/media/", выкарыстоўваючы дыспетчар файлаў. Калі ласка, пазначце пашырэнні тыпаў файлаў праз коску.';
-
 $_lang['setting_upload_translit'] = 'Transliterate names of uploaded files?';
 $_lang['setting_upload_translit_desc'] = 'If this option is enabled, the name of an uploaded file will be transliterated according to the global transliteration rules.';
+
+$_lang['setting_upload_translit_restrict_chars_pattern'] = 'File Name Character Restriction Pattern';
+$_lang['setting_upload_translit_restrict_chars_pattern_desc'] = 'A valid RegEx pattern for restricting characters used in an uploaded file’s name.';
 
 $_lang['setting_use_alias_path'] = 'Выкарыстоўваць укладзеныя URL';
 $_lang['setting_use_alias_path_desc'] = 'Значэнне «Так» для гэтай налады пакажа поўны шлях да рэсурсу, калі ў рэсурса ёсць псеўданім. Напрыклад, калі рэсурс з псеўданімам "child" размешчаны ўнутры рэсурсу-кантэйнера з псеўданімам "parent", то поўны шлях да рэсурсу будзе выведзены так: \'/parent/child.html\'.<br /><strong>ВАЖНА: Усталёўваючы значэнне «Так» для гэтай налады, выкарыстоўвайце поўны шлях у спасылках для такіх файлаў, як малюнкі, CSS, JavaScript, і г.д. Напрыклад, \'/assets/images\', а не \'assets/images\'. Такім чынам вы абароніце браўзер (або веб-сервер) ад дадання адноснага шляху да шляху псеўданіма.</strong>';
@@ -811,7 +835,7 @@ $_lang['setting_error_log_filename'] = 'Назва файла лога памы�
 $_lang['setting_error_log_filename_desc'] = 'Пазначце імя файла з логам памылак MODX (таксама патрэбна пашырэнне файла).';
 
 $_lang['setting_error_log_filepath'] = 'Месцазнаходжанне лога памылак';
-$_lang['setting_error_log_filepath_desc'] = 'Па жаданні можна пазначыць абсалютны шлях да карыстацкага лога памылак. Вы можаце выкарыстоўваць запаўняльнікі падобныя да {cache_path}.';
+$_lang['setting_error_log_filepath_desc'] = 'Optionally set a absolute path the a custom error log location. You might use placeholders like {cache_path}.';
 
 $_lang['setting_passwordless_activated'] = 'Актываваць ўваход без пароля';
 $_lang['setting_passwordless_activated_desc'] = 'Пры ўключэнні карыстальнікі ўводзяць свой адрас электроннай пошты, каб атрымаць аднаразовую спасылку для ўваходу, а не ўводзіць імя карыстальніка і пароль.';

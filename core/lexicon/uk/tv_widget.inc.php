@@ -19,6 +19,8 @@ $_lang['capitalize'] = 'Капіталізація';
 $_lang['checkbox'] = 'Прапорці (checkbox)';
 $_lang['checkbox_columns'] = 'Стовпці';
 $_lang['checkbox_columns_desc'] = 'Кількість стовпців, в яких будуть розміщуватись прапорці (checkbox).';
+$_lang['checkbox_display_switch'] = 'Display as Switch';
+$_lang['checkbox_display_switch_desc'] = 'When set to “Yes,” this TV’s inputs will be rendered in the Resource editing form as switches (toggles) instead of checked boxes. (Default: “No”)';
 $_lang['class'] = 'Клас';
 $_lang['classes'] = 'Клас(и) ';
 $_lang['combo_allowaddnewdata'] = 'Дозволити додавати нові елементи';
@@ -34,6 +36,8 @@ $_lang['combo_listwidth'] = 'Ширина списку';
 $_lang['combo_listwidth_desc'] = 'Ширина списку, в% або px. За замовчуванням ширина як у поля з списком, що випадає. ';
 $_lang['combo_maxheight'] = 'Максимальна висота';
 $_lang['combo_maxheight_desc'] = 'Максимальна висота списку в пікселях перед відображенням прокручування. (За замовчуванням: 300) ';
+$_lang['combo_preserve_selectionorder'] = 'Preserve Entry Order';
+$_lang['combo_preserve_selectionorder_desc'] = 'When set to Yes, saved items display in the order they were originally selected. Otherwise, items follow the order defined in the list options. (Default: No)';
 $_lang['combo_stackitems'] = 'Обрані значення в стовпчик';
 $_lang['combo_stackitems_desc'] = 'Якщо вибрано "Так", обрані значення розміщуватимуться один під одним. За замовчуванням - "Ні", при цьому значення розміщуються в один рядок.';
 $_lang['combo_title'] = 'Заголовок списку';
@@ -97,6 +101,8 @@ $_lang['htmlarea'] = 'HTML-поле';
 $_lang['htmltag'] = 'HTML-теґ';
 $_lang['image'] = 'Зображення';
 $_lang['image_alt'] = 'Альтернативний текст';
+$_lang['input_height'] = 'Input Height';
+$_lang['input_height_desc'] = 'A number specifying the input’s height in pixels. (Default: 140)';
 $_lang['latest_date'] = 'Найпізніша дата';
 $_lang['latest_date_desc'] = 'Найпізніша дата, яку можна вибрати.';
 $_lang['latest_time'] = 'Найпізніший час';
@@ -141,7 +147,7 @@ $_lang['required'] = 'Необов\'язково заповнювати';
 $_lang['required_desc'] = 'Виберіть "Ні", щоб зробити TV обов\'язковим полем у ресурсах, до яких він прив\'язаний. (За замовчуванням: "Так") ';
 $_lang['resourcelist'] = 'Список ресурсів';
 $_lang['resourcelist_depth'] = 'Глибина';
-$_lang['resourcelist_depth_desc'] = 'Кількість підпапок для поглиблення запиту в цьому списку. (За замовчуванням: 10) ';
+$_lang['resourcelist_depth_desc'] = 'The number of subfolders to drill down into for this listing’s search query. (Default: 10)';
 $_lang['resourcelist_forceselection_desc'] = 'Вимкнено, дійсні лише збіги списку. ';
 $_lang['resourcelist_includeparent'] = 'Включати батьків';
 $_lang['resourcelist_includeparent_desc'] = 'Виберіть «Так», щоб включити в список ресурси, зазначені в полі «Батьки». ';
@@ -182,6 +188,10 @@ $_lang['tag_name'] = 'Ім\'я теґу';
 $_lang['target'] = 'Ціль';
 $_lang['text'] = 'Текст';
 $_lang['textarea'] = 'Текстова область';
+$_lang['textarea_grow'] = 'Auto Grow?';
+$_lang['textarea_grow_desc'] = 'Select “Yes” to allow the input’s height to automatically change based on its content. (Default: “No”)';
+$_lang['textarea_resizable'] = 'Resizable?';
+$_lang['textarea_resizable_desc'] = 'Select “Yes” to allow the input’s height to be changed by dragging its bottom boundary. (Default: “No”)';
 $_lang['textareamini'] = 'Текстова область (міні)';
 $_lang['textbox'] = 'Текстове поле';
 $_lang['time_increment'] = 'Прирощення часу';
@@ -189,14 +199,14 @@ $_lang['time_increment_desc'] = 'Кількість хвилин між кожн
 $_lang['title'] = 'Заголовок';
 $_lang['tv_default_checkbox_desc'] = 'Набір опцій, розділених двома вертикальними лініями, вибраних для цього TV, якщо користувач не перевіряє один чи більше варіантів. Якщо ваші опції включають мітки (напр. Параметр Один==1||Параметр Два==2||Параметр Три==3), переконайтеся, що ви ввели значення (тобто «1» для Параметра 1 ,« 1||3» для Параметрів Один і Три ) ';
 $_lang['tv_default_date'] = 'Дата і час за замовчуванням';
-$_lang['tv_default_date_desc'] = 'Дата для отображения, если пользователь ее не предоставил. Выберите относительную дату из списка выше или введите другую дату, используя один из следующих шаблонов: 
+$_lang['tv_default_date_desc'] = 'The date to show if the user does not provide one. Choose a relative date from the list above or enter a different date using one of the following patterns:
     <div class="example-list">
         <ul>
-            <li><span class="example-input">[[+example_1]]</span> (число представляет количество "часов назад")</li>
-            <li><span class="example-input">[[+example_2]]</span> (число представляет количество часов в будущем)</li>
-            <li><span class="example-input">[[+example_3]]</span> (конкретная дата [и время, если необходимо] с использованием показанного формата)</li>
+            <li><span class="example-input">[[+example_1]]</span> (number represents hours ago)</li>
+            <li><span class="example-input">[[+example_2]]</span> (number represents hours in the future)</li>
+            <li><span class="example-input">[[+example_3]]</span> (a specific date [and time if desired] using the format shown)</li>
         </ul>
-        Примечание. Использование «+» и «-», показанное выше, противоречит здравому смыслу, но правильно («+» обозначает обратную во времени).
+        Note: The use of the “+” and “-” shown above is counter-intuitive, but correct (“+” represents backward in time).
     </div>';
 $_lang['tv_default_email'] = 'Адреса електронної пошти за замовчуванням';
 $_lang['tv_default_email_desc'] = 'Адреса електронної пошти цього TV відображатиметься, якщо користувач не надасть його. ';

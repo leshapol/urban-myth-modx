@@ -62,6 +62,8 @@ $_lang['imageExtensions'] = 'imageExtensions';
 $_lang['prop_file.imageExtensions_desc'] = 'Een komma gescheiden lijst van bestandsextensies om als afbeelding te gebruiken. MODX zal proberen van bestanden met deze extensies thumbnails te maken.';
 $_lang['skipFiles'] = 'skipFiles';
 $_lang['prop_file.skipFiles_desc'] = 'Een komma gescheiden lijst van bestanden en mappen welke MODX moet overslaan en verbergen.';
+$_lang['skipExtensions'] = 'skipExtensions';
+$_lang['prop_file.skipExtensions'] = 'A comma-separated list of extensions. MODX will not show files that match any of these.';
 $_lang['thumbnailQuality'] = 'thumbnailQuality';
 $_lang['prop_file.thumbnailQuality_desc'] = 'De kwaliteit van de getoonde thumbnails, tusssen 1 en 100 waarbij 100 de hoogste kwaliteit is.';
 $_lang['thumbnailType'] = 'thumbnailType';
@@ -82,6 +84,7 @@ $_lang['prop_s3.url_desc'] = 'De URL van de Amazon S3 instantie.';
 $_lang['prop_s3.endpoint_desc'] = 'Alternative S3-compatible endpoint URL, e.g., "https://s3.<region>.example.com". Review your S3-compatible provider’s documentation for the endpoint location. Leave empty for Amazon S3';
 $_lang['prop_s3.region_desc'] = 'Regio van de bucket. Voorbeeld: us-west-1';
 $_lang['prop_s3.prefix_desc'] = 'Optioneel pad/map voorvoegsel';
+$_lang['prop_s3.no_check_bucket_desc'] = 'If set, don\'t attempt to check the bucket exists. It can be needed if the access key you are using does not have bucket creation/list permissions.';
 $_lang['s3_no_move_folder'] = 'De S3 driver ondersteund op dit moment het verplaatsen van mappen niet.';
 
 /* ftp source type */
@@ -99,3 +102,4 @@ $_lang['prop_ftp.timeout_desc'] = 'Time-out voor verbinding in seconden.';
 $_lang['PNG'] = 'PNG';
 $_lang['JPG'] = 'JPG';
 $_lang['GIF'] = 'GIF';
+$_lang['WebP'] = 'WebP';

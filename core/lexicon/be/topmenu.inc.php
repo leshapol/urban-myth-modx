@@ -7,6 +7,7 @@
  * @subpackage lexicon
  */
 $_lang['about'] = 'Аб сістеме';
+$_lang['about_desc'] = 'Help!';
 $_lang['access_permissions'] = 'Правы доступу';
 $_lang['access_permissions_desc'] = 'Кіраванне доступам групы карыстальнікаў да рэсурсаў і кантэкстаў';
 $_lang['acls'] = 'Спісы кіравання доступам';
@@ -38,7 +39,7 @@ $_lang['flush_access_desc'] = 'Аднаўленне дазволаў гэтай 
 $_lang['flush_sessions'] = 'Завяршыць усе сеансы';
 $_lang['flush_sessions_confirm'] = 'Вы сапраўды жадаеце ачысціць ўсе карыстацкія сесіі? Гэта знішчыць усе цяперашнія і нядаўнія карыстацкія сесіі, у тым ліку вашу, прымушаючы ўсіх зноў увайсці ў сістэму.';
 $_lang['flush_sessions_desc'] = 'Неадкладнае знішчэнне ўсіх сеансаў';
-$_lang['flush_sessions_err'] = 'Адбылася памылка пры спробе ачысціць карыстацкія сесіі.';
+$_lang['flush_sessions_err'] = 'An error occurred while attempting to flush the current user sessions.';
 $_lang['flush_sessions_not_supported'] = 'Знічшэнне карыстацкіх сеансаў не падтрымліваецца вашай канфігурацыяй.';
 $_lang['form_customization'] = 'Налады форм';
 $_lang['form_customization_desc'] = 'Стварэнне карыстацкіх інтэрфейсаў у сістэме кіравання MODX';
@@ -118,6 +119,8 @@ $_lang['tools'] = 'Інструменты';
 $_lang['tools_desc'] = 'Утыліты для захавання вашага сайту ў парадку';
 $_lang['topnav'] = 'Main Navigation';
 $_lang['topnav_desc'] = '';
+$_lang['trash'] = 'Trash';
+$_lang['trash_desc'] = 'Manage deleted resources.';
 $_lang['user'] = 'Карыстальнік';
 $_lang['usernav'] = 'Меню карыстальніка';
 $_lang['usernav_desc'] = '';

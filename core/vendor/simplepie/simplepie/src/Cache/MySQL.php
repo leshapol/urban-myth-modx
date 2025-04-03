@@ -1,4 +1,5 @@
 <?php
+
 /**
  * SimplePie
  *
@@ -54,13 +55,14 @@ namespace SimplePie\Cache;
  *
  * @package SimplePie
  * @subpackage Caching
+ * @deprecated since SimplePie 1.8.0, use implementation of "Psr\SimpleCache\CacheInterface" instead
  */
 class MySQL extends DB
 {
     /**
      * PDO instance
      *
-     * @var PDO
+     * @var \PDO
      */
     protected $mysql;
 
@@ -83,7 +85,7 @@ class MySQL extends DB
      *
      * @param string $location Location string (from SimplePie::$cache_location)
      * @param string $name Unique ID for the cache
-     * @param string $type Either TYPE_FEED for SimplePie data, or TYPE_IMAGE for image data
+     * @param Base::TYPE_FEED|Base::TYPE_IMAGE $type Either TYPE_FEED for SimplePie data, or TYPE_IMAGE for image data
      */
     public function __construct($location, $name, $type)
     {
@@ -99,7 +101,7 @@ class MySQL extends DB
             ],
         ];
 
-        $this->options = \SimplePie\Misc::array_merge_recursive($this->options, \SimplePie\Cache::parse_URL($location));
+        $this->options = array_replace_recursive($this->options, \SimplePie\Cache::parse_URL($location));
 
         // Path is prefixed with a "/"
         $this->options['dbname'] = substr($this->options['path'], 1);
@@ -145,7 +147,7 @@ class MySQL extends DB
     /**
      * Save data to the cache
      *
-     * @param array|SimplePie $data Data to store in the cache. If passed a SimplePie object, only cache the $data property
+     * @param array|\SimplePie\SimplePie $data Data to store in the cache. If passed a SimplePie object, only cache the $data property
      * @return bool Successfulness
      */
     public function save($data)
@@ -287,13 +289,13 @@ class MySQL extends DB
 
             if ($items !== 0) {
                 if (isset($data['child'][\SimplePie\SimplePie::NAMESPACE_ATOM_10]['feed'][0])) {
-                    $feed =& $data['child'][\SimplePie\SimplePie::NAMESPACE_ATOM_10]['feed'][0];
+                    $feed = &$data['child'][\SimplePie\SimplePie::NAMESPACE_ATOM_10]['feed'][0];
                 } elseif (isset($data['child'][\SimplePie\SimplePie::NAMESPACE_ATOM_03]['feed'][0])) {
-                    $feed =& $data['child'][\SimplePie\SimplePie::NAMESPACE_ATOM_03]['feed'][0];
+                    $feed = &$data['child'][\SimplePie\SimplePie::NAMESPACE_ATOM_03]['feed'][0];
                 } elseif (isset($data['child'][\SimplePie\SimplePie::NAMESPACE_RDF]['RDF'][0])) {
-                    $feed =& $data['child'][\SimplePie\SimplePie::NAMESPACE_RDF]['RDF'][0];
+                    $feed = &$data['child'][\SimplePie\SimplePie::NAMESPACE_RDF]['RDF'][0];
                 } elseif (isset($data['child'][\SimplePie\SimplePie::NAMESPACE_RSS_20]['rss'][0])) {
-                    $feed =& $data['child'][\SimplePie\SimplePie::NAMESPACE_RSS_20]['rss'][0];
+                    $feed = &$data['child'][\SimplePie\SimplePie::NAMESPACE_RSS_20]['rss'][0];
                 } else {
                     $feed = null;
                 }

@@ -1,4 +1,5 @@
 <?php
+
 /*
  * This file is part of MODX Revolution.
  *
@@ -10,12 +11,12 @@
 
 namespace MODX\Revolution\Processors\Security\User;
 
+use MODX\Revolution\Formatter\modManagerDateFormatter;
 use MODX\Revolution\modManagerLog;
-use MODX\Revolution\Processors\Model\GetListProcessor;
 use MODX\Revolution\modResource;
 use MODX\Revolution\modUser;
 use MODX\Revolution\modUserGroup;
-use PDO;
+use MODX\Revolution\Processors\Model\GetListProcessor;
 use xPDO\Om\xPDOObject;
 use xPDO\Om\xPDOQuery;
 
@@ -37,19 +38,20 @@ class GetRecentlyEditedResources extends GetListProcessor
     public $defaultSortDirection = 'DESC';
     protected $classKeys = [];
 
+    private modManagerDateFormatter $formatter;
+
     /**
      * @return bool|null|string
      */
     public function initialize()
     {
         $this->setDefaultProperties(['limit' => 10]);
-
+        $this->formatter = $this->modx->services->get(modManagerDateFormatter::class);
         $this->classKeys = $this->modx->getDescendants(modResource::class);
         $this->classKeys[] = modResource::class;
 
         return parent::initialize();
     }
-
 
     /**
      * Filter resources by user
@@ -60,22 +62,21 @@ class GetRecentlyEditedResources extends GetListProcessor
     {
         $user = $this->getProperty('user');
         $q = $this->modx->newQuery($this->classKey, ['classKey:IN' => $this->classKeys]);
-        $q->select('MAX(id), item');
+        $q->select('MAX(id)');
         if (!empty($user)) {
             $q->where(['user' => $user]);
-            $c->where(['user' => $user]);
         }
         $q->groupby('item');
-        $q->limit($this->getProperty('limit', 10));
-        if ($q->prepare() && $q->stmt->execute()) {
-            if ($ids = $q->stmt->fetchAll(PDO::FETCH_COLUMN)) {
-                $c->where(['id:IN' => $ids]);
-            } else {
-                $c->where(['id' => -1]);
-            }
-        }
 
+        $sql = '-1';
+        if ($q->prepare()) {
+            $sql = $q->toSQL();
+        }
         $c->select($this->modx->getSelectColumns(modManagerLog::class, 'modManagerLog'));
+        $c->where(<<<SQL
+id in ({$sql})
+SQL
+        );
 
         return $c;
     }
@@ -97,27 +98,20 @@ class GetRecentlyEditedResources extends GetListProcessor
         $resourceArray = $resource->get(['id','pagetitle','description','published','deleted','context_key', 'createdon', 'editedon']);
         $resourceArray['pagetitle'] = htmlspecialchars($resourceArray['pagetitle'], ENT_QUOTES, $this->modx->getOption('modx_charset', null, 'UTF-8'));
 
-        $dateFormat = $this->modx->getOption('manager_date_format');
-        $timeFormat = $this->modx->getOption('manager_time_format');
-
-        $createdon = new \DateTimeImmutable($resourceArray['createdon']);
-        $resourceArray['createdon_date'] = $createdon->format($dateFormat);
-        $resourceArray['createdon_time'] = $createdon->format($timeFormat);
-
-        $resourceArray['editedon_date'] = $resourceArray['createdon_date'];
-        $resourceArray['editedon_time'] = $resourceArray['createdon_time'];
-
-        if (!empty($resourceArray['editedon'])) {
-            $editedon = new \DateTimeImmutable($resourceArray['editedon']);
-            $resourceArray['editedon_date'] = $editedon->format($dateFormat);
-            $resourceArray['editedon_time'] = $editedon->format($timeFormat);
-        }
+        $editedon = !empty($resourceArray['editedon']) ? $resourceArray['editedon'] : $resourceArray['createdon'] ;
+        $isUnedited = $editedon === $resourceArray['createdon'];
+        $resourceArray['createdon_date'] = $this->formatter->formatDate($resourceArray['createdon']);
+        $resourceArray['createdon_time'] = $this->formatter->formatTime($resourceArray['createdon']);
+        $resourceArray['editedon_date'] = $isUnedited ? $resourceArray['createdon_date'] : $this->formatter->formatDate($editedon);
+        $resourceArray['editedon_time'] = $isUnedited ? $resourceArray['createdon_time'] : $this->formatter->formatTime($editedon);
+        $row['occurred'] = $this->formatter->formatDateTime($row['occurred']);
 
         $row = array_merge($row, $resourceArray);
 
         /** @var modUser $user */
         if ($user = $object->getOne('User')) {
-            $row = array_merge($row,
+            $row = array_merge(
+                $row,
                 $user->get(['username']),
                 $user->Profile->get(['fullname', 'email']),
                 ['photo' => $user->getPhoto(64, 64)]

@@ -62,6 +62,8 @@ $_lang['imageExtensions'] = 'imageExtensions';
 $_lang['prop_file.imageExtensions_desc'] = 'A lista separada por vírgulas de extensões de arquivos para usar como imagens. MODX tentará fazer miniaturas de arquivos com estas extensões.';
 $_lang['skipFiles'] = 'skipFiles';
 $_lang['prop_file.skipFiles_desc'] = 'Uma lista separada por vírgulas. MODX vai pular e se esconder arquivos e pastas que correspondem a qualquer destes .';
+$_lang['skipExtensions'] = 'skipExtensions';
+$_lang['prop_file.skipExtensions'] = 'A comma-separated list of extensions. MODX will not show files that match any of these.';
 $_lang['thumbnailQuality'] = 'thumbnailQuality';
 $_lang['prop_file.thumbnailQuality_desc'] = 'A qualidade das miniaturas prestados, em uma escala de 0-100.';
 $_lang['thumbnailType'] = 'thumbnailType';
@@ -82,6 +84,7 @@ $_lang['prop_s3.url_desc'] = 'O URL da instância do Amazon S3.';
 $_lang['prop_s3.endpoint_desc'] = 'Alternative S3-compatible endpoint URL, e.g., "https://s3.<region>.example.com". Review your S3-compatible provider’s documentation for the endpoint location. Leave empty for Amazon S3';
 $_lang['prop_s3.region_desc'] = 'Região do bucket. Exemplo: us-west-1';
 $_lang['prop_s3.prefix_desc'] = 'Optional path/folder prefix';
+$_lang['prop_s3.no_check_bucket_desc'] = 'If set, don\'t attempt to check the bucket exists. It can be needed if the access key you are using does not have bucket creation/list permissions.';
 $_lang['s3_no_move_folder'] = 'O driver S3 não suporta movimentação de pastas neste momento.';
 
 /* ftp source type */
@@ -99,3 +102,4 @@ $_lang['prop_ftp.timeout_desc'] = 'Timeout for connection in seconds.';
 $_lang['PNG'] = 'PNG';
 $_lang['JPG'] = 'JPG';
 $_lang['GIF'] = 'GIF';
+$_lang['WebP'] = 'WebP';

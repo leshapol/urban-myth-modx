@@ -7,6 +7,7 @@
  * @subpackage lexicon
  */
 $_lang['about'] = 'Sobre';
+$_lang['about_desc'] = 'Help!';
 $_lang['access_permissions'] = 'Permissões de Acesso';
 $_lang['access_permissions_desc'] = 'Gerenciar o acesso de grupos de usuários aos recursos e contextos.';
 $_lang['acls'] = 'Lista de Controle de Acesso';
@@ -38,7 +39,7 @@ $_lang['flush_access_desc'] = 'Limpa todas as permissões e recarrega o cache.';
 $_lang['flush_sessions'] = 'Limpar Todas as Sessões';
 $_lang['flush_sessions_confirm'] = 'Tem certeza que quer liberar todas as sessões dos do usuário? Isso destruirá todas as sessões dos do usuário atuais e recentes, incluindo o seu próprio, obrigando todos a sessão após esta ação.';
 $_lang['flush_sessions_desc'] = 'Limpa todas as sessões e logout em todos os usuários.';
-$_lang['flush_sessions_err'] = 'Ocorreu um erro durante a tentativa de esvaziar as sessões dos atuais do usuários.';
+$_lang['flush_sessions_err'] = 'An error occurred while attempting to flush the current user sessions.';
 $_lang['flush_sessions_not_supported'] = 'Limpar sessões de usuário não é compatível com sua configuração.';
 $_lang['form_customization'] = 'Personalização de formulários';
 $_lang['form_customization_desc'] = 'Personalizar os formulários do gerenciador através das permissões de segurança.';
@@ -118,6 +119,8 @@ $_lang['tools'] = 'Ferramentas';
 $_lang['tools_desc'] = 'Utilitários para manter seu site ordenado';
 $_lang['topnav'] = 'Main Navigation';
 $_lang['topnav_desc'] = '';
+$_lang['trash'] = 'Trash';
+$_lang['trash_desc'] = 'Manage deleted resources.';
 $_lang['user'] = 'Usuário';
 $_lang['usernav'] = 'Navegação do Usuário';
 $_lang['usernav_desc'] = '';

@@ -7,6 +7,7 @@
  * @subpackage lexicon
  */
 $_lang['about'] = 'Acerca de';
+$_lang['about_desc'] = 'Help!';
 $_lang['access_permissions'] = 'Permisos de Acceso';
 $_lang['access_permissions_desc'] = 'Administrar el acceso del grupo de usuarios a recursos y contextos.';
 $_lang['acls'] = 'Listas de Control de Acceso';
@@ -38,7 +39,7 @@ $_lang['flush_access_desc'] = 'Vaciar todos los permisos y recargar la caché.';
 $_lang['flush_sessions'] = 'Vaciar Todas las Sesiones';
 $_lang['flush_sessions_confirm'] = '¿Estás seguro de que quieres vaciar todas las sesiones de usuario? Esto destruirá todas las sesiones de usuario actuales y recientes, incluyendo la tuya, obligando a los usuarios a volver a iniciar sesión.';
 $_lang['flush_sessions_desc'] = 'Vaciar todas y cerrar la sesión de todos los usuarios.';
-$_lang['flush_sessions_err'] = 'Ocurrió un error mientras se intentaba vaciar las sesiones de usuario actuales.';
+$_lang['flush_sessions_err'] = 'An error occurred while attempting to flush the current user sessions.';
 $_lang['flush_sessions_not_supported'] = 'El vaciado de sesiones de usuario no está activado en la configuración.';
 $_lang['form_customization'] = 'Personalización de Formularios';
 $_lang['form_customization_desc'] = 'Personalizar formularios para usuarios y grupos de usuarios.';
@@ -118,6 +119,8 @@ $_lang['tools'] = 'Herramientas';
 $_lang['tools_desc'] = 'Utilidades para mantener el sitio ordenado';
 $_lang['topnav'] = 'Main Navigation';
 $_lang['topnav_desc'] = '';
+$_lang['trash'] = 'Trash';
+$_lang['trash_desc'] = 'Manage deleted resources.';
 $_lang['user'] = 'Usuario';
 $_lang['usernav'] = 'Menú de Usuario';
 $_lang['usernav_desc'] = '';

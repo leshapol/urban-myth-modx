@@ -7,6 +7,7 @@
  * @subpackage lexicon
  */
 $_lang['about'] = 'Rólunk';
+$_lang['about_desc'] = 'Help!';
 $_lang['access_permissions'] = 'Hozzáférési engedélyek';
 $_lang['access_permissions_desc'] = 'Felhasználói csoport elérésének kezelése az erőforrásokhoz és a környezetekhez.';
 $_lang['acls'] = 'Hozzáférési jogosultságok felsorolása';
@@ -38,7 +39,7 @@ $_lang['flush_access_desc'] = 'Ezen munkamenet engedélyeinek újratöltése';
 $_lang['flush_sessions'] = 'Minden felhasználó kijelentkeztetése';
 $_lang['flush_sessions_confirm'] = 'Biztosan érvénybe lépteti az összes felhasználói munkamenetet? Ez megsemmisíti az összes jelenlegi és közelmúltbeli felhasználói munkamenetet a sajátjával együtt, és mindenkit új bejelentkezésre kényszerít.';
 $_lang['flush_sessions_desc'] = 'Munkamenetek azonnali megsemmisítése';
-$_lang['flush_sessions_err'] = 'Hiba történt a jelenlegi felhasználó munkameneteinek érvénybe léptetésekor.';
+$_lang['flush_sessions_err'] = 'An error occurred while attempting to flush the current user sessions.';
 $_lang['flush_sessions_not_supported'] = 'A felhasználói munkamenetek érvénybe léptetését a beállításai nem támogatják.';
 $_lang['form_customization'] = 'Űrlap testreszabása';
 $_lang['form_customization_desc'] = 'Egyedi MODX kezelői felületek létrehozása';
@@ -118,6 +119,8 @@ $_lang['tools'] = 'Eszközök';
 $_lang['tools_desc'] = 'Az oldal rendben tartásához való eszközök';
 $_lang['topnav'] = 'Főmenü';
 $_lang['topnav_desc'] = '';
+$_lang['trash'] = 'Trash';
+$_lang['trash_desc'] = 'Manage deleted resources.';
 $_lang['user'] = 'Felhasználó';
 $_lang['usernav'] = 'Felhasználói menü';
 $_lang['usernav_desc'] = '';

@@ -7,6 +7,7 @@
  * @subpackage lexicon
  */
 $_lang['about'] = 'آشنایی با مادایکس';
+$_lang['about_desc'] = 'Help!';
 $_lang['access_permissions'] = 'Access Permissions';
 $_lang['access_permissions_desc'] = 'Manage user group access to Resources and Contexts';
 $_lang['acls'] = 'Access Control Lists';
@@ -38,7 +39,7 @@ $_lang['flush_access_desc'] = 'Reload this session’s Permissions';
 $_lang['flush_sessions'] = 'Logout All Users';
 $_lang['flush_sessions_confirm'] = 'Are you sure you want to flush all user sessions? This will destroy all current and recent user sessions, including your own, forcing everyone to login again.';
 $_lang['flush_sessions_desc'] = 'Immediately destroy all sessions';
-$_lang['flush_sessions_err'] = 'An error occured while attempting to flush the current user sessions.';
+$_lang['flush_sessions_err'] = 'An error occurred while attempting to flush the current user sessions.';
 $_lang['flush_sessions_not_supported'] = 'Flushing user sessions is not supported on your configuration.';
 $_lang['form_customization'] = 'Form Customization';
 $_lang['form_customization_desc'] = 'Create bespoke MODX Manager interfaces';
@@ -118,6 +119,8 @@ $_lang['tools'] = 'Tools';
 $_lang['tools_desc'] = 'Utilities to keep your site sorted';
 $_lang['topnav'] = 'Main Navigation';
 $_lang['topnav_desc'] = '';
+$_lang['trash'] = 'Trash';
+$_lang['trash_desc'] = 'Manage deleted resources.';
 $_lang['user'] = 'کاربر';
 $_lang['usernav'] = 'User Navigation';
 $_lang['usernav_desc'] = '';

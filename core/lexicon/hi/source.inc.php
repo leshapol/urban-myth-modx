@@ -62,6 +62,8 @@ $_lang['imageExtensions'] = 'छवि एक्सटेंशन';
 $_lang['prop_file.imageExtensions_desc'] = 'एक कॉमा सेपरेटेड सूची के रूप में छवियों का उपयोग करने के लिए फ़ाइल एक्सटेंशन। MODX इन एक्सटेंशन के साथ फ़ाइलों के थंबनेल बनाने के प्रयास करेंगे।';
 $_lang['skipFiles'] = 'स्किप फाइल';
 $_lang['prop_file.skipFiles_desc'] = 'एक अल्पविराम-पृथक सूची। MODX पर छोड़ और छिपा फ़ाइलों और फ़ोल्डरों कि इनमें से कोई भी मैच होगा।';
+$_lang['skipExtensions'] = 'skipExtensions';
+$_lang['prop_file.skipExtensions'] = 'A comma-separated list of extensions. MODX will not show files that match any of these.';
 $_lang['thumbnailQuality'] = 'थंबलेनगुणवत्ता';
 $_lang['prop_file.thumbnailQuality_desc'] = '0-100 से पैमाने में रेंडर किए गए थंबनेल की गुणवत्ता।';
 $_lang['thumbnailType'] = 'थंबलेन प्रकार ';
@@ -82,6 +84,7 @@ $_lang['prop_s3.url_desc'] = 'अमेज़न S3 इंस्टेंस क
 $_lang['prop_s3.endpoint_desc'] = 'Alternative S3-compatible endpoint URL, e.g., "https://s3.<region>.example.com". Review your S3-compatible provider’s documentation for the endpoint location. Leave empty for Amazon S3';
 $_lang['prop_s3.region_desc'] = 'बाल्टी का क्षेत्र | उदाहरण: हमें-पश्चिम - 1';
 $_lang['prop_s3.prefix_desc'] = 'वैकल्पिक पथ/फोल्डर उपसर्ग';
+$_lang['prop_s3.no_check_bucket_desc'] = 'If set, don\'t attempt to check the bucket exists. It can be needed if the access key you are using does not have bucket creation/list permissions.';
 $_lang['s3_no_move_folder'] = 'फ़ोल्डर्स के इस समय में चलती S3 ड्रायवर समर्थन नहीं करता।';
 
 /* ftp source type */
@@ -99,3 +102,4 @@ $_lang['prop_ftp.timeout_desc'] = 'सेकंड में कनेक्श�
 $_lang['PNG'] = 'पीएनजी';
 $_lang['JPG'] = 'जेपीजी';
 $_lang['GIF'] = 'जीआईएफ';
+$_lang['WebP'] = 'WebP';

@@ -62,6 +62,8 @@ $_lang['imageExtensions'] = 'إمتداد الصور';
 $_lang['prop_file.imageExtensions_desc'] = 'سلسلة مفصولة من لواحق الملفات للاستخدام كصور. مودكس سيحاول جعل صور مصغرة من الملفات مع هذه اللواحق.';
 $_lang['skipFiles'] = 'تخطّي الملفات';
 $_lang['prop_file.skipFiles_desc'] = 'سلسلة مفصولة. مودكس سوف يتجاوز ويخفي الملفات والمجلدات التي تطابق أي من هذا.';
+$_lang['skipExtensions'] = 'skipExtensions';
+$_lang['prop_file.skipExtensions'] = 'A comma-separated list of extensions. MODX will not show files that match any of these.';
 $_lang['thumbnailQuality'] = 'جودة الصور المصغّرة';
 $_lang['prop_file.thumbnailQuality_desc'] = 'جودة الصورة المصغرة المعروضة، في نطاق 0-100.';
 $_lang['thumbnailType'] = 'نوع الصور المصغّرة';
@@ -82,6 +84,7 @@ $_lang['prop_s3.url_desc'] = 'URL نسخة Amazon S3.';
 $_lang['prop_s3.endpoint_desc'] = 'Alternative S3-compatible endpoint URL, e.g., "https://s3.<region>.example.com". Review your S3-compatible provider’s documentation for the endpoint location. Leave empty for Amazon S3';
 $_lang['prop_s3.region_desc'] = 'منطقة التخزين في أمازون s3. على سبيل المثال: us-west-1';
 $_lang['prop_s3.prefix_desc'] = 'Optional path/folder prefix';
+$_lang['prop_s3.no_check_bucket_desc'] = 'If set, don\'t attempt to check the bucket exists. It can be needed if the access key you are using does not have bucket creation/list permissions.';
 $_lang['s3_no_move_folder'] = 'سواقة S3 لا تدعم تنقل المجلدات في هذا الوقت.';
 
 /* ftp source type */
@@ -99,3 +102,4 @@ $_lang['prop_ftp.timeout_desc'] = 'Timeout for connection in seconds.';
 $_lang['PNG'] = 'PNG';
 $_lang['JPG'] = 'JPG';
 $_lang['GIF'] = 'GIF';
+$_lang['WebP'] = 'WebP';

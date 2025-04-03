@@ -62,6 +62,8 @@ $_lang['imageExtensions'] = 'Bild-Dateiendungen';
 $_lang['prop_file.imageExtensions_desc'] = 'Eine kommaseparierte Liste von Dateiendungen, deren zugehörige Dateien als Bilder verwendet werden sollen. MODX wird versuchen, Thumbnails für Dateien mit diesen Endungen zu generieren.';
 $_lang['skipFiles'] = 'Versteckte Dateien und Ordner';
 $_lang['prop_file.skipFiles_desc'] = 'Eine kommaseparierte Liste. MODX versteckt Dateien und Ordner, die auf einen Eintrag dieser Liste passen.';
+$_lang['skipExtensions'] = 'Übersprungene Dateiendungen';
+$_lang['prop_file.skipExtensions'] = 'Eine kommaseparierte Liste von Dateiendungen. MODX wird keine Dateien anzeigen, die diese Dateiendungen benutzen.';
 $_lang['thumbnailQuality'] = 'Thumbnail-Qualität';
 $_lang['prop_file.thumbnailQuality_desc'] = 'Die Qualität der generierten Thumbnails, auf einer Skala von 0 bis 100.';
 $_lang['thumbnailType'] = 'Thumbnail-Typ';
@@ -82,6 +84,7 @@ $_lang['prop_s3.url_desc'] = 'Die URL der Amazon-S3-Instanz.';
 $_lang['prop_s3.endpoint_desc'] = 'Alternative S3-kompatible Endpunkt-URL, z.B. "https://s3.<region>.example.com". Lesen Sie in der Dokumentation Ihres S3-kompatiblen Anbieters nach, wo sich der Endpunkt befindet. Lassen Sie den Eintrag für Amazon S3 leer.';
 $_lang['prop_s3.region_desc'] = 'Region des Amazon-S3-Buckets. Beispiel: us-west-1';
 $_lang['prop_s3.prefix_desc'] = 'Optionales Pfad-/Ordner-Präfix';
+$_lang['prop_s3.no_check_bucket_desc'] = 'Wenn diese Option gesetzt ist, wird nicht versucht zu prüfen, ob das Bucket existiert. Dies kann erforderlich sein, wenn der von Ihnen verwendete Zugriffsschlüssel keine Berechtigung zur Erstellung von Buckets/Listen hat.';
 $_lang['s3_no_move_folder'] = 'Der S3-Treiber unterstützt das Verschieben von Ordnern zu diesem Zeitpunkt nicht.';
 
 /* ftp source type */
@@ -99,3 +102,4 @@ $_lang['prop_ftp.timeout_desc'] = 'Timeout für die Verbindung in Sekunden.';
 $_lang['PNG'] = 'PNG';
 $_lang['JPG'] = 'JPG';
 $_lang['GIF'] = 'GIF';
+$_lang['WebP'] = 'WebP';

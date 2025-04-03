@@ -7,6 +7,7 @@
  * @subpackage lexicon
  */
 $_lang['about'] = 'MODX';
+$_lang['about_desc'] = 'Help!';
 $_lang['access_permissions'] = 'Juurdepääsu Õigused';
 $_lang['access_permissions_desc'] = 'Halda kasutaja grupi juurdepääsu ressurssidele ja context-idele.';
 $_lang['acls'] = 'Access Control Lists';
@@ -38,7 +39,7 @@ $_lang['flush_access_desc'] = 'Flush-i kõik õigused ja taaslae puhver.';
 $_lang['flush_sessions'] = 'Flush-i Kõik Sessioonid';
 $_lang['flush_sessions_confirm'] = 'Olete kindel, et soovite flushida kõik kasutaja sessooind? See hävitab kõik praegused ja hiljutised kasutaja sessioonid, kaasaarvatud teie enda oma, sundides kõiki taas sisse logima, peale seda tegevust.';
 $_lang['flush_sessions_desc'] = 'Flushi kõik sessioonid ja kõik kasutajad logi välja.';
-$_lang['flush_sessions_err'] = 'Tekkis viga, praeguse kasutaja sessiooni flushimisel.';
+$_lang['flush_sessions_err'] = 'An error occurred while attempting to flush the current user sessions.';
 $_lang['flush_sessions_not_supported'] = 'Kasutaja sessioonide flushimine ei ole toetatud teie konfiguratiooni poolt.';
 $_lang['form_customization'] = 'Vormide Kohandamine';
 $_lang['form_customization_desc'] = 'Kohanda manageri vorme turvaõigustega.';
@@ -118,6 +119,8 @@ $_lang['tools'] = 'Tööriistad';
 $_lang['tools_desc'] = 'Utilities to keep your site sorted';
 $_lang['topnav'] = 'Main Navigation';
 $_lang['topnav_desc'] = '';
+$_lang['trash'] = 'Trash';
+$_lang['trash_desc'] = 'Manage deleted resources.';
 $_lang['user'] = 'Kasutaja';
 $_lang['usernav'] = 'User Navigation';
 $_lang['usernav_desc'] = '';

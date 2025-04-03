@@ -62,6 +62,8 @@ $_lang['imageExtensions'] = 'imageExtensions';
 $_lang['prop_file.imageExtensions_desc'] = 'รายการคั่นด้วยเครื่องหมายจุลภาคของนามสกุลไฟล์ที่จะทำเป็นรูปภาพ MODX จะพยายามสร้างรูปขนาดย่อของไฟล์นามสกุลนี้';
 $_lang['skipFiles'] = 'skipFiles';
 $_lang['prop_file.skipFiles_desc'] = 'รายการคั่นด้วยเครื่องหมายจุลภาค MODX จะข้ามและซ่อนไฟล์และโฟลเดอร์ที่ตรงกับพวกเหล่านี้';
+$_lang['skipExtensions'] = 'skipExtensions';
+$_lang['prop_file.skipExtensions'] = 'A comma-separated list of extensions. MODX will not show files that match any of these.';
 $_lang['thumbnailQuality'] = 'thumbnailQuality';
 $_lang['prop_file.thumbnailQuality_desc'] = 'คุณภาพของการเรนเดอร์รูปขนาดย่อในอัตราส่วนจาก 0-100';
 $_lang['thumbnailType'] = 'thumbnailType';
@@ -82,6 +84,7 @@ $_lang['prop_s3.url_desc'] = 'URL ของ Amazon S3 instance';
 $_lang['prop_s3.endpoint_desc'] = 'Alternative S3-compatible endpoint URL, e.g., "https://s3.<region>.example.com". Review your S3-compatible provider’s documentation for the endpoint location. Leave empty for Amazon S3';
 $_lang['prop_s3.region_desc'] = 'Region of the bucket. Example: us-west-1';
 $_lang['prop_s3.prefix_desc'] = 'Optional path/folder prefix';
+$_lang['prop_s3.no_check_bucket_desc'] = 'If set, don\'t attempt to check the bucket exists. It can be needed if the access key you are using does not have bucket creation/list permissions.';
 $_lang['s3_no_move_folder'] = 'ไดรเวอร์ของ S3 ไม่สนับสนุนการย้ายโฟลเดอร์ในเวลานี้';
 
 /* ftp source type */
@@ -99,3 +102,4 @@ $_lang['prop_ftp.timeout_desc'] = 'Timeout for connection in seconds.';
 $_lang['PNG'] = 'PNG';
 $_lang['JPG'] = 'JPG';
 $_lang['GIF'] = 'GIF';
+$_lang['WebP'] = 'WebP';

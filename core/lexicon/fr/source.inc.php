@@ -62,6 +62,8 @@ $_lang['imageExtensions'] = 'Extensions de l\'image';
 $_lang['prop_file.imageExtensions_desc'] = 'Une liste d\'extension de fichiers d\'images, séparées par des virgules. MODX essaiera de créer des miniatures des fichiers portant ces extensions.';
 $_lang['skipFiles'] = 'ignorer les fichiers';
 $_lang['prop_file.skipFiles_desc'] = 'Une liste d\'extensions de fichiers séparées par des virgules. MODX masquera les fichiers et dossiers qui correspondants.';
+$_lang['skipExtensions'] = 'skipExtensions';
+$_lang['prop_file.skipExtensions'] = 'Une liste d\'extensions séparées par des virgules. MODX n\'affichera pas les fichiers qui correspondent à l\'une de ces extensions.';
 $_lang['thumbnailQuality'] = 'qualite de la vignette';
 $_lang['prop_file.thumbnailQuality_desc'] = 'La qualité de rendu des miniatures, dans une fourchette de 0 à 100.';
 $_lang['thumbnailType'] = 'type de vignette';
@@ -82,6 +84,7 @@ $_lang['prop_s3.url_desc'] = 'L\'URL de l\'instance du Amazon S3.';
 $_lang['prop_s3.endpoint_desc'] = 'URL de terminaison ("endpoint") compatible S3, par exemple "https://s3.<region>.example.com". Examinez la documentation de votre fournisseur compatible S3 pour l\'emplacement du "endpoint". Laissez vide pour Amazon S3';
 $_lang['prop_s3.region_desc'] = 'Région du conteneur. Exemple : us-west-1';
 $_lang['prop_s3.prefix_desc'] = 'Préfixe facultatif du chemin d’accès /dossier';
+$_lang['prop_s3.no_check_bucket_desc'] = 'If set, don\'t attempt to check the bucket exists. It can be needed if the access key you are using does not have bucket creation/list permissions.';
 $_lang['s3_no_move_folder'] = 'Le driver S3 ne supporte pas, pour le moment, le déplacement de dossiers.';
 
 /* ftp source type */
@@ -99,3 +102,4 @@ $_lang['prop_ftp.timeout_desc'] = 'Délai d’attente pour la connexion en secon
 $_lang['PNG'] = 'PNG';
 $_lang['JPG'] = 'JPG';
 $_lang['GIF'] = 'GIF';
+$_lang['WebP'] = 'WebP';

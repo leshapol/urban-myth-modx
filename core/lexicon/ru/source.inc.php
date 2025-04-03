@@ -62,6 +62,8 @@ $_lang['imageExtensions'] = 'imageExtensions (расширения изобра�
 $_lang['prop_file.imageExtensions_desc'] = 'Список расширений файлов, через запятую, являющихся изображениями. MODX попытается создать превью для файлов с этими расширениями.';
 $_lang['skipFiles'] = 'skipFiles (игнорировать файлы)';
 $_lang['prop_file.skipFiles_desc'] = 'Список, через запятую. MODX будет пропускать и скрывать файлы и папки, совпадающие с любой из масок.';
+$_lang['skipExtensions'] = 'skipExtensions';
+$_lang['prop_file.skipExtensions'] = 'A comma-separated list of extensions. MODX will not show files that match any of these.';
 $_lang['thumbnailQuality'] = 'thumbnailQuality (качество миниатюр)';
 $_lang['prop_file.thumbnailQuality_desc'] = 'Качество генерируемых превью, по шкале от 0 до 100.';
 $_lang['thumbnailType'] = 'thumbnailType (формат миниатюр)';
@@ -82,6 +84,7 @@ $_lang['prop_s3.url_desc'] = 'URL хранилища Amazon S3.';
 $_lang['prop_s3.endpoint_desc'] = 'Альтернативный S3-совместимый URL-адрес конечной точки, например "https://s3.<region>.example.com". Посмотрите документацию вашего S3-совместимого поставщика для уточнения конечной точки. Оставьте пустым для Amazon S3';
 $_lang['prop_s3.region_desc'] = 'Регион хранилища, например: us-west-1';
 $_lang['prop_s3.prefix_desc'] = 'Префикс для пути источника файлов (необязательно)';
+$_lang['prop_s3.no_check_bucket_desc'] = 'If set, don\'t attempt to check the bucket exists. It can be needed if the access key you are using does not have bucket creation/list permissions.';
 $_lang['s3_no_move_folder'] = 'На текущий момент драйвер S3 не поддерживает перемещение папок.';
 
 /* ftp source type */
@@ -99,3 +102,4 @@ $_lang['prop_ftp.timeout_desc'] = 'Время ожидания соединен�
 $_lang['PNG'] = 'PNG';
 $_lang['JPG'] = 'JPG';
 $_lang['GIF'] = 'GIF';
+$_lang['WebP'] = 'WebP';

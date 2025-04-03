@@ -219,6 +219,12 @@ $_lang['setting_cultureKey_desc'] = 'Välj språk för alla kontexter utanför h
 $_lang['setting_date_timezone'] = 'Standardtidszon';
 $_lang['setting_date_timezone_desc'] = 'Om en tidszon anges används den som standardtidszon för PHP:s datumfunktioner. Om inställningen lämnas tom och om PHP:s ini-inställning date.timezone inte är satt i din miljö så kommer UTC att användas.';
 
+$_lang['setting_manager_datetime_empty_value'] = 'Datetime Empty Value';
+$_lang['setting_manager_datetime_empty_value_desc'] = 'The text (if any) that will show in grids and forms when a datetime field’s value has not been set. (Default: “–” [a single en dash])';
+
+$_lang['setting_manager_datetime_separator'] = 'Datetime Separator';
+$_lang['setting_manager_datetime_separator_desc'] = 'When the date and time are shown as a combined element, these characters will be used to visually separate them. (Default: “, ” [comma and space])';
+
 $_lang['setting_debug'] = 'Debuggning';
 $_lang['setting_debug_desc'] = 'Aktiverar/inaktiverar debuggning i MODX och/eller sätter nivån på PHP:s error_reporting. "" = använd aktuell error_reporting, "0" = false (error_reporting = 0), "1" = true (error_reporting = -1) eller annat giltigtvärde för error_reporting (som ett heltal).';
 
@@ -233,6 +239,9 @@ $_lang['setting_default_media_source_desc'] = 'Den mediakälla som ska laddas so
 
 $_lang['setting_default_media_source_type'] = 'Standardtyp för mediakälla';
 $_lang['setting_default_media_source_type_desc'] = 'Den förvalda mediakälletypen när en ny mediakälla skapas.';
+
+$_lang['setting_photo_profile_source'] = 'Fotokälla för användarprofil';
+$_lang['setting_photo_profile_source_desc'] = 'Anger vilken mediakälla som ska användas för att lagra och hämta profilfoton/avatarer. Om den inte anges kommer standardmediakällan att användas.';
 
 $_lang['setting_default_template'] = 'Standardmall';
 $_lang['setting_default_template_desc'] = 'Välj den standarmall du vill använda för nya resurser. Du kan fortfarande välja en annan mall när du redigerar resursen. Denna inställning är bara förvalet.';
@@ -396,6 +405,24 @@ $_lang['setting_mail_smtp_timeout_desc'] = 'Anger SMTP-serverns timeout i sekund
 $_lang['setting_mail_smtp_user'] = 'SMTP-användare';
 $_lang['setting_mail_smtp_user_desc'] = 'Användaren som ska autentiseras mot SMTP.';
 
+$_lang['setting_mail_dkim_selector'] = 'DKIM selektor';
+$_lang['setting_mail_dkim_selector_desc'] = 'Selektorn för DKIM-domänen där den publika nyckeln lagras.';
+
+$_lang['setting_mail_dkim_identity'] = 'DKIM Identitet';
+$_lang['setting_mail_dkim_identity_desc'] = 'DKIM identitet du signerar som - oftast din avsändaradress.';
+
+$_lang['setting_mail_dkim_domain'] = 'DKIM domän';
+$_lang['setting_mail_dkim_domain_desc'] = 'Domännamn för DKIM-signering.';
+
+$_lang['setting_mail_dkim_privatekeyfile'] = 'DKIM privat nyckelfil';
+$_lang['setting_mail_dkim_privatekeyfile_desc'] = 'Sökväg för DKIM privat nyckelfil. Du kan använda DKIM privat nyckelsträng istället.';
+
+$_lang['setting_mail_dkim_privatekeystring'] = 'DKIM privat nyckelsträng';
+$_lang['setting_mail_dkim_privatekeystring_desc'] = 'Har företräde framför DKIM privat nyckelfil.';
+
+$_lang['setting_mail_dkim_passphrase'] = 'DKIM lösenordsfras';
+$_lang['setting_mail_dkim_passphrase_desc'] = 'Används endast om din nyckel är krypterad.';
+
 $_lang['setting_main_nav_parent'] = 'Huvudmenyns förälder';
 $_lang['setting_main_nav_parent_desc'] = 'Den behållare som används för att hämta alla uppgifter till huvudmenyn.';
 
@@ -471,6 +498,9 @@ $_lang['setting_new_file_permissions_desc'] = 'När en ny fil laddas upp med Fil
 $_lang['setting_new_folder_permissions'] = 'Behörigheter för nya kataloger';
 $_lang['setting_new_folder_permissions_desc'] = 'När en ny katalog skapas i Filhanteraren, kommer Filhanteraren att försöka ändra katalogbehörigheterna till dom som anges i denna inställning. Det här kanske inte fungerar på alla system, tex IIS, i vilket fall du blir tvungen att ändra behörigheterna manuellt.';
 
+$_lang['setting_package_installer_at_top'] = 'Fäst installeraren överst';
+$_lang['setting_package_installer_at_top_desc'] = 'Om den här aktiveras så kommer installeraren att fästas högst upp i komponentmenyn. Annars kommer den att placeras enligt sitt menyindex.';
+
 $_lang['setting_parser_recurse_uncacheable'] = 'Fördröj o-cachebar tolkning';
 $_lang['setting_parser_recurse_uncacheable_desc'] = 'Om den här inaktiveras kan o-cachebara element bli cachade inuti cachebara element. Inaktivera BARA om du har problem med komplex kapslad tolkning som slutat fungera som förväntat.';
 
@@ -500,9 +530,6 @@ $_lang['setting_proxy_port_desc'] = 'Porten för din proxyserver.';
 
 $_lang['setting_proxy_username'] = 'Användarnamn för proxy';
 $_lang['setting_proxy_username_desc'] = 'Användarnamnet som ska användas för att autentisera mot proxyservern.';
-
-$_lang['setting_photo_profile_source'] = 'Mediakälla för användarfoto';
-$_lang['setting_photo_profile_source_desc'] = 'Den mediakälla där användarnas profilbilder sparas. Om inget annat anges används standardmediakällan.';
 
 $_lang['setting_phpthumb_allow_src_above_docroot'] = 'Tillåt sökväg ovanför dokumentrot för phpThumb';
 $_lang['setting_phpthumb_allow_src_above_docroot_desc'] = 'Anger om det är tillåtet med sökvägar utanför dokumentroten. Det här är användbart vid multikontext-installationer med flera virtuella hostar.';
@@ -630,10 +657,10 @@ $_lang['setting_session_cookie_httponly'] = 'HttpOnly för sessions-cookie';
 $_lang['setting_session_cookie_httponly_desc'] = 'Använd den här inställningen för att ange flaggan HttpOnly för sessions-cookies.';
 
 $_lang['setting_session_gc_maxlifetime'] = 'Maximal livslängd för sessionens sophämtning';
-$_lang['setting_session_gc_maxlifetime_desc'] = 'Tillåter anpassning av PHP:s ini-inställning session.gc_maxlifetime när "modSessionHandler" används.';
+$_lang['setting_session_gc_maxlifetime_desc'] = 'Tillåter anpassning av PHP:s ini-inställning session.gc_maxlifetime när "MODX\\Revolution\\modSessionHandler" används.';
 
 $_lang['setting_session_handler_class'] = 'Sessionshanterarklassens namn';
-$_lang['setting_session_handler_class_desc'] = 'Använd \'modSessionHandler\' för databashanterade sessioner. Lämna fältet tomt för att använda PHP:s vanliga sessionshantering.';
+$_lang['setting_session_handler_class_desc'] = 'Använd \'MODX\\Revolution\\modSessionHandler\' för databashanterade sessioner. Lämna fältet tomt för att använda PHP:s vanliga sessionshantering.';
 
 $_lang['setting_session_name'] = 'Sessionsnamn';
 $_lang['setting_session_name_desc'] = 'Använd denna inställning för att anpassa det sessionsnamn som används för sessioner i MODX. Lämna tom för att använda PHP:s standardnamn.';
@@ -738,17 +765,14 @@ $_lang['setting_upload_files_desc'] = 'Här kan du skriva en lista med de typer 
 $_lang['setting_upload_file_exists'] = 'Kontrollera om uppladdad fil redan finns';
 $_lang['setting_upload_file_exists_desc'] = 'När denna är aktiverad visas ett fel vid uppladdning av en fil om det redan finns en fil med samma namn. När den är inaktiverad kommer den befintliga filen att ersättas med den nya filen.';
 
-$_lang['setting_upload_images'] = 'Uppladdningsbara bildtyper';
-$_lang['setting_upload_images_desc'] = 'Här kan du skriva en lista med de typer av bildfiler som kan laddas upp till "assets/images/" med filhanteraren. Skriv filändelserna för bildfilerna, separerade med kommatecken.';
-
 $_lang['setting_upload_maxsize'] = 'Största storlek för uppladdningar';
 $_lang['setting_upload_maxsize_desc'] = 'Skriv den största filstorleken som kan laddas upp via filhanteraren. Storleken måste anges i bytes.<br /><strong>OBS: Stora filer kan ta väldigt lång tid att ladda upp!</strong>';
 
-$_lang['setting_upload_media'] = 'Uppladdningsbara mediatyper';
-$_lang['setting_upload_media_desc'] = 'Här kan du skriva en lista med de typer av mediafiler som kan laddas upp till "assets/media/" med filhanteraren. Skriv filändelserna för mediatyperna, separerade med kommatecken.';
-
 $_lang['setting_upload_translit'] = 'Omtolka namn på uppladdade filer?';
 $_lang['setting_upload_translit_desc'] = 'Om detta alternativ är aktiverat kommer namnet på en uppladdad fil att translitereras enligt de globala translitterationsreglerna.';
+
+$_lang['setting_upload_translit_restrict_chars_pattern'] = 'Mönster för begränsning av tecken i filnamn';
+$_lang['setting_upload_translit_restrict_chars_pattern_desc'] = 'Ett giltigt RegEx som ska användas för att begränsa vilka tecken som får användas i uppladdade filers namn.';
 
 $_lang['setting_use_alias_path'] = 'Använd vänliga aliassökvägar';
 $_lang['setting_use_alias_path_desc'] = 'Sätts detta val till "Ja", kommer hela sökvägen till resursen att visas om resursen har ett alias. Till exempel, om en resurs med aliaset "barn" befinner sig i en behållare med aliaset "foralder", kommer hela sökvägen att visas som "/foralder/barn.html".<br /><strong>Notera: När detta sätts till "Ja" (slår på aliassökvägar), måste du referera objekt (som bilder, css, javascript etc) med en absolut sökväg. Exempel: "/assets/images" istället för "assets/images". Genom att göra så förhindrar du att webbläsaren (eller webbservern) lägger till den relativa sökvägen till aliassökvägen.</strong>';

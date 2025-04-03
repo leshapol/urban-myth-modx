@@ -242,17 +242,17 @@ class modAccessibleObject extends xPDOObject
      *                               class names to limit the check. In most cases, this does not need to be
      *                               set; derivatives should typically determine what targets to include in
      *                               the findPolicy() implementation.
-     * @param modUser      $user
+     * @param modUser|null $user
      *
      * @return boolean Returns true if the policy is satisfied or no policy
      * exists.
      */
-    public function checkPolicy($criteria, $targets = null, modUser $user = null)
+    public function checkPolicy($criteria, $targets = null, ?modUser $user = null)
     {
-        if (!$user) {
-            $user = &$this->xpdo->user;
-        }
         if ($criteria && $this->xpdo instanceof modX && $this->xpdo->getSessionState() == modX::SESSION_STATE_INITIALIZED) {
+            if (!$user) {
+                $user = $this->xpdo->user;
+            }
             if ($user->get('sudo')) {
                 return true;
             }

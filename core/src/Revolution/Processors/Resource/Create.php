@@ -507,7 +507,14 @@ class Create extends CreateProcessor
                         $value = implode(',', $newTags);
                         break;
                     case 'date':
-                        $value = empty($value) ? '' : date('Y-m-d H:i:s', strtotime($value));
+                        $tvProperties = $tv->get('input_properties');
+                        if (!empty($value)) {
+                            $dateTime = new \DateTime($value);
+                            if (is_array($tvProperties) && array_key_exists('hideTime', $tvProperties) && (bool)$tvProperties['hideTime'] && $tvProperties['hideTime'] != 'false') {
+                                $dateTime->setTime(0, 0, 0, 0);
+                            }
+                            $value = $dateTime->format('Y-m-d H:i:s');
+                        }
                         break;
                     case 'url':
                         if ($this->getProperty($tvKey . '_prefix', '--') != '--') {
@@ -750,7 +757,7 @@ class Create extends CreateProcessor
      */
     public function clearCache()
     {
-        $clear = $this->getProperty('syncsite', false) || $this->getProperty('clearCache', false);
+        $clear = $this->getProperty('syncsite', $this->modx->getOption('syncsite_default')) || $this->getProperty('clearCache', false);
         if ($clear) {
             $this->modx->cacheManager->refresh([
                 'db' => [],
@@ -762,4 +769,3 @@ class Create extends CreateProcessor
         return $clear;
     }
 }
-

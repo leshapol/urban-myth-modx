@@ -7,6 +7,7 @@
  * @subpackage lexicon
  */
 $_lang['about'] = 'Hakkında';
+$_lang['about_desc'] = 'Help!';
 $_lang['access_permissions'] = 'Erişim İzinleri';
 $_lang['access_permissions_desc'] = 'Kullanıcı gruplarının Kaynaklara ve Bağlamlara erişimini yönetme';
 $_lang['acls'] = 'Erişim Kontrol Listeleri';
@@ -38,7 +39,7 @@ $_lang['flush_access_desc'] = 'Bu oturumun iznini yeniden yükle';
 $_lang['flush_sessions'] = 'Tüm Kullanıcılara Oturumu Kapat';
 $_lang['flush_sessions_confirm'] = 'Bütün kullanıcı oturumlarını silmek istediğinize emin misiniz? Bu son ve geçerli kullanıcı oturumlarının, sizin ki de dahil olmak üzere, hepsini yok edecek, herkes yeniden oturum açmak zorunda kalacak.';
 $_lang['flush_sessions_desc'] = 'Bütün oturumları hemen yok et';
-$_lang['flush_sessions_err'] = 'Geçerli kullanıcı oturumlarını silmeye çalışırken bir hata meydana geldi.';
+$_lang['flush_sessions_err'] = 'An error occurred while attempting to flush the current user sessions.';
 $_lang['flush_sessions_not_supported'] = 'Konumunuz kullanıcı oturumlarını temizlemeyi desteklemiyor.';
 $_lang['form_customization'] = 'Form Özelleştirme';
 $_lang['form_customization_desc'] = 'Özel MODX Manager arayüzlerini oluşturun';
@@ -118,6 +119,8 @@ $_lang['tools'] = 'Araçlar';
 $_lang['tools_desc'] = 'Sitenizi sıralamaya devam ettirecek araçlar';
 $_lang['topnav'] = 'Main Navigation';
 $_lang['topnav_desc'] = '';
+$_lang['trash'] = 'Trash';
+$_lang['trash_desc'] = 'Manage deleted resources.';
 $_lang['user'] = 'Kullanıcı';
 $_lang['usernav'] = 'Kullanıcı Arayüzü';
 $_lang['usernav_desc'] = '';

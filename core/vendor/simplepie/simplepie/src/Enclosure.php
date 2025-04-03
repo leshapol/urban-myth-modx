@@ -1,4 +1,5 @@
 <?php
+
 /**
  * SimplePie
  *
@@ -604,7 +605,7 @@ class Enclosure
     public function get_link()
     {
         if ($this->link !== null) {
-            return urldecode($this->link);
+            return $this->link;
         }
 
         return null;
@@ -723,7 +724,7 @@ class Enclosure
     {
         $length = $this->get_length();
         if ($length !== null) {
-            return round($length/1048576, 2);
+            return round($length / 1048576, 2);
         }
 
         return null;
@@ -810,7 +811,7 @@ class Enclosure
      * @param array|string $options See first parameter to {@see embed}
      * @return string HTML string to output
      */
-    public function native_embed($options='')
+    public function native_embed($options = '')
     {
         return $this->embed($options, true);
     }
@@ -875,6 +876,7 @@ class Enclosure
         $widescreen = false;
         $handler = $this->get_handler();
         $type = $this->get_real_type();
+        $placeholder = '';
 
         // Process options and reassign values as necessary
         if (is_array($options)) {
@@ -940,9 +942,9 @@ class Enclosure
                 if ($height === 'auto') {
                     $width = 480;
                 } elseif ($widescreen) {
-                    $width = round((intval($height)/9)*16);
+                    $width = round((intval($height) / 9) * 16);
                 } else {
-                    $width = round((intval($height)/3)*4);
+                    $width = round((intval($height) / 3) * 4);
                 }
             } else {
                 $width = '100%';
@@ -960,9 +962,9 @@ class Enclosure
                         $height = 360;
                     }
                 } elseif ($widescreen) {
-                    $height = round((intval($width)/16)*9);
+                    $height = round((intval($width) / 16) * 9);
                 } else {
-                    $height = round((intval($width)/4)*3);
+                    $height = round((intval($width) / 4) * 3);
                 }
             } else {
                 $height = 376;
@@ -1112,7 +1114,7 @@ class Enclosure
                     $type = 'audio/x-ms-wma';
                     break;
 
-                // Video mime-types
+                    // Video mime-types
                 case '3gp':
                 case '3gpp':
                     $type = 'video/3gpp';
@@ -1175,7 +1177,7 @@ class Enclosure
                     $type = 'video/x-ms-wvx';
                     break;
 
-                // Flash mime-types
+                    // Flash mime-types
                 case 'spl':
                     $type = 'application/futuresplash';
                     break;

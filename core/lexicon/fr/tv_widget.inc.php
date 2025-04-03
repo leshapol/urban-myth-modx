@@ -19,6 +19,8 @@ $_lang['capitalize'] = 'Majuscules';
 $_lang['checkbox'] = 'Case à cocher';
 $_lang['checkbox_columns'] = 'Colonnes';
 $_lang['checkbox_columns_desc'] = 'Le nombre de colonnes des cases à cocher';
+$_lang['checkbox_display_switch'] = 'Display as Switch';
+$_lang['checkbox_display_switch_desc'] = 'When set to “Yes,” this TV’s inputs will be rendered in the Resource editing form as switches (toggles) instead of checked boxes. (Default: “No”)';
 $_lang['class'] = 'Classe';
 $_lang['classes'] = 'Class(es)';
 $_lang['combo_allowaddnewdata'] = 'Autorise l\'ajout de nouveaux éléments';
@@ -34,6 +36,8 @@ $_lang['combo_listwidth'] = 'Largeur de liste';
 $_lang['combo_listwidth_desc'] = 'La largeur, en % ou px, de la liste déroulante elle-même. Par défaut, la largeur de la combobox.';
 $_lang['combo_maxheight'] = 'Hauteur maximale';
 $_lang['combo_maxheight_desc'] = 'The maximum height in pixels of the dropdown list before scrollbars are shown. (Default: 300)';
+$_lang['combo_preserve_selectionorder'] = 'Conserver l\'ordre d\'entrée';
+$_lang['combo_preserve_selectionorder_desc'] = 'Lorsque réglé sur Oui, les éléments enregistrés s\'affichent dans l\'ordre dans lequel ils ont été sélectionnés à l\'origine. Sinon, les éléments suivent l\'ordre défini dans les options de la liste. (par défaut: Non)';
 $_lang['combo_stackitems'] = 'Empiler les éléments sélectionnés';
 $_lang['combo_stackitems_desc'] = 'Les éléments sont empilés (1 par ligne). Non par défaut, ce qui affiche les éléments en ligne.';
 $_lang['combo_title'] = 'Entête de liste';
@@ -99,6 +103,8 @@ $_lang['htmlarea'] = 'Zone HTML';
 $_lang['htmltag'] = 'Balise HTML';
 $_lang['image'] = 'Image';
 $_lang['image_alt'] = 'Texte alternatif';
+$_lang['input_height'] = 'Input Height';
+$_lang['input_height_desc'] = 'A number specifying the input’s height in pixels. (Default: 140)';
 $_lang['latest_date'] = 'Date de fin';
 $_lang['latest_date_desc'] = 'Date jusqu\'à laquelle on peut autoriser la sélection.';
 $_lang['latest_time'] = 'Heure de fin';
@@ -144,7 +150,7 @@ $_lang['required'] = 'Optionnel';
 $_lang['required_desc'] = 'Select “No” to make this TV a required field in the Resources it’s assigned to. (Default: “Yes”)';
 $_lang['resourcelist'] = 'Liste de ressources';
 $_lang['resourcelist_depth'] = 'Profondeur';
-$_lang['resourcelist_depth_desc'] = 'The number of subfolders to drill down into for this lising’s search query. (Default: 10)';
+$_lang['resourcelist_depth_desc'] = 'Le nombre de sous-dossiers dans lesquels se déplacer pour la recherche de cette liste. (par défaut: 10)';
 $_lang['resourcelist_forceselection_desc'] = 'Disabled; only list matches are valid.';
 $_lang['resourcelist_includeparent'] = 'Inclure les parents';
 $_lang['resourcelist_includeparent_desc'] = 'Select “Yes” to include the Resources specified in the Parents field in the list.';
@@ -179,6 +185,10 @@ $_lang['tag_name'] = 'Nom de la balise';
 $_lang['target'] = 'Cible';
 $_lang['text'] = 'Texte';
 $_lang['textarea'] = 'Zone de texte';
+$_lang['textarea_grow'] = 'Auto Grow?';
+$_lang['textarea_grow_desc'] = 'Select “Yes” to allow the input’s height to automatically change based on its content. (Default: “No”)';
+$_lang['textarea_resizable'] = 'Resizable?';
+$_lang['textarea_resizable_desc'] = 'Select “Yes” to allow the input’s height to be changed by dragging its bottom boundary. (Default: “No”)';
 $_lang['textareamini'] = 'Zone de texte (Mini)';
 $_lang['textbox'] = 'Zone de texte';
 $_lang['time_increment'] = 'Incrémentation d\'heure';
@@ -186,14 +196,14 @@ $_lang['time_increment_desc'] = 'The number of minutes between each time value i
 $_lang['title'] = 'Titre';
 $_lang['tv_default_checkbox_desc'] = 'A double-pipe-separated set of option(s) selected for this TV if the user does not check one or more. If your options include labels (e.g., Option One==1||Option Two==2||Option Three==3), be sure to enter the value (i.e., “1” for Option One, or “1||3” for Option One and Option Three)';
 $_lang['tv_default_date'] = 'Default Date and Time';
-$_lang['tv_default_date_desc'] = 'The date to show if the user does not provide one. Choose a relative date from the list above or enter a different date using one of the following patterns:
+$_lang['tv_default_date_desc'] = 'La date à afficher si l\'utilisateur ne fournit pas. Choisissez une date relative dans la liste ci-dessus ou entrez une date différente en utilisant l\'un des modèles suivants :
     <div class="example-list">
         <ul>
-            <li><span class="example-input">[[+example_1]]</span> (number respresents hours ago)</li>
-            <li><span class="example-input">[[+example_2]]</span> (number represents hours in the future)</li>
-            <li><span class="example-input">[[+example_3]]</span> (a specific date [and time if desired] using the format shown)</li>
+            <li><span class="example-input"><span class="example-input">[[+example_1]]</span> (nombre représente il y a des heures)</li></li>
+            <li><span class="example-input">[[+example_2]]</span> (nombre représente des heures dans le futur)</li>
+            <li><span class="example-input">[[+example_3]]</span> (une date spécifique [et heure si désiré] en utilisant le format affiché)</li>
         </ul>
-        Note: The use of the “+” and “-” shown above is counter-intuitive, but correct (“+” represents backward in time).
+        Note: L\'utilisation du « + » et « - » est contre-intuitive, mais correct ("+" représente le retour dans le temps).
     </div>';
 $_lang['tv_default_email'] = 'Default Email Address';
 $_lang['tv_default_email_desc'] = 'The email address this TV will show if the user does not provide one.';

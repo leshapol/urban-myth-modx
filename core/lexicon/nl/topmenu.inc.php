@@ -7,6 +7,7 @@
  * @subpackage lexicon
  */
 $_lang['about'] = 'Over';
+$_lang['about_desc'] = 'Help!';
 $_lang['access_permissions'] = 'Toegangsrechten';
 $_lang['access_permissions_desc'] = 'Beheer gebruikersgroep toegang tot documenten en contexts.';
 $_lang['acls'] = 'Toegangsrechten';
@@ -38,7 +39,7 @@ $_lang['flush_access_desc'] = 'Ververs de rechten van alle op dit moment ingelog
 $_lang['flush_sessions'] = 'Alle gebruikers uitloggen';
 $_lang['flush_sessions_confirm'] = 'Weet je zeker dat je alle gebruikerssessies wilt flushen? Dit zal alle alle huidige en recente gebruikerssessies verwijderen, inclusief jouw eigen, het forceert dat iedereen moet inloggen als gevolg van deze actie.';
 $_lang['flush_sessions_desc'] = 'Direct alle gebruikers uitloggen';
-$_lang['flush_sessions_err'] = 'Er is een fout opgetreden tijdens het proberen te flushen van de huidige gebruikerssessie.';
+$_lang['flush_sessions_err'] = 'An error occurred while attempting to flush the current user sessions.';
 $_lang['flush_sessions_not_supported'] = 'Flushen van gebruikerssessies wordt niet ondersteund in jouw configuratie.';
 $_lang['form_customization'] = 'Formulier aanpasingen';
 $_lang['form_customization_desc'] = 'Beheer formulier aanpassingen op basis van beveiligingsrechten.';
@@ -118,6 +119,8 @@ $_lang['tools'] = 'Gereedschappen';
 $_lang['tools_desc'] = 'Hulpprogramma\'s om de site bij te houden';
 $_lang['topnav'] = 'Main Navigation';
 $_lang['topnav_desc'] = '';
+$_lang['trash'] = 'Trash';
+$_lang['trash_desc'] = 'Manage deleted resources.';
 $_lang['user'] = 'Gebruiker';
 $_lang['usernav'] = 'Gebruikersnavigatie';
 $_lang['usernav_desc'] = '';

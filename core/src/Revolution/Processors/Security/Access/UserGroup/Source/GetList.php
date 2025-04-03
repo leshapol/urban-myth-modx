@@ -1,4 +1,5 @@
 <?php
+
 /*
  * This file is part of MODX Revolution.
  *
@@ -56,7 +57,13 @@ class GetList extends GetListProcessor
         if (!empty($userGroup)) {
             $this->userGroup = $this->modx->getObject(modUserGroup::class, $userGroup);
         }
-
+        /*
+            Need to sort on the int field (authority) instead of the composite string field
+            (role_display) to order properly with the format of '[authority] - [role_name]'
+        */
+        if ($this->getProperty('sort') == 'role_display') {
+            $this->setProperty('sort', 'authority');
+        }
         return $initialized;
     }
 
@@ -101,13 +108,38 @@ class GetList extends GetListProcessor
         $c->leftJoin(modAccessPolicy::class, 'Policy');
         $c->select($this->modx->getSelectColumns(modAccessMediaSource::class, 'modAccessMediaSource'));
         $c->select([
-            'name' => 'Target.name',
-            'role_name' => 'Role.name',
-            'policy_name' => 'Policy.name',
-            'policy_data' => 'Policy.data',
+            'name' => '`Target`.`name`',
+            'policy_name' => '`Policy`.`name`',
+            'policy_data' => '`Policy`.`data`',
+            'role_display' => 'CONCAT_WS(\' - \',`modAccessMediaSource`.`authority`,`Role`.`name`)'
         ]);
-
+        if ($this->getProperty('isGroupingGrid')) {
+            $groupBy = $this->getProperty('groupBy');
+            $sortBy = $this->getProperty('sort');
+            if (!empty($groupBy)) {
+                switch ($groupBy) {
+                    case 'name':
+                        $groupKey = '`Target`.`name`';
+                        break;
+                    case 'role_display':
+                        $groupKey = '`modAccessMediaSource`.`authority`';
+                        break;
+                    case 'policy_name':
+                        $groupKey = '`Policy`.`name`';
+                        break;
+                    default:
+                        $groupKey = '`modAccessMediaSource`.`' . $groupBy . '`';
+                        break;
+                }
+                $this->setGroupSort($c, $sortBy, $groupBy, $groupKey);
+            }
+        }
         return $c;
+    }
+
+    public function useSecondaryGroupCondition(string $sortBy, string $groupBy, string $groupKey): bool
+    {
+        return $sortBy === 'authority' && $groupBy === 'role_display';
     }
 
     /**
@@ -121,7 +153,10 @@ class GetList extends GetListProcessor
         if (empty($objectArray['name'])) {
             $objectArray['name'] = '(' . $this->modx->lexicon('none') . ')';
         }
-        $objectArray['authority_name'] = !empty($objectArray['role_name']) ? $objectArray['role_name'] . ' - ' . $objectArray['authority'] : $objectArray['authority'];
+        $objectArray['authority_name'] = !empty($objectArray['role_name'])
+            ? $objectArray['role_name'] . ' - ' . $objectArray['authority']
+            : $objectArray['authority']
+            ;
 
         /* get permissions list */
         $data = $objectArray['policy_data'];
@@ -139,22 +174,15 @@ class GetList extends GetListProcessor
         }
 
         $cls = '';
-        if (($objectArray['target'] === 'web' || $objectArray['target'] === 'mgr') && $objectArray['policy_name'] === 'Administrator' && ($this->userGroup && $this->userGroup->get('name') === 'Administrator')) {
+        if (
+            ($objectArray['target'] === 'web' || $objectArray['target'] === 'mgr')
+            && $objectArray['policy_name'] === 'Administrator'
+            && ($this->userGroup && $this->userGroup->get('name') === 'Administrator')
+        ) {
         } else {
             $cls .= 'pedit premove';
         }
         $objectArray['cls'] = $cls;
-        $objectArray['menu'] = [
-            [
-                'text' => $this->modx->lexicon('access_source_update'),
-                'handler' => 'this.updateAcl',
-            ],
-            '-',
-            [
-                'text' => $this->modx->lexicon('access_source_remove'),
-                'handler' => 'this.confirm.createDelegate(this,["Security/Access/UserGroup/Source/Remove"])',
-            ],
-        ];
 
         return $objectArray;
     }

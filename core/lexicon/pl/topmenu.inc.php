@@ -7,6 +7,7 @@
  * @subpackage lexicon
  */
 $_lang['about'] = 'O MODX';
+$_lang['about_desc'] = 'Help!';
 $_lang['access_permissions'] = 'Ustawienia dostępu';
 $_lang['access_permissions_desc'] = 'Manage user group access to resources and contexts.';
 $_lang['acls'] = 'Uprawnienia';
@@ -38,7 +39,7 @@ $_lang['flush_access_desc'] = 'Zresetuj sesję i odśwież Twoje uprawnienia w p
 $_lang['flush_sessions'] = 'Wszystkie sesje';
 $_lang['flush_sessions_confirm'] = 'Wszystkie bieżące i poprzednie sesje wszystkich użytkowników, także Twoja, zostaną zresetowane. Każdy użytkownik będzie musiał zalogować się ponownie. Czy na pewno chcesz to zrobić?';
 $_lang['flush_sessions_desc'] = 'Zresetuj wszystkie sesje i wyloguj wszystkich użytkowników.';
-$_lang['flush_sessions_err'] = 'Podczas resetowania sesji wystąpił błąd.';
+$_lang['flush_sessions_err'] = 'An error occurred while attempting to flush the current user sessions.';
 $_lang['flush_sessions_not_supported'] = 'Resetowanie sesji nie jest dostępne w Twojej konfiguracji.';
 $_lang['form_customization'] = 'Formatki Zasobów';
 $_lang['form_customization_desc'] = 'Dostosuj formatki zasobów, nadając uprawnienia grupom użytkowników.';
@@ -118,6 +119,8 @@ $_lang['tools'] = 'Narzędzia';
 $_lang['tools_desc'] = 'Narzędzia do porządkowania witryny';
 $_lang['topnav'] = 'Main Navigation';
 $_lang['topnav_desc'] = '';
+$_lang['trash'] = 'Trash';
+$_lang['trash_desc'] = 'Manage deleted resources.';
 $_lang['user'] = 'Użytkownik';
 $_lang['usernav'] = 'Nawigacja użytkownika';
 $_lang['usernav_desc'] = '';

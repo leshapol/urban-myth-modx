@@ -13,6 +13,7 @@ namespace MODX\Revolution;
 use Exception;
 use GuzzleHttp\Client;
 use GuzzleHttp\Psr7\HttpFactory;
+use MODX\Revolution\Formatter\modManagerDateFormatter;
 use MODX\Revolution\Services\Container;
 use MODX\Revolution\Error\modError;
 use MODX\Revolution\Error\modErrorHandler;
@@ -294,12 +295,6 @@ class modX extends xPDO {
      * @static
      */
     public static function protect() {
-        if (@ ini_get('register_globals') && isset ($_REQUEST)) {
-            foreach ($_REQUEST as $key => $value) {
-                $GLOBALS[$key] = null;
-                unset ($GLOBALS[$key]);
-            }
-        }
         $targets= ['PHP_SELF', 'HTTP_USER_AGENT', 'HTTP_REFERER', 'QUERY_STRING'];
         foreach ($targets as $target) {
             $_SERVER[$target] = isset ($_SERVER[$target]) ? htmlspecialchars($_SERVER[$target], ENT_QUOTES) : null;
@@ -345,11 +340,7 @@ class modX extends xPDO {
                         $iteration++;
                     }
                 }
-                if (version_compare(PHP_VERSION, '7.4.0', '<') && get_magic_quotes_gpc()) {
-                    $target[$key]= stripslashes($value);
-                } else {
-                    $target[$key]= $value;
-                }
+                $target[$key]= $value;
             }
         }
         return $target;
@@ -405,6 +396,23 @@ class modX extends xPDO {
     }
 
     /**
+     * Evaluate boolean-like parameter value and return it as an actual boolean or as a string; a string may be
+     * needed/preferred when building code blocks (e.g., javascript) via php strings (nowdoc/heredoc ones in particular).
+     *
+     * @param array $params An associative or numeric-indexed array of parameters
+     * @param string|int $key The array key to evaluate
+     * @param bool $returnBoolAsString Whether to return the string representation ('true' or 'false') of the boolean value
+     * @return string|bool
+     */
+    public function paramValueIsTrue(array $params, $key, bool $returnBoolAsString = false)
+    {
+        if (isset($params[$key]) && in_array($params[$key], ['true', true, '1', 1])) {
+            return $returnBoolAsString ? 'true' : true ;
+        }
+        return $returnBoolAsString ? 'false' : false ;
+    }
+
+    /**
      * Create, retrieve, or update specific modX instances.
      *
      * @static
@@ -413,11 +421,11 @@ class modX extends xPDO {
      * @param array|null $config An optional array of config data for the instance.
      * @param bool $forceNew If true a new instance will be created even if an instance
      * with the provided $id already exists in modX::$instances.
-     * @return modX An instance of modX.
+     * @return static An instance of modX.
      * @throws xPDOException
      */
     public static function getInstance($id = null, $config = null, $forceNew = false) {
-        $class = __CLASS__;
+        $class = static::class;
         if (is_null($id)) {
             if (!is_null($config) || $forceNew || empty(self::$instances)) {
                 $id = uniqid($class);
@@ -576,6 +584,8 @@ class modX extends xPDO {
 
             $this->services->add('registry', new modRegistry($this));
             $this->registry = $this->services->get('registry');
+
+            $this->services->add(modManagerDateFormatter::class, fn() => new modManagerDateFormatter($this));
 
             if (!$this->getOption(xPDO::OPT_SETUP)) {
                 $this->invokeEvent(
@@ -1681,11 +1691,7 @@ class modX extends xPDO {
             foreach ($this->eventMap[$eventName] as $pluginId => $pluginPropset) {
                 /** @var modPlugin $plugin */
                 $plugin= null;
-                if (!version_compare(PHP_VERSION, '5.4', '>=')) {
-                    $this->Event = & $this->event;
-                } else {
-                    $this->Event = clone $this->event;
-                }
+                $this->Event = clone $this->event;
                 $this->event->resetEventObject();
                 $this->event->name= $eventName;
                 if (isset ($this->pluginCache[$pluginId])) {
@@ -2637,6 +2643,14 @@ class modX extends xPDO {
             if (!is_null($debug) && $debug !== '') {
                 $this->setDebug($debug);
             }
+
+            $this->invokeEvent(
+                'OnContextInit',
+                [
+                    'contextKey' => $contextKey,
+                    'options' => $options,
+                ]
+            );
         }
         return $initialized;
     }
@@ -2714,7 +2728,8 @@ class modX extends xPDO {
             // Http Client is created as a factory, so that repeat calls get a fresh client. This is done to make sure
             // mutable clients (perhaps they allow setting options after instantiation) do not cause side-effects elsewhere
             $this->services->add(ClientInterface::class, $this->services->factory(function() {
-                return new Client();
+                $opts = $this->buildHttpClientOptions();
+                return new Client($opts);
             }));
         }
         if (!$this->services->has(ServerRequestFactoryInterface::class)) {
@@ -2732,6 +2747,30 @@ class modX extends xPDO {
                 return new HttpFactory();
             });
         }
+    }
+
+    /**
+     * Build options for the HTTP client based on configuration settings.
+     *
+     * @return array The HTTP client options.
+     */
+    private function buildHttpClientOptions() {
+        $opts = [];
+        $proxyHost = $this->getOption('proxy_host', null, '');
+        if (!empty($proxyHost)) {
+            $proxy_str = $proxyHost;
+            $proxyPort = $this->getOption('proxy_port', null, '');
+            if (!empty($proxyPort)) {
+                $proxy_str .= ':' . $proxyPort;
+            }
+            $proxyUsername = $this->getOption('proxy_username', null, '');
+            if (!empty($proxyUsername)) {
+                $proxyPassword = $this->getOption('proxy_password', null, '');
+                $proxy_str = $proxyUsername . ':' . $proxyPassword . '@' . $proxy_str;
+            }
+            $opts['proxy'] = $proxy_str;
+        }
+        return $opts;
     }
 
     /**
@@ -2754,25 +2793,15 @@ class modX extends xPDO {
         $contextKey= $this->context instanceof modContext ? $this->context->get('key') : null;
         if ($this->getOption('session_enabled', $options, true) || isset($_GET['preview'])) {
             if (!in_array($this->getSessionState(), [modX::SESSION_STATE_INITIALIZED, modX::SESSION_STATE_EXTERNAL, modX::SESSION_STATE_UNAVAILABLE], true)) {
-                $sh = false;
-                if ($sessionHandlerClass = $this->getOption('session_handler_class', $options)) {
-                    if ($shClass = $this->loadClass($sessionHandlerClass, '', false, true)) {
-                        if ($sh = new $shClass($this)) {
-                            session_set_save_handler(
-                                [& $sh, 'open'],
-                                [& $sh, 'close'],
-                                [& $sh, 'read'],
-                                [& $sh, 'write'],
-                                [& $sh, 'destroy'],
-                                [& $sh, 'gc']
-                            );
-                        }
+                $sessionHandlerClass = $this->getOption('session_handler_class', $options);
+                if (is_string($sessionHandlerClass) && !empty($sessionHandlerClass) && class_exists($sessionHandlerClass)) {
+                    $sh = new $sessionHandlerClass($this);
+                    if ($sh instanceof \SessionHandlerInterface) {
+                        $this->services->add('session_handler', $sh);
+                        session_set_save_handler($sh);
                     }
                 }
-                if (
-                    (is_string($sessionHandlerClass) && !$sh instanceof $sessionHandlerClass) ||
-                    !is_string($sessionHandlerClass)
-                ) {
+                if (!$this->services->has('session_handler')) {
                     $sessionSavePath = $this->getOption('session_save_path', $options);
                     if ($sessionSavePath && is_writable($sessionSavePath)) {
                         session_save_path($sessionSavePath);
@@ -2791,27 +2820,19 @@ class modX extends xPDO {
                 }
                 $site_sessionname = $this->getOption('session_name', $options, '');
                 if (!empty($site_sessionname)) session_name($site_sessionname);
-                if (PHP_VERSION_ID < 70300) {
-                    session_set_cookie_params(
-                        $cookieLifetime,
-                        $cookiePath,
-                        $cookieDomain,
-                        $cookieSecure,
-                        $cookieHttpOnly
-                    );
-                } else {
-                    $cookie_params = [
-                        'lifetime' => $cookieLifetime,
-                        'path' => $cookiePath,
-                        'domain' => $cookieDomain,
-                        'secure' => $cookieSecure,
-                        'httponly' => $cookieHttpOnly
-                    ];
-                    if ($cookieSamesite !== '') {
-                        $cookie_params['samesite'] = $cookieSamesite;
-                    }
-                    session_set_cookie_params($cookie_params);
+
+                $cookie_params = [
+                    'lifetime' => $cookieLifetime,
+                    'path' => $cookiePath,
+                    'domain' => $cookieDomain,
+                    'secure' => $cookieSecure,
+                    'httponly' => $cookieHttpOnly
+                ];
+                if ($cookieSamesite !== '') {
+                    $cookie_params['samesite'] = $cookieSamesite;
                 }
+                session_set_cookie_params($cookie_params);
+
                 if ($this->getOption('anonymous_sessions', $options, true) || isset($_COOKIE[session_name()])) {
                     if (!$this->startSession()) {
                         $this->log(modX::LOG_LEVEL_ERROR, 'Unable to initialize a session', '', __METHOD__, __FILE__, __LINE__);
@@ -2836,19 +2857,7 @@ class modX extends xPDO {
                             if ($cookieSamesite !== '') {
                                 $cookie_settings['samesite'] = $cookieSamesite;
                             }
-                            if (PHP_VERSION_ID < 70300) {
-                                setcookie(
-                                    session_name(),
-                                    session_id(),
-                                    $cookieExpiration,
-                                    $cookiePath,
-                                    $cookieDomain,
-                                    $cookieSecure,
-                                    $cookieHttpOnly
-                                );
-                            } else {
-                                setcookie(session_name(), session_id(), $cookie_settings);
-                            }
+                            setcookie(session_name(), session_id(), $cookie_settings);
                         }
                     }
                 } else {
@@ -2980,5 +2989,29 @@ class modX extends xPDO {
             }
         }
         $this->invokeEvent('OnWebPageComplete');
+    }
+
+    /**
+     * Determine whether the passed value is a unix timestamp and, optionally, whether it is within
+     * a specified range
+     * @param string|int $value The timestamp to test
+     * @param bool $limitStart Optional minimum timestamp value that will validate
+     * @param bool $limitEnd Optional maximum timestamp value that will validate
+     * @return bool
+     */
+    public static function isValidTimestamp($value, $limitStart = false, $limitEnd = false): bool
+    {
+        // Check that value represents an integer (signed or unsigned)
+        if (!preg_match('/^-?[1-9][0-9]*$/', $value)) {
+            return false;
+        }
+        $value = (int)$value;
+        if (!($value <= PHP_INT_MAX && $value >= ~PHP_INT_MAX)) {
+            return false;
+        }
+        if (($limitStart !== false && $value < (int)$limitStart) || ($limitEnd !== false && $value > (int)$limitEnd)) {
+            return false;
+        }
+        return true;
     }
 }

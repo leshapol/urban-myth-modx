@@ -219,6 +219,12 @@ $_lang['setting_cultureKey_desc'] = 'Vyberte jazyk, pro všechny kontexty (krom�
 $_lang['setting_date_timezone'] = 'Výchozí časové pásmo';
 $_lang['setting_date_timezone_desc'] = 'Určuje výchozí nastavení časového pásma pro PHP funkce pro práci s datumem, pokud je uvedena hodnota. Není-li uvedena hodnota a nastavení PHP date.timezone ini  nastavení není nastaveno pro Vaše prostředí, bude použito pásmo UTC.';
 
+$_lang['setting_manager_datetime_empty_value'] = 'Datetime Empty Value';
+$_lang['setting_manager_datetime_empty_value_desc'] = 'The text (if any) that will show in grids and forms when a datetime field’s value has not been set. (Default: “–” [a single en dash])';
+
+$_lang['setting_manager_datetime_separator'] = 'Datetime Separator';
+$_lang['setting_manager_datetime_separator_desc'] = 'When the date and time are shown as a combined element, these characters will be used to visually separate them. (Default: “, ” [comma and space])';
+
 $_lang['setting_debug'] = 'Debug';
 $_lang['setting_debug_desc'] = 'Řízení režimu ladění v rámci MODX zapnuto/vypnuto a/nebo nastavení PHP úrovně error_reporting. \'\' = současné nastavení systému, \'0\' = vypnuto (error_reporting = 0), \'1\' = zapnuto (error_reporting = -1), nebo lze použít jakoukoli jinou platnou hodnotu pro error_reporting.';
 
@@ -233,6 +239,9 @@ $_lang['setting_default_media_source_desc'] = 'Výchozí zdroj médií, který s
 
 $_lang['setting_default_media_source_type'] = 'Default Media Source Type';
 $_lang['setting_default_media_source_type_desc'] = 'The default selected Media Source Type when creating a new Media Source.';
+
+$_lang['setting_photo_profile_source'] = 'Zdroj médií pro fotku uživatele';
+$_lang['setting_photo_profile_source_desc'] = 'Určuje zdroj médií, který bude použit pro ukládání a načítání profilových fotografií/avatarů. Není-li zadáno, bude použit výchozí zdroj médií.';
 
 $_lang['setting_default_template'] = 'Výchozí šablona';
 $_lang['setting_default_template_desc'] = 'Vyberte výchozí šablonu, která bude použita pro nové dokumenty. Stále budete mít možnost při úpravě dokumentu vybrat ostatní šablony, toto nastavení je pouze před-výběrem jedné z šablon.';
@@ -382,7 +391,7 @@ $_lang['setting_mail_smtp_port'] = 'SMTP port';
 $_lang['setting_mail_smtp_port_desc'] = 'Nastavení výchozího SMTP portu.';
 
 $_lang['setting_mail_smtp_secure'] = 'SMTP zabezpečené';
-$_lang['setting_mail_smtp_secure_desc'] = 'Nastaví typ zabezpečení SMTP. Možnosti jsou "", "ssl" nebo "tls"';
+$_lang['setting_mail_smtp_secure_desc'] = 'Sets SMTP secure encryption type. Options are "", "ssl" or "tls"';
 
 $_lang['setting_mail_smtp_autotls'] = 'SMTP automatické TLS';
 $_lang['setting_mail_smtp_autotls_desc'] = 'Automaticky povolit TLS šifrování, pokud jej server podporuje, i když "SMTP zabezpečené" není nastaveno na "tls"';
@@ -395,6 +404,24 @@ $_lang['setting_mail_smtp_timeout_desc'] = 'Nastavení délky timeoutu SMTP serv
 
 $_lang['setting_mail_smtp_user'] = 'SMTP uživatelské jméno';
 $_lang['setting_mail_smtp_user_desc'] = 'Uživatelské jméno pro autentizaci k SMTP.';
+
+$_lang['setting_mail_dkim_selector'] = 'DKIM Selector';
+$_lang['setting_mail_dkim_selector_desc'] = 'The DKIM domain selector where the public key stored.';
+
+$_lang['setting_mail_dkim_identity'] = 'DKIM Identity';
+$_lang['setting_mail_dkim_identity_desc'] = 'DKIM identity you\'re signing as - usually your From address';
+
+$_lang['setting_mail_dkim_domain'] = 'DKIM Domain';
+$_lang['setting_mail_dkim_domain_desc'] = 'DKIM signing domain name.';
+
+$_lang['setting_mail_dkim_privatekeyfile'] = 'DKIM Private key file';
+$_lang['setting_mail_dkim_privatekeyfile_desc'] = 'DKIM private key file path. You can use DKIM Private key string instead of this.';
+
+$_lang['setting_mail_dkim_privatekeystring'] = 'DKIM Private key string';
+$_lang['setting_mail_dkim_privatekeystring_desc'] = 'Takes precedence over DKIM Private key file.';
+
+$_lang['setting_mail_dkim_passphrase'] = 'DKIM Passphrase';
+$_lang['setting_mail_dkim_passphrase_desc'] = 'Used only if your key is encrypted.';
 
 $_lang['setting_main_nav_parent'] = 'Složka hlavního menu';
 $_lang['setting_main_nav_parent_desc'] = 'Složka pro načítání všech položek hlavního menu.';
@@ -471,6 +498,9 @@ $_lang['setting_new_file_permissions_desc'] = 'Souborům nahraným pomocí sprá
 $_lang['setting_new_folder_permissions'] = 'Atributy nové složky';
 $_lang['setting_new_folder_permissions_desc'] = 'Složkám vytvořeným ve správci souborů budou nastaveny tyto atributy. Toto nastavení nemusí fungovat na některých serverech, např. na IIS, v těchto případech budete muset nastavit atributy manuálně.';
 
+$_lang['setting_package_installer_at_top'] = 'Připnout Správce balíčků nahoru';
+$_lang['setting_package_installer_at_top_desc'] = 'Pokud je povoleno, položka Správce balíčků bude připnuta k horní části nabídky Komponent. V opačném případě bude umístěna podle menuindexu.';
+
 $_lang['setting_parser_recurse_uncacheable'] = 'Zpožděné necachované zpracování';
 $_lang['setting_parser_recurse_uncacheable_desc'] = 'Je-li zakázáno, výstup necahovatelných elementů může být cachován uvnitř cachovatelných elementů. Zakažte pouze, pokud máte problémy se zpracováním vnořených komplexní elementů, které nefungují podle očekávání.';
 
@@ -500,9 +530,6 @@ $_lang['setting_proxy_port_desc'] = 'Port proxy serveru.';
 
 $_lang['setting_proxy_username'] = 'Proxy uživatelské jméno';
 $_lang['setting_proxy_username_desc'] = 'Uživatelské jméno pro autentizaci k proxy serveru.';
-
-$_lang['setting_photo_profile_source'] = 'Zdroj médií pro profilové fotografie uživatelů';
-$_lang['setting_photo_profile_source_desc'] = 'Zdroj médií sloužící k ukládání fotografií uživatelských profilů. Výchozí nastavení je výchozí zdroj médií.';
 
 $_lang['setting_phpthumb_allow_src_above_docroot'] = 'Povolit soubory mimo root';
 $_lang['setting_phpthumb_allow_src_above_docroot_desc'] = 'Indikuje zda může být cesta src mimo root. Tato volba je užitečná při multi-kontextovém vývoji s více virtuálními hosty.';
@@ -630,10 +657,10 @@ $_lang['setting_session_cookie_httponly'] = 'Session Cookie HttpOnly';
 $_lang['setting_session_cookie_httponly_desc'] = 'Povolte toto nastavení pro nastavení příznaku HttpOnly v session cookies.';
 
 $_lang['setting_session_gc_maxlifetime'] = 'Maximální životnost Session Garbage Collectoru';
-$_lang['setting_session_gc_maxlifetime_desc'] = 'Umožnuje přizpůsobení nastavení PHP ini session.gc_maxlifetime používá-li se "modSessionHandler".';
+$_lang['setting_session_gc_maxlifetime_desc'] = 'Umožňuje přizpůsobit nastavení PHP ini session.gc_maxlifetime při použití \'MODX\\Revolution\\modSessionHandler\'.';
 
 $_lang['setting_session_handler_class'] = 'Název třídy správce session';
-$_lang['setting_session_handler_class_desc'] = 'Pro databází spravované session, použijte "modSessionHandler". Toto ponechte prázdné, pro použití standardní PHP správy session.';
+$_lang['setting_session_handler_class_desc'] = 'Pro databází spravované sessions použijte \'MODX\\Revolution\\modSessionHandler\'. Ponechte prázdné pro použití standardní PHP správy sessions.';
 
 $_lang['setting_session_name'] = 'Název session';
 $_lang['setting_session_name_desc'] = 'Toto nastavení použijte pro přizpůsobení názvu session v MODX.';
@@ -738,17 +765,14 @@ $_lang['setting_upload_files_desc'] = 'Zde můžete zadat seznam souborů, kter�
 $_lang['setting_upload_file_exists'] = 'Check if uploaded file exists';
 $_lang['setting_upload_file_exists_desc'] = 'When enabled an error will be shown when uploading a file that already exists with the same name. When disabled, the existing file will be quietly replaced with the new file.';
 
-$_lang['setting_upload_images'] = 'Povolené typy obrázků';
-$_lang['setting_upload_images_desc'] = 'Zde můžete zadat seznam souborů, které mohou být nahrávány do "assets/images/" pomocí správce souborů. Zadejte přípony souborů pro typy obrázků oddělené čárkami.';
-
 $_lang['setting_upload_maxsize'] = 'Maximální velikost nahrávaného souboru';
 $_lang['setting_upload_maxsize_desc'] = 'Zadejte maximální velikost souboru, kterou je možno nahrát pomocí správce souborů. Velikost musí být zadána v bajtech. <strong>Poznámka: Nahrávání velkých souborů může trvat dlouho!</strong>';
 
-$_lang['setting_upload_media'] = 'Povolené typy médií';
-$_lang['setting_upload_media_desc'] = 'Zde můžete zadat seznam souborů, které mohou být nahrávány do "assets/media/" pomocí správce souborů. Zadejte přípony souborů pro typy médií oddělené čárkami.';
-
 $_lang['setting_upload_translit'] = 'Přepsat názvy nahraných souborů?';
 $_lang['setting_upload_translit_desc'] = 'Pokud je tato možnost povolena, název nahraného souboru bude přepsán podle globálních pravidel přepisování.';
+
+$_lang['setting_upload_translit_restrict_chars_pattern'] = 'Zakázané znaky pro název souboru';
+$_lang['setting_upload_translit_restrict_chars_pattern_desc'] = 'RegEx vzor pro odstranění nechtěných znaků z názvu uploadovaného souboru';
 
 $_lang['setting_use_alias_path'] = 'Použít cesty pomocí přátelských aliasů';
 $_lang['setting_use_alias_path_desc'] = 'Nastavením možnosti na "Ano" zobrazí celou cestu k dokumentu pokud má dokument alias. Například, pokud je dokument s aliasem "potomek" umístěn uvnitř složky s aliasem "rodic", pak bude celá adresa zobrazena jako "/rodic/potomek.html".<br /><strong>Poznámka: Je-li toto nastaveno na Ano (zapnutím cest pomocí aliasů), referencované položky (jako obrázky, css, javaskripty, atd.) používají absolutní cesty: např., "/assets/images" na rozdíl od "assets/images". Tímto zamezíte prohlížeči (nebo serveru) vkládání relativních cest do aliasů.</strong>';
@@ -809,7 +833,7 @@ $_lang['setting_error_log_filename'] = 'Název souboru protokolu chyb';
 $_lang['setting_error_log_filename_desc'] = 'Přizpůsobte si název souboru protokolu chyb MODX (včetně přípony souboru).';
 
 $_lang['setting_error_log_filepath'] = 'Cesta k protokolu chyb';
-$_lang['setting_error_log_filepath_desc'] = 'Volitelně nastavit absolutní cestu umístění protokolu chyb. Můžete použít placehodery jako např. {cache_path}.';
+$_lang['setting_error_log_filepath_desc'] = 'Optionally set a absolute path the a custom error log location. You might use placeholders like {cache_path}.';
 
 $_lang['setting_passwordless_activated'] = 'Activate passwordless login';
 $_lang['setting_passwordless_activated_desc'] = 'When enabled, users will enter their email address to receive a one-time login link, rather than entering a username and password.';

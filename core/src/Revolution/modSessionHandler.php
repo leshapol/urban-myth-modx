@@ -16,7 +16,7 @@ namespace MODX\Revolution;
  *
  * @package MODX\Revolution
  */
-class modSessionHandler
+class modSessionHandler implements \SessionHandlerInterface
 {
     /**
      * @var modX A reference to the modX instance controlling this session
@@ -42,7 +42,7 @@ class modSessionHandler
      *
      * @param modX &$modx A reference to a {@link modX} instance.
      */
-    function __construct(modX &$modx)
+    public function __construct(modX &$modx)
     {
         $this->modx = &$modx;
         $gcMaxlifetime = (integer)$this->modx->getOption('session_gc_maxlifetime');
@@ -68,7 +68,8 @@ class modSessionHandler
      * @return boolean Always returns true; actual connection is managed by
      * {@link modX}.
      */
-    public function open()
+    #[\ReturnTypeWillChange]
+    public function open($path, $name)
     {
         return true;
     }
@@ -80,6 +81,7 @@ class modSessionHandler
      * @return boolean Always returns true; actual connection is managed by
      * {@link modX}
      */
+    #[\ReturnTypeWillChange]
     public function close()
     {
         return true;
@@ -94,6 +96,7 @@ class modSessionHandler
      *
      * @return string The data read from the {@link modSession} object.
      */
+    #[\ReturnTypeWillChange]
     public function read($id)
     {
         if ($this->_getSession($id)) {
@@ -115,6 +118,7 @@ class modSessionHandler
      *
      * @return boolean True if successfully written.
      */
+    #[\ReturnTypeWillChange]
     public function write($id, $data)
     {
         $written = false;
@@ -138,6 +142,7 @@ class modSessionHandler
      *
      * @return boolean True if the session record was destroyed.
      */
+    #[\ReturnTypeWillChange]
     public function destroy($id)
     {
         if ($this->_getSession($id)) {
@@ -159,11 +164,29 @@ class modSessionHandler
      *
      * @return boolean True if session records were removed.
      */
+    #[\ReturnTypeWillChange]
     public function gc($max)
     {
         $maxtime = time() - $this->gcMaxLifetime;
 
         return $this->modx->removeCollection(modSession::class, ["{$this->modx->escape('access')} < {$maxtime}"]);
+    }
+
+    /**
+     * Removes all sessions, logging out all users.
+     *
+     * @param modX $modx
+     * @return boolean
+     */
+    public static function flushSessions(modX $modx)
+    {
+        $sessionTable = $modx->getTableName(modSession::class);
+        if ($modx->query("TRUNCATE TABLE {$sessionTable}") == false) {
+            return false;
+        }
+
+        $modx->user->endSession();
+        return true;
     }
 
     /**

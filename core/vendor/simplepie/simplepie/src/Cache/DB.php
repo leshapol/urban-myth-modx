@@ -1,4 +1,5 @@
 <?php
+
 /**
  * SimplePie
  *
@@ -48,6 +49,7 @@ namespace SimplePie\Cache;
  *
  * @package SimplePie
  * @subpackage Caching
+ * @deprecated since SimplePie 1.8.0, use implementation of "Psr\SimpleCache\CacheInterface" instead
  */
 abstract class DB implements Base
 {
@@ -56,7 +58,7 @@ abstract class DB implements Base
      *
      * Converts a given {@see SimplePie} object into data to be stored
      *
-     * @param SimplePie $data
+     * @param \SimplePie\SimplePie $data
      * @return array First item is the serialized data for storage, second item is the unique ID for this item
      */
     protected static function prepare_simplepie_object_for_cache($data)
@@ -77,13 +79,13 @@ abstract class DB implements Base
             }
 
             if (isset($data->data['child'][\SimplePie\SimplePie::NAMESPACE_ATOM_10]['feed'][0])) {
-                $channel =& $data->data['child'][\SimplePie\SimplePie::NAMESPACE_ATOM_10]['feed'][0];
+                $channel = &$data->data['child'][\SimplePie\SimplePie::NAMESPACE_ATOM_10]['feed'][0];
             } elseif (isset($data->data['child'][\SimplePie\SimplePie::NAMESPACE_ATOM_03]['feed'][0])) {
-                $channel =& $data->data['child'][\SimplePie\SimplePie::NAMESPACE_ATOM_03]['feed'][0];
+                $channel = &$data->data['child'][\SimplePie\SimplePie::NAMESPACE_ATOM_03]['feed'][0];
             } elseif (isset($data->data['child'][\SimplePie\SimplePie::NAMESPACE_RDF]['RDF'][0])) {
-                $channel =& $data->data['child'][\SimplePie\SimplePie::NAMESPACE_RDF]['RDF'][0];
+                $channel = &$data->data['child'][\SimplePie\SimplePie::NAMESPACE_RDF]['RDF'][0];
             } elseif (isset($data->data['child'][\SimplePie\SimplePie::NAMESPACE_RSS_20]['rss'][0]['child'][\SimplePie\SimplePie::NAMESPACE_RSS_20]['channel'][0])) {
-                $channel =& $data->data['child'][\SimplePie\SimplePie::NAMESPACE_RSS_20]['rss'][0]['child'][\SimplePie\SimplePie::NAMESPACE_RSS_20]['channel'][0];
+                $channel = &$data->data['child'][\SimplePie\SimplePie::NAMESPACE_RSS_20]['rss'][0]['child'][\SimplePie\SimplePie::NAMESPACE_RSS_20]['channel'][0];
             } else {
                 $channel = null;
             }

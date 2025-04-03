@@ -110,7 +110,7 @@ class StreamWrapper
     public static function register(
         S3ClientInterface $client,
         $protocol = 's3',
-        CacheInterface $cache = null,
+        ?CacheInterface $cache = null,
         $v2Existence = false
     ) {
         self::$useV2Existence = $v2Existence;
@@ -817,6 +817,7 @@ class StreamWrapper
             return $this->triggerError("Bucket already exists: {$path}");
         }
 
+        unset($params['ACL']);
         return $this->boolCall(function () use ($params, $path) {
             $this->getClient()->createBucket($params);
             $this->clearCacheKey($path);

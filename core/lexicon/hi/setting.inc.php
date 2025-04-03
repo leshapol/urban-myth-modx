@@ -219,6 +219,12 @@ $_lang['setting_cultureKey_desc'] = 'non-manager Contexts सहित वेब
 $_lang['setting_date_timezone'] = 'डिफ़ॉल्ट समय ज़ोन';
 $_lang['setting_date_timezone_desc'] = 'PHP दिनांक फ़ंक्शन के लिए, सेटिंग डिफ़ॉल्ट timezone अगर नहीं खाली नियंत्रित करता है। यदि आपका परिवेश में खाली और PHP date.timezone ini सेटिंग सेट नहीं है, UTC मान लिया जाएगा।';
 
+$_lang['setting_manager_datetime_empty_value'] = 'Datetime Empty Value';
+$_lang['setting_manager_datetime_empty_value_desc'] = 'The text (if any) that will show in grids and forms when a datetime field’s value has not been set. (Default: “–” [a single en dash])';
+
+$_lang['setting_manager_datetime_separator'] = 'Datetime Separator';
+$_lang['setting_manager_datetime_separator_desc'] = 'When the date and time are shown as a combined element, these characters will be used to visually separate them. (Default: “, ” [comma and space])';
+
 $_lang['setting_debug'] = 'डीबग करें';
 $_lang['setting_debug_desc'] = 'MODX में डीबगिंग on/off टर्निंग को नियंत्रित करता है and/or PHP error_reporting स्तर सेट करता है। \' उपयोग वर्तमान error_reporting, \'0\' = = false (error_reporting = 0), \'1\' = सच (error_reporting -1 =), या कोई मान्य error_reporting मान (integer) के रूप में।';
 
@@ -233,6 +239,9 @@ $_lang['setting_default_media_source_desc'] = 'डिफ़ॉल्ट मी�
 
 $_lang['setting_default_media_source_type'] = 'डिफॉल्ट मीडिया स्त्रोत प्रकार';
 $_lang['setting_default_media_source_type_desc'] = 'नया मीडिया स्त्रोत बनाते समय डिफॉल्ट चयनित मीडिया स्त्रोत प्रकार |';
+
+$_lang['setting_photo_profile_source'] = 'User Profile Photo Source';
+$_lang['setting_photo_profile_source_desc'] = 'Specifies the Media Source to use for storing and retrieving profile photos/avatars. If not specified, the default Media Source will be used.';
 
 $_lang['setting_default_template'] = 'डिफॉल्ट टेम्पलेट';
 $_lang['setting_default_template_desc'] = 'डिफ़ॉल्ट टेम्पलेट आप नए Resource के लिए उपयोग करना चाहते हैं का चयन करें। आप अभी भी Resource संपादक में कोई अलग टेम्पलेट का चयन कर सकते हैं, यह सेटिंग सिर्फ आपके टेम्पलेट्स में से एक आप के लिए पूर्व-चुनता है।';
@@ -382,7 +391,7 @@ $_lang['setting_mail_smtp_port'] = 'SMTP पोर्ट';
 $_lang['setting_mail_smtp_port_desc'] = 'डिफ़ॉल्ट SMTP सर्वर पोर्ट सेट करता है।';
 
 $_lang['setting_mail_smtp_secure'] = 'SMTP Secure';
-$_lang['setting_mail_smtp_secure_desc'] = 'Sets SMTP secure encyption type. Options are "", "ssl" or "tls"';
+$_lang['setting_mail_smtp_secure_desc'] = 'Sets SMTP secure encryption type. Options are "", "ssl" or "tls"';
 
 $_lang['setting_mail_smtp_autotls'] = 'एसएमटीपी ऑटो टीएलस';
 $_lang['setting_mail_smtp_autotls_desc'] = 'Whether to enable TLS encryption automatically if a server supports it, even if "SMTP Secure" is not set to "tls"';
@@ -395,6 +404,24 @@ $_lang['setting_mail_smtp_timeout_desc'] = 'सेकंड में SMTP स�
 
 $_lang['setting_mail_smtp_user'] = 'एसएमटीपी उपयोगकर्ता';
 $_lang['setting_mail_smtp_user_desc'] = 'User के खिलाफ SMTP को प्रमाणित करने के लिए।';
+
+$_lang['setting_mail_dkim_selector'] = 'DKIM Selector';
+$_lang['setting_mail_dkim_selector_desc'] = 'The DKIM domain selector where the public key stored.';
+
+$_lang['setting_mail_dkim_identity'] = 'DKIM Identity';
+$_lang['setting_mail_dkim_identity_desc'] = 'DKIM identity you\'re signing as - usually your From address';
+
+$_lang['setting_mail_dkim_domain'] = 'DKIM Domain';
+$_lang['setting_mail_dkim_domain_desc'] = 'DKIM signing domain name.';
+
+$_lang['setting_mail_dkim_privatekeyfile'] = 'DKIM Private key file';
+$_lang['setting_mail_dkim_privatekeyfile_desc'] = 'DKIM private key file path. You can use DKIM Private key string instead of this.';
+
+$_lang['setting_mail_dkim_privatekeystring'] = 'DKIM Private key string';
+$_lang['setting_mail_dkim_privatekeystring_desc'] = 'Takes precedence over DKIM Private key file.';
+
+$_lang['setting_mail_dkim_passphrase'] = 'DKIM Passphrase';
+$_lang['setting_mail_dkim_passphrase_desc'] = 'Used only if your key is encrypted.';
 
 $_lang['setting_main_nav_parent'] = 'मुख्य मेनू parent';
 $_lang['setting_main_nav_parent_desc'] = 'मुख्य मेनू के लिए सभी रिकॉर्ड खींच करने के लिए इस्तेमाल किया कंटेनर।';
@@ -471,6 +498,9 @@ $_lang['setting_new_file_permissions_desc'] = 'जब एक नया फ़ा
 $_lang['setting_new_folder_permissions'] = 'नया फ़ोल्डर अनुमतियाँ';
 $_lang['setting_new_folder_permissions_desc'] = 'जब फ़ाइल Manager में एक नया फ़ोल्डर बनाने, फ़ाइल Manager जो इस सेटिंग में प्रवेश करने के लिए फ़ोल्डर अनुमतियाँ परिवर्तित करने का प्रयास करेंगे। यह कुछ setups, जैसे कि IIS पर काम नहीं हो सकता है, जो मामले में आप मैन्युअल रूप से अनुमतियाँ बदलने की आवश्यकता होगी।';
 
+$_lang['setting_package_installer_at_top'] = 'Pin Package-Installer at top';
+$_lang['setting_package_installer_at_top_desc'] = 'If enabled, the Installer entry will be pinned to the top of the Extras menu. Otherwise it will be positioned according to its menuindex.';
+
 $_lang['setting_parser_recurse_uncacheable'] = 'विलंबित अप्राप्य पार्सिंग';
 $_lang['setting_parser_recurse_uncacheable_desc'] = 'यदि अक्षम किया गया है, तो अप्राप्य तत्वों का आउटपुट कैश करने योग्य तत्व सामग्री के अंदर कैश्ड हो सकता है! इसे केवल तभी अक्षम करें जब आपको जटिल नेस्टेड पार्सिंग में समस्या हो रही हो जिसने अपेक्षा के अनुरूप काम करना बंद कर दिया हो!';
 
@@ -500,9 +530,6 @@ $_lang['setting_proxy_port_desc'] = 'आपके प्रॉक्सी स�
 
 $_lang['setting_proxy_username'] = 'प्रॉक्सी username';
 $_lang['setting_proxy_username_desc'] = 'के खिलाफ आपके प्रॉक्सी सर्वर के साथ प्रमाणित करने के लिए username.';
-
-$_lang['setting_photo_profile_source'] = 'प्रयोक्ता तस्वीर मीडिया स्रोत';
-$_lang['setting_photo_profile_source_desc'] = 'मीडिया स्रोत उपयोगकर्ता प्रोफ़ाइल्स तस्वीरें स्टोर करने के लिए इस्तेमाल किया। डिफ़ॉल्ट डिफ़ॉल्ट मीडिया स्रोत पर।';
 
 $_lang['setting_phpthumb_allow_src_above_docroot'] = 'Document रूट ऊपर src की अनुमति दें phpThumb';
 $_lang['setting_phpthumb_allow_src_above_docroot_desc'] = 'src पथ document जड़ बाहर की अनुमति दी जाती है तो इंगित करता है। यह कई आभासी host के साथ multi-context की तैनाती के लिए उपयोगी है।';
@@ -630,10 +657,10 @@ $_lang['setting_session_cookie_httponly'] = 'manager कुकी HttpOnly';
 $_lang['setting_session_cookie_httponly_desc'] = 'manager कुकीज़ पर HttpOnly ध्वज सेट करने के लिए इस सेटिंग का उपयोग करें।';
 
 $_lang['setting_session_gc_maxlifetime'] = 'manager कचरा कलेक्टर अधिकतम जीवनकाल';
-$_lang['setting_session_gc_maxlifetime_desc'] = 'Session.gc_maxlifetime PHP ini सेटिंग का अनुकूलन जब \'modSessionHandler\' का उपयोग करने की अनुमति देता है।';
+$_lang['setting_session_gc_maxlifetime_desc'] = 'Allows customization of the session.gc_maxlifetime PHP ini setting when using \'MODX\\Revolution\\modSessionHandler\'.';
 
 $_lang['setting_session_handler_class'] = 'manager हेन्डलर class नाम';
-$_lang['setting_session_handler_class_desc'] = 'Session manager डेटाबेस के लिए, \'modSessionHandler\' का उपयोग करें।  यह मानक PHP Session manager का उपयोग करने के लिए रिक्त छोड़ दें।';
+$_lang['setting_session_handler_class_desc'] = 'For database managed sessions, use \'MODX\\Revolution\\modSessionHandler\'.  Leave this blank to use standard PHP session management.';
 
 $_lang['setting_session_name'] = 'Session के नाम';
 $_lang['setting_session_name_desc'] = 'Session के नाम MODX में Sessions के लिए इस्तेमाल किया अनुकूलित करने के लिए इस सेटिंग का उपयोग करें। डिफ़ॉल्ट PHP Session के नाम का उपयोग करने के लिए रिक्त छोड़ दें।';
@@ -738,17 +765,14 @@ $_lang['setting_upload_files_desc'] = 'यहाँ आप resource manager क�
 $_lang['setting_upload_file_exists'] = 'जाचे की अपलोड की गई फाइल मौजूद है या नहीं';
 $_lang['setting_upload_file_exists_desc'] = 'सक्षम होने पर एक फ़ाइल अपलोड करते समय एक त्रुटि दिखाई देगी जो पहले से इसी नाम से मौजूद है! अक्षम होने पर मौजूदा फ़ाइल चुपचाप नई फ़ाइल से बदल दी जाऐगी.';
 
-$_lang['setting_upload_images'] = 'Uploadable छवि प्रकार';
-$_lang['setting_upload_images_desc'] = 'यहाँ आप में अपलोड किया जा कर सकते हैं कि फ़ाइलों की एक सूची में प्रवेश कर सकते हैं \'assets/images/\' resource manager का उपयोग कर। कृपया अल्पविराम के द्वारा अलग छवि प्रकार के लिए एक्सटेंशन दर्ज करें।';
-
 $_lang['setting_upload_maxsize'] = 'अधिकतम अपलोड आकार';
 $_lang['setting_upload_maxsize_desc'] = 'फ़ाइल manager के माध्यम से अपलोड किया जा सकता है कि अधिकतम फ़ाइल आकार दर्ज करें। अपलोड फ़ाइल आकार बाइट्स में दर्ज होना चाहिए। <strong> नोट: बड़ी फ़ाइलों को अपलोड करने के लिए एक बहुत लंबा समय लग सकता है </strong>';
 
-$_lang['setting_upload_media'] = 'Uploadable मीडिया प्रकार';
-$_lang['setting_upload_media_desc'] = 'यहाँ आप resource manager का उपयोग करते हुए \'assets/media/\' में अपलोड किया जा सकता है कि फाइलों की सूची में प्रवेश कर सकते हैं। अल्पविराम के द्वारा अलग मीडिया प्रकार, के लिए एक्सटेंशन दर्ज करें।';
-
 $_lang['setting_upload_translit'] = 'Transliterate names of uploaded files?';
 $_lang['setting_upload_translit_desc'] = 'If this option is enabled, the name of an uploaded file will be transliterated according to the global transliteration rules.';
+
+$_lang['setting_upload_translit_restrict_chars_pattern'] = 'File Name Character Restriction Pattern';
+$_lang['setting_upload_translit_restrict_chars_pattern_desc'] = 'A valid RegEx pattern for restricting characters used in an uploaded file’s name.';
 
 $_lang['setting_use_alias_path'] = 'फ्रेंडली अलियास पाथ का इस्तेमाल करें उदाहरण के लिए';
 $_lang['setting_use_alias_path_desc'] = 'यदि resource एक उपनाम है \'हाँ \' के लिए इस विकल्प को सेट पूर्ण पथ resource को प्रदर्शित करेगा। एक एलियास बुलाया \'बच्चे\' के साथ एक resource \'parent\' नामक एक एलियास के साथ एक कंटेनर के अंदर resource स्थित है यदि, उदाहरण के लिए, तब resource के लिए पूर्ण alias पथ के रूप में प्रदर्शित किया जाएगा \'/parent/child.html\'.<br /><strong> ध्यान दें: जब \'हाँ (alias path पर मोड़), context आइटमों के लिए \' इस विकल्प की स्थापना (जैसे छवियाँ, CSS, JavaScripts, आदि) निरपेक्ष पथ, उदाहरण के लिए, \'/assets/images\' विरोध \'/assets/images\' के रूप में उपयोग करें। द्वारा ताकि आप ब्राउज़र (या वेब सर्वर) को रोकने जाएगा के रिश्तेदार पथ के लिए एलियास रास्ते से appending कर रही</strong>';
@@ -809,7 +833,7 @@ $_lang['setting_error_log_filename'] = 'त्रुटि लॉग फाइ�
 $_lang['setting_error_log_filename_desc'] = 'MODX त्रुटि लॉग फाइल के फाइल नाम को अनुकूलित करें';
 
 $_lang['setting_error_log_filepath'] = 'त्रुटि लॉग पथ';
-$_lang['setting_error_log_filepath_desc'] = 'व्वकल्पित रूप से एक कस्टम त्रुटि लॉग स्थान के लिए एक पूर्ण पथ सेट करें {cache _path} जैसे स्पेसहोल्डर का उपयोग कर सकते हैं |';
+$_lang['setting_error_log_filepath_desc'] = 'Optionally set a absolute path the a custom error log location. You might use placeholders like {cache_path}.';
 
 $_lang['setting_passwordless_activated'] = 'पासवर्ड रहित लॉगिन सक्रिय करें';
 $_lang['setting_passwordless_activated_desc'] = 'When enabled, users will enter their email address to receive a one-time login link, rather than entering a username and password.';

@@ -50,7 +50,7 @@ $_lang['settings_after_install'] = 'Bu yeni bir kurulum olduğu için bu ayarlar
 $_lang['settings_desc'] = 'Here you can set general preferences and configuration settings for the MODX manager interface, as well as how your MODX site runs. <b>Each setting will be available via the [[++key]] placeholder.</b><br />Double-click on the value column for the setting you\'d like to edit to dynamically edit via the grid, or right-click on a setting for more options. You can also click the "+" sign for a description of the setting.';
 $_lang['settings_furls'] = 'Kullanıcı Dostu URLler';
 $_lang['settings_misc'] = 'Diğer';
-$_lang['settings_site'] = 'Site';
+$_lang['settings_site'] = 'Alan';
 $_lang['settings_ui'] = 'Arayüz &amp; Özellikleri';
 $_lang['settings_users'] = 'Kullanıcı';
 $_lang['system_settings'] = 'Sistem Ayarları';
@@ -219,6 +219,12 @@ $_lang['setting_cultureKey_desc'] = 'Tüm yönetici olmayan Bağlamların dilini
 $_lang['setting_date_timezone'] = 'Varsayılan Zaman Dilimi';
 $_lang['setting_date_timezone_desc'] = 'Eğer boş değilse, PHP tarih işlevleri için varsayılan zaman dilimi ayarını kontrol eder. Eğer boş ise ve bağlamınız içindeki PHP tarih.zamandilimi ini ayarlanmadıysa, UTC olarak kabul edilecektir.';
 
+$_lang['setting_manager_datetime_empty_value'] = 'Datetime Empty Value';
+$_lang['setting_manager_datetime_empty_value_desc'] = 'The text (if any) that will show in grids and forms when a datetime field’s value has not been set. (Default: “–” [a single en dash])';
+
+$_lang['setting_manager_datetime_separator'] = 'Datetime Separator';
+$_lang['setting_manager_datetime_separator_desc'] = 'When the date and time are shown as a combined element, these characters will be used to visually separate them. (Default: “, ” [comma and space])';
+
 $_lang['setting_debug'] = 'Hata ayıklama';
 $_lang['setting_debug_desc'] = 'MODX\'de hata ayıklamayı açma / kapama kontrolü ve / veya PHP hata bildirim seviyesini ayarlar."= geçerli error_reporting kullan, \'0\' = false (error_reporting = 0), \'1\' = true (error_reporting = -1), ya da herhangi bir geçerli error_reporting değeri (tamsayı olarak).';
 
@@ -231,8 +237,11 @@ $_lang['setting_default_duplicate_publish_option_desc'] = 'bir kaynağı çogalt
 $_lang['setting_default_media_source'] = 'Varsayılan Medya kaynağı';
 $_lang['setting_default_media_source_desc'] = 'Yüklemek için varsayılan Medya Kaynağı.';
 
-$_lang['setting_default_media_source_type'] = 'Default Media Source Type';
+$_lang['setting_default_media_source_type'] = 'Varsayılan Medya Kaynağı Türü';
 $_lang['setting_default_media_source_type_desc'] = 'The default selected Media Source Type when creating a new Media Source.';
+
+$_lang['setting_photo_profile_source'] = 'User Profile Photo Source';
+$_lang['setting_photo_profile_source_desc'] = 'Specifies the Media Source to use for storing and retrieving profile photos/avatars. If not specified, the default Media Source will be used.';
 
 $_lang['setting_default_template'] = 'Varsayılan şablon';
 $_lang['setting_default_template_desc'] = 'Yeni Kaynaklar için kullanmak istediğiniz varsayılan Şablonu seçin. Kaynak düzenleyicide yine de farklı bir şablon seçebilirsiniz, bu ayar Şablonlarınızdan birini önceden seçer.';
@@ -382,7 +391,7 @@ $_lang['setting_mail_smtp_port'] = 'SMTP bağlantı noktası';
 $_lang['setting_mail_smtp_port_desc'] = 'Varsayılam SMTP sunucu bağlantı noktasını ayarlar.';
 
 $_lang['setting_mail_smtp_secure'] = 'SMTP Secure';
-$_lang['setting_mail_smtp_secure_desc'] = 'Sets SMTP secure encyption type. Options are "", "ssl" or "tls"';
+$_lang['setting_mail_smtp_secure_desc'] = 'Sets SMTP secure encryption type. Options are "", "ssl" or "tls"';
 
 $_lang['setting_mail_smtp_autotls'] = 'SMTP Auto TLS';
 $_lang['setting_mail_smtp_autotls_desc'] = 'Whether to enable TLS encryption automatically if a server supports it, even if "SMTP Secure" is not set to "tls"';
@@ -395,6 +404,24 @@ $_lang['setting_mail_smtp_timeout_desc'] = 'SMTP sunucusunun zaman aşımını s
 
 $_lang['setting_mail_smtp_user'] = 'SMTP kullanıcısı';
 $_lang['setting_mail_smtp_user_desc'] = 'Kullanıcının SMTP\'ye karşı kimliğini doğrulaması.';
+
+$_lang['setting_mail_dkim_selector'] = 'DKIM Selector';
+$_lang['setting_mail_dkim_selector_desc'] = 'The DKIM domain selector where the public key stored.';
+
+$_lang['setting_mail_dkim_identity'] = 'DKIM Identity';
+$_lang['setting_mail_dkim_identity_desc'] = 'DKIM identity you\'re signing as - usually your From address';
+
+$_lang['setting_mail_dkim_domain'] = 'DKIM Domain';
+$_lang['setting_mail_dkim_domain_desc'] = 'DKIM signing domain name.';
+
+$_lang['setting_mail_dkim_privatekeyfile'] = 'DKIM Private key file';
+$_lang['setting_mail_dkim_privatekeyfile_desc'] = 'DKIM private key file path. You can use DKIM Private key string instead of this.';
+
+$_lang['setting_mail_dkim_privatekeystring'] = 'DKIM Private key string';
+$_lang['setting_mail_dkim_privatekeystring_desc'] = 'Takes precedence over DKIM Private key file.';
+
+$_lang['setting_mail_dkim_passphrase'] = 'DKIM Passphrase';
+$_lang['setting_mail_dkim_passphrase_desc'] = 'Used only if your key is encrypted.';
 
 $_lang['setting_main_nav_parent'] = 'Ana menü temeli';
 $_lang['setting_main_nav_parent_desc'] = 'Tüm kayıtları ana menüye çekmek için konteyner kullanılır.';
@@ -471,6 +498,9 @@ $_lang['setting_new_file_permissions_desc'] = 'dosya yöneticisnde yeni bir dosy
 $_lang['setting_new_folder_permissions'] = 'Yeni Klasör İzinleri';
 $_lang['setting_new_folder_permissions_desc'] = 'Dosya Yöneticisi\'nde yeni bir klasör oluştururken Dosya Yöneticisi, klasör izinlerini bu ayarda girilenlere değiştirmeye çalışacaktır. Bu, IIS gibi bazı kurulumlarda çalışmayabilir, bu durumda izinleri manuel olarak değiştirmeniz gerekecektir.';
 
+$_lang['setting_package_installer_at_top'] = 'Pin Package-Installer at top';
+$_lang['setting_package_installer_at_top_desc'] = 'If enabled, the Installer entry will be pinned to the top of the Extras menu. Otherwise it will be positioned according to its menuindex.';
+
 $_lang['setting_parser_recurse_uncacheable'] = 'Çözülemeyen Ayrıştırmayı Geciktirme';
 $_lang['setting_parser_recurse_uncacheable_desc'] = 'Devre dışı bırakılırsa, çıkartılamaz öğeler çıktılarını önbellekte önbelleğe alınabilir öğe içeriği içinde olabilir. SADECE, beklendiği gibi çalışmayı durdurdu karmaşık iç içe ayrıştırma ile ilgili sorunlar yaşıyorsanız, bu devre dışı bırakın.';
 
@@ -500,9 +530,6 @@ $_lang['setting_proxy_port_desc'] = 'Bu port proxy sunucunuzun portu.';
 
 $_lang['setting_proxy_username'] = 'Proxy Kullanıcı Adı';
 $_lang['setting_proxy_username_desc'] = 'Proxy sunucunuza karşı kimliğinizi doğrulamak için kullanıcı adı.';
-
-$_lang['setting_photo_profile_source'] = 'Kullanıcı fotoğrafı Medya Kaynağı';
-$_lang['setting_photo_profile_source_desc'] = 'Medya kaynağı kullanıcıların profil fotoğraflarını saklamak için kullanılır. Varsayılan Medya Kaynağı varsayılandır.';
 
 $_lang['setting_phpthumb_allow_src_above_docroot'] = 'phpThumb izin ver src belge kökü yukarıda';
 $_lang['setting_phpthumb_allow_src_above_docroot_desc'] = 'Kaynak yolunun belge kaynağı dışında izin verilip verilmediğini gösterir. Bu, birden çok sanal ana bilgisayara sahip olan çoklu bağlamda ki  dağıtımlar için kullanışlıdır.';
@@ -630,10 +657,10 @@ $_lang['setting_session_cookie_httponly'] = 'Oturum Çerezi Yalnızca Http';
 $_lang['setting_session_cookie_httponly_desc'] = 'Oturum tanımlama bilgilerinde HttpOnly bayrağını ayarlamak için bu ayarı kullanın.';
 
 $_lang['setting_session_gc_maxlifetime'] = 'Oturum Çöp Toplayıcısı Maximum Ömrü';
-$_lang['setting_session_gc_maxlifetime_desc'] = 'Oturumun özelleştirmesini sağlar..gc_maxlifetime PHP ini ayarı \'modSessionHandler\'kullanırken.';
+$_lang['setting_session_gc_maxlifetime_desc'] = 'Allows customization of the session.gc_maxlifetime PHP ini setting when using \'MODX\\Revolution\\modSessionHandler\'.';
 
 $_lang['setting_session_handler_class'] = 'Oturum İşleyici Sınıfı Adı';
-$_lang['setting_session_handler_class_desc'] = 'Veri tabanının yönettiği oturumlar için \'modSessionHandler\'ı kullanın. Standart PHP oturum yönetimi için burayı boş bırakın.';
+$_lang['setting_session_handler_class_desc'] = 'For database managed sessions, use \'MODX\\Revolution\\modSessionHandler\'.  Leave this blank to use standard PHP session management.';
 
 $_lang['setting_session_name'] = 'Oturum İsmi';
 $_lang['setting_session_name_desc'] = 'MODX\'de oturumlar için kullanılan oturum adını özelleştirmek için bu ayarı kullanır. Varsayılan PHP oturum adını kullanmak için boş bırakın.';
@@ -738,17 +765,14 @@ $_lang['setting_upload_files_desc'] = 'Buraya, Kaynak Yöneticisini kullanarak \
 $_lang['setting_upload_file_exists'] = 'Check if uploaded file exists';
 $_lang['setting_upload_file_exists_desc'] = 'When enabled an error will be shown when uploading a file that already exists with the same name. When disabled, the existing file will be quietly replaced with the new file.';
 
-$_lang['setting_upload_images'] = 'Yüklenebilir Resim Türleri';
-$_lang['setting_upload_images_desc'] = 'Buraya, Kaynak Yöneticisini kullanarak \'asset/images/\' içine yüklenebilecek dosyalar listesini girebilirsiniz. Lütfen resim türü uzantılarını virgül ile ayırarak girin.';
-
 $_lang['setting_upload_maxsize'] = 'Maksimum yükleme boyutu';
 $_lang['setting_upload_maxsize_desc'] = 'Dosya yöneticisi aracılığıyla yüklenebilecek maksimum dosya boyutunu girin. Yüklenen dosya boyunu byte olarak girilmelidir. <strong>NOT: Büyük boyutlu dosyalar yüklenmek için çok uzun bir süre alabilir!</strong>';
 
-$_lang['setting_upload_media'] = 'Yüklenebilir Medya Türleri';
-$_lang['setting_upload_media_desc'] = 'Burada, Kaynak Yöneticisi\'ni kullanarak \'assets / media /\' dosyasına yüklenebilecek dosyaların bir listesini girebilirsiniz. Lütfen medya türleri için virgüllerle ayrılmış uzantıları girin.';
-
 $_lang['setting_upload_translit'] = 'Transliterate names of uploaded files?';
 $_lang['setting_upload_translit_desc'] = 'If this option is enabled, the name of an uploaded file will be transliterated according to the global transliteration rules.';
+
+$_lang['setting_upload_translit_restrict_chars_pattern'] = 'File Name Character Restriction Pattern';
+$_lang['setting_upload_translit_restrict_chars_pattern_desc'] = 'A valid RegEx pattern for restricting characters used in an uploaded file’s name.';
 
 $_lang['setting_use_alias_path'] = 'Arkadaşça diğer yolu kullan';
 $_lang['setting_use_alias_path_desc'] = 'Kaynakta bir takma ad varsa, bu seçeneği \'evet\' olarak ayarlamak, Kaynağın tam yolunu görüntüleyecektir. Örneğin, \'alt\' adlı bir takma ada sahip bir Kaynak, \'üst\' olarak adlandırılan bir takma ada sahip bir kapsayıcı Kaynak içerisinde yer alıyorsa, Kaynak için tam takma ad yolu \'/parent/child.html\' olarak görüntülenecektir. <br /><strong> NOT: Bu seçeneği \'Evet\' (diğer ad yollarını açma) olarak ayarlarsanız, referans öğeler (resimler, CSS, JavaScript\'ler vb.) mutlak yolu, örn. \'/ assets / images\' olarak kullanır \'varlıklara / resimlere\' karşı. Böylece tarayıcının (veya web sunucusunun) takma ad yoluna göre yol eklemesini engelleyeceksiniz.</strong>';
@@ -809,7 +833,7 @@ $_lang['setting_error_log_filename'] = 'Error log filename';
 $_lang['setting_error_log_filename_desc'] = 'Customize the filename of the MODX error log file (includes file extension).';
 
 $_lang['setting_error_log_filepath'] = 'Error log path';
-$_lang['setting_error_log_filepath_desc'] = 'Optionally set a absolute path the a custom error log location. You might use placehodlers like {cache_path}.';
+$_lang['setting_error_log_filepath_desc'] = 'Optionally set a absolute path the a custom error log location. You might use placeholders like {cache_path}.';
 
 $_lang['setting_passwordless_activated'] = 'Activate passwordless login';
 $_lang['setting_passwordless_activated_desc'] = 'When enabled, users will enter their email address to receive a one-time login link, rather than entering a username and password.';

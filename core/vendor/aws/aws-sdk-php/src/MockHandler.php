@@ -30,9 +30,10 @@ class MockHandler implements \Countable
      */
     public function __construct(
         array $resultOrQueue = [],
-        callable $onFulfilled = null,
-        callable $onRejected = null
+        ?callable $onFulfilled = null,
+        ?callable $onRejected = null
     ) {
+        $this->queue = [];
         $this->onFulfilled = $onFulfilled;
         $this->onRejected = $onRejected;
 

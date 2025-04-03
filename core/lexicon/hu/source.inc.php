@@ -62,6 +62,8 @@ $_lang['imageExtensions'] = 'imageExtensions';
 $_lang['prop_file.imageExtensions_desc'] = 'A comma-separated list of file extensions to use as images. MODX will attempt to make thumbnails of files with these extensions.';
 $_lang['skipFiles'] = 'skipFiles';
 $_lang['prop_file.skipFiles_desc'] = 'A comma-separated list. MODX will skip over and hide files and folders that match any of these.';
+$_lang['skipExtensions'] = 'skipExtensions';
+$_lang['prop_file.skipExtensions'] = 'A comma-separated list of extensions. MODX will not show files that match any of these.';
 $_lang['thumbnailQuality'] = 'thumbnailQuality';
 $_lang['prop_file.thumbnailQuality_desc'] = 'The quality of the rendered thumbnails, in a scale from 0-100.';
 $_lang['thumbnailType'] = 'thumbnailType';
@@ -82,6 +84,7 @@ $_lang['prop_s3.url_desc'] = 'The URL of the Amazon S3 instance.';
 $_lang['prop_s3.endpoint_desc'] = 'S3-hoz illeszkedő végponti URL, pl. "https://s3.<region>.example.com". Tekintse át az S3-hoz illeszkedő szolgáltató leírását a végpont elhelyezkedéséről. Hagyja üresen az Amazon S3 esetén';
 $_lang['prop_s3.region_desc'] = 'A vödör körzete. Például: us-west-1';
 $_lang['prop_s3.prefix_desc'] = 'Elhagyható elérési út/mappa előtag';
+$_lang['prop_s3.no_check_bucket_desc'] = 'If set, don\'t attempt to check the bucket exists. It can be needed if the access key you are using does not have bucket creation/list permissions.';
 $_lang['s3_no_move_folder'] = 'The S3 driver does not support moving of folders at this time.';
 
 /* ftp source type */
@@ -99,3 +102,4 @@ $_lang['prop_ftp.timeout_desc'] = 'Kapcsolódás időtúllépése másodpercben.
 $_lang['PNG'] = 'PNG';
 $_lang['JPG'] = 'JPG';
 $_lang['GIF'] = 'GIF';
+$_lang['WebP'] = 'WebP';

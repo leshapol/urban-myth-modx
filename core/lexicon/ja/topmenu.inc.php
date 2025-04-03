@@ -7,6 +7,7 @@
  * @subpackage lexicon
  */
 $_lang['about'] = 'MODXについて';
+$_lang['about_desc'] = 'Help!';
 $_lang['access_permissions'] = 'アクセス許可';
 $_lang['access_permissions_desc'] = 'リソースとコンテキストへのユーザーアクセス管理';
 $_lang['acls'] = 'Access Control Lists';
@@ -38,7 +39,7 @@ $_lang['flush_access_desc'] = '一時的にキャッシュされている権限�
 $_lang['flush_sessions'] = '全セッションを初期化';
 $_lang['flush_sessions_confirm'] = '全ユーザーのセッション情報を初期化しますか？　自分自身を含めた全ユーザーのセッション情報が初期化されます。';
 $_lang['flush_sessions_desc'] = '全セッションを初期化し全てのユーザーを強制ログアウト';
-$_lang['flush_sessions_err'] = '現在のユーザーセッションを初期化中にエラーが発生しました。';
+$_lang['flush_sessions_err'] = 'An error occurred while attempting to flush the current user sessions.';
 $_lang['flush_sessions_not_supported'] = '現在のアカウントは、ユーザーセッションの初期化権限を持っていません。';
 $_lang['form_customization'] = '管理画面カスタマイズ';
 $_lang['form_customization_desc'] = '管理画面のフォームをカスタマイズ。ロール単位で設定可能';
@@ -118,6 +119,8 @@ $_lang['tools'] = 'ツール';
 $_lang['tools_desc'] = 'Utilities to keep your site sorted';
 $_lang['topnav'] = 'Main Navigation';
 $_lang['topnav_desc'] = '';
+$_lang['trash'] = 'Trash';
+$_lang['trash_desc'] = 'Manage deleted resources.';
 $_lang['user'] = 'ユーザー';
 $_lang['usernav'] = 'User Navigation';
 $_lang['usernav_desc'] = '';

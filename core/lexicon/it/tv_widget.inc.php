@@ -19,6 +19,8 @@ $_lang['capitalize'] = 'Tutte Maiuscole';
 $_lang['checkbox'] = 'Spunta Casella';
 $_lang['checkbox_columns'] = 'Colonne';
 $_lang['checkbox_columns_desc'] = 'Il numero di colonne in cui vengono visualizzati i checkboxes.';
+$_lang['checkbox_display_switch'] = 'Display as Switch';
+$_lang['checkbox_display_switch_desc'] = 'When set to “Yes,” this TV’s inputs will be rendered in the Resource editing form as switches (toggles) instead of checked boxes. (Default: “No”)';
 $_lang['class'] = 'Classe';
 $_lang['classes'] = 'Classe/i';
 $_lang['combo_allowaddnewdata'] = 'Consenti Aggiunta Nuovi Elementi';
@@ -34,6 +36,8 @@ $_lang['combo_listwidth'] = 'Larghezza Lista';
 $_lang['combo_listwidth_desc'] = 'La larghezza, in % o px, dell\'elenco a tendina stesso. Predefiniti alla larghezza della casella della combo.';
 $_lang['combo_maxheight'] = 'Massima Altezza';
 $_lang['combo_maxheight_desc'] = 'L\'altezza massima in pixels della lista dropdown prima che vengano mostrate le scrollbars (defaults è 300).';
+$_lang['combo_preserve_selectionorder'] = 'Preserve Entry Order';
+$_lang['combo_preserve_selectionorder_desc'] = 'When set to Yes, saved items display in the order they were originally selected. Otherwise, items follow the order defined in the list options. (Default: No)';
 $_lang['combo_stackitems'] = 'Incolonna Oggetti Selezionati';
 $_lang['combo_stackitems_desc'] = 'Quando impostato su "SI", gli oggetti vengono mostrati 1 per linea. Di defaults il valore è "NO" e vengono mostrati tutti gli oggetti inline.';
 $_lang['combo_title'] = 'Testata Lista';
@@ -99,6 +103,8 @@ $_lang['htmlarea'] = 'Area HTML';
 $_lang['htmltag'] = 'Tag HTML';
 $_lang['image'] = 'Immagine';
 $_lang['image_alt'] = 'Testo Alternativo';
+$_lang['input_height'] = 'Input Height';
+$_lang['input_height_desc'] = 'A number specifying the input’s height in pixels. (Default: 140)';
 $_lang['latest_date'] = 'Ultima data';
 $_lang['latest_date_desc'] = 'La data entro la quale è consentito scegliere.';
 $_lang['latest_time'] = 'Ultimo orario';
@@ -144,7 +150,7 @@ $_lang['required'] = 'Consenti Vuoto';
 $_lang['required_desc'] = 'Selezionare “No” per rendere questo TV un campo obbligatorio nelle Risorse a cui è assegnato. (Predefinito: “Sì”)';
 $_lang['resourcelist'] = 'Elenco Risorse';
 $_lang['resourcelist_depth'] = 'Profondità';
-$_lang['resourcelist_depth_desc'] = 'Il numero di sottocartelle in cui scendere per la ricerca di questa lista. (Predefinito: 10)';
+$_lang['resourcelist_depth_desc'] = 'The number of subfolders to drill down into for this listing’s search query. (Default: 10)';
 $_lang['resourcelist_forceselection_desc'] = 'Disabilitato; solo le corrispondenze della lista sono valide.';
 $_lang['resourcelist_includeparent'] = 'Includi Genitori';
 $_lang['resourcelist_includeparent_desc'] = 'Selezionare “Sì” per includere le risorse specificate nel campo Genitori nella lista.';
@@ -179,6 +185,10 @@ $_lang['tag_name'] = 'Nome Tag';
 $_lang['target'] = 'Obiettivo';
 $_lang['text'] = 'Testo';
 $_lang['textarea'] = 'Area di testo (Textarea)';
+$_lang['textarea_grow'] = 'Auto Grow?';
+$_lang['textarea_grow_desc'] = 'Select “Yes” to allow the input’s height to automatically change based on its content. (Default: “No”)';
+$_lang['textarea_resizable'] = 'Resizable?';
+$_lang['textarea_resizable_desc'] = 'Select “Yes” to allow the input’s height to be changed by dragging its bottom boundary. (Default: “No”)';
 $_lang['textareamini'] = 'Mini Area Testo(Mini TextArea)';
 $_lang['textbox'] = 'Box Testo';
 $_lang['time_increment'] = 'Incremento Orario';
@@ -186,14 +196,14 @@ $_lang['time_increment_desc'] = 'Il numero di minuti tra ogni valore temporale n
 $_lang['title'] = 'Titolo';
 $_lang['tv_default_checkbox_desc'] = 'Un insieme di opzioni selezionate per questa TV separate da due pipe se l\' utente non controlla una o più. Se le opzioni includono etichette (ad es. Opzione One==1<unk> <unk> Opzione Two==2<unk> <unk> Opzione Three==3), essere sicuri di inserire il valore (cioè, “1” per l\'opzione uno, o “1<unk> <unk> 3” per l\'opzione Uno e l\'opzione tre)';
 $_lang['tv_default_date'] = 'Data e ora predefinite';
-$_lang['tv_default_date_desc'] = 'La data da mostrare se l\'utente non ne fornisce una. Scegli una data relativa dalla lista qui sopra o inserisci una data diversa utilizzando uno dei seguenti modelli:
+$_lang['tv_default_date_desc'] = 'The date to show if the user does not provide one. Choose a relative date from the list above or enter a different date using one of the following patterns:
     <div class="example-list">
         <ul>
-            <li><span class="example-input">[[+example_1]]</span> (numero rappresenta ore fa)</li>
-            <li><span class="example-input">[[+example_2]]</span> (numero rappresenta ore in futuro)</li>
-            <li><span class="example-input">[[+example_3]]</span> (data specifica [e ora se lo desideri] utilizzando il formato mostrato)</li>
+            <li><span class="example-input">[[+example_1]]</span> (number represents hours ago)</li>
+            <li><span class="example-input">[[+example_2]]</span> (number represents hours in the future)</li>
+            <li><span class="example-input">[[+example_3]]</span> (a specific date [and time if desired] using the format shown)</li>
         </ul>
-        Nota: l\'uso dei “+” e “-” mostrati sopra è contro-intuitivo, ma corretto (“+” rappresenta indietro nel tempo).
+        Note: The use of the “+” and “-” shown above is counter-intuitive, but correct (“+” represents backward in time).
     </div>';
 $_lang['tv_default_email'] = 'Indirizzo Email Predefinito';
 $_lang['tv_default_email_desc'] = 'L\'indirizzo email che questa TV mostrerà se l\'utente non ne fornisce uno.';

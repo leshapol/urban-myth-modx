@@ -224,6 +224,12 @@ $_lang['setting_cultureKey_desc'] = 'حدد اللغة لجميع السياقا
 $_lang['setting_date_timezone'] = 'المنطقة الزمنية الافتراضية';
 $_lang['setting_date_timezone_desc'] = 'تتحكم باعدادات المنطقة الزمنية الافتراضية من أجل اجراءات التاريخ بلغة PHP، إذا كان غير فارغ. اذا كان فارغ واذا كان الخيار  date.timezone ini غير محدد في البيئة الخاصة بك إذا لم يتم تعيين فارغة والإعداد ini date.timezone بي في البيئة الخاصة بك، سيتم افتراض UTC.';
 
+$_lang['setting_manager_datetime_empty_value'] = 'Datetime Empty Value';
+$_lang['setting_manager_datetime_empty_value_desc'] = 'The text (if any) that will show in grids and forms when a datetime field’s value has not been set. (Default: “–” [a single en dash])';
+
+$_lang['setting_manager_datetime_separator'] = 'Datetime Separator';
+$_lang['setting_manager_datetime_separator_desc'] = 'When the date and time are shown as a combined element, these characters will be used to visually separate them. (Default: “, ” [comma and space])';
+
 $_lang['setting_debug'] = 'التنقيح';
 $_lang['setting_debug_desc'] = 'تتحكم بتشغيل/تعطيل تصحيح الأخطاء و/أو ضبط مستوى error_reporting في PHP. مثلا \'\' = use current error_reporting, \'0\' = false (error_reporting = 0), \'1\' = true (error_reporting = -1)، أو أي قيمة  error_reporting صالحة (كعدد صحيح).';
 
@@ -238,6 +244,9 @@ $_lang['setting_default_media_source_desc'] = 'مصدر الوسائط الاف�
 
 $_lang['setting_default_media_source_type'] = 'Default Media Source Type';
 $_lang['setting_default_media_source_type_desc'] = 'The default selected Media Source Type when creating a new Media Source.';
+
+$_lang['setting_photo_profile_source'] = 'User Profile Photo Source';
+$_lang['setting_photo_profile_source_desc'] = 'Specifies the Media Source to use for storing and retrieving profile photos/avatars. If not specified, the default Media Source will be used.';
 
 $_lang['setting_default_template'] = 'القالب الافتراضي';
 $_lang['setting_default_template_desc'] = 'حدد القالب الافتراضي الذي تريد استخدامه للمصادر الجديدة. مازال بإمكانك تحديد قالب مختلف في محرر المصدر، هذا الإعداد فقط يحدد مسبقاً أحد القوالب الخاصة بك.';
@@ -387,7 +396,7 @@ $_lang['setting_mail_smtp_port'] = 'منفذ SMTP';
 $_lang['setting_mail_smtp_port_desc'] = 'ضبط منفذ المخدم SMTP الافتراضي.';
 
 $_lang['setting_mail_smtp_secure'] = 'SMTP Secure';
-$_lang['setting_mail_smtp_secure_desc'] = 'Sets SMTP secure encyption type. Options are "", "ssl" or "tls"';
+$_lang['setting_mail_smtp_secure_desc'] = 'Sets SMTP secure encryption type. Options are "", "ssl" or "tls"';
 
 $_lang['setting_mail_smtp_autotls'] = 'SMTP Auto TLS';
 $_lang['setting_mail_smtp_autotls_desc'] = 'Whether to enable TLS encryption automatically if a server supports it, even if "SMTP Secure" is not set to "tls"';
@@ -400,6 +409,24 @@ $_lang['setting_mail_smtp_timeout_desc'] = 'ضبط مهلة المخدم SMTP م
 
 $_lang['setting_mail_smtp_user'] = 'مستخدم SMTP';
 $_lang['setting_mail_smtp_user_desc'] = 'المستخدم للمصادقة مقابله إلى SMTP.';
+
+$_lang['setting_mail_dkim_selector'] = 'DKIM Selector';
+$_lang['setting_mail_dkim_selector_desc'] = 'The DKIM domain selector where the public key stored.';
+
+$_lang['setting_mail_dkim_identity'] = 'DKIM Identity';
+$_lang['setting_mail_dkim_identity_desc'] = 'DKIM identity you\'re signing as - usually your From address';
+
+$_lang['setting_mail_dkim_domain'] = 'DKIM Domain';
+$_lang['setting_mail_dkim_domain_desc'] = 'DKIM signing domain name.';
+
+$_lang['setting_mail_dkim_privatekeyfile'] = 'DKIM Private key file';
+$_lang['setting_mail_dkim_privatekeyfile_desc'] = 'DKIM private key file path. You can use DKIM Private key string instead of this.';
+
+$_lang['setting_mail_dkim_privatekeystring'] = 'DKIM Private key string';
+$_lang['setting_mail_dkim_privatekeystring_desc'] = 'Takes precedence over DKIM Private key file.';
+
+$_lang['setting_mail_dkim_passphrase'] = 'DKIM Passphrase';
+$_lang['setting_mail_dkim_passphrase_desc'] = 'Used only if your key is encrypted.';
 
 $_lang['setting_main_nav_parent'] = 'أصل القائمة الرئيسية';
 $_lang['setting_main_nav_parent_desc'] = 'الحاوية مستخدمة لسحب كافة السجلات للقائمة الرئيسية.';
@@ -476,6 +503,9 @@ $_lang['setting_new_file_permissions_desc'] = 'عند رفع ملف جديد ف�
 $_lang['setting_new_folder_permissions'] = 'صلاحيات المجلد الجديد';
 $_lang['setting_new_folder_permissions_desc'] = 'عند إنشاء مجلد جديد في مدير الملفات، سيحاول مدير الملفات تغيير صلاحيات المجلد إلى تلك المدخلة في هذا الإعداد. من الممكن ألا يعمل هذا في بعض التنصيبات، مثل IIS، ستحتاج في مثل هذه الحالة إلى تغيير الصلاحيات بشكل يدوي.';
 
+$_lang['setting_package_installer_at_top'] = 'Pin Package-Installer at top';
+$_lang['setting_package_installer_at_top_desc'] = 'If enabled, the Installer entry will be pinned to the top of the Extras menu. Otherwise it will be positioned according to its menuindex.';
+
 $_lang['setting_parser_recurse_uncacheable'] = 'تأخير التحليل الغير قابل للحفظ في الذاكرة المؤقتة';
 $_lang['setting_parser_recurse_uncacheable_desc'] = 'إذا كان معطلاً، فإن العناصرالغير قابلة للحفظ في الذاكرة المؤقتة تكون مخرجاتها محفوظة مؤقتاً داخل محتوى العنصر قابل للتخزين المؤقت. تعطيل هذا فقط إذا كنت تواجه مشاكل مع تحليل العقد المتداخلة التي توقفت عن العمل كما هو متوقع.';
 
@@ -505,9 +535,6 @@ $_lang['setting_proxy_port_desc'] = 'المنفذ لمخدم البروكسي ا
 
 $_lang['setting_proxy_username'] = 'اسم مستخدم البروكسي';
 $_lang['setting_proxy_username_desc'] = 'اسم المستخدم للمصادقة مقابله مع مخدم البروكسي الخاص بك.';
-
-$_lang['setting_photo_profile_source'] = 'مصدر إعلام صورة المستخدم';
-$_lang['setting_photo_profile_source_desc'] = 'مصدر الوسائط يستخدم لتخزين صور المستخدمين الشخصية .القيم الافتراضية لمصدر الوسائط الافتراضي.';
 
 $_lang['setting_phpthumb_allow_src_above_docroot'] = 'السماح لـ src فوق جذر المستند لـ phpThumb';
 $_lang['setting_phpthumb_allow_src_above_docroot_desc'] = 'تشير فيما إذا كان مسار src مسموح خارج جذر المستند. هذا مفيد من أجل عمليات النشر لسياق متعدد مع مضيفين افتراضيين متعددين.';
@@ -635,10 +662,10 @@ $_lang['setting_session_cookie_httponly'] = 'HttpOnly لكوكي الجلسة';
 $_lang['setting_session_cookie_httponly_desc'] = 'استخدم هذا الإعداد لضبط علامة HttpOnly على كوكي الجلسة.';
 
 $_lang['setting_session_gc_maxlifetime'] = 'وقت الحياة الأعظمي لجامع قمامة الجلسة';
-$_lang['setting_session_gc_maxlifetime_desc'] = 'السماح بتخصيص session.gc_maxlifetime في إعداد PHP ini عند استخدام \'modSessionHandler\'.';
+$_lang['setting_session_gc_maxlifetime_desc'] = 'Allows customization of the session.gc_maxlifetime PHP ini setting when using \'MODX\\Revolution\\modSessionHandler\'.';
 
 $_lang['setting_session_handler_class'] = 'اسم صف معالج الجلسة';
-$_lang['setting_session_handler_class_desc'] = 'من أجل الجلسات المدارة في قاعدة المعطيات، استخدم \'modSessionHandler\'. اترك هذا فارغا لاستخدام إدارة الجلسة القياسية في PHP.';
+$_lang['setting_session_handler_class_desc'] = 'For database managed sessions, use \'MODX\\Revolution\\modSessionHandler\'.  Leave this blank to use standard PHP session management.';
 
 $_lang['setting_session_name'] = 'اسم الجلسة';
 $_lang['setting_session_name_desc'] = 'استخدم هذا الإعداد لتخصيص اسم الجلسة المستخدم من أجل الجلسات في مودكس. اتركه فارغا لاستخدام اسم الجلسة الافتراضي في PHP.';
@@ -743,17 +770,14 @@ $_lang['setting_upload_files_desc'] = 'هنا يمكنك إدخال قائمة �
 $_lang['setting_upload_file_exists'] = 'Check if uploaded file exists';
 $_lang['setting_upload_file_exists_desc'] = 'When enabled an error will be shown when uploading a file that already exists with the same name. When disabled, the existing file will be quietly replaced with the new file.';
 
-$_lang['setting_upload_images'] = 'أ،واع الصور القابلة للرفع';
-$_lang['setting_upload_images_desc'] = 'هنا يمكنك إدخال قائمة من الملفات التي يمكن أن ترفع إلى \'assets/images/\' باستخدام مدير المصدر. الرجاء إدخال الامتدادات لأنواع الصور، مفصولة بفواصل.';
-
 $_lang['setting_upload_maxsize'] = 'حجم الرفع الأعظمي';
 $_lang['setting_upload_maxsize_desc'] = 'أدخل حجم الملف الأعظمي الذي يمكن رفعه باستخدام مدير الملفات. يجب إدخال حجم الملف المرفوع مقدرا بالبايت. <strong>ملاحظة: يمكن أن يستغرق رفع الملفات الكبيرة وقتا طويلا جدا!</strong>';
 
-$_lang['setting_upload_media'] = 'أنواع الوسائط القابلة للرفع';
-$_lang['setting_upload_media_desc'] = 'هنا يمكنك إدخال قائمة من الملفات التي يمكن أن ترفع إلى \'assets/media/\' باستخدام مدير المصدر. الرجاء إدخال الامتدادات لأنواع الوسائط، مفصولة بفواصل.';
-
 $_lang['setting_upload_translit'] = 'Transliterate names of uploaded files?';
 $_lang['setting_upload_translit_desc'] = 'If this option is enabled, the name of an uploaded file will be transliterated according to the global transliteration rules.';
+
+$_lang['setting_upload_translit_restrict_chars_pattern'] = 'File Name Character Restriction Pattern';
+$_lang['setting_upload_translit_restrict_chars_pattern_desc'] = 'A valid RegEx pattern for restricting characters used in an uploaded file’s name.';
 
 $_lang['setting_use_alias_path'] = 'استخدم مسار ذو اسم مستعار مألوف';
 $_lang['setting_use_alias_path_desc'] = 'ضبط هذا الخيار إلى ’نعم’ سيعرض المسار الكامل للمصدر إذا كان المصدر يملك اسم مستعار. على سبيل المثال، إذا كان مصدر مع اسم مستعار يدعى \'child\' موجود ضمن مصدر حاوي مع اسم مستعار يدعى \'parent\'، عندها مسار الاسم المستعار الكامل للمصدر سيعرض كـ  \'/parent/child.html\'.<br /><strong>ملاحظة: عند ضبط هذا الخيار إلى ’نعم’ (تشغيل مسارات الاسم المستعار)، العناصر المرجعية (مثل الصور، ملفات CSS، ملفات جافا سكريبت، وغيرها) تستخدم المسار المطلق، مثلا، \'/assets/images\' بدلا من  \'assets/images\'. عند القيام بذلك ستمنع المتصفح (أو مخدم الوب) من إلحاق المسار ذو الصلة بمسار الاسم المستعار.</strong>';
@@ -814,7 +838,7 @@ $_lang['setting_error_log_filename'] = 'Error log filename';
 $_lang['setting_error_log_filename_desc'] = 'Customize the filename of the MODX error log file (includes file extension).';
 
 $_lang['setting_error_log_filepath'] = 'Error log path';
-$_lang['setting_error_log_filepath_desc'] = 'Optionally set a absolute path the a custom error log location. You might use placehodlers like {cache_path}.';
+$_lang['setting_error_log_filepath_desc'] = 'Optionally set a absolute path the a custom error log location. You might use placeholders like {cache_path}.';
 
 $_lang['setting_passwordless_activated'] = 'Activate passwordless login';
 $_lang['setting_passwordless_activated_desc'] = 'When enabled, users will enter their email address to receive a one-time login link, rather than entering a username and password.';

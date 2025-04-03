@@ -7,6 +7,7 @@
  * @subpackage lexicon
  */
 $_lang['about'] = 'Tietoja meistä';
+$_lang['about_desc'] = 'Help!';
 $_lang['access_permissions'] = 'Käyttöoikeudet';
 $_lang['access_permissions_desc'] = 'Manage user group access to Resources and Contexts';
 $_lang['acls'] = 'Käyttöoikeusluettelot';
@@ -38,7 +39,7 @@ $_lang['flush_access_desc'] = 'Lataa tämän istunnon käyttöoikeudet';
 $_lang['flush_sessions'] = 'Kirjaa kaikki käyttäjät ulos';
 $_lang['flush_sessions_confirm'] = 'Oletko varma, että haluat tyhjentää kaikki käyttäjäistunnot? Tämä kirjaa ulos kaikki nykyiset käyttäjäistunnot mukaan lukien omasi ja pakottaa kaikki kirjautumaan uudelleen.';
 $_lang['flush_sessions_desc'] = 'Immediately destroy all sessions';
-$_lang['flush_sessions_err'] = 'An error occured while attempting to flush the current user sessions.';
+$_lang['flush_sessions_err'] = 'An error occurred while attempting to flush the current user sessions.';
 $_lang['flush_sessions_not_supported'] = 'Flushing user sessions is not supported on your configuration.';
 $_lang['form_customization'] = 'Form Customization';
 $_lang['form_customization_desc'] = 'Create bespoke MODX Manager interfaces';
@@ -118,6 +119,8 @@ $_lang['tools'] = 'Työkalut';
 $_lang['tools_desc'] = 'Utilities to keep your site sorted';
 $_lang['topnav'] = 'Main Navigation';
 $_lang['topnav_desc'] = '';
+$_lang['trash'] = 'Trash';
+$_lang['trash_desc'] = 'Manage deleted resources.';
 $_lang['user'] = 'Käyttäjä';
 $_lang['usernav'] = 'User Navigation';
 $_lang['usernav_desc'] = '';

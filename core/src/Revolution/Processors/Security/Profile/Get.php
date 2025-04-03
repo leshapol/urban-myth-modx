@@ -1,4 +1,5 @@
 <?php
+
 /*
  * This file is part of MODX Revolution.
  *
@@ -10,11 +11,12 @@
 
 namespace MODX\Revolution\Processors\Security\Profile;
 
-use MODX\Revolution\Processors\Processor;
+use MODX\Revolution\Formatter\modManagerDateFormatter;
 use MODX\Revolution\modUser;
 use MODX\Revolution\modUserGroup;
 use MODX\Revolution\modUserGroupMember;
 use MODX\Revolution\modUserGroupRole;
+use MODX\Revolution\Processors\Processor;
 
 /**
  * Get a user profile
@@ -25,6 +27,8 @@ class Get extends Processor
 {
     /** @var modUser $user */
     public $user;
+
+    private modManagerDateFormatter $formatter;
 
     /**
      * @return bool
@@ -47,14 +51,11 @@ class Get extends Processor
      */
     public function initialize()
     {
-        $id = $this->getProperty('id');
-        if (empty($id)) {
-            return $this->modx->lexicon('user_err_ns');
-        }
-        $this->user = $this->modx->getObject(modUser::class, $id);
+        $this->user = $this->modx->user;
         if (!$this->user) {
             return $this->modx->lexicon('user_err_not_found');
         }
+        $this->formatter = $this->modx->services->get(modManagerDateFormatter::class);
         return true;
     }
 
@@ -71,13 +72,12 @@ class Get extends Processor
             $userArray = array_merge($profile->toArray(), $userArray);
         }
 
-        $userArray['dob'] = !empty($userArray['dob']) ? date('m/d/Y', $userArray['dob']) : '';
-        $userArray['blockeduntil'] = !empty($userArray['blockeduntil']) ? date('m/d/Y h:i A',
-            $userArray['blockeduntil']) : '';
-        $userArray['blockedafter'] = !empty($userArray['blockedafter']) ? date('m/d/Y h:i A',
-            $userArray['blockedafter']) : '';
-        $userArray['lastlogin'] = !empty($userArray['lastlogin']) ? date('m/d/Y', $userArray['lastlogin']) : '';
+        $userArray['dob'] = !empty($userArray['dob']) ? date('Y-m-d', $userArray['dob']) : '';
+        $userArray['blockeduntil'] = $this->formatter->formatHidden($userArray['blockeduntil']);
+        $userArray['blockedafter'] = $this->formatter->formatHidden($userArray['blockedafter']);
+        $userArray['lastlogin'] = $this->formatter->formatDateTime($userArray['lastlogin'], false, '');
 
+        unset($userArray['password'], $userArray['cachepwd'], $userArray['sessionid'], $userArray['salt']);
         return $this->success('', $userArray);
     }
 

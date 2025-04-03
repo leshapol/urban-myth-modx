@@ -19,6 +19,8 @@ $_lang['capitalize'] = 'Прописные';
 $_lang['checkbox'] = 'Флажки (checkbox)';
 $_lang['checkbox_columns'] = 'Столбцы';
 $_lang['checkbox_columns_desc'] = 'Количество колонок, в которых будут отображаться флажки (checkbox).';
+$_lang['checkbox_display_switch'] = 'Display as Switch';
+$_lang['checkbox_display_switch_desc'] = 'When set to “Yes,” this TV’s inputs will be rendered in the Resource editing form as switches (toggles) instead of checked boxes. (Default: “No”)';
 $_lang['class'] = 'Класс';
 $_lang['classes'] = 'Класс(ы)';
 $_lang['combo_allowaddnewdata'] = 'Разрешить добавлять новые элементы';
@@ -34,6 +36,8 @@ $_lang['combo_listwidth'] = 'Ширина списка';
 $_lang['combo_listwidth_desc'] = 'Ширина выпадающего списка, в % или px. По умолчанию ширина как у поля с выпадающим списком.';
 $_lang['combo_maxheight'] = 'Максимальная высота';
 $_lang['combo_maxheight_desc'] = 'Максимальная высота выпадающего списка в пикселях перед отображением прокрутки. (По умолчанию: 300)';
+$_lang['combo_preserve_selectionorder'] = 'Preserve Entry Order';
+$_lang['combo_preserve_selectionorder_desc'] = 'When set to Yes, saved items display in the order they were originally selected. Otherwise, items follow the order defined in the list options. (Default: No)';
 $_lang['combo_stackitems'] = 'Выбранные значения в столбик';
 $_lang['combo_stackitems_desc'] = 'Если выбрать «Да», выбранные значения будут выстраиваться вертикально. По умолчанию «Нет», при этом значения выстраиваются в одну строку.';
 $_lang['combo_title'] = 'Заголовок списка';
@@ -97,6 +101,8 @@ $_lang['htmlarea'] = 'HTML-поле';
 $_lang['htmltag'] = 'HTML-тег';
 $_lang['image'] = 'Изображение';
 $_lang['image_alt'] = 'Альтернативный текст';
+$_lang['input_height'] = 'Input Height';
+$_lang['input_height_desc'] = 'A number specifying the input’s height in pixels. (Default: 140)';
 $_lang['latest_date'] = 'Поздняя дата';
 $_lang['latest_date_desc'] = 'Самая поздняя дата, которую можно выбрать.';
 $_lang['latest_time'] = 'Позднее время';
@@ -141,7 +147,7 @@ $_lang['required'] = 'Может быть незаполненным';
 $_lang['required_desc'] = 'Выберите «Нет», чтобы сделать TV обязательным полем в ресурсах, к которым он привязан. (По умолчанию: «Да»)';
 $_lang['resourcelist'] = 'Список ресурсов';
 $_lang['resourcelist_depth'] = 'Глубина';
-$_lang['resourcelist_depth_desc'] = 'Количество подпапок для углубления поискового запроса в этом списке. (По умолчанию: 10)';
+$_lang['resourcelist_depth_desc'] = 'The number of subfolders to drill down into for this listing’s search query. (Default: 10)';
 $_lang['resourcelist_forceselection_desc'] = 'Выключено: список совпадений действителен.';
 $_lang['resourcelist_includeparent'] = 'Включать родителей';
 $_lang['resourcelist_includeparent_desc'] = 'Выберите «Да» для включения в список ресурсов, указанных в поле «Родители».';
@@ -175,6 +181,10 @@ $_lang['tag_name'] = 'Название тега';
 $_lang['target'] = 'Цель';
 $_lang['text'] = 'Текст';
 $_lang['textarea'] = 'Текстовая область';
+$_lang['textarea_grow'] = 'Auto Grow?';
+$_lang['textarea_grow_desc'] = 'Select “Yes” to allow the input’s height to automatically change based on its content. (Default: “No”)';
+$_lang['textarea_resizable'] = 'Resizable?';
+$_lang['textarea_resizable_desc'] = 'Select “Yes” to allow the input’s height to be changed by dragging its bottom boundary. (Default: “No”)';
 $_lang['textareamini'] = 'Текстовая область (мини)';
 $_lang['textbox'] = 'Текстовый блок';
 $_lang['time_increment'] = 'Приращение времени';
@@ -182,14 +192,14 @@ $_lang['time_increment_desc'] = 'Количество минут между ка
 $_lang['title'] = 'Заголовок';
 $_lang['tv_default_checkbox_desc'] = 'Набор опций, разделенных двумя вертикальными чертами, выбранных для этого TV, если пользователь не проверяет один или более вариантов. Если ваши опции включают в себя метки (напр. Параметр Один==1||Параметр Два==2||Параметр Три==3), убедитесь, что вы ввели значение (т.е. «1» для Параметра 1 ,«1||3» для Параметров Один и Три )';
 $_lang['tv_default_date'] = 'Дата и время по умолчанию';
-$_lang['tv_default_date_desc'] = 'Дата для отображения, если пользователь ее не предоставил. Выберите относительную дату из списка выше или введите другую дату, используя один из следующих шаблонов: 
+$_lang['tv_default_date_desc'] = 'The date to show if the user does not provide one. Choose a relative date from the list above or enter a different date using one of the following patterns:
     <div class="example-list">
         <ul>
-            <li><span class="example-input">[[+example_1]]</span> (число представляет количество "часов назад")</li>
-            <li><span class="example-input">[[+example_2]]</span> (число представляет количество часов в будущем)</li>
-            <li><span class="example-input">[[+example_3]]</span> (конкретная дата [и время, если необходимо] с использованием показанного формата)</li>
+            <li><span class="example-input">[[+example_1]]</span> (number represents hours ago)</li>
+            <li><span class="example-input">[[+example_2]]</span> (number represents hours in the future)</li>
+            <li><span class="example-input">[[+example_3]]</span> (a specific date [and time if desired] using the format shown)</li>
         </ul>
-        Примечание. Использование «+» и «-», показанное выше, противоречит здравому смыслу, но правильно («+» обозначает обратную во времени).
+        Note: The use of the “+” and “-” shown above is counter-intuitive, but correct (“+” represents backward in time).
     </div>';
 $_lang['tv_default_email'] = 'Адрес электронной почты по умолчанию';
 $_lang['tv_default_email_desc'] = 'Адрес электронной почты этого TV будет показываться, если пользователь не предоставит его.';
@@ -222,7 +232,7 @@ $_lang['tv_elements_desc'] = 'Определяет выбираемые пара
     <div class="example-list">
         <ul>
             <li><span class="example-input">Птица||Кошка||Собака</span> (короче для птица==Птица||Кошка==Кошка||Собака==Собака)</li>
-            <li><span class="example-input"><span class="example-input"> Белый==#ffffff|||Черный==#000000</span> (где label==value)</li>
+            <li><span class="example-input"><span class="example-input"> Белый==#ffffff||Черный==#000000</span> (где label==value)</li>
             <li><span class="example-input">[[+example_1]]</span> (строит список опубликованных ресурсов с назначенным id шаблона равным 1)</li>
             <li><span class="example-input">[[+example_2]]</span> (строит тот же список, что и предыдущий пример, включая пустой вариант)</li>
         </ul>

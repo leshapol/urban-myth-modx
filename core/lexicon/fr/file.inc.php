@@ -1,4 +1,5 @@
 <?php
+
 /**
  * File English lexicon topic
  *
@@ -6,6 +7,7 @@
  * @package modx
  * @subpackage lexicon
  */
+
 $_lang['directory'] = 'Répertoire';
 $_lang['file_create'] = 'Créer un fichier';
 $_lang['file_download'] = 'Télécharger le fichier';
@@ -14,10 +16,13 @@ $_lang['file_copy_path'] = 'Copier le chemin du fichier';
 $_lang['file_edit'] = 'Modifier le fichier';
 $_lang['file_open'] = 'Ouvrir l\'Url du fichier';
 $_lang['file_err_ae'] = 'Le fichier %s existe déjà';
-$_lang['file_err_create'] = 'Une erreur inconnue est survenue à la création du fichier.';
+$_lang['file_err_create_general_exception'] = 'Une erreur inconnue s\'est produite lors de la création du fichier. Veuillez vérifier les logs d\'erreurs de MODX et/ou du serveur pour plus d\'informations.';
+$_lang['file_err_create_write_exception'] = 'Le fichier n\'a pas pu être créé. Veuillez vérifier que vous avez les permissions d\'écriture pour son répertoire cible et réessayez.';
 $_lang['file_err_ext_not_allowed'] = 'Extension de fichier `[[+ext]]` non autorisée.';
 $_lang['file_err_filter'] = 'Aucun fichier ne correspond au filtre spécifié.';
 $_lang['file_err_invalid'] = 'Le fichier n\'est pas un fichier ordinaire et ne peut être supprimé.';
+$_lang['file_err_move_general_exception'] = 'Une erreur inconnue s\'est produite en essayant de déplacer le fichier. Veuillez vérifier les logs d\'erreurs de MODX et/ou du serveur pour plus d\'informations.';
+$_lang['file_err_move_write_exception'] = 'Le fichier n\'a pas pu être déplacé. Veuillez vérifier que vous avez les permissions d\'écriture pour le fichier et son répertoire cible et réessayez.';
 $_lang['file_err_nf'] = 'le fichier n\'existe pas!';
 $_lang['file_err_ns'] = 'Veuillez spécifier un fichier valide.';
 $_lang['file_err_open'] = 'Impossible d\'ouvrir le fichier: ';
@@ -25,6 +30,8 @@ $_lang['file_err_rename'] = 'MODX n\'a pas réussi à renommer le fichier. Veuil
 $_lang['file_err_remove'] = 'MODX n\'a pas réussi à supprimer le fichier. Veuillez vérifier que les permissions sont paramétrées correctement.';
 $_lang['file_err_too_large'] = 'Le fichier est trop volumineux ([[+size]] octets). Veuillez vous assurer que vos fichiers fassent moins de [[+allowed]] octets.';
 $_lang['file_err_unzip'] = 'Échec de la décompression!';
+$_lang['file_err_update_general_exception'] = 'Une erreur système inconnue s\'est produite lors de la mise à jour de ce fichier. Veuillez vérifier les logs d\'erreurs MODX et/ou serveur pour plus d\'informations.';
+$_lang['file_err_update_write_exception'] = 'Le fichier n\'a pas pu être mis à jour. Veuillez vérifier que vous avez les permissions d\'écriture et réessayez.';
 $_lang['file_err_upload'] = 'Une erreur s\'est produite en tentant d\'envoyer les fichiers.';
 $_lang['file_extensions'] = 'Extensions de fichiers';
 $_lang['file_folder_path'] = 'Chemin d\'accès';
@@ -40,9 +47,12 @@ $_lang['file_folder_copy_path'] = 'Copier le chemin du répertoire';
 $_lang['file_folder_err_ae'] = 'Un répertoire du même nom existe déjà à cet emplacement.';
 $_lang['file_folder_err_create'] = 'Une erreur s\'est produite lors de la création du répertoire.';
 $_lang['file_folder_err_invalid'] = 'Le répertoire spécifié n\'est pas un répertoire.';
+$_lang['file_folder_err_move_general_exception'] = 'Une erreur inconnue s\'est produite en essayant de déplacer le répertoire. Veuillez vérifier les logs d\'erreurs du MODX et/ou du serveur pour plus d\'informations.';
+$_lang['file_folder_err_move_write_exception'] = 'Le répertoire n\'a pas pu être déplacé. Veuillez vérifier que vous avez les permissions d\'écriture pour ce répertoire et son répertoire cible et réessayez.';
 $_lang['file_folder_err_ns'] = 'Veuillez spécifier un répertoire valide.';
 $_lang['file_folder_err_ns_name'] = 'Veuillez entrer un nom valide pour le dossier.';
-$_lang['file_folder_err_rename'] = 'Une erreur inconnue s\'est produite en tentant de renommer le répertoire.';
+$_lang['file_folder_err_rename_general_exception'] = 'Une erreur inconnue s\'est produite en essayant de renommer le répertoire. Veuillez vérifier les logs d\'erreurs MODX et/ou serveur pour plus d\'informations.';
+$_lang['file_folder_err_rename_write_exception'] = 'Le répertoire n\'a pas pu être renommé. Veuillez vérifier que vous avez les permissions d\'écriture pour ce dossier et réessayez.';
 $_lang['file_folder_err_rename_protected'] = 'Le renommage du répertoire système protégé n\'est pas autorisé.';
 $_lang['file_folder_err_remove'] = 'Une erreur s\'est produite lors de la suppression du répertoire.';
 $_lang['file_folder_err_remove_protected'] = 'La suppression du répertoire système protégé n\'est pas autorisée.';
@@ -115,3 +125,7 @@ $_lang['upload.clear_list.all']           = 'Vider la liste';
 $_lang['upload.clear_list.notpermitted']  = 'La suppression n\'est pas autorisée';
 $_lang['upload.msg.title.error']          = 'Erreur';
 $_lang['upload.upload.success']           = 'Chargement réussi';
+
+/** Deprecated keys */
+$_lang['file_err_create'] = $_lang['file_err_create_general_exception'];
+$_lang['file_folder_err_rename'] = $_lang['file_folder_err_rename_general_exception'];

@@ -219,6 +219,12 @@ $_lang['setting_cultureKey_desc'] = 'Selecteer de taal voor alle niet-manager Co
 $_lang['setting_date_timezone'] = 'Standaard Tijdzone';
 $_lang['setting_date_timezone_desc'] = 'Handelt de standaard tijdzone voor PHP date functies, indien niet leeg. Indien leeg en de PHP date.timezone ini insteling is niet gezet in jouw omgeving, UTC wordt aangehouden.';
 
+$_lang['setting_manager_datetime_empty_value'] = 'Datetime Empty Value';
+$_lang['setting_manager_datetime_empty_value_desc'] = 'The text (if any) that will show in grids and forms when a datetime field’s value has not been set. (Default: “–” [a single en dash])';
+
+$_lang['setting_manager_datetime_separator'] = 'Datetime Separator';
+$_lang['setting_manager_datetime_separator_desc'] = 'When the date and time are shown as a combined element, these characters will be used to visually separate them. (Default: “, ” [comma and space])';
+
 $_lang['setting_debug'] = 'Debug';
 $_lang['setting_debug_desc'] = 'Zet debugging aan en/of uit in MODX en/of bepaald de PHP error_reporting level. \'\' = gebruik huidige error_reporting, \'0\' = false (error_reporting = 0), \'1\' = true (error_reporting = -1), of elke geldige error_reporting waarde (als een nummer).';
 
@@ -233,6 +239,9 @@ $_lang['setting_default_media_source_desc'] = 'De standaard te laden Media bron.
 
 $_lang['setting_default_media_source_type'] = 'Default Media Source Type';
 $_lang['setting_default_media_source_type_desc'] = 'The default selected Media Source Type when creating a new Media Source.';
+
+$_lang['setting_photo_profile_source'] = 'Bron foto gebruikersprofiel';
+$_lang['setting_photo_profile_source_desc'] = 'Geeft de Mediabron aan voor het opslaan en ophalen van profielfotos/avatars. Indien niet opgegeven, zal de standaard Mediabron worden gebruikt.';
 
 $_lang['setting_default_template'] = 'Standaard Template';
 $_lang['setting_default_template_desc'] = 'Selecteer de standaard template welke je wilt gebruiken voor nieuwe documenten. Uiteraard kun je altijd nog een andere template kiezen in de document-editor, deze instelling selecteert er alvast een voor jou.';
@@ -382,7 +391,7 @@ $_lang['setting_mail_smtp_port'] = 'SMTP poort';
 $_lang['setting_mail_smtp_port_desc'] = 'Stel de standaard SMTP poort in.';
 
 $_lang['setting_mail_smtp_secure'] = 'SMTP Secure';
-$_lang['setting_mail_smtp_secure_desc'] = 'Sets SMTP secure encyption type. Options are "", "ssl" or "tls"';
+$_lang['setting_mail_smtp_secure_desc'] = 'Sets SMTP secure encryption type. Options are "", "ssl" or "tls"';
 
 $_lang['setting_mail_smtp_autotls'] = 'SMTP Auto TLS';
 $_lang['setting_mail_smtp_autotls_desc'] = 'Whether to enable TLS encryption automatically if a server supports it, even if "SMTP Secure" is not set to "tls"';
@@ -395,6 +404,24 @@ $_lang['setting_mail_smtp_timeout_desc'] = 'Stel de SMTP server timeout in, in s
 
 $_lang['setting_mail_smtp_user'] = 'SMTP Gebruiker';
 $_lang['setting_mail_smtp_user_desc'] = 'De gebruikersnaam voor de authenticatie voor de SMTP.';
+
+$_lang['setting_mail_dkim_selector'] = 'DKIM Selector';
+$_lang['setting_mail_dkim_selector_desc'] = 'The DKIM domain selector where the public key stored.';
+
+$_lang['setting_mail_dkim_identity'] = 'DKIM Identity';
+$_lang['setting_mail_dkim_identity_desc'] = 'DKIM identity you\'re signing as - usually your From address';
+
+$_lang['setting_mail_dkim_domain'] = 'DKIM Domain';
+$_lang['setting_mail_dkim_domain_desc'] = 'DKIM signing domain name.';
+
+$_lang['setting_mail_dkim_privatekeyfile'] = 'DKIM Private key file';
+$_lang['setting_mail_dkim_privatekeyfile_desc'] = 'DKIM private key file path. You can use DKIM Private key string instead of this.';
+
+$_lang['setting_mail_dkim_privatekeystring'] = 'DKIM Private key string';
+$_lang['setting_mail_dkim_privatekeystring_desc'] = 'Takes precedence over DKIM Private key file.';
+
+$_lang['setting_mail_dkim_passphrase'] = 'DKIM Passphrase';
+$_lang['setting_mail_dkim_passphrase_desc'] = 'Used only if your key is encrypted.';
 
 $_lang['setting_main_nav_parent'] = 'Bovenliggend hoofdmenu';
 $_lang['setting_main_nav_parent_desc'] = 'De container gebruikt om de records op te halen voor het belangrijkste menu.';
@@ -471,6 +498,9 @@ $_lang['setting_new_file_permissions_desc'] = 'Wanneer een nieuw bestand geuploa
 $_lang['setting_new_folder_permissions'] = 'Nieuwe maprechten';
 $_lang['setting_new_folder_permissions_desc'] = 'Wanneer een nieuwe map toegeoegd wordt in de bestandsmanager, zal de bestandsmanager proberen de rechten van de map te veranderen naar deze instelling. Dit werkt niet op alle omgevingen, zoals IIS. In dat geval moet je zelf handmatig de rechten aanpassen.';
 
+$_lang['setting_package_installer_at_top'] = 'Pin Package-Installer at top';
+$_lang['setting_package_installer_at_top_desc'] = 'If enabled, the Installer entry will be pinned to the top of the Extras menu. Otherwise it will be positioned according to its menuindex.';
+
 $_lang['setting_parser_recurse_uncacheable'] = 'Vertraagd Uncacheable Tags Parsen';
 $_lang['setting_parser_recurse_uncacheable_desc'] = 'Mocht je problemen ondervinden met complexe geneste tags, dan kan deze instelling uitgeschakeld worden. In dat geval kan het resultaat van een uncacheable element gecached worden binnen de context van een cacheable element. ';
 
@@ -500,9 +530,6 @@ $_lang['setting_proxy_port_desc'] = 'De poort voor jouw proxy server.';
 
 $_lang['setting_proxy_username'] = 'Proxy gebruikersnaam';
 $_lang['setting_proxy_username_desc'] = 'De gebruikersnaam nodig voor authenticatie van de proxy server.';
-
-$_lang['setting_photo_profile_source'] = 'Gebruiker foto media bron';
-$_lang['setting_photo_profile_source_desc'] = 'De mediabron waarin profielfoto\'s van gebruikers worden opgeslagen. Indien niet ingesteld zal de standaard media bron worden gebruikt.';
 
 $_lang['setting_phpthumb_allow_src_above_docroot'] = 'phpThumb Sta src buiten document root toe';
 $_lang['setting_phpthumb_allow_src_above_docroot_desc'] = 'Geeft aan of het src pad buiten de document root is toegestaan. Dit is handig voor multi-context implementaties met meerdere virtuele hosts.';
@@ -630,10 +657,10 @@ $_lang['setting_session_cookie_httponly'] = 'Sessie Cookie HttpOnly';
 $_lang['setting_session_cookie_httponly_desc'] = 'Gebruik deze instelling om de HttpOnly flag op sessie cookies in te stellen.';
 
 $_lang['setting_session_gc_maxlifetime'] = 'Sessie Garbage Collector Max Lifetime';
-$_lang['setting_session_gc_maxlifetime_desc'] = 'Staat aanpassingen toe van de session.gc_maxlifetime PHP ini instelling wanneer \'modSessionHandler\' wordt gebruikt.';
+$_lang['setting_session_gc_maxlifetime_desc'] = 'Allows customization of the session.gc_maxlifetime PHP ini setting when using \'MODX\\Revolution\\modSessionHandler\'.';
 
 $_lang['setting_session_handler_class'] = 'Sessie handler classnaam';
-$_lang['setting_session_handler_class_desc'] = 'Voor database gestuurde sessies, gebruik \'modSessionHandler\'. Laat deze leeg voor de standaard PHP sessie management.';
+$_lang['setting_session_handler_class_desc'] = 'For database managed sessions, use \'MODX\\Revolution\\modSessionHandler\'.  Leave this blank to use standard PHP session management.';
 
 $_lang['setting_session_name'] = 'Sessienaam';
 $_lang['setting_session_name_desc'] = 'Gebruik deze instelling om de sessienaam voor gebruik in sessies in MODX aan te passen.';
@@ -738,17 +765,14 @@ $_lang['setting_upload_files_desc'] = 'Hier kun je een lijst van bestandstypen i
 $_lang['setting_upload_file_exists'] = 'Check if uploaded file exists';
 $_lang['setting_upload_file_exists_desc'] = 'When enabled an error will be shown when uploading a file that already exists with the same name. When disabled, the existing file will be quietly replaced with the new file.';
 
-$_lang['setting_upload_images'] = 'Uploadbare afbeeldingstypen';
-$_lang['setting_upload_images_desc'] = 'Hier kun je een lijst van bestandstypen invullen welke geupload kunnen worden in \'assets/images/\' bij gebruik van de document manager. Vul de extenties van de bestandstypen in gescheiden door een komma.';
-
 $_lang['setting_upload_maxsize'] = 'Maximale upload grootte';
 $_lang['setting_upload_maxsize_desc'] = 'Vul een maximale bestandsgrootte in dat geupload kan worden via de bestandsmanager. Upload grootte moet ingevuld worden in bytes. <strong>Let op: grote bestanden kunnen er lang over doen voordat ze geupload zijn!</strong>';
 
-$_lang['setting_upload_media'] = 'Uploadbare mediatypen';
-$_lang['setting_upload_media_desc'] = 'Hier kun je een lijst van bestandstypen invullen welke geupload kunnen worden in \'assets/media/\' bij gebruik van de document manager. Vul de extenties van de bestandstypen in gescheiden door een komma.';
-
 $_lang['setting_upload_translit'] = 'Transliterate names of uploaded files?';
 $_lang['setting_upload_translit_desc'] = 'If this option is enabled, the name of an uploaded file will be transliterated according to the global transliteration rules.';
+
+$_lang['setting_upload_translit_restrict_chars_pattern'] = 'File Name Character Restriction Pattern';
+$_lang['setting_upload_translit_restrict_chars_pattern_desc'] = 'A valid RegEx pattern for restricting characters used in an uploaded file’s name.';
 
 $_lang['setting_use_alias_path'] = 'Gebruik vriendelijke aliaspaden';
 $_lang['setting_use_alias_path_desc'] = 'Stel deze optie in op \'Ja\' zal een volledig pad tonen naar het document als het een alias heeft. Ter voorbeeld, als een document met een alias genaamd \'child\' in een container document zit met een alias genaamd \'parent\', dan is het volledige pad naar het document dat getoond word zoiets als \'parent/child.html\'<br /><strong>Let op: wanneer je deze instelling instelt op \'Ja\' (aanzetten aliaspaden), refereer items (zoals afbeeldingen, css, javascripts, etc.) middels gebruik van absolute paden: bijv., \'/assets/images\' in tegenstelling tot \'assets/images\'. Als je dit doet dan voorkom je dat de browser (of webserver) dat ze het pad toevoegen aan het alias pad.</strong>';
@@ -809,7 +833,7 @@ $_lang['setting_error_log_filename'] = 'Error log filename';
 $_lang['setting_error_log_filename_desc'] = 'Customize the filename of the MODX error log file (includes file extension).';
 
 $_lang['setting_error_log_filepath'] = 'Error log path';
-$_lang['setting_error_log_filepath_desc'] = 'Optionally set a absolute path the a custom error log location. You might use placehodlers like {cache_path}.';
+$_lang['setting_error_log_filepath_desc'] = 'Optionally set a absolute path the a custom error log location. You might use placeholders like {cache_path}.';
 
 $_lang['setting_passwordless_activated'] = 'Activate passwordless login';
 $_lang['setting_passwordless_activated_desc'] = 'When enabled, users will enter their email address to receive a one-time login link, rather than entering a username and password.';

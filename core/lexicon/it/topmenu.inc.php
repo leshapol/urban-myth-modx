@@ -7,6 +7,7 @@
  * @subpackage lexicon
  */
 $_lang['about'] = 'Info MODX';
+$_lang['about_desc'] = 'Help!';
 $_lang['access_permissions'] = 'Permessi d\'Accesso';
 $_lang['access_permissions_desc'] = 'Gestione Accessi dei Gruppi Utenti alle Risorse e ai Contesti.';
 $_lang['acls'] = 'Elenchi di controllo di accesso';
@@ -38,7 +39,7 @@ $_lang['flush_access_desc'] = 'Ripulisci tutti i permessi e ricarica la cache.';
 $_lang['flush_sessions'] = 'Ripulire Tutte le Sessioni';
 $_lang['flush_sessions_confirm'] = 'Sei sicuro di voler ripulire tutte le sessioni degli utenti? Questo distruggerà tutte le attuali e recenti sessioni degli utenti, compresa la tua, obbligando tutti a rieseguire il login dopo questa azione.';
 $_lang['flush_sessions_desc'] = 'Ripulisci tutte le sessioni ed espelli (logout) tutti gli utenti.';
-$_lang['flush_sessions_err'] = 'Si è verificato un errore durante il tentativo di ripulire le sessioni dell\'utente attuale.';
+$_lang['flush_sessions_err'] = 'An error occurred while attempting to flush the current user sessions.';
 $_lang['flush_sessions_not_supported'] = 'Il ripulimento delle sessioni non è supportato dalla tua configurazione.';
 $_lang['form_customization'] = 'Personalizzazione Form';
 $_lang['form_customization_desc'] = 'Personalizza i moduli (forms) del manager attraverso i permessi di sicurezza.';
@@ -118,6 +119,8 @@ $_lang['tools'] = 'Strumenti';
 $_lang['tools_desc'] = 'Utilities per mantenere il tuo sito in ordine';
 $_lang['topnav'] = 'Navigazione Principale';
 $_lang['topnav_desc'] = '';
+$_lang['trash'] = 'Trash';
+$_lang['trash_desc'] = 'Manage deleted resources.';
 $_lang['user'] = 'Utente';
 $_lang['usernav'] = 'Navigazione Utente';
 $_lang['usernav_desc'] = '';

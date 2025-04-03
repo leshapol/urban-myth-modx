@@ -1,0 +1,11 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => false,
+  'vehicle_class' => 'xPDO\\Transport\\xPDOObjectVehicle',
+  'guid' => '95d4476b6a9d3395c5e9f8f412bd2346',
+  'package' => '',
+  'class' => 'MODX\\Revolution\\modSystemSetting',
+  'signature' => '7ac95cd31a04fbb93712c276c262d13f',
+  'native_key' => 'manager_datetime_empty_value',
+  'object' => '{"key":"manager_datetime_empty_value","value":"\\u2014","xtype":"textfield","namespace":"core","area":"manager","editedon":null}',
+);

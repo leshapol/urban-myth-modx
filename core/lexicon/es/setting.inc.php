@@ -219,6 +219,12 @@ $_lang['setting_cultureKey_desc'] = 'Selecciona el idioma para todos los Context
 $_lang['setting_date_timezone'] = 'Zona Horaria por Defecto';
 $_lang['setting_date_timezone_desc'] = 'Si no está vacío, controla la zona horaria por defecto para la función "date()" de PHP. Si está vacío y la configuración de PHP "date.timezone" no está configurada, se asumirá el uso de UTC.';
 
+$_lang['setting_manager_datetime_empty_value'] = 'Datetime Empty Value';
+$_lang['setting_manager_datetime_empty_value_desc'] = 'The text (if any) that will show in grids and forms when a datetime field’s value has not been set. (Default: “–” [a single en dash])';
+
+$_lang['setting_manager_datetime_separator'] = 'Datetime Separator';
+$_lang['setting_manager_datetime_separator_desc'] = 'When the date and time are shown as a combined element, these characters will be used to visually separate them. (Default: “, ” [comma and space])';
+
 $_lang['setting_debug'] = 'Depuración';
 $_lang['setting_debug_desc'] = 'Controla la activación/desactivación de la depuración en MODX y/o configura el nivel de la variable de PHP "error_reporting". "" = usar el valor actual de error_reporting, "0" = false (error_reporting = 0), "1" = true (error_reporting = -1), o cualquier valor válido para error_reporting (como número entero).';
 
@@ -233,6 +239,9 @@ $_lang['setting_default_media_source_desc'] = 'Los Orígenes Multimedia a cargar
 
 $_lang['setting_default_media_source_type'] = 'Tipo de Orígen Multimedia por Defecto';
 $_lang['setting_default_media_source_type_desc'] = 'El Tipo de Origen Multimedia seleccionado por defecto al crear un nuevo Origen Multimedia.';
+
+$_lang['setting_photo_profile_source'] = 'User Profile Photo Source';
+$_lang['setting_photo_profile_source_desc'] = 'Specifies the Media Source to use for storing and retrieving profile photos/avatars. If not specified, the default Media Source will be used.';
 
 $_lang['setting_default_template'] = 'Plantilla Predeterminada';
 $_lang['setting_default_template_desc'] = 'Selecciona la Plantilla predeterminada que deseas usar para los Recursos nuevos. Puedes seleccionar una plantilla diferente en el editor de Recursos, esta configuración solo selecciona por defecto una de tus Plantillas.';
@@ -382,7 +391,7 @@ $_lang['setting_mail_smtp_port'] = 'Puerto de SMTP';
 $_lang['setting_mail_smtp_port_desc'] = 'Configura el puerto predeterminado del servidor de SMTP.';
 
 $_lang['setting_mail_smtp_secure'] = 'SMTP Secure';
-$_lang['setting_mail_smtp_secure_desc'] = 'Sets SMTP secure encyption type. Options are "", "ssl" or "tls"';
+$_lang['setting_mail_smtp_secure_desc'] = 'Sets SMTP secure encryption type. Options are "", "ssl" or "tls"';
 
 $_lang['setting_mail_smtp_autotls'] = 'SMTP Auto TLS';
 $_lang['setting_mail_smtp_autotls_desc'] = 'Whether to enable TLS encryption automatically if a server supports it, even if "SMTP Secure" is not set to "tls"';
@@ -395,6 +404,24 @@ $_lang['setting_mail_smtp_timeout_desc'] = 'Configura el tiempo de caducidad de 
 
 $_lang['setting_mail_smtp_user'] = 'Usuario de SMTP';
 $_lang['setting_mail_smtp_user_desc'] = 'El usuario utilizado para autenticarse en el servidor SMTP.';
+
+$_lang['setting_mail_dkim_selector'] = 'DKIM Selector';
+$_lang['setting_mail_dkim_selector_desc'] = 'The DKIM domain selector where the public key stored.';
+
+$_lang['setting_mail_dkim_identity'] = 'DKIM Identity';
+$_lang['setting_mail_dkim_identity_desc'] = 'DKIM identity you\'re signing as - usually your From address';
+
+$_lang['setting_mail_dkim_domain'] = 'DKIM Domain';
+$_lang['setting_mail_dkim_domain_desc'] = 'DKIM signing domain name.';
+
+$_lang['setting_mail_dkim_privatekeyfile'] = 'DKIM Private key file';
+$_lang['setting_mail_dkim_privatekeyfile_desc'] = 'DKIM private key file path. You can use DKIM Private key string instead of this.';
+
+$_lang['setting_mail_dkim_privatekeystring'] = 'DKIM Private key string';
+$_lang['setting_mail_dkim_privatekeystring_desc'] = 'Takes precedence over DKIM Private key file.';
+
+$_lang['setting_mail_dkim_passphrase'] = 'DKIM Passphrase';
+$_lang['setting_mail_dkim_passphrase_desc'] = 'Used only if your key is encrypted.';
 
 $_lang['setting_main_nav_parent'] = 'Padre del Menú principal';
 $_lang['setting_main_nav_parent_desc'] = 'El contenedor utilizado para meter todos los registros del menú principal.';
@@ -471,6 +498,9 @@ $_lang['setting_new_file_permissions_desc'] = 'Cuando se carga un archivo nuevo 
 $_lang['setting_new_folder_permissions'] = 'Permisos de Carpeta Nueva';
 $_lang['setting_new_folder_permissions_desc'] = 'Cuando se crea una carpeta nueva en el Panel de Administración de Archivos, éste intentará cambiar los permisos de la carpeta a los aquí introducidos. Esto puede no funcionar en algunas instalaciones, tales como IIS, en cuyo caso necesitarás cambiar los permisos manualmente.';
 
+$_lang['setting_package_installer_at_top'] = 'Pin Package-Installer at top';
+$_lang['setting_package_installer_at_top_desc'] = 'If enabled, the Installer entry will be pinned to the top of the Extras menu. Otherwise it will be positioned according to its menuindex.';
+
 $_lang['setting_parser_recurse_uncacheable'] = 'Retardar el proceso/análisis de no cacheables';
 $_lang['setting_parser_recurse_uncacheable_desc'] = 'Si está desactivado, los elementos no cacheables pueden tener su salida en caché dentro del contenido de elementos cacheables. Deshabilita esto SOLAMENTE si estás teniendo problemas con el análisis/proceso anidado complejo, porque dejó de funcionar como se esperaba.';
 
@@ -500,9 +530,6 @@ $_lang['setting_proxy_port_desc'] = 'El puerto para tu servidor de proxy.';
 
 $_lang['setting_proxy_username'] = 'Nombre de usaurio del Proxy';
 $_lang['setting_proxy_username_desc'] = 'El nombre de usuario para autenticarte en el servidor de proxy.';
-
-$_lang['setting_photo_profile_source'] = 'Origen Multimedia de la foto de usuario';
-$_lang['setting_photo_profile_source_desc'] = 'El Origen Multimedia utilizado para almacenar fotos de perfiles de usuarios. Por defecto, es el Origen Multimedia por defecto.';
 
 $_lang['setting_phpthumb_allow_src_above_docroot'] = 'phpThumb Permitir carpeta de miniaturas fuera del directorio raíz';
 $_lang['setting_phpthumb_allow_src_above_docroot_desc'] = 'Indica si se permite utilizar una ruta para la carpeta de miniaturas fuera del directorio raíz. Esto es útil para instalaciones multi-contextos con múltiples hosts virtuales.';
@@ -630,10 +657,10 @@ $_lang['setting_session_cookie_httponly'] = 'HttpOnly en las Cookies de Sesión'
 $_lang['setting_session_cookie_httponly_desc'] = 'Configurar este parámetro para activar el flag "HttpOnly" en las cookies de sesión.';
 
 $_lang['setting_session_gc_maxlifetime'] = 'Tiempo de Vida Máximo del Garbage Collector de la Sesión';
-$_lang['setting_session_gc_maxlifetime_desc'] = 'Permite personalizar la variable de PHP "session.gc_maxlifetime" cuando se utilice "modSessionHandler".';
+$_lang['setting_session_gc_maxlifetime_desc'] = 'Allows customization of the session.gc_maxlifetime PHP ini setting when using \'MODX\\Revolution\\modSessionHandler\'.';
 
 $_lang['setting_session_handler_class'] = 'Nombre de Clase del Manejador de Sesiones';
-$_lang['setting_session_handler_class_desc'] = 'Para sesiones administradas en base de datos, usar "modSessionHandler". Dejar en blanco para usar la administración de sesiones estándar de PHP.';
+$_lang['setting_session_handler_class_desc'] = 'For database managed sessions, use \'MODX\\Revolution\\modSessionHandler\'.  Leave this blank to use standard PHP session management.';
 
 $_lang['setting_session_name'] = 'Nombre de Sesión';
 $_lang['setting_session_name_desc'] = 'Usa esta configuración para personalizar el nombre de sesión usado para las sesiones en MODX. Déjalo en blanco para usar el valor de nombre de sesión por defecto de PHP.';
@@ -738,17 +765,14 @@ $_lang['setting_upload_files_desc'] = 'Lista separada por comas de los tipos de 
 $_lang['setting_upload_file_exists'] = 'Comprueba si  el archivo cargado existe';
 $_lang['setting_upload_file_exists_desc'] = 'Cuando está habilitado, se mostrará un error al cargar un archivo si ya existe uno con el mismo nombre. Cuando está deshabilitado, el archivo existente será reemplazado por el nuevo archivo sin pedir confirmación.';
 
-$_lang['setting_upload_images'] = 'Tipos de Archivos de Imagen Permitidos en Subida';
-$_lang['setting_upload_images_desc'] = 'Lista separada por comas de los tipos de archivos de imagen permitidos para subir a la carpeta "assets/images" utilizando el Administrador de Recursos.';
-
 $_lang['setting_upload_maxsize'] = 'Tamaño Máximo de Archivo en Subida';
 $_lang['setting_upload_maxsize_desc'] = 'Tamaño máximo permitido de los archivos a ser subidos a través del Administrador de Archivos. El tamaño debe introducirse en bytes. <strong>NOTA: ¡Los archivos muy grandes pueden tardar bastante en ser subidos!</strong>';
 
-$_lang['setting_upload_media'] = 'Tipos de Archivo Multimedia Permitidos en Subida';
-$_lang['setting_upload_media_desc'] = 'Lista separada por comas de los tipos de archivo multimedia permitidos para subir a la carpeta "assets/media" utilizando el Administrador de Recursos.';
-
 $_lang['setting_upload_translit'] = 'Transliterate names of uploaded files?';
 $_lang['setting_upload_translit_desc'] = 'If this option is enabled, the name of an uploaded file will be transliterated according to the global transliteration rules.';
+
+$_lang['setting_upload_translit_restrict_chars_pattern'] = 'File Name Character Restriction Pattern';
+$_lang['setting_upload_translit_restrict_chars_pattern_desc'] = 'A valid RegEx pattern for restricting characters used in an uploaded file’s name.';
 
 $_lang['setting_use_alias_path'] = 'Usar la Ruta de Alias Amigable';
 $_lang['setting_use_alias_path_desc'] = 'Configurando esta opción a "Sí" se mostrará la ruta completa al Recurso si éste tiene un alias. Por ejemplo, si un Recurso con un alias de "hijo" se encuentra dentro de un Recurso contenedor con un alias de "padre", entonces la ruta completa del alias al Recurso será mostrado como "/padre/hijo.html".<br /><strong>NOTA: Cuando esta opción se configura como "Sí" (activando las rutas de alias), los recursos (como imágenes, css, javascript, etc.) usan la ruta absoluta, como por ejemplo "/assets/images" en lugar de "assets/images". Al hacer esto, prevendrás que navegador o servidor web añadan la ruta relativa a la ruta del alias.</strong>';
@@ -809,7 +833,7 @@ $_lang['setting_error_log_filename'] = 'Nombre del archivo del Registro de Error
 $_lang['setting_error_log_filename_desc'] = 'Personalizar el nombre del archivo del registro de errores de MODX (incluye la extensión de archivo).';
 
 $_lang['setting_error_log_filepath'] = 'Ruta del registro de errores';
-$_lang['setting_error_log_filepath_desc'] = 'Opcionalmente, establece una ruta absoluta para una ubicación del registro de errores. Puedes utilizar placeholders como {cache_path}.';
+$_lang['setting_error_log_filepath_desc'] = 'Optionally set a absolute path the a custom error log location. You might use placeholders like {cache_path}.';
 
 $_lang['setting_passwordless_activated'] = 'Activate passwordless login';
 $_lang['setting_passwordless_activated_desc'] = 'When enabled, users will enter their email address to receive a one-time login link, rather than entering a username and password.';

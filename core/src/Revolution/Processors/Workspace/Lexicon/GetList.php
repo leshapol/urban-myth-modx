@@ -1,4 +1,5 @@
 <?php
+
 /*
  * This file is part of MODX Revolution.
  *
@@ -10,6 +11,7 @@
 
 namespace MODX\Revolution\Processors\Workspace\Lexicon;
 
+use MODX\Revolution\Formatter\modManagerDateFormatter;
 use MODX\Revolution\modLexiconEntry;
 use MODX\Revolution\Processors\Processor;
 
@@ -24,6 +26,8 @@ use MODX\Revolution\Processors\Processor;
  */
 class GetList extends Processor
 {
+    private modManagerDateFormatter $formatter;
+
     /**
      * @return bool
      */
@@ -53,6 +57,7 @@ class GetList extends Processor
             'language' => 'en',
             'namespace' => 'core',
             'topic' => 'default',
+            'query' => ''
         ]);
         if ($this->getProperty('language') === '') {
             $this->setProperty('language', 'en');
@@ -63,6 +68,7 @@ class GetList extends Processor
         if ($this->getProperty('topic') === '') {
             $this->setProperty('topic', 'default');
         }
+        $this->formatter = $this->modx->services->get(modManagerDateFormatter::class);
         return true;
     }
 
@@ -77,11 +83,11 @@ class GetList extends Processor
             'language' => $this->getProperty('language'),
         ];
 
-        $search = $this->getProperty('search');
-        if (!empty($search)) {
+        $query = $this->getProperty('query');
+        if (!empty($query)) {
             $where[] = [
-                'name:LIKE' => '%' . $search . '%',
-                'OR:value:LIKE' => '%' . $search . '%',
+                'name:LIKE' => '%' . $query . '%',
+                'OR:value:LIKE' => '%' . $query . '%',
             ];
         }
 
@@ -97,12 +103,15 @@ class GetList extends Processor
         }
 
         /* first get file-based lexicon */
-        $entries = $this->modx->lexicon->getFileTopic($this->getProperty('language'), $this->getProperty('namespace'),
-            $this->getProperty('topic'));
+        $entries = $this->modx->lexicon->getFileTopic(
+            $this->getProperty('language'),
+            $this->getProperty('namespace'),
+            $this->getProperty('topic')
+        );
         $entries = is_array($entries) ? $entries : [];
 
         /* if searching */
-        if (!empty($search)) {
+        if (!empty($query)) {
             function parseArray($needle, array $haystack = [])
             {
                 if (!is_array($haystack)) {
@@ -117,7 +126,7 @@ class GetList extends Processor
                 return $results;
             }
 
-            $entries = parseArray($search, $entries);
+            $entries = parseArray($query, $entries);
         }
 
         /* add in unique entries */
@@ -132,6 +141,7 @@ class GetList extends Processor
         /* loop through */
         $list = [];
         foreach ($entries as $name => $value) {
+            $editedOn = null;
             $entryArray = [
                 'name' => $name,
                 'value' => $value,
@@ -147,10 +157,10 @@ class GetList extends Processor
                 foreach ($dbEntries[$name] as $k => $v) {
                     $entryArray[$k] = $v; // array_merge very slow inside loop, don't use it here
                 }
-
-                $entryArray['editedon'] = strtotime($entryArray['editedon']) ?: strtotime($entryArray['createdon']);
+                $editedOn = $entryArray['editedon'] ?: $entryArray['createdon'] ;
                 $entryArray['overridden'] = 1;
             }
+            $entryArray['editedon'] = $this->formatter->formatDateTime($editedOn);
             $list[] = $entryArray;
         }
 

@@ -7,6 +7,7 @@
  * @subpackage lexicon
  */
 $_lang['about'] = 'Tentang';
+$_lang['about_desc'] = 'Help!';
 $_lang['access_permissions'] = 'Izin akses';
 $_lang['access_permissions_desc'] = 'Mengelola grup pengguna akses ke sumber daya dan konteks';
 $_lang['acls'] = 'Daftar kontrol akses';
@@ -38,7 +39,7 @@ $_lang['flush_access_desc'] = 'Ulang sesi izin ini';
 $_lang['flush_sessions'] = 'Semua pengguna logout';
 $_lang['flush_sessions_confirm'] = 'Apakah Anda yakin Anda ingin flush semua sesi pengguna? Ini akan menghancurkan semua sesi pengguna saat ini dan yang baru, termasuk Anda sendiri, memaksa semua orang untuk masuk lagi.';
 $_lang['flush_sessions_desc'] = 'Segera hancurkan semua sesi';
-$_lang['flush_sessions_err'] = 'Terjadi error ketika mencoba untuk flush sesi pengguna saat ini.';
+$_lang['flush_sessions_err'] = 'An error occurred while attempting to flush the current user sessions.';
 $_lang['flush_sessions_not_supported'] = 'Sesi pengguna Flushing tidak didukung pada konfigurasi Anda.';
 $_lang['form_customization'] = 'Bentuk kustomisasi';
 $_lang['form_customization_desc'] = 'Buat interface manajer MODX dipesan lebih dahulu';
@@ -118,6 +119,8 @@ $_lang['tools'] = 'Alat';
 $_lang['tools_desc'] = 'Kegunaan untuk menjaga situs Anda tersortir';
 $_lang['topnav'] = 'Main Navigation';
 $_lang['topnav_desc'] = '';
+$_lang['trash'] = 'Trash';
+$_lang['trash_desc'] = 'Manage deleted resources.';
 $_lang['user'] = 'Pengguna';
 $_lang['usernav'] = 'Navigasi Pengguna';
 $_lang['usernav_desc'] = '';

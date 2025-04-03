@@ -219,6 +219,12 @@ $_lang['setting_cultureKey_desc'] = 'เลือกภาษาสำหรั�
 $_lang['setting_date_timezone'] = 'โซนเวลาปริยาย';
 $_lang['setting_date_timezone_desc'] = 'ควบคุมการตั้งค่าโซนเวลาปริยายสำหรับฟังก์ชัน date ของ PHP ถ้าว่างเปล่าและการตั้งค่า PHP date.timezone ini ไม่ถูกตั้งในสภาพแวดล้อมของคุณจะสมมติว่าเป็น UTC ทันที';
 
+$_lang['setting_manager_datetime_empty_value'] = 'Datetime Empty Value';
+$_lang['setting_manager_datetime_empty_value_desc'] = 'The text (if any) that will show in grids and forms when a datetime field’s value has not been set. (Default: “–” [a single en dash])';
+
+$_lang['setting_manager_datetime_separator'] = 'Datetime Separator';
+$_lang['setting_manager_datetime_separator_desc'] = 'When the date and time are shown as a combined element, these characters will be used to visually separate them. (Default: “, ” [comma and space])';
+
 $_lang['setting_debug'] = 'ดีบั๊ก';
 $_lang['setting_debug_desc'] = 'ควบคุมการเปิด/ปิดของการดีบั๊กใน MODX และ/หรือตั้งระดับของ PHP error_reporting \'\' = ใช้ error_reporting ปัจจุบัน, \'0\' = ผิด (error_reporting = 0), \'1\' = ถูก (error_reporting = -1) หรือค่า error_reporting ที่ถูกต้องใดๆ (เป็นตัวเลขจำนวนเต็ม)';
 
@@ -233,6 +239,9 @@ $_lang['setting_default_media_source_desc'] = 'แหล่งข้อมูล
 
 $_lang['setting_default_media_source_type'] = 'Default Media Source Type';
 $_lang['setting_default_media_source_type_desc'] = 'The default selected Media Source Type when creating a new Media Source.';
+
+$_lang['setting_photo_profile_source'] = 'User Profile Photo Source';
+$_lang['setting_photo_profile_source_desc'] = 'Specifies the Media Source to use for storing and retrieving profile photos/avatars. If not specified, the default Media Source will be used.';
 
 $_lang['setting_default_template'] = 'แม่แบบปริยาย';
 $_lang['setting_default_template_desc'] = 'เลือกแม่แบบปริยายที่คุณต้องการใช้สำหรับรีซอร์สที่สร้างขึ้นใหม่ คุณยังสามารถเลือกแม่แบบที่ต่างกันในแต่ละรีซอร์สอิดิเตอร์ การตั้งค่านี้จะเลือกแม่แบบไว้ให้คุณก่อนหนึ่งอัน';
@@ -382,7 +391,7 @@ $_lang['setting_mail_smtp_port'] = 'พอร์ต SMTP';
 $_lang['setting_mail_smtp_port_desc'] = 'ตั้งค่าปริยายให้กับพอร์ตของ SMTP เซิร์ฟเวอร์';
 
 $_lang['setting_mail_smtp_secure'] = 'SMTP Secure';
-$_lang['setting_mail_smtp_secure_desc'] = 'Sets SMTP secure encyption type. Options are "", "ssl" or "tls"';
+$_lang['setting_mail_smtp_secure_desc'] = 'Sets SMTP secure encryption type. Options are "", "ssl" or "tls"';
 
 $_lang['setting_mail_smtp_autotls'] = 'SMTP Auto TLS';
 $_lang['setting_mail_smtp_autotls_desc'] = 'Whether to enable TLS encryption automatically if a server supports it, even if "SMTP Secure" is not set to "tls"';
@@ -395,6 +404,24 @@ $_lang['setting_mail_smtp_timeout_desc'] = 'ตั้ง timeout ของ SMTP 
 
 $_lang['setting_mail_smtp_user'] = 'ผู้ใช้ของ SMTP';
 $_lang['setting_mail_smtp_user_desc'] = 'ผู้ใช้ที่รับรองโดย SMTP against';
+
+$_lang['setting_mail_dkim_selector'] = 'DKIM Selector';
+$_lang['setting_mail_dkim_selector_desc'] = 'The DKIM domain selector where the public key stored.';
+
+$_lang['setting_mail_dkim_identity'] = 'DKIM Identity';
+$_lang['setting_mail_dkim_identity_desc'] = 'DKIM identity you\'re signing as - usually your From address';
+
+$_lang['setting_mail_dkim_domain'] = 'DKIM Domain';
+$_lang['setting_mail_dkim_domain_desc'] = 'DKIM signing domain name.';
+
+$_lang['setting_mail_dkim_privatekeyfile'] = 'DKIM Private key file';
+$_lang['setting_mail_dkim_privatekeyfile_desc'] = 'DKIM private key file path. You can use DKIM Private key string instead of this.';
+
+$_lang['setting_mail_dkim_privatekeystring'] = 'DKIM Private key string';
+$_lang['setting_mail_dkim_privatekeystring_desc'] = 'Takes precedence over DKIM Private key file.';
+
+$_lang['setting_mail_dkim_passphrase'] = 'DKIM Passphrase';
+$_lang['setting_mail_dkim_passphrase_desc'] = 'Used only if your key is encrypted.';
 
 $_lang['setting_main_nav_parent'] = 'Main menu parent';
 $_lang['setting_main_nav_parent_desc'] = 'The container used to pull all records for the main menu.';
@@ -471,6 +498,9 @@ $_lang['setting_new_file_permissions_desc'] = 'เมื่อทำการอ
 $_lang['setting_new_folder_permissions'] = 'สิทธิ์การใช้งานโฟลเดอร์ใหม่';
 $_lang['setting_new_folder_permissions_desc'] = 'เมื่อทำการอัปโหลดโฟลเดอร์ใหม่ในตัวจัดการไฟล์ซึ่งจะพยายามเปลี่ยนสิทธิ์การใช้งานโฟลเดอร์เหล่านั้นเป็นตามที่คุณป้อนในนี้ อาจจะไม่ทำงานบนบางการติดตั้ง เช่น IIS ซึ่งในกรณีนี้คุณจำเป็นต้องทำการกำหนดสิทธิ์เอง';
 
+$_lang['setting_package_installer_at_top'] = 'Pin Package-Installer at top';
+$_lang['setting_package_installer_at_top_desc'] = 'If enabled, the Installer entry will be pinned to the top of the Extras menu. Otherwise it will be positioned according to its menuindex.';
+
 $_lang['setting_parser_recurse_uncacheable'] = 'Delay Uncacheable Parsing';
 $_lang['setting_parser_recurse_uncacheable_desc'] = 'If disabled, uncacheable elements may have their output cached inside cacheable element content. Disable this ONLY if you are having problems with complex nested parsing which stopped working as expected.';
 
@@ -500,9 +530,6 @@ $_lang['setting_proxy_port_desc'] = 'พอร์ตสำหรับพร็�
 
 $_lang['setting_proxy_username'] = 'ชื่อผู้ใช้ของพร็อกซี';
 $_lang['setting_proxy_username_desc'] = 'ชื่อผู้ใช้เพื่อตรวจสอบพร็อกซีเซิร์ฟเวอร์ของคุณ';
-
-$_lang['setting_photo_profile_source'] = 'User photo Media Source';
-$_lang['setting_photo_profile_source_desc'] = 'The Media Source used to store users profiles photos. Defaults to default Media Source.';
 
 $_lang['setting_phpthumb_allow_src_above_docroot'] = 'อนุญาตให้แหล่งข้อมูล phpThumb อยู่เหนือรูทเอกสาร';
 $_lang['setting_phpthumb_allow_src_above_docroot_desc'] = 'บ่งชี้ว่าเส้นทางแหล่งข้อมูลถูกอนุญาตให้อยู่นอกรูทเอกสารหรือไม่ นี่จะมีประโยชน์สำหรับการใช้งานแบบหลายบริบทกับโฮสต์เสมือนหลายๆอัน';
@@ -630,10 +657,10 @@ $_lang['setting_session_cookie_httponly'] = 'Session Cookie HttpOnly';
 $_lang['setting_session_cookie_httponly_desc'] = 'Use this setting to set the HttpOnly flag on session cookies.';
 
 $_lang['setting_session_gc_maxlifetime'] = 'Session Garbage Collector Max Lifetime';
-$_lang['setting_session_gc_maxlifetime_desc'] = 'อนุญาตการปรับแต่งของ session.gc_maxlifetime ของการตั้งค่า PHP ini เมื่อใช้ \'modSessionHandler\'';
+$_lang['setting_session_gc_maxlifetime_desc'] = 'Allows customization of the session.gc_maxlifetime PHP ini setting when using \'MODX\\Revolution\\modSessionHandler\'.';
 
 $_lang['setting_session_handler_class'] = 'Session Handler Classname';
-$_lang['setting_session_handler_class_desc'] = 'สำหรับวาระจัดการฐานข้อมูลใช้ \'modSessionHandler\'  ปล่อยว่างไว้เพื่อใช้การจัดการวาระของ PHP แบบมาตรฐาน';
+$_lang['setting_session_handler_class_desc'] = 'For database managed sessions, use \'MODX\\Revolution\\modSessionHandler\'.  Leave this blank to use standard PHP session management.';
 
 $_lang['setting_session_name'] = 'ชื่อวาระ';
 $_lang['setting_session_name_desc'] = 'ใช้การตั้งค่านี้เพื่อกำหนดชื่อวาระสำหรับใช้ใน MODX';
@@ -738,17 +765,14 @@ $_lang['setting_upload_files_desc'] = 'คุณสามารถป้อน�
 $_lang['setting_upload_file_exists'] = 'Check if uploaded file exists';
 $_lang['setting_upload_file_exists_desc'] = 'When enabled an error will be shown when uploading a file that already exists with the same name. When disabled, the existing file will be quietly replaced with the new file.';
 
-$_lang['setting_upload_images'] = 'ประเภทรูปภาพที่สามารถอัปโหลดได้';
-$_lang['setting_upload_images_desc'] = 'คุณสามารถป้อนรายการของไฟล์ที่สามารถอัปโหลดไปยัง \'assets/images/\' โดยใช้ตัวจัดการรีซอร์ส กรุณาป้อนนามสกุลของประเภทรูปภาพคั่นด้วยจุลภาค';
-
 $_lang['setting_upload_maxsize'] = 'ขนาดอัปโหลดสูงสุด';
 $_lang['setting_upload_maxsize_desc'] = 'ป้อนขนาดไฟล์สูงสุดที่สามารถอัปโหลดผ่านทางตัวจัดการไฟล์ได้ ขนาดการอัปโหลดไฟล์ต้องป้อนในหน่วย byte <strong>หมายเหตุ: ไฟล์ขนาดใหญ่อาจใช้เวลาในการอัปโหลดนานมาก!</strong>';
 
-$_lang['setting_upload_media'] = 'ประเภทมีเดียที่สามารถอัปโหลดได้';
-$_lang['setting_upload_media_desc'] = 'คุณสามารถป้อนรายการของไฟล์ที่สามารถอัปโหลดไปยัง \'assets/media/\' โดยใช้ตัวจัดการรีซอร์ส กรุณาป้อนนามสกุลของประเภทมีเดียคั่นด้วยจุลภาค';
-
 $_lang['setting_upload_translit'] = 'Transliterate names of uploaded files?';
 $_lang['setting_upload_translit_desc'] = 'If this option is enabled, the name of an uploaded file will be transliterated according to the global transliteration rules.';
+
+$_lang['setting_upload_translit_restrict_chars_pattern'] = 'File Name Character Restriction Pattern';
+$_lang['setting_upload_translit_restrict_chars_pattern_desc'] = 'A valid RegEx pattern for restricting characters used in an uploaded file’s name.';
 
 $_lang['setting_use_alias_path'] = 'ใช้เส้นทาง Friendly Alias';
 $_lang['setting_use_alias_path_desc'] = 'การตั้งค่าตัวเลือกนี้เป็น \'ใช่\' จะเป็นการแสดงเส้นทางแบบเต็มของรีซอร์ส ถ้ารีซอร์สมี alias ตัวอย่าง ถ้ารีซอร์สมี alias เรียกว่า \'child\' อยู่ในตัวบรรจุรีซอร์สที่มี alias เรียกว่า \'parent\' ดังนั้นเส้นทางเต็มของ alias ไปยังรีซอร์สจะแสดงได้เป็น \'/parent/child.html\'<br /><strong>หมายเหตุ: เมื่อตั้งค่าตัวเลือกนี้เป็น \'ใช่\' (เปิดใช้เส้นทาง alias) การอ้างอิงถึงไอเท็ม (เช่น รูปภาพ css javascripts เป็นต้น) จะใช้เส้นทางสัมพัทธ์: เช่น \'/assets/images\' ไม่ใช่ \'assets/images\' โดยการทำอย่างนี้จะเป็นการป้องกันเบราว์เซอร์ (หรือเว็บเซิร์ฟเวอร์) จากการเติมท้ายเส้นทางสัมพัทธ์ของเส้นทาง alias</strong>';
@@ -809,7 +833,7 @@ $_lang['setting_error_log_filename'] = 'Error log filename';
 $_lang['setting_error_log_filename_desc'] = 'Customize the filename of the MODX error log file (includes file extension).';
 
 $_lang['setting_error_log_filepath'] = 'Error log path';
-$_lang['setting_error_log_filepath_desc'] = 'Optionally set a absolute path the a custom error log location. You might use placehodlers like {cache_path}.';
+$_lang['setting_error_log_filepath_desc'] = 'Optionally set a absolute path the a custom error log location. You might use placeholders like {cache_path}.';
 
 $_lang['setting_passwordless_activated'] = 'Activate passwordless login';
 $_lang['setting_passwordless_activated_desc'] = 'When enabled, users will enter their email address to receive a one-time login link, rather than entering a username and password.';

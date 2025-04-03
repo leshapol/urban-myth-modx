@@ -5,6 +5,8 @@ namespace MODX\Revolution;
 use MODX\Revolution\Registry\modDbRegister;
 use MODX\Revolution\Registry\modRegistry;
 use PDO;
+use ReflectionClass;
+use ReflectionException;
 use xPDO\Cache\xPDOCache;
 use xPDO\Cache\xPDOCacheManager;
 use xPDO\Om\xPDOCriteria;
@@ -46,9 +48,6 @@ use xPDO\xPDO;
  * @property int                        $publishedon           The UNIX time that this Resource was marked as published
  * @property int                        $publishedby           The User that published this Resource
  * @property string                     $menutitle             The title to show when this Resource is displayed in a menu
- * @property boolean                    $donthit               Deprecated.
- * @property boolean                    $privateweb            Deprecated.
- * @property boolean                    $privatemgr            Deprecated.
  * @property int                        $content_dispo         The type of Content Disposition that is used when displaying this Resource
  * @property boolean                    $hidemenu              Whether or not this Resource should show in menus
  * @property string                     $class_key             The Class Key of this Resource. Useful for derivative Resource types
@@ -488,7 +487,7 @@ class modResource extends modAccessibleSimpleObject implements modResourceInterf
                 }
             } else {
                 $this->_content = $this->getContent();
-                $maxIterations = intval($this->xpdo->getOption('parser_max_iterations', 10));
+                $maxIterations = intval($this->xpdo->getOption('parser_max_iterations', null, 10));
                 $this->xpdo->parser->processElementTags('', $this->_content, false, false, '[[', ']]', [],
                     $maxIterations);
                 $this->_processed = true;
@@ -899,7 +898,7 @@ class modResource extends modAccessibleSimpleObject implements modResourceInterf
      *
      * @param mixed $pk Either the ID of the TV, or the name of the TV.
      *
-     * @return null/mixed The value of the TV for the Resource, or null if the
+     * @return null|mixed The value of the TV for the Resource, or null if the
      * TV is not found.
      */
     public function getTVValue($pk)
@@ -1536,5 +1535,90 @@ class modResource extends modAccessibleSimpleObject implements modResourceInterf
         if ($this->xpdo instanceof modX) {
             $this->xpdo->invokeEvent('OnResourceCacheUpdate', ['id' => $this->get('id')]);
         }
+    }
+
+    /**
+     * Get icon classes for the resource, based on template, class_key, system settings, etc.
+     *
+     * @return array
+     */
+    public function getIconClasses()
+    {
+        try {
+            $reflectionClass = new ReflectionClass($this->get('class_key'));
+            $classKey = strtolower($reflectionClass->getShortName());
+        } catch (ReflectionException $e) {
+            $classKey = strtolower($this->get('class_key'));
+        }
+
+        if (substr($classKey, 0, 3) === 'mod') {
+            $classKey = substr($classKey, 3);
+        }
+
+        $iconCls = [];
+
+        $contentType = $this->getOne('ContentType');
+        if ($contentType && $contentType->get('icon')) {
+            $iconCls[] = $contentType->get('icon');
+        }
+
+        $template = $this->getOne('Template');
+        $tplIcon = '';
+        if ($template && $template->get('icon')) {
+            $tplIcon = $template->get('icon');
+            $iconCls[] = $template->get('icon');
+        }
+
+        $classKeyIcon = $this->xpdo->getOption('mgr_tree_icon_' . $classKey, null, 'tree-resource', true);
+        if (empty($iconCls)) {
+            $iconCls[] = $classKeyIcon;
+        }
+
+        switch ($classKey) {
+            case 'weblink':
+                $iconCls[] = $this->xpdo->getOption('mgr_tree_icon_weblink', null, 'tree-weblink');
+                break;
+
+            case 'symlink':
+                $iconCls[] = $this->xpdo->getOption('mgr_tree_icon_symlink', null, 'tree-symlink');
+                break;
+
+            case 'staticresource':
+                $iconCls[] = $this->xpdo->getOption('mgr_tree_icon_staticresource', null, 'tree-static-resource');
+                break;
+        }
+
+        // Icons specific with the context and resource ID for super specific tweaks
+        $iconCls[] = 'icon-' . $this->get('context_key') . '-' . $this->get('id');
+        $iconCls[] = 'icon-parent-' . $this->get('context_key') . '-' . $this->get('parent');
+
+        // Modifiers to indicate resource _state_
+        $childrenCount = $this->xpdo->getCount(modResource::class, ['parent' => $this->get('id')]);
+        if ($childrenCount > 0 || $this->isfolder) {
+            if (empty($tplIcon) && $classKeyIcon === 'tree-resource') {
+                $iconCls[] = $this->xpdo->getOption('mgr_tree_icon_folder', null, 'parent-resource');
+            }
+        }
+
+        return $iconCls;
+    }
+
+    public function getStatusClasses()
+    {
+        $classes = [];
+
+        if (!$this->get('published')) {
+            $classes[] = 'unpublished';
+        }
+
+        if ($this->get('deleted')) {
+            $classes[] = 'deleted';
+        }
+
+        if ($this->get('hidemenu')) {
+            $classes[] = 'hidemenu';
+        }
+
+        return $classes;
     }
 }

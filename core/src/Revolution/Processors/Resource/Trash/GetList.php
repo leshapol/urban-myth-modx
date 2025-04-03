@@ -1,4 +1,5 @@
 <?php
+
 /*
  * This file is part of MODX Revolution.
  *
@@ -10,10 +11,11 @@
 
 namespace MODX\Revolution\Processors\Resource\Trash;
 
+use MODX\Revolution\Formatter\modManagerDateFormatter;
 use MODX\Revolution\modContext;
-use MODX\Revolution\Processors\Model\GetListProcessor;
 use MODX\Revolution\modResource;
 use MODX\Revolution\modUser;
+use MODX\Revolution\Processors\Model\GetListProcessor;
 use PDO;
 use xPDO\Om\xPDOObject;
 use xPDO\Om\xPDOQuery;
@@ -38,12 +40,27 @@ class GetList extends GetListProcessor
 
     public $permission = 'view';
 
+    private modManagerDateFormatter $formatter;
+
+    public function initialize()
+    {
+        $this->formatter = $this->modx->services->get(modManagerDateFormatter::class);
+        return parent::initialize();
+    }
+
     /**
      * @param xPDOQuery $c
      * @return xPDOQuery
      */
     public function prepareQueryBeforeCount(xPDOQuery $c)
     {
+        if ($deleted = $this->getDeleted()) {
+            $c->where(['modResource.id:IN' => $deleted]);
+        } else {
+            $c->where(['modResource.id' => 0]);
+            return $c;
+        }
+
         $query = $this->getProperty('query');
         $context = $this->getProperty('context');
 
@@ -56,25 +73,28 @@ class GetList extends GetListProcessor
         $c->leftJoin(modUser::class, 'User', 'modResource.deletedby = User.id');
         $c->leftJoin(modContext::class, 'Context', 'modResource.context_key = Context.key');
 
-        // TODO add only resources if we have the save permission here (on the context!!)
-        // we need the following permissions:
-        // undelete_document - to restore the document
-        // delete_document - thats perhaps not necessary, because all documents are already deleted
-        // but we need the purge_deleted permission - for every single file
-
-        if (!empty($query)) {
-            $c->where(['modResource.pagetitle:LIKE' => '%' . $query . '%']);
-            $c->orCondition(['modResource.longtitle:LIKE' => '%' . $query . '%']);
-        }
-        if (!empty($context)) {
-            $c->where(['modResource.context_key' => $context]);
-        }
+        /*
+            TODO:
+            Add only resources if we have the save permission here (on the context!!)
+            we need the following permissions:
+                undelete_document - to restore the document
+                delete_document - that's perhaps not necessary, because all documents are already deleted
+                but we need the purge_deleted permission - for every single file
+        */
         if ($deleted = $this->getDeleted()) {
             $c->where(['modResource.id:IN' => $deleted]);
         } else {
             $c->where(['modResource.id:IN' => 0]);
         }
-
+        if (!empty($query)) {
+            $c->where([
+                'modResource.pagetitle:LIKE' => '%' . $query . '%',
+                'OR:modResource.longtitle:LIKE' => '%' . $query . '%'
+            ]);
+        }
+        if (!empty($context)) {
+            $c->where(['modResource.context_key' => $context]);
+        }
         return $c;
     }
 
@@ -88,7 +108,13 @@ class GetList extends GetListProcessor
         if ($c->prepare() && $c->stmt->execute()) {
             $resources = $c->stmt->fetchAll(PDO::FETCH_ASSOC);
         }
-
+        /*
+            TODO:
+            Filter out resources where user does not have at least one of the permissions
+            applicable to the actions available in the trash manager:
+            1. undelete_document - restore resource
+            2. purge_deleted - permanently destroy resource
+        */
         $deleted = [];
         foreach ($resources as $resource) {
             $deleted[] = (int)$resource['id'];
@@ -108,7 +134,9 @@ class GetList extends GetListProcessor
         // this is a strange workaround: obviously we can access the resources even if we don't have access to the context! Check that
         // TODO check if that is the same for resource groups
         $context = $this->modx->getContext($object->get('context_key'));
-        if (!$context) return [];
+        if (!$context) {
+            return [];
+        }
 
         $charset = $this->modx->getOption('modx_charset', null, 'UTF-8');
         $objectArray = $object->toArray();
@@ -126,17 +154,16 @@ class GetList extends GetListProcessor
             if ($parentObject) {
                 $parents[] = $parentObject;
                 $parent = $parentObject->get('parent');
-            }
-            else {
+            } else {
                 break;
             }
         }
 
-        $parentPath = "";
+        $parentPath = '';
         foreach ($parents as $parent) {
-            $parentPath = $parent->get('pagetitle') . " (" . $parent->get('id') . ") > " . $parentPath;
+            $parentPath = $parent->get('pagetitle') . ' (' . $parent->get('id') . ') > ' . $parentPath;
         }
-        $objectArray['parentPath'] = "[" . $objectArray['context_key'] . "] " . $parentPath;
+        $objectArray['parentPath'] = '[' . $objectArray['context_key'] . '] ' . $parentPath;
 
         //  TODO implement permission checks for every resource and return only resources user is allowed to see
 
@@ -173,6 +200,8 @@ class GetList extends GetListProcessor
         $cls[] = 'trashrow';
 
         $objectArray['cls'] = implode(' ', $cls);
+
+        $objectArray['deletedon'] = $this->formatter->formatDateTime($objectArray['deletedon']);
 
         return $objectArray;
     }

@@ -62,6 +62,8 @@ $_lang['imageExtensions'] = 'imageExtensions';
 $_lang['prop_file.imageExtensions_desc'] = 'Список розширень файлів через кому, які є зображеннями. MODX намагатиметься робити попередній перегляд для файлів з цими розширеннями.';
 $_lang['skipFiles'] = 'skipFiles (ігнорувати файли) ';
 $_lang['prop_file.skipFiles_desc'] = 'Список через кому. MODX пропускатиме і приховуватиме файли та каталоги, які відповідають цим маскам.';
+$_lang['skipExtensions'] = 'skipExtensions';
+$_lang['prop_file.skipExtensions'] = 'Список розширень через кому. MODX не буде показувати файли, що відповідають цьому.';
 $_lang['thumbnailQuality'] = 'thumbnailQuality (якість мініатюр)';
 $_lang['prop_file.thumbnailQuality_desc'] = 'Якість створюваних зображень попереднього перегляду, в діапазоні 0-100.';
 $_lang['thumbnailType'] = 'thumbnailType (формат мініатюр) ';
@@ -82,6 +84,7 @@ $_lang['prop_s3.url_desc'] = 'URL сховища Amazon S3.';
 $_lang['prop_s3.endpoint_desc'] = 'Альтернативний URL кінцевої точки S3-, наприклад, "https://s3.<region>.example.com". Перегляньте документацію S3-сумісного провайдера для кінцевої точки. Залиште порожнім для Amazon S3';
 $_lang['prop_s3.region_desc'] = 'Регіон сховища, наприклад: us-west-1 ';
 $_lang['prop_s3.prefix_desc'] = 'Необов\'язковий префікс шляху/папки';
+$_lang['prop_s3.no_check_bucket_desc'] = 'Якщо встановлено, не намагайтеся перевірити наявність сховища. Це може бути необхідно, якщо ключ доступу, який ви використовуєте, не має прав на створення/список сховищ.';
 $_lang['s3_no_move_folder'] = 'На даний момент драйвер S3 не підтримує переміщення каталогів.';
 
 /* ftp source type */
@@ -99,3 +102,4 @@ $_lang['prop_ftp.timeout_desc'] = 'Час очікування для з\'єдн
 $_lang['PNG'] = 'PNG';
 $_lang['JPG'] = 'JPG';
 $_lang['GIF'] = 'GIF';
+$_lang['WebP'] = 'WebP';
