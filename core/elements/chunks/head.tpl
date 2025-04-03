@@ -110,4 +110,22 @@
     ></iframe
   ></noscript>
   <!-- End Google Tag Manager (noscript) -->
+
+  <!-- OpenGraph -->
+  <meta property="og:locale" content="en_Us" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="[[++site_name]]" />
+  <meta property="og:title" content="[[*pagetitle]]" />
+  <meta property="og:description" content="[[*description]]" />
+  <meta property="og:image" content="[[!++site_url]][[*hero-img]]" />
+  <meta property="og:url" content="[[~[[*id]]? &scheme=`full`]]" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@urbanmyth" />
+  <meta name="twitter:creator" content="@urbanmyth" />
+  <meta property="twitter:title" content="[[*pagetitle]]" />
+  <meta name="twitter:description" content="[[*description]]" />
+  <meta property="twitter:image" content="[[!++site_url]][[*hero-img]]" />
+  <meta property="twitter:url" content="[[~[[*id]]? &scheme=`full`]]" />
 </head>
