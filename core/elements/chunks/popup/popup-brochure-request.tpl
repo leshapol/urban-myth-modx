@@ -1,8 +1,6 @@
-<p class="popup__title">Brochure request</p>
+<p class="popup__title">Let's Bring Your Project to Life!</p>
 <p class="popup__text">
-  With one of the most diverse ranges of kitchens available in the industry we
-  have produced this brochure to give you more inspiration about the work we can
-  do.
+Share a few details with us, and we’ll send you a link to our brochure full of design inspiration and everything you need to know about our service.
 </p>
 
 [[$brochure-form]]

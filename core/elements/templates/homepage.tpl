@@ -172,7 +172,7 @@
                 </li>
               ` ]]
             </ul>
-            <a href="[[~6]]" class="awards__link button button_small">learn more</a>
+            <a href="[[~241]]" class="awards__link button button_small">learn more</a>
           </div>
         </section>
 

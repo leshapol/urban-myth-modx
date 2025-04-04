@@ -46,22 +46,24 @@
     />
   </label>
 
-  <label>Urgency </label>
-  <select id="fielddtsfj" name="cm-fo-dtsfj" class="select form__input" value="">
-    <option disabled="" selected="" value="">Select...</option>
-    <option value="2202563">In the next few weeks</option>
-    <option value="2202564">In the next 6 months</option>
-    <option value="2202565">Just researching the market</option>
-  </select>
+  <label class="form__label form__label_select">
+    <select class="_select" id="fielddtsfj" name="cm-fo-dtsfj" >
+      <option selected="" value="">I am starting my project...</option>
+      <option value="2202563">In the next few weeks</option>
+      <option value="2202564">In the next 6 months</option>
+      <option value="2202565">Just researching the market</option>
+    </select>
+  </label>
 
-  <label>Budget</label>
-  <select id="fielddtsft" name="cm-fo-dtsft" class="select form__input" value="">
-    <option disabled="" selected="" value="">Select...</option>
-    <option value="2202566">£20-£30K</option>
+  <label class="form__label form__label_select">
+    <select class="_select" id="fielddtsft" name="cm-fo-dtsft"  >
+      <option selected="" value="">My budget is...</option>
+      <option value="2202566">£20-£30K</option>
     <option value="2202567">£30-£40K</option>
     <option value="2202568">£40+</option>
     <option value="2202569">I don’t know</option>
-  </select>
+    </select>
+  </label>
 
   <div class="form__privacy">
     <label class="form__label-privacy">
