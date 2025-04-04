@@ -1541,7 +1541,7 @@ class mSearch2 {
 				'revolution_version' => $this->modx->version['code_name'].'-'.$this->modx->version['full_version'],
 				'supports' => $this->modx->version['code_name'].'-'.$this->modx->version['full_version'],
 				'http_host' => $this->modx->getOption('http_host'),
-				'php_version' => XPDO_PHP_VERSION,
+				'php_version' => "8.1",
 				'language' => $this->modx->getOption('manager_language'),
 			));
 			$this->modx->setLogLevel($level);
