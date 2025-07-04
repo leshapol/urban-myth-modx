@@ -101,6 +101,6 @@
     value="Send"
   />
 
-  [[!rcv3_html? &action=`[[+rcv3Action:default=``]]`
+  [[!rcv3_html? &action=`contactForm`
   &error=`[[+fi.error.g-recaptcha-response]]`]]
 </form>

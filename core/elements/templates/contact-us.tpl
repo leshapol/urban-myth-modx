@@ -15,7 +15,11 @@
 
           <div class="contact__body container">
             <div>
-              [[$formit]] [[$contact-form]]
+              [[$formit?
+              &hooks=`rcv3,email`
+              &rcv3.action=`contactForm`
+              ]] 
+              [[$contact-form]]
               <div class="contact__big-title">
                 <h2>Showroom Opening hours</h2>
                 <div class="contact__text-block">
