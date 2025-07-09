@@ -16,8 +16,7 @@
           <div class="contact__body container">
             <div>
               [[$formit?
-              &hooks=`rcv3,email`
-              &rcv3.action=`contactForm`
+              &hooks=`email`
               ]] 
               [[$contact-form]]
               <div class="contact__big-title">
