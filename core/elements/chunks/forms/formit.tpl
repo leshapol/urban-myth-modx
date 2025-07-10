@@ -3,7 +3,7 @@
   &emailUseFieldForSubject=`1`
   &emailSubject=`Email From Website` 
   &emailTo=`[[+email-to:is=``:then=`[[++email-to]]`:else=`[[+email-to]]`]]`
-  &emailCC=`[[++email-bcc]]`
+  &emailBCC=`[[++email-bcc]]`
   &emailFrom=`[[++emailsender]]`
   &emailReplyTo=`[[++emailsender]]`
   &redirectTo=`126`
