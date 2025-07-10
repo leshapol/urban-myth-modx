@@ -78,7 +78,7 @@ class FetchIt
 
     public function registerScript()
     {
-        if (!$_SESSION['fetchit_called']) {
+        if (!isset($_SESSION['fetchit_called']) || !$_SESSION['fetchit_called']) {
             return;
         }
 
