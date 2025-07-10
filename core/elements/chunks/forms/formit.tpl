@@ -1,5 +1,5 @@
 [[!FormIt? 
-  &hooks=`[[+no-rc:isempty=`rcv3,`]]FormItSaveForm,email,redirect`
+  &hooks=`[[+no-rc:is=``:then=`rcv3,`]]FormItSaveForm,email,redirect`
   &emailUseFieldForSubject=`1`
   &emailSubject=`Email From Website` 
   &emailTo=`[[+email-to:is=``:then=`[[++email-to]]`:else=`[[+email-to]]`]]`
