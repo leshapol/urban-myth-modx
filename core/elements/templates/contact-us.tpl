@@ -15,9 +15,7 @@
 
           <div class="contact__body container">
             <div>
-              [[$formit?
-              &hooks=`email`
-              ]] 
+              [[$formit? &no-rc=`1`]] 
               [[$contact-form]]
               <div class="contact__big-title">
                 <h2>Showroom Opening hours</h2>

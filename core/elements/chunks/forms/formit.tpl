@@ -1,9 +1,11 @@
 [[!FormIt? 
-  &hooks=`rcv3,FormItSaveForm,email,redirect`
+  &hooks=`[[+no-rc:is=``:then=`rcv3`]],FormItSaveForm,email,redirect`
   &emailUseFieldForSubject=`1`
   &emailSubject=`Email From Website` 
   &emailTo=`[[+email-to:is=``:then=`[[++email-to]]`:else=`[[+email-to]]`]]`
+  &emaiBCC=`[[++email-bcc]]`
   &emailFrom=`[[++emailsender]]`
+  &emailReplyTo=`[[++emailsender]]`
   &redirectTo=`126`
   &validate=`name:required,email:required,accept:required`
   &emailTpl=`email-chunk`
