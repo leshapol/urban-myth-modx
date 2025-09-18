@@ -43,6 +43,7 @@
       id="fielddylrdkj"
       maxlength="200"
       name="cm-f-dylrdkj"
+      required
     />
   </label>
 
