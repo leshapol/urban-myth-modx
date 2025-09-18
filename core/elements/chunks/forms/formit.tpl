@@ -12,4 +12,5 @@
   &submitVar=`[[+submit-var:is=``:then=`contact-form`:else=`[[+submit-var]]`]]`
   &validationErrorMessage=`The form contains errors!`
   &successMessage=`Message sent successfully`
+  &formName=`*`
 ]] 

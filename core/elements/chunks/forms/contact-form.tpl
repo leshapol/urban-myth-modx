@@ -3,6 +3,7 @@
 `]]
 
 <form action="[[~[[*id]]]]" class="popup__form form" method="post">
+  <input type="hidden" name="formname" value="[[+formname:default=`popup-contact-form`]]" />
   [[+subject:ne=`0`:then=` [[+text-subject:is=`1`:then=`
   <label class="form__label">
     <input

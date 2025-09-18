@@ -4,6 +4,10 @@
       <h2 class="form-section__title section-title">[[+title]]</h2>
       <div class="form-section__description section-text">[[+description]]</div>
     </div>
-    <div class="form-section__form-block">[[$section-form]]</div>
+    <div class="form-section__form-block">
+      [[+form:is=`brochure`:then=`[[$brochure-form]]`]]
+      [[+form:is=`contact`:then=`[[$contact-form? &submit-var=`book-form` &formname=`section-contact-form`]]`]]
+      [[+form:is=`newsletter`:then=`[[$newsletter-form]]`]]
+    </div>
   </div>
 </section>

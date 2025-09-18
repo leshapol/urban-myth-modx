@@ -116,7 +116,7 @@
             E4 8QF <br /><br />
             <strong>Showroom Opening hours</strong><br /><br />
             Monday to Friday 9am - 5pm & evenings by appointment<br />
-            Saturday 10am - 3pm<br />
+            Saturday 10am - 5pm<br />
             Closed Sundays & Bank holidays
           </div>
         </div>

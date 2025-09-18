@@ -34,7 +34,7 @@ function select_init(select) {
   const select_modifikator = select.getAttribute("class");
   const select_selected_option = select.querySelector("option:checked");
   select.setAttribute("data-default", select_selected_option.value);
-  select.style.display = "none";
+  //select.style.display = "none";
 
   select_parent.insertAdjacentHTML(
     "beforeend",

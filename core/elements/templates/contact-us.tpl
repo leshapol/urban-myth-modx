@@ -21,7 +21,7 @@
                 <h2>Showroom Opening hours</h2>
                 <div class="contact__text-block">
                   <p>Monday to Friday 9 - 5pm & evenings by appointment</p>
-                  <p>Saturday 10 - 3pm</p>
+                  <p>Saturday 10am - 5pm</p>
                   <p>Closed Sundays & Bank holidays</p>
                 </div>
               </div>

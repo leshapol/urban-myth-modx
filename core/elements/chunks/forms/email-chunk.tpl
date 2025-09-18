@@ -3,7 +3,7 @@
   [[+name]] ([[+email]]) <br />
   Wrote:
 </p>
-
+<p>Subject: [[+subject]]</p>
 <p>[[+message]]</p>
 
 <p>Their phone number is [[+phone]]</p>
