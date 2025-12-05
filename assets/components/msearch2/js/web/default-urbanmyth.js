@@ -1183,7 +1183,7 @@ var mSearch2 = {
       .removeClass(this.options.disabled_class);
 
     var params = this.Hash.get();
-    console.log(params);
+    //console.log(params);
     $(".card__link").each(function () {
       var url = $(this).attr("href");
       if (params.style) {
