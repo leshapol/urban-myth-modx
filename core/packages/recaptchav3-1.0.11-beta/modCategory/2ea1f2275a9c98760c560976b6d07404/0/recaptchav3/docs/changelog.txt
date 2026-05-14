@@ -1,0 +1,5 @@
+Changelog for reCaptchaV3.
+
+1.0.0-beta
+==============
+- Release
