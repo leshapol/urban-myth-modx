@@ -1,0 +1,11 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => false,
+  'vehicle_class' => 'xPDO\\Transport\\xPDOObjectVehicle',
+  'guid' => 'a911494feb573dbbc3297a39b226d638',
+  'package' => '',
+  'class' => 'MODX\\Revolution\\modSystemSetting',
+  'signature' => '38bc7d03bc3f9033cf812ef773c194a6',
+  'native_key' => 'site_status',
+  'object' => '{"key":"site_status","value":true,"xtype":"combo-boolean","namespace":"core","area":"site","editedon":null}',
+);

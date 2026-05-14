@@ -1,0 +1,15 @@
+<?php return array (
+  'preserve_keys' => false,
+  'unique_key' => 
+  array (
+    0 => 'name',
+  ),
+  'update_object' => true,
+  'vehicle_class' => 'xPDO\\Transport\\xPDOObjectVehicle',
+  'guid' => '005a9b9ac8f6fe4bb0b15494544520af',
+  'package' => '',
+  'class' => 'MODX\\Revolution\\modAccessPolicy',
+  'signature' => '0d2e1aa555b431fd0ea1e6c70bafcc31',
+  'native_key' => 8,
+  'object' => '{"id":8,"name":"Media Source Admin","description":"policy_media_source_admin_desc","parent":0,"template":0,"class":"","data":"{\\"create\\":true,\\"copy\\":true,\\"load\\":true,\\"list\\":true,\\"save\\":true,\\"remove\\":true,\\"view\\":true}","lexicon":"permissions"}',
+);

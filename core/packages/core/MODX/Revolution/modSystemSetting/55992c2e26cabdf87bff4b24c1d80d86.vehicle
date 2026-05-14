@@ -1,0 +1,11 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => false,
+  'vehicle_class' => 'xPDO\\Transport\\xPDOObjectVehicle',
+  'guid' => 'c591b0dcac033e5a065b373a0f7a8c79',
+  'package' => '',
+  'class' => 'MODX\\Revolution\\modSystemSetting',
+  'signature' => '55992c2e26cabdf87bff4b24c1d80d86',
+  'native_key' => 'container_suffix',
+  'object' => '{"key":"container_suffix","value":"\\/","xtype":"textfield","namespace":"core","area":"furls","editedon":null}',
+);

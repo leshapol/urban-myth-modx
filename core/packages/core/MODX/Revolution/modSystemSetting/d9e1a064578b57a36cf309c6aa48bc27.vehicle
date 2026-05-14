@@ -1,0 +1,11 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => false,
+  'vehicle_class' => 'xPDO\\Transport\\xPDOObjectVehicle',
+  'guid' => 'cac38f4bec60b85f82501d2ec0bd4fae',
+  'package' => '',
+  'class' => 'MODX\\Revolution\\modSystemSetting',
+  'signature' => 'd9e1a064578b57a36cf309c6aa48bc27',
+  'native_key' => 'static_elements_automate_tvs',
+  'object' => '{"key":"static_elements_automate_tvs","value":false,"xtype":"combo-boolean","namespace":"core","area":"static_elements","editedon":null}',
+);

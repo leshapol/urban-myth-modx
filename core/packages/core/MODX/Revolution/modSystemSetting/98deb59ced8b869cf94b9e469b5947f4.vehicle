@@ -1,0 +1,11 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => false,
+  'vehicle_class' => 'xPDO\\Transport\\xPDOObjectVehicle',
+  'guid' => '2c31db7aa02d93aea7138b52eb4a6d30',
+  'package' => '',
+  'class' => 'MODX\\Revolution\\modSystemSetting',
+  'signature' => '98deb59ced8b869cf94b9e469b5947f4',
+  'native_key' => 'access_resource_group_enabled',
+  'object' => '{"key":"access_resource_group_enabled","value":true,"xtype":"combo-boolean","namespace":"core","area":"authentication","editedon":null}',
+);

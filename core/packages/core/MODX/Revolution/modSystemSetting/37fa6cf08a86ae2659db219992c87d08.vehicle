@@ -1,0 +1,11 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => false,
+  'vehicle_class' => 'xPDO\\Transport\\xPDOObjectVehicle',
+  'guid' => 'a0787901b2221c4e2e719341174afbd9',
+  'package' => '',
+  'class' => 'MODX\\Revolution\\modSystemSetting',
+  'signature' => '37fa6cf08a86ae2659db219992c87d08',
+  'native_key' => 'modx_charset',
+  'object' => '{"key":"modx_charset","value":"UTF-8","xtype":"modx-combo-charset","namespace":"core","area":"language","editedon":null}',
+);

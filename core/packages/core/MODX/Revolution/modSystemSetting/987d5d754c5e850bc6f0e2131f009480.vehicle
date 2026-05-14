@@ -1,0 +1,11 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => false,
+  'vehicle_class' => 'xPDO\\Transport\\xPDOObjectVehicle',
+  'guid' => 'a1367f86f5da05dc676ad59b58ccbc11',
+  'package' => '',
+  'class' => 'MODX\\Revolution\\modSystemSetting',
+  'signature' => '987d5d754c5e850bc6f0e2131f009480',
+  'native_key' => 'cache_resource',
+  'object' => '{"key":"cache_resource","value":true,"xtype":"combo-boolean","namespace":"core","area":"caching","editedon":null}',
+);

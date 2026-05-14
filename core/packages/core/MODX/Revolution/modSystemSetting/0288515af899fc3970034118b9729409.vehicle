@@ -1,0 +1,11 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => false,
+  'vehicle_class' => 'xPDO\\Transport\\xPDOObjectVehicle',
+  'guid' => '4e98e5768c187ff8fd9fdaf6ff4e2f8e',
+  'package' => '',
+  'class' => 'MODX\\Revolution\\modSystemSetting',
+  'signature' => '0288515af899fc3970034118b9729409',
+  'native_key' => 'manager_favicon_url',
+  'object' => '{"key":"manager_favicon_url","value":"favicon.ico","xtype":"textfield","namespace":"core","area":"manager","editedon":null}',
+);

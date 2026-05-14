@@ -1,0 +1,15 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => true,
+  'unique_key' => 
+  array (
+    0 => 'id',
+  ),
+  'vehicle_class' => 'xPDO\\Transport\\xPDOObjectVehicle',
+  'guid' => '50deb98e3ebb6b4c6ac81c423b586fe0',
+  'package' => '',
+  'class' => 'MODX\\Revolution\\modDashboard',
+  'signature' => '96ade93c23e19881f4615dffa8b92899',
+  'native_key' => 1,
+  'object' => '{"id":1,"name":"Default","description":"","hide_trees":0,"customizable":1}',
+);

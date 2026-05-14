@@ -1,0 +1,11 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => false,
+  'vehicle_class' => 'xPDO\\Transport\\xPDOObjectVehicle',
+  'guid' => '765775656dd154cb5ea25de5bb89e3d9',
+  'package' => '',
+  'class' => 'MODX\\Revolution\\modSystemSetting',
+  'signature' => '5f4f1c5fe8b22ee36d8c4f78a3d8872a',
+  'native_key' => 'friendly_alias_translit_class_path',
+  'object' => '{"key":"friendly_alias_translit_class_path","value":"{core_path}components\\/","xtype":"textfield","namespace":"core","area":"furls","editedon":null}',
+);

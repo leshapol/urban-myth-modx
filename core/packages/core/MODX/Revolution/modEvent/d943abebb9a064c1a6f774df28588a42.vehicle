@@ -1,0 +1,11 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => true,
+  'vehicle_class' => 'xPDO\\Transport\\xPDOObjectVehicle',
+  'guid' => '8c67a9fa9b2bdbde1d8bae4edea74db0',
+  'package' => '',
+  'class' => 'MODX\\Revolution\\modEvent',
+  'signature' => 'd943abebb9a064c1a6f774df28588a42',
+  'native_key' => 'OnContextBeforeSave',
+  'object' => '{"name":"OnContextBeforeSave","service":1,"groupname":"Contexts"}',
+);

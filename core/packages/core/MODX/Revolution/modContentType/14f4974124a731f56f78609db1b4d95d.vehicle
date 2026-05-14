@@ -1,0 +1,12 @@
+<?php return array (
+  'preserve_keys' => false,
+  'update_object' => false,
+  'unique_key' => 'mime_type',
+  'vehicle_class' => 'xPDO\\Transport\\xPDOObjectVehicle',
+  'guid' => 'b9a97300b4a02fb1de94105b04658bcd',
+  'package' => '',
+  'class' => 'MODX\\Revolution\\modContentType',
+  'signature' => '14f4974124a731f56f78609db1b4d95d',
+  'native_key' => 3,
+  'object' => '{"id":3,"name":"Text","description":"Plain text content","mime_type":"text\\/plain","file_extensions":".txt","icon":"icon-txt","headers":"NULL","binary":0}',
+);

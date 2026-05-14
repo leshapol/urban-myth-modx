@@ -1,0 +1,11 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => false,
+  'vehicle_class' => 'xPDO\\Transport\\xPDOObjectVehicle',
+  'guid' => 'a32dfd56ff620be9277fba1073c519f6',
+  'package' => '',
+  'class' => 'MODX\\Revolution\\modSystemSetting',
+  'signature' => '58042b71b466b3c4ed938ea82487a379',
+  'native_key' => 'default_per_page',
+  'object' => '{"key":"default_per_page","value":"20","xtype":"textfield","namespace":"core","area":"manager","editedon":null}',
+);

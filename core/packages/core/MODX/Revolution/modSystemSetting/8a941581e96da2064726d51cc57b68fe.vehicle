@@ -1,0 +1,11 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => false,
+  'vehicle_class' => 'xPDO\\Transport\\xPDOObjectVehicle',
+  'guid' => '8d0a5c61fb34e9565d8a6cd77640beb4',
+  'package' => '',
+  'class' => 'MODX\\Revolution\\modSystemSetting',
+  'signature' => '8a941581e96da2064726d51cc57b68fe',
+  'native_key' => 'modx_browser_default_sort',
+  'object' => '{"key":"modx_browser_default_sort","value":"name","xtype":"textfield","namespace":"core","area":"manager","editedon":null}',
+);

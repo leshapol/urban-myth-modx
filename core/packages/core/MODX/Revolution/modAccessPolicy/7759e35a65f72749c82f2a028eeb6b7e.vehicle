@@ -1,0 +1,15 @@
+<?php return array (
+  'preserve_keys' => false,
+  'unique_key' => 
+  array (
+    0 => 'name',
+  ),
+  'update_object' => true,
+  'vehicle_class' => 'xPDO\\Transport\\xPDOObjectVehicle',
+  'guid' => 'b499b68d7fc2b43deb626a6cde3653a2',
+  'package' => '',
+  'class' => 'MODX\\Revolution\\modAccessPolicy',
+  'signature' => '7759e35a65f72749c82f2a028eeb6b7e',
+  'native_key' => 9,
+  'object' => '{"id":9,"name":"Media Source User","description":"policy_media_source_user_desc","parent":0,"template":0,"class":"","data":"{\\"load\\":true,\\"list\\":true,\\"view\\":true}","lexicon":"permissions"}',
+);

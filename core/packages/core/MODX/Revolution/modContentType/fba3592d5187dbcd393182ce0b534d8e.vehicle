@@ -1,0 +1,12 @@
+<?php return array (
+  'preserve_keys' => false,
+  'update_object' => false,
+  'unique_key' => 'mime_type',
+  'vehicle_class' => 'xPDO\\Transport\\xPDOObjectVehicle',
+  'guid' => '63e21ae81af86625fc1e66faeb8e08a5',
+  'package' => '',
+  'class' => 'MODX\\Revolution\\modContentType',
+  'signature' => 'fba3592d5187dbcd393182ce0b534d8e',
+  'native_key' => 4,
+  'object' => '{"id":4,"name":"CSS","description":"CSS content","mime_type":"text\\/css","file_extensions":".css","icon":"icon-css","headers":"NULL","binary":0}',
+);

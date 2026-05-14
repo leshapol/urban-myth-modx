@@ -1,0 +1,15 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => false,
+  'unique_key' => 
+  array (
+    0 => 'id',
+  ),
+  'vehicle_class' => 'xPDO\\Transport\\xPDOObjectVehicle',
+  'guid' => 'd138598e33677a1ca291678073bd7823',
+  'package' => '',
+  'class' => 'MODX\\Revolution\\Sources\\modMediaSource',
+  'signature' => 'db8c68c68d14257c204779ce5c446aee',
+  'native_key' => 1,
+  'object' => '{"id":1,"name":"Filesystem","description":"","class_key":"MODX\\\\Revolution\\\\Sources\\\\modFileMediaSource","properties":"a:0:{}","is_stream":1}',
+);

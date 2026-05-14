@@ -1,0 +1,11 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => true,
+  'vehicle_class' => 'xPDO\\Transport\\xPDOObjectVehicle',
+  'guid' => 'fca6f19a80ca25e75eb07337b65bb9fc',
+  'package' => '',
+  'class' => 'MODX\\Revolution\\modEvent',
+  'signature' => '2eb5da6bec834120851adba7ed66b367',
+  'native_key' => 'OnPluginBeforeSave',
+  'object' => '{"name":"OnPluginBeforeSave","service":1,"groupname":"Plugins"}',
+);

@@ -1,0 +1,11 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => false,
+  'vehicle_class' => 'xPDO\\Transport\\xPDOObjectVehicle',
+  'guid' => 'a98c69b1266392f0e9c734f47f4c1528',
+  'package' => '',
+  'class' => 'MODX\\Revolution\\modSystemSetting',
+  'signature' => 'f252075a235d668c8107bcf7cc5a8e8a',
+  'native_key' => 'session_name',
+  'object' => '{"key":"session_name","value":"","xtype":"textfield","namespace":"core","area":"session","editedon":null}',
+);

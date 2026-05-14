@@ -1,0 +1,15 @@
+<?php return array (
+  'preserve_keys' => false,
+  'update_object' => false,
+  'unique_key' => 
+  array (
+    0 => 'name',
+  ),
+  'vehicle_class' => 'xPDO\\Transport\\xPDOObjectVehicle',
+  'guid' => 'c7b969d13ae80cc5b62b17b3065f493d',
+  'package' => '',
+  'class' => 'MODX\\Revolution\\modDashboardWidget',
+  'signature' => 'ec92ee234c0ef0a9aa63d439e91c4b3b',
+  'native_key' => NULL,
+  'object' => '{"id":null,"name":"w_securityfeed","description":"w_securityfeed_desc","type":"file","content":"[[++manager_path]]controllers\\/default\\/dashboard\\/widget.modx-security.php","properties":null,"namespace":"core","lexicon":"core:dashboards","size":"one-third","permission":""}',
+);

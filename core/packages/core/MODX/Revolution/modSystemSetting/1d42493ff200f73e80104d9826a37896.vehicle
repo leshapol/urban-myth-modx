@@ -1,0 +1,11 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => false,
+  'vehicle_class' => 'xPDO\\Transport\\xPDOObjectVehicle',
+  'guid' => 'b93c650f4a56f804cca71d1923402498',
+  'package' => '',
+  'class' => 'MODX\\Revolution\\modSystemSetting',
+  'signature' => '1d42493ff200f73e80104d9826a37896',
+  'native_key' => 'manager_login_url_alternate',
+  'object' => '{"key":"manager_login_url_alternate","value":"","xtype":"textfield","namespace":"core","area":"authentication","editedon":null}',
+);

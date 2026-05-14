@@ -1,0 +1,11 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => false,
+  'vehicle_class' => 'xPDO\\Transport\\xPDOObjectVehicle',
+  'guid' => 'a25a226d864477bd313eb50dac54dbbe',
+  'package' => '',
+  'class' => 'MODX\\Revolution\\modSystemSetting',
+  'signature' => '447fa376f9bcb51bab25d0738ee07e86',
+  'native_key' => 'topmenu_show_descriptions',
+  'object' => '{"key":"topmenu_show_descriptions","value":true,"xtype":"combo-boolean","namespace":"core","area":"manager","editedon":null}',
+);

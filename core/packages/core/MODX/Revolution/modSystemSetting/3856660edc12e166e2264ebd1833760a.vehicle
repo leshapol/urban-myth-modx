@@ -1,0 +1,11 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => false,
+  'vehicle_class' => 'xPDO\\Transport\\xPDOObjectVehicle',
+  'guid' => '886fc909cad594835ed17e29a10abd89',
+  'package' => '',
+  'class' => 'MODX\\Revolution\\modSystemSetting',
+  'signature' => '3856660edc12e166e2264ebd1833760a',
+  'native_key' => 'mail_inlinestyle_inline',
+  'object' => '{"key":"mail_inlinestyle_inline","value":true,"xtype":"combo-boolean","namespace":"core","area":"mail","editedon":null}',
+);

@@ -1,0 +1,11 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => false,
+  'vehicle_class' => 'xPDO\\Transport\\xPDOObjectVehicle',
+  'guid' => 'aba3c5fa88c83278b9ce1acc8ccf9a2b',
+  'package' => '',
+  'class' => 'MODX\\Revolution\\modSystemSetting',
+  'signature' => '69e21b545f44391c2514fddff684b832',
+  'native_key' => 'phpthumb_allow_src_above_docroot',
+  'object' => '{"key":"phpthumb_allow_src_above_docroot","value":false,"xtype":"combo-boolean","namespace":"core","area":"phpthumb","editedon":null}',
+);

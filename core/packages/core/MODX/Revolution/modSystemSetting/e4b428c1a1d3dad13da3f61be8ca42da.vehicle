@@ -1,0 +1,11 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => false,
+  'vehicle_class' => 'xPDO\\Transport\\xPDOObjectVehicle',
+  'guid' => '145fb564c23f95dbb3e1f9c935658985',
+  'package' => '',
+  'class' => 'MODX\\Revolution\\modSystemSetting',
+  'signature' => 'e4b428c1a1d3dad13da3f61be8ca42da',
+  'native_key' => 'use_frozen_parent_uris',
+  'object' => '{"key":"use_frozen_parent_uris","value":false,"xtype":"combo-boolean","namespace":"core","area":"furls","editedon":null}',
+);

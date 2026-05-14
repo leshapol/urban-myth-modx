@@ -1,0 +1,11 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => false,
+  'vehicle_class' => 'xPDO\\Transport\\xPDOObjectVehicle',
+  'guid' => 'c897a2fa436aed41c1d05b7e8c09578c',
+  'package' => '',
+  'class' => 'MODX\\Revolution\\modSystemSetting',
+  'signature' => 'b02cc43d32d5f29e074139ec1ba3c26f',
+  'native_key' => 'phpthumb_nooffsitelink_text_message',
+  'object' => '{"key":"phpthumb_nooffsitelink_text_message","value":"Off-server linking is not allowed","xtype":"textfield","namespace":"core","area":"phpthumb","editedon":null}',
+);

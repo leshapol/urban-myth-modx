@@ -1,0 +1,11 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => false,
+  'vehicle_class' => 'xPDO\\Transport\\xPDOObjectVehicle',
+  'guid' => 'b5461b533c1cf3993c3136a23d280cb8',
+  'package' => '',
+  'class' => 'MODX\\Revolution\\modUserGroupRole',
+  'signature' => '5d57523d82170ed8ce95a4b956640723',
+  'native_key' => 2,
+  'object' => '{"id":2,"name":"Super User","description":"NULL","authority":0}',
+);

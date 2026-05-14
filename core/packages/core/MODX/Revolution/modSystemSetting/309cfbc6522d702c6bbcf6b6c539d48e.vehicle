@@ -1,0 +1,11 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => false,
+  'vehicle_class' => 'xPDO\\Transport\\xPDOObjectVehicle',
+  'guid' => '7167ac7ff2af2088d23d933cccf24a2f',
+  'package' => '',
+  'class' => 'MODX\\Revolution\\modSystemSetting',
+  'signature' => '309cfbc6522d702c6bbcf6b6c539d48e',
+  'native_key' => 'welcome_screen',
+  'object' => '{"key":"welcome_screen","value":true,"xtype":"combo-boolean","namespace":"core","area":"manager","editedon":null}',
+);

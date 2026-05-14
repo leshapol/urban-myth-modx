@@ -1,0 +1,11 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => false,
+  'vehicle_class' => 'xPDO\\Transport\\xPDOObjectVehicle',
+  'guid' => '9a62aa43d70ed2b11ae91748c8e3b600',
+  'package' => '',
+  'class' => 'MODX\\Revolution\\modSystemSetting',
+  'signature' => '3471f44fe694bf8351d06fe987016864',
+  'native_key' => 'static_elements_default_category',
+  'object' => '{"key":"static_elements_default_category","value":0,"xtype":"modx-combo-category","namespace":"core","area":"static_elements","editedon":null}',
+);

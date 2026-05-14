@@ -1,0 +1,15 @@
+<?php return array (
+  'preserve_keys' => false,
+  'update_object' => false,
+  'unique_key' => 
+  array (
+    0 => 'name',
+  ),
+  'vehicle_class' => 'xPDO\\Transport\\xPDOObjectVehicle',
+  'guid' => 'f1120f4617f65d211271b0d8ff4c42a2',
+  'package' => '',
+  'class' => 'MODX\\Revolution\\modDashboardWidget',
+  'signature' => 'afeea6ec0016f6bc419d6645ba3bac4b',
+  'native_key' => NULL,
+  'object' => '{"id":null,"name":"w_whosonline","description":"w_whosonline_desc","type":"file","content":"[[++manager_path]]controllers\\/default\\/dashboard\\/widget.grid-online.php","properties":null,"namespace":"core","lexicon":"core:dashboards","size":"one-third","permission":""}',
+);

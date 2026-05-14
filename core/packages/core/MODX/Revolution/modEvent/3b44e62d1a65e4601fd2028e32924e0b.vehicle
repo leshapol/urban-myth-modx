@@ -1,0 +1,11 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => true,
+  'vehicle_class' => 'xPDO\\Transport\\xPDOObjectVehicle',
+  'guid' => '138804692f39cadbbc3d29095382ce96',
+  'package' => '',
+  'class' => 'MODX\\Revolution\\modEvent',
+  'signature' => '3b44e62d1a65e4601fd2028e32924e0b',
+  'native_key' => 'OnBeforeCacheUpdate',
+  'object' => '{"name":"OnBeforeCacheUpdate","service":4,"groupname":"System"}',
+);

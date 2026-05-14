@@ -1,0 +1,11 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => false,
+  'vehicle_class' => 'xPDO\\Transport\\xPDOObjectVehicle',
+  'guid' => '6c9c7760fd1875c875df507619e08826',
+  'package' => '',
+  'class' => 'MODX\\Revolution\\modSystemSetting',
+  'signature' => '83719f887e8f4d966aca4328f8ae5c52',
+  'native_key' => 'upload_translit',
+  'object' => '{"key":"upload_translit","value":true,"xtype":"combo-boolean","namespace":"core","area":"file","editedon":null}',
+);

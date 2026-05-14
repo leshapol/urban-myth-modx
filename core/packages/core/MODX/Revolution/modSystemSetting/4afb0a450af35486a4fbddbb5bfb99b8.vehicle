@@ -1,0 +1,11 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => false,
+  'vehicle_class' => 'xPDO\\Transport\\xPDOObjectVehicle',
+  'guid' => '6e049e5fda80951bb27e37f45e04278a',
+  'package' => '',
+  'class' => 'MODX\\Revolution\\modSystemSetting',
+  'signature' => '4afb0a450af35486a4fbddbb5bfb99b8',
+  'native_key' => 'allow_forward_across_contexts',
+  'object' => '{"key":"allow_forward_across_contexts","value":false,"xtype":"combo-boolean","namespace":"core","area":"system","editedon":null}',
+);

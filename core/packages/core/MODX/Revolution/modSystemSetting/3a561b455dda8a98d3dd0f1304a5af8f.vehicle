@@ -1,0 +1,11 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => false,
+  'vehicle_class' => 'xPDO\\Transport\\xPDOObjectVehicle',
+  'guid' => '5dcd26e65ab44da8c9c9fc26ce805abe',
+  'package' => '',
+  'class' => 'MODX\\Revolution\\modSystemSetting',
+  'signature' => '3a561b455dda8a98d3dd0f1304a5af8f',
+  'native_key' => 'login_background_image',
+  'object' => '{"key":"login_background_image","value":"","xtype":"textfield","namespace":"core","area":"authentication","editedon":null}',
+);

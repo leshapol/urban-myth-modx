@@ -6,6 +6,7 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname(dirname($vendorDir));
 
 return array(
+    'Symfony\\Polyfill\\Php82\\' => array($vendorDir . '/symfony/polyfill-php82'),
     'Symfony\\Polyfill\\Php80\\' => array($vendorDir . '/symfony/polyfill-php80'),
     'Symfony\\Polyfill\\Php73\\' => array($vendorDir . '/symfony/polyfill-php73'),
     'Symfony\\Polyfill\\Mbstring\\' => array($vendorDir . '/symfony/polyfill-mbstring'),
@@ -14,6 +15,7 @@ return array(
     'Symfony\\Polyfill\\Ctype\\' => array($vendorDir . '/symfony/polyfill-ctype'),
     'Symfony\\Contracts\\Service\\' => array($vendorDir . '/symfony/service-contracts'),
     'Symfony\\Component\\String\\' => array($vendorDir . '/symfony/string'),
+    'Symfony\\Component\\Filesystem\\' => array($vendorDir . '/symfony/filesystem'),
     'Symfony\\Component\\CssSelector\\' => array($vendorDir . '/symfony/css-selector'),
     'Symfony\\Component\\Console\\' => array($vendorDir . '/symfony/console'),
     'SimplePie\\' => array($vendorDir . '/simplepie/simplepie/src'),

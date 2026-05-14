@@ -4,27 +4,29 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit585eb8c88716e2466731cbe0662f58f6
+class ComposerStaticInit53d898d9c7f0a218c242ba786ba07651
 {
     public static $files = array (
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
-        'a4a119a56e50fbb293281d9a48007e0e' => __DIR__ . '/..' . '/symfony/polyfill-php80/bootstrap.php',
-        '7b11c4dc42b3b3023073cb14e519683c' => __DIR__ . '/..' . '/ralouphie/getallheaders/src/getallheaders.php',
         '6e3fae29631ef280660b3cdad06f25a8' => __DIR__ . '/..' . '/symfony/deprecation-contracts/function.php',
+        '7b11c4dc42b3b3023073cb14e519683c' => __DIR__ . '/..' . '/ralouphie/getallheaders/src/getallheaders.php',
         '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
         '8825ede83f2f289127722d4e842cf7e8' => __DIR__ . '/..' . '/symfony/polyfill-intl-grapheme/bootstrap.php',
         'e69f7f6ee287b969198c3c9d6777bd38' => __DIR__ . '/..' . '/symfony/polyfill-intl-normalizer/bootstrap.php',
         '37a3dc5111fe8f707ab4c132ef1dbc62' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/functions_include.php',
         'b067bc7112e384b61c701452d53a14a8' => __DIR__ . '/..' . '/mtdowling/jmespath.php/src/JmesPath.php',
         '0d59ee240a4cd96ddbb4ff164fccea4d' => __DIR__ . '/..' . '/symfony/polyfill-php73/bootstrap.php',
+        'a4a119a56e50fbb293281d9a48007e0e' => __DIR__ . '/..' . '/symfony/polyfill-php80/bootstrap.php',
         'b6b991a57620e2fb6b2f66f03fe9ddc2' => __DIR__ . '/..' . '/symfony/string/Resources/functions.php',
         '8a9dc1de0ca7e01f3e08231539562f61' => __DIR__ . '/..' . '/aws/aws-sdk-php/src/functions.php',
         '532945a4b12d830ff3e086cc36a64375' => __DIR__ . '/..' . '/james-heinrich/phpthumb/phpthumb.class.php',
+        '5897ea0ac4cccf14d323035e65887801' => __DIR__ . '/..' . '/symfony/polyfill-php82/bootstrap.php',
     );
 
     public static $prefixLengthsPsr4 = array (
-        'S' => 
+        'S' =>
         array (
+            'Symfony\\Polyfill\\Php82\\' => 23,
             'Symfony\\Polyfill\\Php80\\' => 23,
             'Symfony\\Polyfill\\Php73\\' => 23,
             'Symfony\\Polyfill\\Mbstring\\' => 26,
@@ -33,178 +35,187 @@ class ComposerStaticInit585eb8c88716e2466731cbe0662f58f6
             'Symfony\\Polyfill\\Ctype\\' => 23,
             'Symfony\\Contracts\\Service\\' => 26,
             'Symfony\\Component\\String\\' => 25,
+            'Symfony\\Component\\Filesystem\\' => 29,
             'Symfony\\Component\\CssSelector\\' => 30,
             'Symfony\\Component\\Console\\' => 26,
             'SimplePie\\' => 10,
         ),
-        'P' => 
+        'P' =>
         array (
             'Psr\\Http\\Message\\' => 17,
             'Psr\\Http\\Client\\' => 16,
             'Psr\\Container\\' => 14,
             'PHPMailer\\PHPMailer\\' => 20,
         ),
-        'M' => 
+        'M' =>
         array (
             'MODX\\' => 5,
         ),
-        'L' => 
+        'L' =>
         array (
             'League\\MimeTypeDetection\\' => 25,
             'League\\Flysystem\\Ftp\\' => 21,
             'League\\Flysystem\\AwsS3V3\\' => 25,
             'League\\Flysystem\\' => 17,
         ),
-        'J' => 
+        'J' =>
         array (
             'JmesPath\\' => 9,
         ),
-        'G' => 
+        'G' =>
         array (
             'GuzzleHttp\\Psr7\\' => 16,
             'GuzzleHttp\\Promise\\' => 19,
             'GuzzleHttp\\' => 11,
         ),
-        'A' => 
+        'A' =>
         array (
             'Aws\\' => 4,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
-        'Symfony\\Polyfill\\Php80\\' => 
+        'Symfony\\Polyfill\\Php82\\' =>
+        array (
+            0 => __DIR__ . '/..' . '/symfony/polyfill-php82',
+        ),
+        'Symfony\\Polyfill\\Php80\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-php80',
         ),
-        'Symfony\\Polyfill\\Php73\\' => 
+        'Symfony\\Polyfill\\Php73\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-php73',
         ),
-        'Symfony\\Polyfill\\Mbstring\\' => 
+        'Symfony\\Polyfill\\Mbstring\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-mbstring',
         ),
-        'Symfony\\Polyfill\\Intl\\Normalizer\\' => 
+        'Symfony\\Polyfill\\Intl\\Normalizer\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-intl-normalizer',
         ),
-        'Symfony\\Polyfill\\Intl\\Grapheme\\' => 
+        'Symfony\\Polyfill\\Intl\\Grapheme\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-intl-grapheme',
         ),
-        'Symfony\\Polyfill\\Ctype\\' => 
+        'Symfony\\Polyfill\\Ctype\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-ctype',
         ),
-        'Symfony\\Contracts\\Service\\' => 
+        'Symfony\\Contracts\\Service\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/service-contracts',
         ),
-        'Symfony\\Component\\String\\' => 
+        'Symfony\\Component\\String\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/string',
         ),
-        'Symfony\\Component\\CssSelector\\' => 
+        'Symfony\\Component\\Filesystem\\' =>
+        array (
+            0 => __DIR__ . '/..' . '/symfony/filesystem',
+        ),
+        'Symfony\\Component\\CssSelector\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/css-selector',
         ),
-        'Symfony\\Component\\Console\\' => 
+        'Symfony\\Component\\Console\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/console',
         ),
-        'SimplePie\\' => 
+        'SimplePie\\' =>
         array (
             0 => __DIR__ . '/..' . '/simplepie/simplepie/src',
         ),
-        'Psr\\Http\\Message\\' => 
+        'Psr\\Http\\Message\\' =>
         array (
             0 => __DIR__ . '/..' . '/psr/http-factory/src',
             1 => __DIR__ . '/..' . '/psr/http-message/src',
         ),
-        'Psr\\Http\\Client\\' => 
+        'Psr\\Http\\Client\\' =>
         array (
             0 => __DIR__ . '/..' . '/psr/http-client/src',
         ),
-        'Psr\\Container\\' => 
+        'Psr\\Container\\' =>
         array (
             0 => __DIR__ . '/..' . '/psr/container/src',
         ),
-        'PHPMailer\\PHPMailer\\' => 
+        'PHPMailer\\PHPMailer\\' =>
         array (
             0 => __DIR__ . '/..' . '/phpmailer/phpmailer/src',
         ),
-        'MODX\\' => 
+        'MODX\\' =>
         array (
             0 => __DIR__ . '/../../..' . '/core/src',
         ),
-        'League\\MimeTypeDetection\\' => 
+        'League\\MimeTypeDetection\\' =>
         array (
             0 => __DIR__ . '/..' . '/league/mime-type-detection/src',
         ),
-        'League\\Flysystem\\Ftp\\' => 
+        'League\\Flysystem\\Ftp\\' =>
         array (
             0 => __DIR__ . '/..' . '/league/flysystem-ftp',
         ),
-        'League\\Flysystem\\AwsS3V3\\' => 
+        'League\\Flysystem\\AwsS3V3\\' =>
         array (
             0 => __DIR__ . '/..' . '/league/flysystem-aws-s3-v3',
         ),
-        'League\\Flysystem\\' => 
+        'League\\Flysystem\\' =>
         array (
             0 => __DIR__ . '/..' . '/league/flysystem/src',
         ),
-        'JmesPath\\' => 
+        'JmesPath\\' =>
         array (
             0 => __DIR__ . '/..' . '/mtdowling/jmespath.php/src',
         ),
-        'GuzzleHttp\\Psr7\\' => 
+        'GuzzleHttp\\Psr7\\' =>
         array (
             0 => __DIR__ . '/..' . '/guzzlehttp/psr7/src',
         ),
-        'GuzzleHttp\\Promise\\' => 
+        'GuzzleHttp\\Promise\\' =>
         array (
             0 => __DIR__ . '/..' . '/guzzlehttp/promises/src',
         ),
-        'GuzzleHttp\\' => 
+        'GuzzleHttp\\' =>
         array (
             0 => __DIR__ . '/..' . '/guzzlehttp/guzzle/src',
         ),
-        'Aws\\' => 
+        'Aws\\' =>
         array (
             0 => __DIR__ . '/..' . '/aws/aws-sdk-php/src',
         ),
     );
 
     public static $prefixesPsr0 = array (
-        'x' => 
+        'x' =>
         array (
-            'xPDO' => 
+            'xPDO' =>
             array (
                 0 => __DIR__ . '/..' . '/xpdo/xpdo/src',
                 1 => __DIR__ . '/..' . '/xpdo/xpdo/test',
             ),
         ),
-        'S' => 
+        'S' =>
         array (
-            'SimplePie' => 
+            'SimplePie' =>
             array (
                 0 => __DIR__ . '/..' . '/simplepie/simplepie/library',
             ),
         ),
-        'P' => 
+        'P' =>
         array (
-            'Pimple' => 
+            'Pimple' =>
             array (
                 0 => __DIR__ . '/..' . '/pimple/pimple/src',
             ),
-            'Parsedown' => 
+            'Parsedown' =>
             array (
                 0 => __DIR__ . '/..' . '/erusev/parsedown',
             ),
         ),
-        'I' => 
+        'I' =>
         array (
-            'InlineStyle' => 
+            'InlineStyle' =>
             array (
                 0 => __DIR__ . '/..' . '/inlinestyle/inlinestyle',
             ),
@@ -235,11 +246,20 @@ class ComposerStaticInit585eb8c88716e2466731cbe0662f58f6
         'AWS\\CRT\\NativeResource' => __DIR__ . '/..' . '/aws/aws-crt-php/src/AWS/CRT/NativeResource.php',
         'AWS\\CRT\\OptionValue' => __DIR__ . '/..' . '/aws/aws-crt-php/src/AWS/CRT/Options.php',
         'AWS\\CRT\\Options' => __DIR__ . '/..' . '/aws/aws-crt-php/src/AWS/CRT/Options.php',
+        'AllowDynamicProperties' => __DIR__ . '/..' . '/symfony/polyfill-php82/Resources/stubs/AllowDynamicProperties.php',
         'Attribute' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/Attribute.php',
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
         'JsonException' => __DIR__ . '/..' . '/symfony/polyfill-php73/Resources/stubs/JsonException.php',
         'Normalizer' => __DIR__ . '/..' . '/symfony/polyfill-intl-normalizer/Resources/stubs/Normalizer.php',
         'PhpToken' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/PhpToken.php',
+        'Random\\BrokenRandomEngineError' => __DIR__ . '/..' . '/symfony/polyfill-php82/Resources/stubs/Random/BrokenRandomEngineError.php',
+        'Random\\CryptoSafeEngine' => __DIR__ . '/..' . '/symfony/polyfill-php82/Resources/stubs/Random/CryptoSafeEngine.php',
+        'Random\\Engine' => __DIR__ . '/..' . '/symfony/polyfill-php82/Resources/stubs/Random/Engine.php',
+        'Random\\Engine\\Secure' => __DIR__ . '/..' . '/symfony/polyfill-php82/Resources/stubs/Random/Engine/Secure.php',
+        'Random\\RandomError' => __DIR__ . '/..' . '/symfony/polyfill-php82/Resources/stubs/Random/RandomError.php',
+        'Random\\RandomException' => __DIR__ . '/..' . '/symfony/polyfill-php82/Resources/stubs/Random/RandomException.php',
+        'SensitiveParameter' => __DIR__ . '/..' . '/symfony/polyfill-php82/Resources/stubs/SensitiveParameter.php',
+        'SensitiveParameterValue' => __DIR__ . '/..' . '/symfony/polyfill-php82/Resources/stubs/SensitiveParameterValue.php',
         'Smarty' => __DIR__ . '/..' . '/smarty/smarty/libs/Smarty.class.php',
         'SmartyCompilerException' => __DIR__ . '/..' . '/smarty/smarty/libs/sysplugins/smartycompilerexception.php',
         'SmartyException' => __DIR__ . '/..' . '/smarty/smarty/libs/sysplugins/smartyexception.php',
@@ -417,10 +437,10 @@ class ComposerStaticInit585eb8c88716e2466731cbe0662f58f6
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit585eb8c88716e2466731cbe0662f58f6::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit585eb8c88716e2466731cbe0662f58f6::$prefixDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInit585eb8c88716e2466731cbe0662f58f6::$prefixesPsr0;
-            $loader->classMap = ComposerStaticInit585eb8c88716e2466731cbe0662f58f6::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit53d898d9c7f0a218c242ba786ba07651::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit53d898d9c7f0a218c242ba786ba07651::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInit53d898d9c7f0a218c242ba786ba07651::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInit53d898d9c7f0a218c242ba786ba07651::$classMap;
 
         }, null, ClassLoader::class);
     }

@@ -1,0 +1,11 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => true,
+  'vehicle_class' => 'xPDO\\Transport\\xPDOObjectVehicle',
+  'guid' => '4ac4c0c50f1790a918a11b63e821f5f0',
+  'package' => '',
+  'class' => 'MODX\\Revolution\\modEvent',
+  'signature' => '60311fd57414e7ff911de94e6277fa08',
+  'native_key' => 'OnDocFormPrerender',
+  'object' => '{"name":"OnDocFormPrerender","service":1,"groupname":"Resources"}',
+);

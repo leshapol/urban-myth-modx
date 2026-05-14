@@ -1,0 +1,12 @@
+<?php return array (
+  'preserve_keys' => false,
+  'update_object' => false,
+  'unique_key' => 'mime_type',
+  'vehicle_class' => 'xPDO\\Transport\\xPDOObjectVehicle',
+  'guid' => 'd674ee6b73c5334b84e00d93bfc69460',
+  'package' => '',
+  'class' => 'MODX\\Revolution\\modContentType',
+  'signature' => '85a00a1f149c2313d1c4819981e2fee9',
+  'native_key' => 2,
+  'object' => '{"id":2,"name":"XML","description":"XML content","mime_type":"text\\/xml","file_extensions":".xml","icon":"icon-xml","headers":"NULL","binary":0}',
+);

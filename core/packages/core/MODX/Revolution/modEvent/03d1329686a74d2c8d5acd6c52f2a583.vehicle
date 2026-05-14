@@ -1,0 +1,11 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => true,
+  'vehicle_class' => 'xPDO\\Transport\\xPDOObjectVehicle',
+  'guid' => '6073c315079695f7eb1ace319c578c13',
+  'package' => '',
+  'class' => 'MODX\\Revolution\\modEvent',
+  'signature' => '03d1329686a74d2c8d5acd6c52f2a583',
+  'native_key' => 'OnTempFormPrerender',
+  'object' => '{"name":"OnTempFormPrerender","service":1,"groupname":"Templates"}',
+);

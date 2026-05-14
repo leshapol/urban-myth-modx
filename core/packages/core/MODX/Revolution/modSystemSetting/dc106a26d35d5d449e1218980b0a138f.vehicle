@@ -1,0 +1,11 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => false,
+  'vehicle_class' => 'xPDO\\Transport\\xPDOObjectVehicle',
+  'guid' => '589aae81426f509ff2f97224b2d2f34f',
+  'package' => '',
+  'class' => 'MODX\\Revolution\\modSystemSetting',
+  'signature' => 'dc106a26d35d5d449e1218980b0a138f',
+  'native_key' => 'manager_datetime_separator',
+  'object' => '{"key":"manager_datetime_separator","value":", ","xtype":"textfield","namespace":"core","area":"manager","editedon":null}',
+);

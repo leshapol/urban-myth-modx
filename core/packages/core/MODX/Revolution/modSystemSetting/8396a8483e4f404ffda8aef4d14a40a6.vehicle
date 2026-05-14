@@ -1,0 +1,11 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => false,
+  'vehicle_class' => 'xPDO\\Transport\\xPDOObjectVehicle',
+  'guid' => 'b1048feb1a833c9957fc28de9fb80356',
+  'package' => '',
+  'class' => 'MODX\\Revolution\\modSystemSetting',
+  'signature' => '8396a8483e4f404ffda8aef4d14a40a6',
+  'native_key' => 'mail_smtp_keepalive',
+  'object' => '{"key":"mail_smtp_keepalive","value":false,"xtype":"combo-boolean","namespace":"core","area":"mail","editedon":null}',
+);

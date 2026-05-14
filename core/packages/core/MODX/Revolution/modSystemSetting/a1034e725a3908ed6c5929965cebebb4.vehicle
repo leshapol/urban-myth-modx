@@ -1,0 +1,11 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => false,
+  'vehicle_class' => 'xPDO\\Transport\\xPDOObjectVehicle',
+  'guid' => '6005b8447f68d369f0b6dc0592b7c7ab',
+  'package' => '',
+  'class' => 'MODX\\Revolution\\modSystemSetting',
+  'signature' => 'a1034e725a3908ed6c5929965cebebb4',
+  'native_key' => 'site_unavailable_message',
+  'object' => '{"key":"site_unavailable_message","value":"[[%site_unavailable_message]]","xtype":"textfield","namespace":"core","area":"site","editedon":null}',
+);

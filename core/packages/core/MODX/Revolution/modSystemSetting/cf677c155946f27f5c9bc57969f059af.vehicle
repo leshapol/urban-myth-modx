@@ -1,0 +1,11 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => false,
+  'vehicle_class' => 'xPDO\\Transport\\xPDOObjectVehicle',
+  'guid' => 'ac9be74a09ace51039ee912a2003762d',
+  'package' => '',
+  'class' => 'MODX\\Revolution\\modSystemSetting',
+  'signature' => 'cf677c155946f27f5c9bc57969f059af',
+  'native_key' => 'mail_dkim_privatekeystring',
+  'object' => '{"key":"mail_dkim_privatekeystring","value":"","xtype":"textfield","namespace":"core","area":"mail","editedon":null}',
+);

@@ -1,0 +1,15 @@
+<?php return array (
+  'preserve_keys' => false,
+  'unique_key' => 
+  array (
+    0 => 'name',
+  ),
+  'update_object' => true,
+  'vehicle_class' => 'xPDO\\Transport\\xPDOObjectVehicle',
+  'guid' => '0a649b706a0eb683ac99748a72e9653a',
+  'package' => '',
+  'class' => 'MODX\\Revolution\\modAccessPolicy',
+  'signature' => '32b2cc0d117492497844dcd699e6829b',
+  'native_key' => 4,
+  'object' => '{"id":4,"name":"Load, List and View","description":"policy_load_list_and_view_desc","parent":0,"template":0,"class":"","data":"{\\"load\\":true,\\"list\\":true,\\"view\\":true}","lexicon":"permissions"}',
+);

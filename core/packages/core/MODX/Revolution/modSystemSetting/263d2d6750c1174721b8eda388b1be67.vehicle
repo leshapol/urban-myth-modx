@@ -1,0 +1,11 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => false,
+  'vehicle_class' => 'xPDO\\Transport\\xPDOObjectVehicle',
+  'guid' => '6f0f79dd36544e25d7cbf200e521892f',
+  'package' => '',
+  'class' => 'MODX\\Revolution\\modSystemSetting',
+  'signature' => '263d2d6750c1174721b8eda388b1be67',
+  'native_key' => 'quick_search_result_max',
+  'object' => '{"key":"quick_search_result_max","value":10,"xtype":"numberfield","namespace":"core","area":"manager","editedon":null}',
+);

@@ -1,0 +1,12 @@
+<?php return array (
+  'preserve_keys' => false,
+  'update_object' => false,
+  'unique_key' => 'mime_type',
+  'vehicle_class' => 'xPDO\\Transport\\xPDOObjectVehicle',
+  'guid' => 'd0e986362807582d97766a49685b11f3',
+  'package' => '',
+  'class' => 'MODX\\Revolution\\modContentType',
+  'signature' => '4629bbf2761fea297453722dbb3c2d5a',
+  'native_key' => 7,
+  'object' => '{"id":7,"name":"JSON","description":"JSON","mime_type":"application\\/json","file_extensions":".json","icon":"icon-json","headers":"NULL","binary":0}',
+);

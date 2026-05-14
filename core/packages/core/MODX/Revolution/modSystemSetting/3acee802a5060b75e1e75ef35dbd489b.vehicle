@@ -1,0 +1,11 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => false,
+  'vehicle_class' => 'xPDO\\Transport\\xPDOObjectVehicle',
+  'guid' => 'd3f9eedd50ba6ec3455fff1707a9e964',
+  'package' => '',
+  'class' => 'MODX\\Revolution\\modSystemSetting',
+  'signature' => '3acee802a5060b75e1e75ef35dbd489b',
+  'native_key' => 'manager_time_format',
+  'object' => '{"key":"manager_time_format","value":"H:i","xtype":"textfield","namespace":"core","area":"manager","editedon":null}',
+);

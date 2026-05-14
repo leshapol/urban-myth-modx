@@ -1,0 +1,11 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => false,
+  'vehicle_class' => 'xPDO\\Transport\\xPDOObjectVehicle',
+  'guid' => 'cefc9e42aad2e34a8cef44271c342c15',
+  'package' => '',
+  'class' => 'MODX\\Revolution\\modSystemSetting',
+  'signature' => '014c6ea995f13f50eb2e1fdcc5df9826',
+  'native_key' => 'proxy_port',
+  'object' => '{"key":"proxy_port","value":"","xtype":"numberfield","namespace":"core","area":"proxy","editedon":null}',
+);

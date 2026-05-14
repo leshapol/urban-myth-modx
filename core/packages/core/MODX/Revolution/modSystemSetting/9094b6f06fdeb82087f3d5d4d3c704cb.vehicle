@@ -1,0 +1,11 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => false,
+  'vehicle_class' => 'xPDO\\Transport\\xPDOObjectVehicle',
+  'guid' => 'dd286714053acc7a9de128f175f11a0c',
+  'package' => '',
+  'class' => 'MODX\\Revolution\\modSystemSetting',
+  'signature' => '9094b6f06fdeb82087f3d5d4d3c704cb',
+  'native_key' => 'default_duplicate_publish_option',
+  'object' => '{"key":"default_duplicate_publish_option","value":"preserve","xtype":"textfield","namespace":"core","area":"manager","editedon":null}',
+);

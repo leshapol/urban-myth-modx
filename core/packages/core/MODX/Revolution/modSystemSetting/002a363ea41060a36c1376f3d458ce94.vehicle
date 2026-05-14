@@ -1,0 +1,11 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => false,
+  'vehicle_class' => 'xPDO\\Transport\\xPDOObjectVehicle',
+  'guid' => '1ca95316e832049dbdffc9d7978c43d1',
+  'package' => '',
+  'class' => 'MODX\\Revolution\\modSystemSetting',
+  'signature' => '002a363ea41060a36c1376f3d458ce94',
+  'native_key' => 'friendly_alias_translit_class',
+  'object' => '{"key":"friendly_alias_translit_class","value":"translit.modTransliterate","xtype":"textfield","namespace":"core","area":"furls","editedon":null}',
+);

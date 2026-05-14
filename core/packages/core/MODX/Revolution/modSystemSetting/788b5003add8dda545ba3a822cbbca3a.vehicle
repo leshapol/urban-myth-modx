@@ -1,0 +1,11 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => false,
+  'vehicle_class' => 'xPDO\\Transport\\xPDOObjectVehicle',
+  'guid' => 'c0ef9581a11fe0c45e0694e5f042aac2',
+  'package' => '',
+  'class' => 'MODX\\Revolution\\modSystemSetting',
+  'signature' => '788b5003add8dda545ba3a822cbbca3a',
+  'native_key' => 'upload_translit_restrict_chars_pattern',
+  'object' => '{"key":"upload_translit_restrict_chars_pattern","value":"\\/[\\\\0\\\\x0B\\\\t\\\\n\\\\r\\\\f\\\\a&=+%#<>\\"~:`@\\\\?\\\\[\\\\]\\\\{\\\\}\\\\|\\\\^\'\\\\\\\\]\\/","xtype":"textfield","namespace":"core","area":"file","editedon":null}',
+);
