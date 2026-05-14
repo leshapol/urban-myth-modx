@@ -76,7 +76,7 @@
             </p>
 
             <div class="stay__form">
-              [[$formit? &no-rc=`1`]] [[$contact-form? &subject=`0`]]
+              [[$formit?]] [[$contact-form? &subject=`0`]]
             </div>
           </div>
         </section>

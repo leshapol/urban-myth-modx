@@ -7,7 +7,7 @@
   &emailFrom=`[[++emailsender]]`
   &emailReplyTo=`[[++emailsender]]`
   &redirectTo=`126`
-  &validate=`name:required,email:required,accept:required`
+  &validate=`company:blank,name:required,email:required,accept:required`
   &emailTpl=`email-chunk`
   &submitVar=`[[+submit-var:is=``:then=`contact-form`:else=`[[+submit-var]]`]]`
   &validationErrorMessage=`The form contains errors!`

@@ -8,6 +8,7 @@
       [[+form:is=`brochure`:then=`[[$brochure-form]]`]]
       [[+form:is=`contact`:then=`[[$contact-form? &submit-var=`book-form` &formname=`section-contact-form`]]`]]
       [[+form:is=`newsletter`:then=`[[$newsletter-form]]`]]
+      [[+form:is=`style-download`:then=`[[$style-download-form]]`]]
     </div>
   </div>
 </section>

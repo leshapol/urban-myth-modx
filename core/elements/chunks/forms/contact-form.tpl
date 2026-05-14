@@ -4,6 +4,15 @@
 
 <form action="[[~[[*id]]]]" class="popup__form form" method="post">
   <input type="hidden" name="formname" value="[[+formname:default=`popup-contact-form`]]" />
+  <label class="visually-hidden" aria-hidden="true">
+    <input
+      type="text"
+      name="company"
+      value=""
+      tabindex="-1"
+      autocomplete="off"
+    />
+  </label>
   [[+subject:ne=`0`:then=` [[+text-subject:is=`1`:then=`
   <label class="form__label">
     <input
@@ -19,7 +28,7 @@
     <select class="_select" name="subject">
       <option value="">Subject (Select)</option>
       <option>New Kitchen Enquiry</option>
-      <option>Additions to an Urban Myth Kitchen</option>
+      <option>Urban Myth Kitchen Refurbishment</option>
       <option>Customer Support</option>
       <option>General Enquiry</option>
     </select>
@@ -102,6 +111,6 @@
     value="Send"
   />
 
-  [[-!rcv3_html? &action=`contactForm`
+  [[!rcv3_html? &action=`contactForm`
   &error=`[[+fi.error.g-recaptcha-response]]`]]
 </form>
