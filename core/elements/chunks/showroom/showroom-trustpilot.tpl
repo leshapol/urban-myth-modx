@@ -11,7 +11,7 @@
       data-style-height="140px"
       data-style-width="100%"
       data-token="a4f92439-f520-40ad-b4a7-8fd98c4618b1"
-      data-tags="[[*trustpilot-tags:empty=`customerservice`]]"
+      data-tags="[[*trustpilot-tags]]"
       data-stars="[[*trustpilot-stars:empty=`1,2,3,4,5`]]"
       data-review-languages="en"
     >
