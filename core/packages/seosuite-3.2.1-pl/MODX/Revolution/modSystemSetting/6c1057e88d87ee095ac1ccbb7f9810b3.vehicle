@@ -1,0 +1,12 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'vehicle_class' => 'xPDO\\Transport\\xPDOObjectVehicle',
+  'guid' => 'bfbcca8e52954cbc82e3283cd2b5ab7d',
+  'package' => '',
+  'class' => 'MODX\\Revolution\\modSystemSetting',
+  'signature' => '6c1057e88d87ee095ac1ccbb7f9810b3',
+  'native_key' => 'seosuite.tab_social.twitter_creator_id',
+  'object' => '{"key":"seosuite.tab_social.twitter_creator_id","value":"","xtype":"textfield","namespace":"seosuite","area":"seosuite_tab_social","editedon":null}',
+);

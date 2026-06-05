@@ -1,0 +1,40 @@
+<?php return array (
+  'unique_key' => 'name',
+  'preserve_keys' => true,
+  'update_object' => true,
+  'resolve' => 
+  array (
+    0 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"seosuite-3.2.1-pl\\/MODX\\/Revolution\\/modNamespace\\/07dd0b76ebd1f21c4aa139dacc4a911f\\/0\\/","target":"return MODX_CORE_PATH . \'components\\/\';","name":"seosuite"}',
+    ),
+    1 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"seosuite-3.2.1-pl\\/MODX\\/Revolution\\/modNamespace\\/07dd0b76ebd1f21c4aa139dacc4a911f\\/1\\/","target":"return MODX_ASSETS_PATH . \'components\\/\';","name":"seosuite"}',
+    ),
+    2 => 
+    array (
+      'type' => 'php',
+      'body' => '{"type":"php","source":"seosuite-3.2.1-pl\\/MODX\\/Revolution\\/modNamespace\\/07dd0b76ebd1f21c4aa139dacc4a911f.gpm.resolve.bootstrap.resolver","name":"gpm.resolve.bootstrap"}',
+    ),
+    3 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"seosuite-3.2.1-pl\\/MODX\\/Revolution\\/modNamespace\\/07dd0b76ebd1f21c4aa139dacc4a911f\\/3\\/","target":"return MODX_CORE_PATH . \'components\\/seosuite\\/docs\\/\';","name":"LICENSE.md"}',
+    ),
+    4 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"seosuite-3.2.1-pl\\/MODX\\/Revolution\\/modNamespace\\/07dd0b76ebd1f21c4aa139dacc4a911f\\/4\\/","target":"return MODX_CORE_PATH . \'components\\/seosuite\\/docs\\/\';","name":"CHANGELOG.md"}',
+    ),
+  ),
+  'vehicle_class' => 'xPDO\\Transport\\xPDOObjectVehicle',
+  'guid' => '09b5d136f3defe54f44b975e4cf3b2d3',
+  'package' => '',
+  'class' => 'MODX\\Revolution\\modNamespace',
+  'signature' => '07dd0b76ebd1f21c4aa139dacc4a911f',
+  'native_key' => 'seosuite',
+  'object' => '{"name":"seosuite","path":"{core_path}components\\/seosuite\\/","assets_path":"{assets_path}components\\/seosuite\\/"}',
+);

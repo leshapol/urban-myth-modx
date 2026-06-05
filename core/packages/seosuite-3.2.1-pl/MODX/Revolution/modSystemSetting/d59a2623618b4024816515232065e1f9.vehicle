@@ -1,0 +1,12 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'vehicle_class' => 'xPDO\\Transport\\xPDOObjectVehicle',
+  'guid' => 'ca65a4797da9260ac57c9826e0376750',
+  'package' => '',
+  'class' => 'MODX\\Revolution\\modSystemSetting',
+  'signature' => 'd59a2623618b4024816515232065e1f9',
+  'native_key' => 'seosuite.tab_social.og_types',
+  'object' => '{"key":"seosuite.tab_social.og_types","value":"website","xtype":"textfield","namespace":"seosuite","area":"seosuite_tab_social","editedon":null}',
+);

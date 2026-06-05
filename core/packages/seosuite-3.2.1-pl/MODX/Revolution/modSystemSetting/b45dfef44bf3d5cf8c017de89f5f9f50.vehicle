@@ -1,0 +1,12 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'vehicle_class' => 'xPDO\\Transport\\xPDOObjectVehicle',
+  'guid' => 'd84b402f43739a0fadeba7af853c37af',
+  'package' => '',
+  'class' => 'MODX\\Revolution\\modSystemSetting',
+  'signature' => 'b45dfef44bf3d5cf8c017de89f5f9f50',
+  'native_key' => 'seosuite.default_redirect_type',
+  'object' => '{"key":"seosuite.default_redirect_type","value":"HTTP\\/1.1 301 Moved Permanently","xtype":"textfield","namespace":"seosuite","area":"seosuite","editedon":null}',
+);

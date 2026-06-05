@@ -1,0 +1,12 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'vehicle_class' => 'xPDO\\Transport\\xPDOObjectVehicle',
+  'guid' => '26b3b9e4558b7e24898170e7c29226fe',
+  'package' => '',
+  'class' => 'MODX\\Revolution\\modSystemSetting',
+  'signature' => 'd747046d2cc039ecbefd1421604234c2',
+  'native_key' => 'seosuite.meta.field_counters',
+  'object' => '{"key":"seosuite.meta.field_counters","value":"longtitle:30|70,description:70|155","xtype":"textfield","namespace":"seosuite","area":"seosuite_tab_meta","editedon":null}',
+);

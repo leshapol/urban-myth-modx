@@ -1,0 +1,12 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'vehicle_class' => 'xPDO\\Transport\\xPDOObjectVehicle',
+  'guid' => '78a226bc9038a2e0ae7690d3455ed50c',
+  'package' => '',
+  'class' => 'MODX\\Revolution\\modSystemSetting',
+  'signature' => 'acadc661c17b891dfe97f540815e26fd',
+  'native_key' => 'seosuite.tab_social.twitter_cards',
+  'object' => '{"key":"seosuite.tab_social.twitter_cards","value":"summary,summary_large_image,app,player","xtype":"textfield","namespace":"seosuite","area":"seosuite_tab_social","editedon":null}',
+);

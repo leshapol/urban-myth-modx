@@ -1,0 +1,12 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'vehicle_class' => 'xPDO\\Transport\\xPDOObjectVehicle',
+  'guid' => 'bbcc0fa4bc704954c586604dd31d6040',
+  'package' => '',
+  'class' => 'MODX\\Revolution\\modSystemSetting',
+  'signature' => '12c400ab4163689878b9257eb55e2ce2',
+  'native_key' => 'seosuite.meta.searchmode',
+  'object' => '{"key":"seosuite.meta.searchmode","value":"desktop","xtype":"textfield","namespace":"seosuite","area":"seosuite_tab_meta","editedon":null}',
+);

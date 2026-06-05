@@ -1,0 +1,12 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'vehicle_class' => 'xPDO\\Transport\\xPDOObjectVehicle',
+  'guid' => '82e4c9e371909db34ca7ab7bc00985f9',
+  'package' => '',
+  'class' => 'MODX\\Revolution\\modSystemSetting',
+  'signature' => '2daf81b4ba04deb135809b0253680965',
+  'native_key' => 'seosuite.meta.searchengine',
+  'object' => '{"key":"seosuite.meta.searchengine","value":"google","xtype":"textfield","namespace":"seosuite","area":"seosuite_tab_meta","editedon":null}',
+);

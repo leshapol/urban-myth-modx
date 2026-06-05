@@ -1,0 +1,570 @@
+<?php return array (
+  'unique_key' => 'category',
+  'preserve_keys' => false,
+  'update_object' => true,
+  'related_objects' => 
+  array (
+    'Chunks' => 
+    array (
+      '04dd5ce11149f1f9b51ec32d6d58d58f' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'MODX\\Revolution\\modChunk',
+        'object' => '{"id":null,"source":0,"property_preprocess":0,"name":"tplMetaTitle","description":"The default chunk used for the title.","editor_type":0,"category":0,"cache_type":0,"snippet":"<title>[[+value]]<\\/title>","locked":0,"properties":"a:0:{}","static":0,"static_file":"","content":"<title>[[+value]]<\\/title>"}',
+        'guid' => 'e764891c520b4dc78f1ec995588512e3',
+        'native_key' => NULL,
+        'signature' => '58309ca125eb3d9156ac0eb30c8ae66d',
+      ),
+      'b80cc2eb3879205b3e7398856a89345d' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'MODX\\Revolution\\modChunk',
+        'object' => '{"id":null,"source":0,"property_preprocess":0,"name":"tplMeta","description":"The default chunk used for the meta.","editor_type":0,"category":0,"cache_type":0,"snippet":"<meta name=\\"[[+name]]\\" content=\\"[[+value:escape]]\\" \\/>","locked":0,"properties":"a:0:{}","static":0,"static_file":"","content":"<meta name=\\"[[+name]]\\" content=\\"[[+value:escape]]\\" \\/>"}',
+        'guid' => 'be59fe582ad5142a20689e1207beb306',
+        'native_key' => NULL,
+        'signature' => '300327c2f16cbe0c8025449973587283',
+      ),
+      'c50cc44c989937fa5903f757665178b7' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'MODX\\Revolution\\modChunk',
+        'object' => '{"id":null,"source":0,"property_preprocess":0,"name":"tplMetaSocial","description":"The default chunk used for the social meta.","editor_type":0,"category":0,"cache_type":0,"snippet":"<meta property=\\"[[+name]]\\" content=\\"[[+value:escape]]\\" \\/>","locked":0,"properties":"a:0:{}","static":0,"static_file":"","content":"<meta property=\\"[[+name]]\\" content=\\"[[+value:escape]]\\" \\/>"}',
+        'guid' => 'e86eb941323ed1ea254606f4d35ea945',
+        'native_key' => NULL,
+        'signature' => '53f676a580c1a7db1dace94f41291f75',
+      ),
+      'b4c3e474747d009fee72ad102fc1e1bf' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'MODX\\Revolution\\modChunk',
+        'object' => '{"id":null,"source":0,"property_preprocess":0,"name":"tplLink","description":"The default chunk used for the link.","editor_type":0,"category":0,"cache_type":0,"snippet":"<link rel=\\"[[+name]]\\" href=\\"[[+value]]\\" [[+hreflang:notempty=`hreflang=\\"[[+hreflang]]\\"`]]\\/>","locked":0,"properties":"a:0:{}","static":0,"static_file":"","content":"<link rel=\\"[[+name]]\\" href=\\"[[+value]]\\" [[+hreflang:notempty=`hreflang=\\"[[+hreflang]]\\"`]]\\/>"}',
+        'guid' => 'dbaae5b7ca3d8de82fd29b620672444a',
+        'native_key' => NULL,
+        'signature' => 'c4cf400ad0ecc4aa9a1fab55997294f4',
+      ),
+      'd6185c05ea72dc6e7b6e3336475b6cc4' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'MODX\\Revolution\\modChunk',
+        'object' => '{"id":null,"source":0,"property_preprocess":0,"name":"tplAlternateWrapper","description":"The default chunk used for wrapping alternate links","editor_type":0,"category":0,"cache_type":0,"snippet":"[[+output]]","locked":0,"properties":"a:0:{}","static":0,"static_file":"","content":"[[+output]]"}',
+        'guid' => '3480febba733e5173db5ce0998f05bd5',
+        'native_key' => NULL,
+        'signature' => '4a0bde0fbe2b7d5b6684742c10c222d0',
+      ),
+    ),
+    'Snippets' => 
+    array (
+      '9286f9ff6f7f7a1db1189baa30e71f74' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'MODX\\Revolution\\modSnippet',
+        'object' => '{"id":null,"source":0,"property_preprocess":0,"name":"SeoSuiteMeta","description":"Snippet for adding the title and meta description in your website.","editor_type":0,"category":0,"cache_type":0,"snippet":"use Sterc\\\\SeoSuite\\\\Snippets\\\\Meta;\\n\\n$meta = new Meta($modx);\\n\\nreturn $meta->process($scriptProperties);","locked":0,"properties":"a:0:{}","moduleguid":"","static":0,"static_file":"","content":"use Sterc\\\\SeoSuite\\\\Snippets\\\\Meta;\\n\\n$meta = new Meta($modx);\\n\\nreturn $meta->process($scriptProperties);"}',
+        'guid' => 'edce070e0b3ab760c87f86665a780bbd',
+        'native_key' => NULL,
+        'signature' => 'd0c4a906c559118f01c5d4a569f5597a',
+      ),
+      '4102581a5db1458895b0b89197b2832e' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'MODX\\Revolution\\modSnippet',
+        'object' => '{"id":null,"source":0,"property_preprocess":0,"name":"SeoSuiteSitemap","description":"","editor_type":0,"category":0,"cache_type":0,"snippet":"use Sterc\\\\SeoSuite\\\\Snippets\\\\Sitemap;\\n\\n$sitemap = new Sitemap($modx);\\n\\nreturn $sitemap->process($scriptProperties);","locked":0,"properties":"a:0:{}","moduleguid":"","static":0,"static_file":"","content":"use Sterc\\\\SeoSuite\\\\Snippets\\\\Sitemap;\\n\\n$sitemap = new Sitemap($modx);\\n\\nreturn $sitemap->process($scriptProperties);"}',
+        'guid' => 'bd54265e090335385df6640e3d08bf6c',
+        'native_key' => NULL,
+        'signature' => '943583836c79d64051bf262d4321318f',
+      ),
+    ),
+    'Plugins' => 
+    array (
+      'd6ecea8f933e06894b1f765188cccb04' => 
+      array (
+        'unique_key' => 'name',
+        'preserve_keys' => false,
+        'update_object' => true,
+        'related_objects' => 
+        array (
+          'PluginEvents' => 
+          array (
+            '197f597c1eb7f289ecc11e4af59553e6' => 
+            array (
+              'preserve_keys' => true,
+              'update_object' => true,
+              'unique_key' => 
+              array (
+                0 => 'pluginid',
+                1 => 'event',
+              ),
+              'related_objects' => true,
+              'related_object_attributes' => 
+              array (
+                'PropertySet' => 
+                array (
+                  'unique_key' => 'name',
+                  'preserve_keys' => false,
+                  'update_object' => false,
+                ),
+              ),
+              'class' => 'MODX\\Revolution\\modPluginEvent',
+              'object' => '{"pluginid":0,"event":"OnDocFormPrerender","priority":0,"propertyset":0}',
+              'guid' => '8f85996b9b185a9ed495e560e1610644',
+              'native_key' => 
+              array (
+                0 => 0,
+                1 => 'OnDocFormPrerender',
+              ),
+              'signature' => '5e3dc9937b4253a97b6a3c05dd0595aa',
+            ),
+            '09f7a7b4b4d79c643b952d3bbddd393d' => 
+            array (
+              'preserve_keys' => true,
+              'update_object' => true,
+              'unique_key' => 
+              array (
+                0 => 'pluginid',
+                1 => 'event',
+              ),
+              'related_objects' => true,
+              'related_object_attributes' => 
+              array (
+                'PropertySet' => 
+                array (
+                  'unique_key' => 'name',
+                  'preserve_keys' => false,
+                  'update_object' => false,
+                ),
+              ),
+              'class' => 'MODX\\Revolution\\modPluginEvent',
+              'object' => '{"pluginid":0,"event":"OnDocFormRender","priority":0,"propertyset":0}',
+              'guid' => '2ac199a3f07234e9dbd151601b2f12a8',
+              'native_key' => 
+              array (
+                0 => 0,
+                1 => 'OnDocFormRender',
+              ),
+              'signature' => 'e644d7822f7e09d5d845abf67d718a10',
+            ),
+            '38d04f3a76b6a6459be7c9deffde6065' => 
+            array (
+              'preserve_keys' => true,
+              'update_object' => true,
+              'unique_key' => 
+              array (
+                0 => 'pluginid',
+                1 => 'event',
+              ),
+              'related_objects' => true,
+              'related_object_attributes' => 
+              array (
+                'PropertySet' => 
+                array (
+                  'unique_key' => 'name',
+                  'preserve_keys' => false,
+                  'update_object' => false,
+                ),
+              ),
+              'class' => 'MODX\\Revolution\\modPluginEvent',
+              'object' => '{"pluginid":0,"event":"onBeforeDocFormSave","priority":0,"propertyset":0}',
+              'guid' => 'e7902cdc755dce96252f6a45149ac8bd',
+              'native_key' => 
+              array (
+                0 => 0,
+                1 => 'onBeforeDocFormSave',
+              ),
+              'signature' => '0968a2bf5fe24a799c82e584c0eb4782',
+            ),
+            'd29e39525be96be9a74a727c0a7cbc08' => 
+            array (
+              'preserve_keys' => true,
+              'update_object' => true,
+              'unique_key' => 
+              array (
+                0 => 'pluginid',
+                1 => 'event',
+              ),
+              'related_objects' => true,
+              'related_object_attributes' => 
+              array (
+                'PropertySet' => 
+                array (
+                  'unique_key' => 'name',
+                  'preserve_keys' => false,
+                  'update_object' => false,
+                ),
+              ),
+              'class' => 'MODX\\Revolution\\modPluginEvent',
+              'object' => '{"pluginid":0,"event":"OnDocFormSave","priority":0,"propertyset":0}',
+              'guid' => 'ac2d4fc9a4fe84a98c32c3e55c29f5ab',
+              'native_key' => 
+              array (
+                0 => 0,
+                1 => 'OnDocFormSave',
+              ),
+              'signature' => 'd2ecef6dfcf2e0e198412a8afe0fc33c',
+            ),
+            'c72673468ea3466bc15e208264b0c198' => 
+            array (
+              'preserve_keys' => true,
+              'update_object' => true,
+              'unique_key' => 
+              array (
+                0 => 'pluginid',
+                1 => 'event',
+              ),
+              'related_objects' => true,
+              'related_object_attributes' => 
+              array (
+                'PropertySet' => 
+                array (
+                  'unique_key' => 'name',
+                  'preserve_keys' => false,
+                  'update_object' => false,
+                ),
+              ),
+              'class' => 'MODX\\Revolution\\modPluginEvent',
+              'object' => '{"pluginid":0,"event":"onEmptyTrash","priority":0,"propertyset":0}',
+              'guid' => '7c136dfd69325bf25d7c5dac620d4d09',
+              'native_key' => 
+              array (
+                0 => 0,
+                1 => 'onEmptyTrash',
+              ),
+              'signature' => 'd380a18ff240e1c163807ca2db28bc92',
+            ),
+            '12723ac4e4633ff3b72e64d33c40edd0' => 
+            array (
+              'preserve_keys' => true,
+              'update_object' => true,
+              'unique_key' => 
+              array (
+                0 => 'pluginid',
+                1 => 'event',
+              ),
+              'related_objects' => true,
+              'related_object_attributes' => 
+              array (
+                'PropertySet' => 
+                array (
+                  'unique_key' => 'name',
+                  'preserve_keys' => false,
+                  'update_object' => false,
+                ),
+              ),
+              'class' => 'MODX\\Revolution\\modPluginEvent',
+              'object' => '{"pluginid":0,"event":"OnLoadWebDocument","priority":0,"propertyset":0}',
+              'guid' => '3a650f408e870c59a920a08d60882a00',
+              'native_key' => 
+              array (
+                0 => 0,
+                1 => 'OnLoadWebDocument',
+              ),
+              'signature' => 'b77729053befb3332ae760c249da3965',
+            ),
+            '35920d60115bc168e3d10cb73a2b63a9' => 
+            array (
+              'preserve_keys' => true,
+              'update_object' => true,
+              'unique_key' => 
+              array (
+                0 => 'pluginid',
+                1 => 'event',
+              ),
+              'related_objects' => true,
+              'related_object_attributes' => 
+              array (
+                'PropertySet' => 
+                array (
+                  'unique_key' => 'name',
+                  'preserve_keys' => false,
+                  'update_object' => false,
+                ),
+              ),
+              'class' => 'MODX\\Revolution\\modPluginEvent',
+              'object' => '{"pluginid":0,"event":"OnMODXInit","priority":0,"propertyset":0}',
+              'guid' => 'd0dd43727c8a4598f8a453b1b878bd01',
+              'native_key' => 
+              array (
+                0 => 0,
+                1 => 'OnMODXInit',
+              ),
+              'signature' => 'c8954b2c9ffa57e8b70bfbbb3764c34c',
+            ),
+            '0b834486693389a3250cc17fed2032df' => 
+            array (
+              'preserve_keys' => true,
+              'update_object' => true,
+              'unique_key' => 
+              array (
+                0 => 'pluginid',
+                1 => 'event',
+              ),
+              'related_objects' => true,
+              'related_object_attributes' => 
+              array (
+                'PropertySet' => 
+                array (
+                  'unique_key' => 'name',
+                  'preserve_keys' => false,
+                  'update_object' => false,
+                ),
+              ),
+              'class' => 'MODX\\Revolution\\modPluginEvent',
+              'object' => '{"pluginid":0,"event":"OnPageNotFound","priority":0,"propertyset":0}',
+              'guid' => '1dafa48c346da65ac5b4385d0696b98f',
+              'native_key' => 
+              array (
+                0 => 0,
+                1 => 'OnPageNotFound',
+              ),
+              'signature' => '6345bae1f32efcdcc365f0c55e9b794b',
+            ),
+            'f67bb449ef0b0e8b8be17de735b27919' => 
+            array (
+              'preserve_keys' => true,
+              'update_object' => true,
+              'unique_key' => 
+              array (
+                0 => 'pluginid',
+                1 => 'event',
+              ),
+              'related_objects' => true,
+              'related_object_attributes' => 
+              array (
+                'PropertySet' => 
+                array (
+                  'unique_key' => 'name',
+                  'preserve_keys' => false,
+                  'update_object' => false,
+                ),
+              ),
+              'class' => 'MODX\\Revolution\\modPluginEvent',
+              'object' => '{"pluginid":0,"event":"OnResourceBeforeSort","priority":0,"propertyset":0}',
+              'guid' => '97116172904a02d68d91fc2e719c1464',
+              'native_key' => 
+              array (
+                0 => 0,
+                1 => 'OnResourceBeforeSort',
+              ),
+              'signature' => 'b59a26a590e57180f3e63189d54c7957',
+            ),
+            'b962c5b6f8877b8528123dbadb80d9bd' => 
+            array (
+              'preserve_keys' => true,
+              'update_object' => true,
+              'unique_key' => 
+              array (
+                0 => 'pluginid',
+                1 => 'event',
+              ),
+              'related_objects' => true,
+              'related_object_attributes' => 
+              array (
+                'PropertySet' => 
+                array (
+                  'unique_key' => 'name',
+                  'preserve_keys' => false,
+                  'update_object' => false,
+                ),
+              ),
+              'class' => 'MODX\\Revolution\\modPluginEvent',
+              'object' => '{"pluginid":0,"event":"OnResourceSort","priority":0,"propertyset":0}',
+              'guid' => '1c9c301dbcfbbdd5c8bf004b970acca6',
+              'native_key' => 
+              array (
+                0 => 0,
+                1 => 'OnResourceSort',
+              ),
+              'signature' => '6c9b482e12f9c6f93878c65634efd09a',
+            ),
+            '07ed2fc59038a6044c0a036ac01c960c' => 
+            array (
+              'preserve_keys' => true,
+              'update_object' => true,
+              'unique_key' => 
+              array (
+                0 => 'pluginid',
+                1 => 'event',
+              ),
+              'related_objects' => true,
+              'related_object_attributes' => 
+              array (
+                'PropertySet' => 
+                array (
+                  'unique_key' => 'name',
+                  'preserve_keys' => false,
+                  'update_object' => false,
+                ),
+              ),
+              'class' => 'MODX\\Revolution\\modPluginEvent',
+              'object' => '{"pluginid":0,"event":"OnResourceDuplicate","priority":0,"propertyset":0}',
+              'guid' => '0a029436d1242edc10bebfcb320a302f',
+              'native_key' => 
+              array (
+                0 => 0,
+                1 => 'OnResourceDuplicate',
+              ),
+              'signature' => 'ee8577f166c36b453ccd7779f1e1593e',
+            ),
+            '678c9be51df25e1886a9c1fb4a095f6d' => 
+            array (
+              'preserve_keys' => true,
+              'update_object' => true,
+              'unique_key' => 
+              array (
+                0 => 'pluginid',
+                1 => 'event',
+              ),
+              'related_objects' => true,
+              'related_object_attributes' => 
+              array (
+                'PropertySet' => 
+                array (
+                  'unique_key' => 'name',
+                  'preserve_keys' => false,
+                  'update_object' => false,
+                ),
+              ),
+              'class' => 'MODX\\Revolution\\modPluginEvent',
+              'object' => '{"pluginid":0,"event":"OnBabelDuplicate","priority":0,"propertyset":0}',
+              'guid' => 'cb905bc1ace94bc985f6dfe2e1bf6e17',
+              'native_key' => 
+              array (
+                0 => 0,
+                1 => 'OnBabelDuplicate',
+              ),
+              'signature' => '3a6d27d61c177026a7e9cdb59f334271',
+            ),
+          ),
+        ),
+        'related_object_attributes' => 
+        array (
+          'PluginEvents' => 
+          array (
+            'preserve_keys' => true,
+            'update_object' => true,
+            'unique_key' => 
+            array (
+              0 => 'pluginid',
+              1 => 'event',
+            ),
+            'related_objects' => true,
+            'related_object_attributes' => 
+            array (
+              'PropertySet' => 
+              array (
+                'unique_key' => 'name',
+                'preserve_keys' => false,
+                'update_object' => false,
+              ),
+            ),
+          ),
+        ),
+        'class' => 'MODX\\Revolution\\modPlugin',
+        'object' => '{"id":null,"source":0,"property_preprocess":0,"name":"SEO Suite","description":"Plugin to handle the SEO Suite redirects.","editor_type":0,"category":0,"cache_type":0,"plugincode":"use Sterc\\\\SeoSuite\\\\SeoSuite;\\n\\n$seosuite = $modx->services->get(\'seosuite\');\\n$seosuite->firePlugins($modx->event, $scriptProperties);","locked":0,"properties":"a:0:{}","disabled":0,"moduleguid":"","static":0,"static_file":"","content":"use Sterc\\\\SeoSuite\\\\SeoSuite;\\n\\n$seosuite = $modx->services->get(\'seosuite\');\\n$seosuite->firePlugins($modx->event, $scriptProperties);"}',
+        'guid' => '91e52235188d6a98721997c83f85d19a',
+        'native_key' => NULL,
+        'signature' => '72402fafa225003b6b0f9a0727e7186f',
+      ),
+    ),
+  ),
+  'related_object_attributes' => 
+  array (
+    'Children' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 
+      array (
+        0 => 'parent',
+        1 => 'category',
+      ),
+    ),
+    'Snippets' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+    'Chunks' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+    'Templates' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'templatename',
+    ),
+    'TemplateVars' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+    'PropertySets' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+    'Plugins' => 
+    array (
+      'unique_key' => 'name',
+      'preserve_keys' => false,
+      'update_object' => true,
+      'related_objects' => true,
+      'related_object_attributes' => 
+      array (
+        'PluginEvents' => 
+        array (
+          'preserve_keys' => true,
+          'update_object' => true,
+          'unique_key' => 
+          array (
+            0 => 'pluginid',
+            1 => 'event',
+          ),
+          'related_objects' => true,
+          'related_object_attributes' => 
+          array (
+            'PropertySet' => 
+            array (
+              'unique_key' => 'name',
+              'preserve_keys' => false,
+              'update_object' => false,
+            ),
+          ),
+        ),
+      ),
+    ),
+  ),
+  'resolve' => 
+  array (
+    0 => 
+    array (
+      'type' => 'php',
+      'body' => '{"type":"php","snippets":{"SeoSuiteMeta":[],"SeoSuiteSitemap":[]},"chunks":{"tplMetaTitle":[],"tplMeta":[],"tplMetaSocial":[],"tplLink":[],"tplAlternateWrapper":[]},"plugins":{"SEO Suite":[]},"templates":[],"source":"seosuite-3.2.1-pl\\/MODX\\/Revolution\\/modCategory\\/9efba20077b98a2e0246b494f7cb9431.gpm.resolve.element_property_set.resolver","name":"gpm.resolve.element_property_set"}',
+    ),
+  ),
+  'vehicle_class' => 'xPDO\\Transport\\xPDOObjectVehicle',
+  'guid' => '836eb430c299c7bc6f828a7986efb0e9',
+  'package' => '',
+  'class' => 'MODX\\Revolution\\modCategory',
+  'signature' => '9efba20077b98a2e0246b494f7cb9431',
+  'native_key' => NULL,
+  'object' => '{"id":null,"parent":0,"category":"SEO Suite","rank":0}',
+);

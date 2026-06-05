@@ -1,0 +1,12 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'vehicle_class' => 'xPDO\\Transport\\xPDOObjectVehicle',
+  'guid' => '6b5245f61fa27b1fb3063c2d3ff8c39b',
+  'package' => '',
+  'class' => 'MODX\\Revolution\\modSystemSetting',
+  'signature' => '27bd75b20cc8ce27ac3f4cc0c4b3cb66',
+  'native_key' => 'seosuite.default_media_source',
+  'object' => '{"key":"seosuite.default_media_source","value":"","xtype":"modx-combo-source","namespace":"seosuite","area":"seosuite","editedon":null}',
+);

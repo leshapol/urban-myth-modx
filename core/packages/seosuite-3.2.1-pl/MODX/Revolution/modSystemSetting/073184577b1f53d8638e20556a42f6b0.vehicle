@@ -1,0 +1,12 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'vehicle_class' => 'xPDO\\Transport\\xPDOObjectVehicle',
+  'guid' => '8027a7df8c1fa488eba141f8f56f8e99',
+  'package' => '',
+  'class' => 'MODX\\Revolution\\modSystemSetting',
+  'signature' => '073184577b1f53d8638e20556a42f6b0',
+  'native_key' => 'seosuite.log_404',
+  'object' => '{"key":"seosuite.log_404","value":"1","xtype":"combo-boolean","namespace":"seosuite","area":"seosuite","editedon":null}',
+);
