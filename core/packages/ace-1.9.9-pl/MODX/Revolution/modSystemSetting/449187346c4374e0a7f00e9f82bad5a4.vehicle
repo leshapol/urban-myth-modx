@@ -1,0 +1,15 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'ace',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '793bbd9497a490c409bd724b7d152f8f',
+  'package' => '',
+  'class' => 'modSystemSetting',
+  'signature' => '449187346c4374e0a7f00e9f82bad5a4',
+  'native_key' => 'ace.soft_tabs',
+  'object' => '{"key":"ace.soft_tabs","value":"1","xtype":"combo-boolean","namespace":"ace","area":"general","editedon":null}',
+);

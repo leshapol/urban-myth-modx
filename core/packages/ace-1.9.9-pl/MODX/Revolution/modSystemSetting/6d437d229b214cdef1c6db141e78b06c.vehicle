@@ -1,0 +1,15 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'ace',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '1e828104cd5f8bd487c7fc6dfd90cd01',
+  'package' => '',
+  'class' => 'modSystemSetting',
+  'signature' => '6d437d229b214cdef1c6db141e78b06c',
+  'native_key' => 'ace.tab_size',
+  'object' => '{"key":"ace.tab_size","value":"4","xtype":"textfield","namespace":"ace","area":"general","editedon":null}',
+);

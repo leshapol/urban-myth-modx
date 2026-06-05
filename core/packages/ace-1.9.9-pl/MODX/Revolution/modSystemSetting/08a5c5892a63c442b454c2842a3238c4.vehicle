@@ -1,0 +1,15 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'ace',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'c999db96c275c6c9eccc7973f7b5d3bf',
+  'package' => '',
+  'class' => 'modSystemSetting',
+  'signature' => '08a5c5892a63c442b454c2842a3238c4',
+  'native_key' => 'ace.theme',
+  'object' => '{"key":"ace.theme","value":"chrome","xtype":"textfield","namespace":"ace","area":"general","editedon":null}',
+);

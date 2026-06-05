@@ -1,0 +1,17 @@
+<?php return array (
+  'unique_key' => 'name',
+  'preserve_keys' => true,
+  'update_object' => true,
+  'resolve_files' => true,
+  'resolve_php' => true,
+  'namespace' => 'ace',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '6581992602bdf2e0526f5ef2faa077f1',
+  'package' => '',
+  'class' => 'modNamespace',
+  'signature' => 'e72aaeac28931cf6a4b30f02336cc012',
+  'native_key' => 'ace',
+  'object' => '{"name":"ace","path":"{core_path}components\\/ace\\/","assets_path":""}',
+);

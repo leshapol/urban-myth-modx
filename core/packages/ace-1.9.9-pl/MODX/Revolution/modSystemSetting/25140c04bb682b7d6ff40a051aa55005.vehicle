@@ -1,0 +1,15 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'ace',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'd001f566655096c6d2c5d9229b446b25',
+  'package' => '',
+  'class' => 'modSystemSetting',
+  'signature' => '25140c04bb682b7d6ff40a051aa55005',
+  'native_key' => 'ace.snippets',
+  'object' => '{"key":"ace.snippets","value":"","xtype":"textarea","namespace":"ace","area":"general","editedon":null}',
+);

@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'related_objects' => false,
+  'namespace' => 'fetchit',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_class' => 'xPDO\\Transport\\xPDOObjectVehicle',
+  'guid' => '72b300c9b10800cb1d599b2192ece360',
+  'package' => '',
+  'class' => 'MODX\\Revolution\\modSystemSetting',
+  'signature' => '43ddfbf39c614c2a2f2d43b9a4041303',
+  'native_key' => 'fetchit.frontend.default.notifier',
+  'object' => '{"key":"fetchit.frontend.default.notifier","value":0,"xtype":"combo-boolean","namespace":"fetchit","area":"fetchit_main","editedon":null}',
+);

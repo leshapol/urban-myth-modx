@@ -1,0 +1,15 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'ace',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '8873bf2f6fd5a1bca742894a7a80336b',
+  'package' => '',
+  'class' => 'modSystemSetting',
+  'signature' => '49534ae5afb25213354151f5c035a90e',
+  'native_key' => 'ace.grow',
+  'object' => '{"key":"ace.grow","value":"","xtype":"textfield","namespace":"ace","area":"general","editedon":null}',
+);

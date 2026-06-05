@@ -1,0 +1,15 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'ace',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'b95b416bf0d53588fab0c513155040e4',
+  'package' => '',
+  'class' => 'modSystemSetting',
+  'signature' => '5ccb5417bec553ee637cf785c501c56c',
+  'native_key' => 'ace.html_elements_mime',
+  'object' => '{"key":"ace.html_elements_mime","value":"","xtype":"textfield","namespace":"ace","area":"general","editedon":null}',
+);
