@@ -98,14 +98,29 @@ class mSearch2 {
 
 		$this->modx->addPackage('msearch2', $this->config['modelPath']);
 		$this->modx->lexicon->load('msearch2:default');
-		$this->pdoTools = $this->modx->getService('pdoFetch');
 
-		$fqn = $this->modx->getOption('pdoFetch.class', null, 'pdotools.pdofetch', true);
-		$path = $this->modx->getOption('pdofetch_class_path', null, MODX_CORE_PATH . 'components/pdotools/model/', true);
-		if ($pdoClass = $modx->loadClass($fqn, $path, false, true)) {
-			$this->pdoTools = new $pdoClass($modx, $config);
-		} else {
+		if (isset($this->modx->services)) {
+			$this->modx->services['pdotools_config'] = $config;
+			if ($this->modx->services->has('pdoFetch')) {
+				$this->pdoTools = $this->modx->services->get('pdoFetch');
+			}
+			elseif (class_exists('ModxPro\\PdoTools\\Fetch')) {
+				$this->pdoTools = $this->modx->services->get('ModxPro\\PdoTools\\Fetch');
+			}
+		}
+
+		if (!$this->pdoTools) {
 			$this->pdoTools = $this->modx->getService('pdoFetch');
+		}
+
+		if (!$this->pdoTools) {
+			$fqn = $this->modx->getOption('pdoFetch.class', null, 'pdotools.pdofetch', true);
+			$path = $this->modx->getOption('pdofetch_class_path', null, MODX_CORE_PATH . 'components/pdotools/model/', true);
+			if ($pdoClass = $modx->loadClass($fqn, $path, false, true)) {
+				$this->pdoTools = new $pdoClass($modx, $config);
+			} else {
+				$this->pdoTools = $this->modx->getService('pdoFetch');
+			}
 		}
 
 		$this->getWorkFields();

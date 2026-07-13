@@ -78,7 +78,7 @@ class FetchIt
 
     public function registerScript()
     {
-        if (!$_SESSION['fetchit_called']) {
+        if (empty($_SESSION['fetchit_called'])) {
             return;
         }
 

@@ -36,7 +36,21 @@ if (empty($config) || !is_array($config)) {
 }
 
 /** @var pdoFetch $pdoFetch */
-$pdoFetch = $modx->getService('pdoFetch');
+$pdoFetch = null;
+if (isset($modx->services)) {
+    $modx->services['pdotools_config'] = $scriptProperties;
+    if ($modx->services->has('pdoFetch')) {
+        $pdoFetch = $modx->services->get('pdoFetch');
+    } elseif (class_exists('ModxPro\\PdoTools\\Fetch')) {
+        $pdoFetch = $modx->services->get(ModxPro\PdoTools\Fetch::class);
+    }
+}
+if (!$pdoFetch) {
+    $pdoFetch = $modx->getService('pdoFetch');
+}
+if (!$pdoFetch) {
+    exit(json_encode(array('success' => false, 'message' => 'Could not load pdoFetch service')));
+}
 $pdoFetch->setConfig($scriptProperties);
 $pdoFetch->addTime('pdoTools loaded.');
 

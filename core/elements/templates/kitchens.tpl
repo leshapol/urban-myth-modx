@@ -30,6 +30,8 @@
               &includeTVs=`category-img,hero-img,tags`
               &prepareTVs=`1`
               &ajaxMode=`button`
+              &ajaxElemMore=`#pdopage ._btn-more`
+              &ajaxHistory=`0`
               &ajaxTplMore=`@INLINE <button class="blog__button-more button button_long button_center _btn-more">LOAD MORE</button>`
               &tplOuter=`tpl.mFilter2.outer.Urbanmyth`
               &tplFilter.outer.default=`tpl.mFilter2.filter.outer.Urbanmyth`
